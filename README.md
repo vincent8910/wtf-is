@@ -54,6 +54,8 @@
 | **MCP** | 讓 AI 能連接外部工具的標準接口 | AI 的感官器官 | 「裝了 **MCP** 之後，AI 就能直接幫你讀日曆了。」 | [→ 詳細](terms/mcp.md) |
 | **Agent** | 能自主規劃和執行任務的 AI | 自主做事的正職員工 | 「這個 **Agent** 會自己拆任務、自己跑，你只要看結果就好。」 | [→ 詳細](terms/agent.md) |
 | **SuperClaude** | 讓 Claude Code 更強的開源設定框架 | 員工培訓手冊 / 超級裝備包 | 「裝了 **SuperClaude** 之後，Claude Code 回答更有結構了。」 | [→ 詳細](terms/superclaude.md) |
+| **JSON** | 軟體之間傳資料用的標準格式 | 統一發票的格式 | 「API 回傳的是 **JSON** 格式。」 | [→ 詳細](terms/json.md) |
+| **Framework / Library** | 別人寫好的現成工具，拿來用就好 | 工具箱 / 已裝潢好的廚房 | 「我們用的**框架**是 React。」 | [→ 詳細](terms/framework-library.md) |
 
 ---
 
@@ -67,7 +69,12 @@
 | **Clone** | 把專案完整複製一份到你的電腦 | 按「建立副本」 | 「先把 repo **clone** 下來跑跑看。」 | [→ 詳細](terms/clone.md) |
 | **Git** | 幫你記住每一次修改的版本控制工具 | 後悔藥 / 時光機 | 「改壞了沒關係，用 **Git** 可以回到上一版。」 | [→ 詳細](terms/git.md) |
 | **GitHub** | 把 Git 存檔上傳到雲端的協作平台 | 程式碼的 Google Drive | 「規格書放 **GitHub** 上，工程師改了你馬上看得到。」 | [→ 詳細](terms/github.md) |
+| **Branch（分支）** | 在不影響主版本的情況下，開一條平行路線去做事 | 平行宇宙 | 「我開了一個 **branch** 在做。」 | [→ 詳細](terms/branch.md) |
+| **Commit（提交）** | 對程式碼按一次「存檔」 | 遊戲存檔點 | 「我已經 **commit** 了。」 | [→ 詳細](terms/commit.md) |
+| **Push（推送）** | 把你電腦上的存檔上傳到雲端 | 上傳照片到共用相簿 | 「你 **push** 了嗎？」 | [→ 詳細](terms/push.md) |
+| **Merge（合併）** | 把兩條開發路線的修改合在一起 | 兩個人的企劃書合成一份 | 「PR merge 了，可以上線了。」 | [→ 詳細](terms/merge.md) |
 | **PR（Pull Request）** | 改完後請同事審查的流程 | 公文會簽 | 「我發了一個 **PR**，你幫我 review 一下再合併。」 | [→ 詳細](terms/pull-request.md) |
+| **Open Source（開源）** | 程式碼公開，大家都能看、用、改 | 公開食譜的餐廳 | 「這個工具是 **open source** 的。」 | [→ 詳細](terms/open-source.md) |
 
 ---
 
@@ -96,6 +103,7 @@
 | **Database（資料庫）** | 儲存和管理資料的系統 | 超級進化版的 Excel | 「我去查一下 **DB**，看資料還在不在。」 | [→ 詳細](terms/database.md) |
 | **Server（伺服器）** | 24 小時待命、專門服務請求的電腦 | 24 小時不打烊的服務生 | 「**Server** 掛了，網站打不開。」 | [→ 詳細](terms/server.md) |
 | **Auth（驗證/授權）** | Authentication 確認你是誰，Authorization 確認你能做什麼 | 門口警衛 / 樓層門禁 | 「**Auth** 做好了嗎？使用者登入有問題。」 | [→ 詳細](terms/auth.md) |
+| **Token（令牌）** | 系統發給你的臨時通行證 | 遊樂園手上的入場章 | 「**Token** 過期了，要重新登入。」 | [→ 詳細](terms/token.md) |
 
 ---
 
@@ -110,6 +118,8 @@ PM 寫規格、追進度時會遇到的詞：
 | **Blocker** | 卡住進度、讓你做不下去的障礙 | 路中間的大石頭 | 「我這邊有 **blocker**，要等後端的 API。」 | [→ 詳細](terms/blocker.md) |
 | **Technical Debt（技術債）** | 為了趕工走捷徑，之後要花時間還的代價 | 先刷信用卡，之後再還 | 「這邊有**技術債**，要花時間還。」 | [→ 詳細](terms/technical-debt.md) |
 | **Refactor（重構）** | 重新整理程式碼，功能不變但更好維護 | 重新整理衣櫃 | 「這段 code 要 **refactor** 一下。」 | [→ 詳細](terms/refactor.md) |
+| **Agile / Scrum（敏捷開發）** | 把大專案切成小段，快速交付、快速調整 | 邊吃邊點的火鍋 | 「我們跑 **Scrum**，兩週一個 sprint。」 | [→ 詳細](terms/agile-scrum.md) |
+| **MVP** | 用最少的功能先上線試水溫 | 夜市擺攤試賣 | 「先做個 **MVP** 測試看看。」 | [→ 詳細](terms/mvp.md) |
 
 ---
 
@@ -233,8 +243,10 @@ PM 寫規格、追進度時會遇到的詞：
 | GitHub | 程式碼的 Google Drive |
 | PR（Pull Request） | 公文會簽 |
 | Branch（分支） | 平行宇宙 |
-| Commit | 按下存檔鍵 |
-| Push | 上傳到雲端 |
+| Commit（提交） | 遊戲存檔點 |
+| Push（推送） | 上傳照片到共用相簿 |
+| Merge（合併） | 兩個人的企劃書合成一份 |
+| Open Source（開源） | 公開食譜的餐廳 |
 | IDE | 全配的辦公室 |
 | VS Code | 超強的筆記本 |
 | Prompt | 跟同事交辦工作的那句話 |
@@ -243,6 +255,8 @@ PM 寫規格、追進度時會遇到的詞：
 | Agent | 自主做事的正職員工 |
 | Agent 團隊 | 特遣隊 |
 | SuperClaude | 員工培訓手冊 |
+| JSON | 統一發票的格式 |
+| Framework / Library（框架 / 函式庫） | 工具箱 / 已裝潢好的廚房 |
 | Frontend / Backend | 餐廳外場 / 內場廚房 |
 | Bug / Debug | 蟲 / 抓蟲大作戰 |
 | Deploy（部署） | 把新菜色端上桌 |
@@ -251,11 +265,14 @@ PM 寫規格、追進度時會遇到的詞：
 | Database（資料庫） | 超級進化版的 Excel |
 | Server（伺服器） | 24 小時不打烊的服務生 |
 | Authentication / Authorization | 門口警衛 / 樓層門禁 |
+| Token（令牌） | 遊樂園手上的入場章 |
 | Spec（規格） | 蓋房子前的藍圖 |
 | Scope（範圍） | 套餐的菜色清單 |
 | Blocker | 路中間的大石頭 |
 | Technical Debt（技術債） | 先刷信用卡，之後再還 |
 | Refactor（重構） | 重新整理衣櫃 |
+| Agile / Scrum（敏捷開發） | 邊吃邊點的火鍋 |
+| MVP（最小可行產品） | 夜市擺攤試賣 |
 | Hotfix | 先貼 OK 繃止血 |
 | Rollback（回滾） | 按 Ctrl+Z 復原 |
 | Downtime（停機） | 店家掛出「裝修中」 |
