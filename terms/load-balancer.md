@@ -27,7 +27,7 @@
 
 ### 常見情境
 
-- **DevOps 工程師：**「我在前面加了一個 load balancer，流量會自動分到三台 server。」
+- **DevOps（負責維運和自動化部署的）工程師：**「我在前面加了一個 load balancer，流量（同時進來的使用者請求數量）會自動分到三台 server。」
 - **PM：**「雙 11 撐得住嗎？」→ 「load balancer 會自動分流，應該沒問題。」
 - **工程師：**「有一台 server 掛了，但 load balancer 自動把流量導到其他台，用戶沒感覺。」
 

@@ -6,7 +6,7 @@
 
 ## 它到底是什麼？
 
-**Endpoint** 就是後端伺服器上一個一個特定的網址。前端或其他系統想要某個功能，就去打對應的 endpoint。
+**Endpoint** 就是[後端](frontend-backend.md)[伺服器](server.md)上一個一個特定的網址。[前端](frontend-backend.md)或其他系統想要某個功能，就去打對應的 endpoint。
 
 想像郵局有不同的窗口——
 
