@@ -40,6 +40,12 @@
 | **API** | 軟體之間溝通的窗口 | 餐廳的服務窗口 | 「前端是透過 **API** 跟後端要資料的。」 | [→ 詳細](terms/api.md) |
 | **API Key** | 讓服務認出你的通行證 | 員工證 / 門禁卡 | 「記得去後台產一組 **API Key**。」 | [→ 詳細](terms/api-key.md) |
 | **環境變數** | 電腦裡存放設定值的地方 | 貼在冰箱上的便條紙 | 「把 Key 存進**環境變數**，這樣每次開機就不用重貼。」 | [→ 詳細](terms/environment-variable.md) |
+| **HTML** | 網頁的骨架結構，決定頁面上有什麼東西 | 蓋房子的鋼筋水泥 | 「這段 **HTML** 結構要改一下。」 | [→ 詳細](terms/html.md) |
+| **JavaScript** | 讓網頁「動起來」的程式語言 | 房子的水電和電器 | 「我們前端用的是 **JavaScript**。」 | [→ 詳細](terms/javascript.md) |
+| **HTTP / HTTPS** | 瀏覽器和網站之間的溝通規則，HTTPS 有加密更安全 | 明信片 vs 密封掛號信 | 「我們的網站要全部改成 **HTTPS**。」 | [→ 詳細](terms/http-https.md) |
+| **DNS** | 把網址翻譯成電腦看得懂的地址 | 網路世界的電話簿 | 「**DNS** 還沒設定，網站打不開。」 | [→ 詳細](terms/dns.md) |
+| **Domain（網域）** | 網站的名字，像 `google.com` | 店名 | 「新的 **domain** 買好了。」 | [→ 詳細](terms/domain.md) |
+| **IP Address（IP 位址）** | 網路上每台電腦的門牌號碼 | 門牌地址 | 「把這個 **IP** 加到白名單裡。」 | [→ 詳細](terms/ip-address.md) |
 
 ---
 
@@ -56,6 +62,10 @@
 | **SuperClaude** | 讓 Claude Code 更強的開源設定框架 | 員工培訓手冊 / 超級裝備包 | 「裝了 **SuperClaude** 之後，Claude Code 回答更有結構了。」 | [→ 詳細](terms/superclaude.md) |
 | **JSON** | 軟體之間傳資料用的標準格式 | 統一發票的格式 | 「API 回傳的是 **JSON** 格式。」 | [→ 詳細](terms/json.md) |
 | **Framework / Library** | 別人寫好的現成工具，拿來用就好 | 工具箱 / 已裝潢好的廚房 | 「我們用的**框架**是 React。」 | [→ 詳細](terms/framework-library.md) |
+| **Cookie** | 網站存在你瀏覽器裡的小紙條，用來記住你是誰 | 手上蓋的入場章 | 「清除 **Cookie** 之後就要重新登入了。」 | [→ 詳細](terms/cookie.md) |
+| **Localhost（本機）** | 你自己電腦上跑的臨時網站，別人看不到 | 在自己家廚房試做新菜 | 「功能我在 **localhost** 跑過了，沒問題。」 | [→ 詳細](terms/localhost.md) |
+| **SQL** | 跟資料庫溝通的語言 | 圖書館的查詢系統 | 「我寫一段 **SQL** 去撈資料。」 | [→ 詳細](terms/sql.md) |
+| **SaaS** | 按月付費、用瀏覽器就能用的軟體服務 | 租房子（不用自己蓋） | 「我們是做 **SaaS** 的公司。」 | [→ 詳細](terms/saas.md) |
 
 ---
 
@@ -75,6 +85,9 @@
 | **Merge（合併）** | 把兩條開發路線的修改合在一起 | 兩個人的企劃書合成一份 | 「PR merge 了，可以上線了。」 | [→ 詳細](terms/merge.md) |
 | **PR（Pull Request）** | 改完後請同事審查的流程 | 公文會簽 | 「我發了一個 **PR**，你幫我 review 一下再合併。」 | [→ 詳細](terms/pull-request.md) |
 | **Open Source（開源）** | 程式碼公開，大家都能看、用、改 | 公開食譜的餐廳 | 「這個工具是 **open source** 的。」 | [→ 詳細](terms/open-source.md) |
+| **Pull（拉取）** | 把雲端最新的存檔下載到你的電腦 | 同步共用資料夾 | 「你先 **pull** 一下，我剛改了一些東西。」 | [→ 詳細](terms/pull.md) |
+| **Merge Conflict（合併衝突）** | 兩個人改到同一個地方，要手動決定用誰的版本 | 兩份企劃書的同一段不一樣 | 「我在解 **conflict**，要花點時間。」 | [→ 詳細](terms/merge-conflict.md) |
+| **Code Review（程式碼審查）** | 程式碼寫完請同事檢查的流程 | 文章校稿 | 「這個 PR 還在等 **code review**。」 | [→ 詳細](terms/code-review.md) |
 
 ---
 
@@ -133,6 +146,7 @@ PM 寫規格、追進度時會遇到的詞：
 | **Rollback（回滾）** | 把系統退回上一個正常版本 | 按 Ctrl+Z 復原 | 「新版有問題，先 **rollback**。」 | [→ 詳細](terms/rollback.md) |
 | **Downtime（停機）** | 系統無法使用的時間 | 店家掛出「裝修中」 | 「這次部署需要 10 分鐘 **downtime**。」 | [→ 詳細](terms/downtime.md) |
 | **Legacy Code** | 前人留下的老舊程式碼 | 上一任留下的爛攤子 | 「這段 **legacy code** 沒人敢動。」 | [→ 詳細](terms/legacy-code.md) |
+| **Backup（備份）** | 把資料複製一份存到另一個地方，以防萬一 | 重要文件影印一份放別處 | 「幸好有 **backup**，不然資料就全沒了。」 | [→ 詳細](terms/backup.md) |
 
 ---
 
@@ -315,6 +329,20 @@ PM 寫規格、追進度時會遇到的詞：
 | Phishing（釣魚攻擊） | 詐騙電話假裝警察 |
 | VPN | 走秘密地下通道 |
 | Vulnerability（漏洞） | 房子牆上的裂縫 |
+| HTML | 蓋房子的鋼筋水泥結構 |
+| JavaScript | 房子的水電和電器設備 |
+| HTTP / HTTPS | 明信片 vs 密封掛號信 |
+| DNS | 網路世界的電話簿 |
+| Domain（網域） | 店名 |
+| IP Address（IP 位址） | 門牌地址 |
+| Cookie | 手上蓋的入場章 |
+| Localhost（本機） | 在自己家廚房試做新菜 |
+| SQL | 圖書館的查詢系統 |
+| SaaS | 租房子（不用自己蓋） |
+| Pull（拉取） | 同步共用資料夾 |
+| Merge Conflict（合併衝突） | 兩份企劃書的同一段不一樣 |
+| Code Review（程式碼審查） | 文章校稿 |
+| Backup（備份） | 重要文件影印一份放別處 |
 
 ---
 
