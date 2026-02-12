@@ -46,6 +46,48 @@
 
 ---
 
+## 單字速查表（A-Z）
+
+| | | | |
+|---|---|---|---|
+| [2FA](terms/2fa.md) | [A/B Testing](terms/ab-testing.md) | [Agent](terms/agent.md) | [Agile / Scrum](terms/agile-scrum.md) |
+| [Antigravity](terms/antigravity.md) | [API](terms/api.md) | [API Key](terms/api-key.md) | [App 審核](terms/app-review.md) |
+| [Auth](terms/auth.md) | [AWS](terms/aws.md) | [Backup](terms/backup.md) | [Blocker](terms/blocker.md) |
+| [Branch](terms/branch.md) | [Bug / Debug](terms/bug-debug.md) | [Cache](terms/cache.md) | [CDN](terms/cdn.md) |
+| [CI/CD](terms/ci-cd.md) | [Claude](terms/claude.md) | [Claude Code](terms/claude-code.md) | [Clone](terms/clone.md) |
+| [Cloud](terms/cloud.md) | [Cocos Creator](terms/cocos-creator.md) | [Code Review](terms/code-review.md) | [Commit](terms/commit.md) |
+| [Component](terms/component.md) | [Concurrency](terms/concurrency.md) | [Container / Docker](terms/container-docker.md) | [Conversion Rate](terms/conversion-rate.md) |
+| [Cookie](terms/cookie.md) | [Crash](terms/crash.md) | [Cron Job](terms/cron-job.md) | [CRUD](terms/crud.md) |
+| [CSS](terms/css.md) | [Cursor](terms/cursor.md) | [Dashboard](terms/dashboard.md) | [Data Lake / Warehouse](terms/data-lake-warehouse.md) |
+| [Database](terms/database.md) | [Dependency](terms/dependency.md) | [Deploy](terms/deploy.md) | [DevOps](terms/devops.md) |
+| [DNS](terms/dns.md) | [Domain](terms/domain.md) | [Downtime](terms/downtime.md) | [Edge Case](terms/edge-case.md) |
+| [EKS](terms/eks.md) | [ELK Stack](terms/elk.md) | [Encryption](terms/encryption.md) | [Endpoint](terms/endpoint.md) |
+| [環境變數](terms/environment-variable.md) | [ETL](terms/etl.md) | [Feature Flag](terms/feature-flag.md) | [Firewall](terms/firewall.md) |
+| [FPS](terms/fps.md) | [Framework / Library](terms/framework-library.md) | [Frontend / Backend](terms/frontend-backend.md) | [Full-Stack](terms/full-stack.md) |
+| [GCP](terms/gcp.md) | [Gemini CLI](terms/gemini-cli.md) | [Git](terms/git.md) | [Git Bash](terms/git-bash.md) |
+| [GitHub](terms/github.md) | [Go / Golang](terms/golang.md) | [H5](terms/h5.md) | [Hotfix](terms/hotfix.md) |
+| [HTML](terms/html.md) | [HTTP / HTTPS](terms/http-https.md) | [IDE](terms/ide.md) | [IP Address](terms/ip-address.md) |
+| [JavaScript](terms/javascript.md) | [JSON](terms/json.md) | [K8s](terms/k8s.md) | [Landing Page](terms/landing-page.md) |
+| [Latency / Ping](terms/latency.md) | [Legacy Code](terms/legacy-code.md) | [Load Balancer](terms/load-balancer.md) | [Localhost](terms/localhost.md) |
+| [Log](terms/log.md) | [Markdown](terms/markdown.md) | [Matchmaking](terms/matchmaking.md) | [MCP](terms/mcp.md) |
+| [Merge](terms/merge.md) | [Merge Conflict](terms/merge-conflict.md) | [Microservice](terms/microservice.md) | [Middleware](terms/middleware.md) |
+| [MongoDB](terms/mongodb.md) | [Monitor / Alert](terms/monitor-alert.md) | [MVP](terms/mvp.md) | [Native / Web App](terms/native-web-app.md) |
+| [Node.js](terms/nodejs.md) | [npm](terms/npm.md) | [OAuth](terms/oauth.md) | [Open Source](terms/open-source.md) |
+| [Phishing](terms/phishing.md) | [Pipeline](terms/pipeline.md) | [Port](terms/port.md) | [PR（Pull Request）](terms/pull-request.md) |
+| [Prompt](terms/prompt.md) | [Pull](terms/pull.md) | [Push](terms/push.md) | [Push Notification](terms/push-notification.md) |
+| [Python](terms/python.md) | [Redis](terms/redis.md) | [Refactor](terms/refactor.md) | [Regression](terms/regression.md) |
+| [Render](terms/render.md) | [Repo](terms/repo.md) | [Rollback](terms/rollback.md) | [Rust](terms/rust.md) |
+| [RWD](terms/rwd.md) | [S3](terms/s3.md) | [SaaS](terms/saas.md) | [Sandbox](terms/sandbox.md) |
+| [Scope](terms/scope.md) | [SDK](terms/sdk.md) | [SEO](terms/seo.md) | [Server](terms/server.md) |
+| [Session](terms/session.md) | [Shader](terms/shader.md) | [Spec](terms/spec.md) | [SQL](terms/sql.md) |
+| [SSH](terms/ssh.md) | [SSL / TLS](terms/ssl-tls.md) | [Staging / Production](terms/staging-production.md) | [SuperClaude](terms/superclaude.md) |
+| [Sync / Async](terms/sync-async.md) | [Technical Debt](terms/technical-debt.md) | [Terminal / CLI](terms/terminal-cli.md) | [Test Case](terms/test-case.md) |
+| [Timeout](terms/timeout.md) | [Token](terms/token.md) | [UAT](terms/uat.md) | [UI / UX](terms/ui-ux.md) |
+| [Unity](terms/unity.md) | [VPN](terms/vpn.md) | [VS Code](terms/vscode.md) | [Vulnerability](terms/vulnerability.md) |
+| [Webhook](terms/webhook.md) | | | |
+
+---
+
 ## 基礎建設類
 
 這些是軟體開發的基礎環境詞彙：
