@@ -3,6 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+  <!-- Google Analytics (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YG0ZPJNCJL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-YG0ZPJNCJL');
+  </script>
   <title>WTF is…？術語快查</title>
   <meta name="description" content="多領域術語白話翻譯，搜尋即查。軟體工程、股票投資、加密貨幣、行銷企劃⋯⋯用白話解釋專有名詞。">
 
@@ -824,6 +833,7 @@
     const current = getThemePref();
     // auto → dark → light → auto
     const next = current === 'auto' ? 'dark' : current === 'dark' ? 'light' : 'auto';
+    gtag('event', 'toggle_theme', { theme: next });
     applyTheme(next);
   });
 
@@ -934,6 +944,7 @@
       if (!btn) return;
       const domain = btn.dataset.domain;
       searchInput.value = '';
+      gtag('event', 'view_domain', { domain: domain });
       showDomainResults(domain);
     });
   }
@@ -984,6 +995,7 @@
     recentSection.style.display = 'none';
     const results = fuse.search(q, { limit: 30 });
     const items = results.map(r => r.item);
+    gtag('event', 'search', { search_term: q, results_count: items.length });
     renderResults(items);
     resultCountEl.textContent = `找到 ${items.length} 個結果`;
     resultCountEl.style.display = 'block';
@@ -994,6 +1006,7 @@
     selectedIndex = -1;
     if (items.length === 0) {
       resultsEl.innerHTML = '<div class="no-results"><div class="emoji">🤷</div><div>找不到相關術語</div><div style="margin-top:8px;font-size:13px">覺得應該要有這個詞？<a href="https://github.com/vincent8910/wtf-is/issues/new?title=建議新增術語：" target="_blank" rel="noopener" style="color:var(--accent)">告訴 vincent8910 把它加進來</a>，或<a href="https://t.me/vincent8910" target="_blank" rel="noopener" style="color:var(--accent)">點這裡用 Telegram 告訴 vincent8910</a></div></div>';
+      gtag('event', 'no_results', { search_term: searchInput.value });
       return;
     }
     resultsEl.innerHTML = items.map((t, i) =>
@@ -1050,6 +1063,7 @@
 
     // 更新頁面標題（SEO）
     document.title = `${term.title} — WTF is…？`;
+    gtag('event', 'view_term', { term_id: id, term_title: term.title, domain: term.domain });
 
     detailTitle.textContent = term.title;
     detailMeta.innerHTML = `<span class="result-tag">${esc(term.domainLabel)}</span>`;
