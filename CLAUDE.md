@@ -8,8 +8,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## 專案結構
 
-- `README.md` — 主頁，含軟體工程術語總覽 + 各領域入口連結
-- `terms/*.md` — 軟體工程術語的詳細說明頁
+- `README.md` — 主頁，全域索引（含各領域大綱 + 單字速查表）
+- `software-engineering/README.md` — 軟體工程術語總覽
+- `software-engineering/terms/*.md` — 軟體工程術語的詳細說明頁
 - `stock/README.md` — 股票投資術語總覽
 - `stock/terms/*.md` — 股票投資術語的詳細說明頁
 - `electronics/README.md` — 電子產業術語總覽
@@ -52,10 +53,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## 新增術語的步驟
 
 ### 軟體工程術語
-1. 在 `terms/` 下建立 `術語名稱.md`（用英文小寫 kebab-case 命名）
+1. 在 `software-engineering/terms/` 下建立 `術語名稱.md`（用英文小寫 kebab-case 命名）
 2. 按上方模板填寫內容
-3. 在 `README.md` 對應的類別表格中新增一行（含詞彙、一句話解釋、比喻、造句、詳細連結）
-4. 如果有合適比喻，也加到 README 底部的「比喻對照總表」
+3. 在 `software-engineering/README.md` 對應的類別表格中新增一行（含詞彙、一句話解釋、比喻、造句、詳細連結）
+4. 如果有合適比喻，也加到 `software-engineering/README.md` 底部的「比喻對照總表」
+5. 在主頁 `README.md` 的軟體工程單字速查表中新增一行
 
 ### 其他領域術語
 1. 在對應領域資料夾的 `terms/` 下建立 `術語名稱.md`（用英文小寫 kebab-case 命名）
