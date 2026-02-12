@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>WTF is…？術語快查</title>
+  <meta name="description" content="多領域術語白話翻譯，搜尋即查">
+  <meta name="theme-color" content="#1e293b" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f8fafc" media="(prefers-color-scheme: light)">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="WTF is">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="manifest" href="manifest.json">
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #f8fafc;
+      --bg-card: #ffffff;
+      --bg-input: #ffffff;
+      --text: #0f172a;
+      --text-secondary: #475569;
+      --text-tertiary: #94a3b8;
+      --border: #e2e8f0;
+      --accent: #3b82f6;
+      --accent-soft: #eff6ff;
+      --tag-bg: #f1f5f9;
+      --shadow: 0 1px 3px rgba(0,0,0,0.08);
+      --shadow-lg: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f172a;
+        --bg-card: #1e293b;
+        --bg-input: #1e293b;
+        --text: #f1f5f9;
+        --text-secondary: #94a3b8;
+        --text-tertiary: #64748b;
+        --border: #334155;
+        --accent: #60a5fa;
+        --accent-soft: #1e3a5f;
+        --tag-bg: #334155;
+        --shadow: 0 1px 3px rgba(0,0,0,0.3);
+        --shadow-lg: 0 4px 12px rgba(0,0,0,0.4);
+      }
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans TC", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100dvh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    /* ===== 搜尋頁 ===== */
+    #search-view {
+      padding-top: env(safe-area-inset-top, 20px);
+    }
+
+    .header {
+      text-align: center;
+      padding: 32px 0 24px;
+    }
+
+    .header h1 {
+      font-size: 28px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+
+    .header p {
+      color: var(--text-secondary);
+      font-size: 14px;
+      margin-top: 4px;
+    }
+
+    .search-box {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: var(--bg);
+      padding: 8px 0 12px;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 14px 16px 14px 44px;
+      font-size: 17px;
+      border: 2px solid var(--border);
+      border-radius: 14px;
+      background: var(--bg-input);
+      color: var(--text);
+      outline: none;
+      transition: border-color 0.15s;
+      -webkit-appearance: none;
+    }
+
+    .search-input:focus {
+      border-color: var(--accent);
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-tertiary);
+      pointer-events: none;
+    }
+
+    .search-wrapper {
+      position: relative;
+    }
+
+    .search-clear {
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: var(--tag-bg);
+      border: none;
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      font-size: 14px;
+      color: var(--text-secondary);
+      cursor: pointer;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      line-height: 1;
+    }
+
+    .search-clear.visible { display: flex; }
+
+    /* 結果列表 */
+    .results {
+      list-style: none;
+      padding-bottom: 80px;
+    }
+
+    .result-item {
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border);
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .result-item:active {
+      opacity: 0.7;
+    }
+
+    .result-title {
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .result-oneline {
+      font-size: 14px;
+      color: var(--text-secondary);
+      margin-top: 2px;
+    }
+
+    .result-tag {
+      display: inline-block;
+      font-size: 12px;
+      background: var(--tag-bg);
+      color: var(--text-secondary);
+      padding: 2px 8px;
+      border-radius: 6px;
+      margin-top: 4px;
+    }
+
+    /* 領域快捷 */
+    .domains {
+      padding: 16px 0 80px;
+    }
+
+    .domains h2 {
+      font-size: 14px;
+      color: var(--text-tertiary);
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+
+    .domain-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+    .domain-btn {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 14px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      cursor: pointer;
+      font-size: 14px;
+      color: var(--text);
+      box-shadow: var(--shadow);
+      -webkit-tap-highlight-color: transparent;
+      transition: transform 0.1s;
+    }
+
+    .domain-btn:active {
+      transform: scale(0.97);
+    }
+
+    .domain-emoji {
+      font-size: 22px;
+    }
+
+    .domain-name {
+      font-weight: 500;
+    }
+
+    .domain-count {
+      font-size: 12px;
+      color: var(--text-tertiary);
+    }
+
+    .result-count {
+      font-size: 13px;
+      color: var(--text-tertiary);
+      padding: 8px 0;
+    }
+
+    .no-results {
+      text-align: center;
+      padding: 40px 0;
+      color: var(--text-tertiary);
+    }
+
+    .no-results .emoji {
+      font-size: 48px;
+      margin-bottom: 12px;
+    }
+
+    /* ===== 詳細頁 ===== */
+    #detail-view {
+      display: none;
+      padding-top: env(safe-area-inset-top, 20px);
+    }
+
+    .back-bar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: var(--bg);
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: none;
+      border: none;
+      font-size: 16px;
+      color: var(--accent);
+      cursor: pointer;
+      padding: 4px 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .detail-header {
+      padding: 20px 0 8px;
+    }
+
+    .detail-title {
+      font-size: 24px;
+      font-weight: 800;
+      line-height: 1.3;
+    }
+
+    .detail-meta {
+      display: flex;
+      gap: 8px;
+      margin-top: 8px;
+    }
+
+    .detail-content {
+      padding: 16px 0 80px;
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    .detail-content blockquote {
+      border-left: 4px solid var(--accent);
+      padding: 12px 16px;
+      margin: 16px 0;
+      background: var(--accent-soft);
+      border-radius: 0 8px 8px 0;
+      font-size: 15px;
+    }
+
+    .detail-content h2 {
+      font-size: 20px;
+      font-weight: 700;
+      margin: 28px 0 12px;
+    }
+
+    .detail-content h3 {
+      font-size: 17px;
+      font-weight: 600;
+      margin: 20px 0 8px;
+    }
+
+    .detail-content p {
+      margin: 12px 0;
+    }
+
+    .detail-content ul, .detail-content ol {
+      margin: 12px 0;
+      padding-left: 24px;
+    }
+
+    .detail-content li {
+      margin: 6px 0;
+    }
+
+    .detail-content code {
+      background: var(--tag-bg);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 14px;
+      font-family: "SF Mono", "Fira Code", monospace;
+    }
+
+    .detail-content pre {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px;
+      overflow-x: auto;
+      margin: 16px 0;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .detail-content pre code {
+      background: none;
+      padding: 0;
+    }
+
+    .detail-content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+
+    .detail-content th, .detail-content td {
+      border: 1px solid var(--border);
+      padding: 8px 12px;
+      text-align: left;
+    }
+
+    .detail-content th {
+      background: var(--tag-bg);
+      font-weight: 600;
+    }
+
+    .detail-content a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .detail-content a:hover {
+      text-decoration: underline;
+    }
+
+    .detail-content hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 24px 0;
+    }
+
+    .detail-content strong {
+      font-weight: 600;
+    }
+
+    .detail-content img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    /* 隱藏「回到術語總覽」的連結 */
+    .detail-content a[href="../README.md"],
+    .detail-content a[href*="README.md"] {
+      display: none;
+    }
+
+    .detail-content p:last-child:has(a[href*="README.md"]) {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<!-- 搜尋頁 -->
+<div id="search-view">
+  <div class="container">
+    <div class="header">
+      <h1>WTF is…？</h1>
+      <p>術語白話翻譯快查</p>
+    </div>
+
+    <div class="search-box">
+      <div class="search-wrapper">
+        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" class="search-input" id="search" placeholder="搜尋術語…" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false">
+        <button class="search-clear" id="clear-btn" aria-label="清除">&times;</button>
+      </div>
+    </div>
+
+    <div id="result-count" class="result-count" style="display:none"></div>
+    <ul class="results" id="results"></ul>
+
+    <div class="domains" id="domains">
+      <h2>依領域瀏覽</h2>
+      <div class="domain-grid" id="domain-grid"></div>
+    </div>
+  </div>
+</div>
+
+<!-- 詳細頁 -->
+<div id="detail-view">
+  <div class="container">
+    <div class="back-bar">
+      <button class="back-btn" id="back-btn">← 返回搜尋</button>
+    </div>
+    <div class="detail-header">
+      <div class="detail-title" id="detail-title"></div>
+      <div class="detail-meta" id="detail-meta"></div>
+    </div>
+    <div class="detail-content" id="detail-content"></div>
+  </div>
+</div>
+
+<script>
+(function() {
+  'use strict';
+
+  let TERMS = [];
+  let fuse = null;
+  let currentView = 'search'; // 'search' | 'detail'
+
+  const $ = id => document.getElementById(id);
+
+  const searchInput = $('search');
+  const clearBtn = $('clear-btn');
+  const resultsEl = $('results');
+  const resultCountEl = $('result-count');
+  const domainsEl = $('domains');
+  const domainGrid = $('domain-grid');
+  const searchView = $('search-view');
+  const detailView = $('detail-view');
+  const detailTitle = $('detail-title');
+  const detailMeta = $('detail-meta');
+  const detailContent = $('detail-content');
+  const backBtn = $('back-btn');
+
+  // ===== 載入資料 =====
+  async function loadTerms() {
+    const resp = await fetch('terms.json');
+    TERMS = await resp.json();
+    fuse = new Fuse(TERMS, {
+      keys: [
+        { name: 'title', weight: 0.45 },
+        { name: 'oneLine', weight: 0.25 },
+        { name: 'metaphor', weight: 0.2 },
+        { name: 'id', weight: 0.1 },
+      ],
+      threshold: 0.35,
+      distance: 200,
+      includeScore: true,
+      minMatchCharLength: 1,
+    });
+    buildDomainGrid();
+    handleRoute();
+  }
+
+  // ===== 領域快捷 =====
+  function buildDomainGrid() {
+    const domains = {};
+    TERMS.forEach(t => {
+      if (!domains[t.domainLabel]) domains[t.domainLabel] = { label: t.domainLabel, domain: t.domain, count: 0 };
+      domains[t.domainLabel].count++;
+    });
+    domainGrid.innerHTML = Object.values(domains).map(d => {
+      const emoji = d.label.match(/^./u)?.[0] || '';
+      const name = d.label.replace(/^.\s*/, '');
+      return `<button class="domain-btn" data-domain="${d.domain}">
+        <span class="domain-emoji">${emoji}</span>
+        <span><span class="domain-name">${name}</span><br><span class="domain-count">${d.count} 個術語</span></span>
+      </button>`;
+    }).join('');
+
+    domainGrid.addEventListener('click', e => {
+      const btn = e.target.closest('.domain-btn');
+      if (!btn) return;
+      const domain = btn.dataset.domain;
+      searchInput.value = '';
+      showDomainResults(domain);
+    });
+  }
+
+  function showDomainResults(domain) {
+    const filtered = TERMS.filter(t => t.domain === domain);
+    const label = filtered[0]?.domainLabel || domain;
+    renderResults(filtered);
+    resultCountEl.textContent = `${label}：${filtered.length} 個術語`;
+    resultCountEl.style.display = 'block';
+    domainsEl.style.display = 'none';
+    clearBtn.classList.add('visible');
+  }
+
+  // ===== 搜尋 =====
+  let debounceTimer;
+  searchInput.addEventListener('input', () => {
+    clearTimeout(debounceTimer);
+    debounceTimer = setTimeout(doSearch, 150);
+    clearBtn.classList.toggle('visible', searchInput.value.length > 0);
+  });
+
+  clearBtn.addEventListener('click', () => {
+    searchInput.value = '';
+    clearBtn.classList.remove('visible');
+    resultsEl.innerHTML = '';
+    resultCountEl.style.display = 'none';
+    domainsEl.style.display = 'block';
+    searchInput.focus();
+  });
+
+  function doSearch() {
+    const q = searchInput.value.trim();
+    if (!q) {
+      resultsEl.innerHTML = '';
+      resultCountEl.style.display = 'none';
+      domainsEl.style.display = 'block';
+      return;
+    }
+    domainsEl.style.display = 'none';
+    const results = fuse.search(q, { limit: 30 });
+    const items = results.map(r => r.item);
+    renderResults(items);
+    resultCountEl.textContent = `找到 ${items.length} 個結果`;
+    resultCountEl.style.display = 'block';
+  }
+
+  function renderResults(items) {
+    if (items.length === 0) {
+      resultsEl.innerHTML = '<div class="no-results"><div class="emoji">🤷</div><div>找不到相關術語</div></div>';
+      return;
+    }
+    resultsEl.innerHTML = items.map(t =>
+      `<li class="result-item" data-id="${t.id}">
+        <div class="result-title">${esc(t.title)}</div>
+        ${t.oneLine ? `<div class="result-oneline">${esc(t.oneLine)}</div>` : ''}
+        <span class="result-tag">${esc(t.domainLabel)}</span>
+      </li>`
+    ).join('');
+  }
+
+  resultsEl.addEventListener('click', e => {
+    const item = e.target.closest('.result-item');
+    if (!item) return;
+    navigateTo(item.dataset.id);
+  });
+
+  // ===== 詳細頁 =====
+  function showDetail(id) {
+    const term = TERMS.find(t => t.id === id);
+    if (!term) return;
+
+    detailTitle.textContent = term.title;
+    detailMeta.innerHTML = `<span class="result-tag">${esc(term.domainLabel)}</span>`;
+
+    // 處理內部連結：把 .md 連結轉成 hash
+    let html = term.content;
+    html = html.replace(/href="([^"]*?)\.md"/g, (match, p1) => {
+      // 移除路徑前綴（如 ../terms/ 或 ./）
+      const name = p1.replace(/^.*\//, '');
+      return `href="#${name}"`;
+    });
+    detailContent.innerHTML = html;
+
+    // 攔截內部連結點擊
+    detailContent.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        const targetId = a.getAttribute('href').slice(1);
+        if (TERMS.find(t => t.id === targetId)) {
+          navigateTo(targetId);
+        }
+      });
+    });
+
+    searchView.style.display = 'none';
+    detailView.style.display = 'block';
+    window.scrollTo(0, 0);
+    currentView = 'detail';
+  }
+
+  function showSearch() {
+    detailView.style.display = 'none';
+    searchView.style.display = 'block';
+    currentView = 'search';
+    searchInput.focus();
+  }
+
+  backBtn.addEventListener('click', () => {
+    history.back();
+  });
+
+  // ===== 路由 =====
+  function navigateTo(id) {
+    history.pushState({ id }, '', '#' + id);
+    showDetail(id);
+  }
+
+  function handleRoute() {
+    const hash = location.hash.slice(1);
+    if (hash && TERMS.find(t => t.id === hash)) {
+      showDetail(hash);
+    } else {
+      showSearch();
+    }
+  }
+
+  window.addEventListener('popstate', handleRoute);
+
+  // ===== 鍵盤快捷鍵 =====
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+      if (currentView === 'detail') {
+        history.back();
+      } else if (searchInput.value) {
+        searchInput.value = '';
+        clearBtn.classList.remove('visible');
+        resultsEl.innerHTML = '';
+        resultCountEl.style.display = 'none';
+        domainsEl.style.display = 'block';
+      }
+    }
+    // 任意鍵自動 focus 搜尋框（在搜尋頁時）
+    if (currentView === 'search' && !e.ctrlKey && !e.metaKey && e.key.length === 1) {
+      searchInput.focus();
+    }
+  });
+
+  function esc(s) {
+    const d = document.createElement('div');
+    d.textContent = s;
+    return d.innerHTML;
+  }
+
+  // ===== Service Worker =====
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js').catch(() => {});
+  }
+
+  // ===== 初始化 =====
+  searchInput.focus();
+  loadTerms();
+})();
+</script>
+</body>
+</html>

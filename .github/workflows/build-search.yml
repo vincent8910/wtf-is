@@ -1,0 +1,30 @@
+name: Build Search Index
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '*/terms/*.md'
+      - 'scripts/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm ci
+
+      - run: node scripts/build-search-index.js
+
+      - name: Commit updated index
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/terms.json
+          git diff --cached --quiet || git commit -m "chore: 自動更新搜尋索引"
+          git push

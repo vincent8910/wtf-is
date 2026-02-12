@@ -1,0 +1,12 @@
+{
+  "name": "wtf-is",
+  "version": "1.0.0",
+  "private": true,
+  "description": "多領域術語白話翻譯手冊",
+  "scripts": {
+    "build": "node scripts/build-search-index.js"
+  },
+  "dependencies": {
+    "marked": "^15.0.0"
+  }
+}
