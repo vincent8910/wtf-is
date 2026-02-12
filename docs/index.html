@@ -184,7 +184,7 @@
 
     /* 領域快捷 */
     .domains {
-      padding: 16px 0 80px;
+      padding: 16px 0 24px;
     }
 
     .domains h2 {
@@ -192,6 +192,69 @@
       color: var(--text-tertiary);
       font-weight: 500;
       margin-bottom: 12px;
+    }
+
+    /* 安裝提示 */
+    .install-guide {
+      padding: 0 0 80px;
+    }
+
+    .install-toggle {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: none;
+      border: none;
+      font-size: 14px;
+      color: var(--text-tertiary);
+      cursor: pointer;
+      padding: 8px 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .install-toggle .arrow {
+      transition: transform 0.2s;
+      font-size: 12px;
+    }
+
+    .install-toggle.open .arrow {
+      transform: rotate(90deg);
+    }
+
+    .install-steps {
+      display: none;
+      padding: 12px 0 0;
+    }
+
+    .install-steps.visible {
+      display: block;
+    }
+
+    .install-steps h3 {
+      font-size: 15px;
+      font-weight: 600;
+      margin: 16px 0 8px;
+    }
+
+    .install-steps h3:first-child {
+      margin-top: 0;
+    }
+
+    .install-steps ol {
+      padding-left: 24px;
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.8;
+    }
+
+    .install-steps li {
+      margin: 4px 0;
+    }
+
+    .install-steps .tip {
+      font-size: 13px;
+      color: var(--text-tertiary);
+      margin-top: 12px;
     }
 
     .domain-grid {
@@ -436,6 +499,30 @@
       <h2>依領域瀏覽</h2>
       <div class="domain-grid" id="domain-grid"></div>
     </div>
+
+    <div class="install-guide" id="install-guide">
+      <button class="install-toggle" id="install-toggle">
+        <span class="arrow">&#9654;</span>
+        加到手機桌面，像 App 一樣開啟
+      </button>
+      <div class="install-steps" id="install-steps">
+        <h3>iPhone / iPad（Safari）</h3>
+        <ol>
+          <li>用 <strong>Safari</strong> 打開這個頁面</li>
+          <li>點底部的 <strong>分享按鈕</strong>（方框 + 向上箭頭 ↑）</li>
+          <li>往下滑找到 <strong>「加入主畫面」</strong>，點它</li>
+          <li>點右上角 <strong>「新增」</strong>，完成！</li>
+        </ol>
+        <h3>Android（Chrome）</h3>
+        <ol>
+          <li>用 <strong>Chrome</strong> 打開這個頁面</li>
+          <li>點右上角 <strong>⋮ 選單</strong></li>
+          <li>點 <strong>「加到主畫面」</strong> 或 <strong>「安裝應用程式」</strong></li>
+          <li>確認後就會出現在桌面上了</li>
+        </ol>
+        <p class="tip">加到桌面後，打開就是全螢幕，不會有瀏覽器的網址列，而且支援離線使用。</p>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -669,6 +756,20 @@
     const d = document.createElement('div');
     d.textContent = s;
     return d.innerHTML;
+  }
+
+  // ===== 安裝提示 =====
+  const installToggle = $('install-toggle');
+  const installSteps = $('install-steps');
+  if (installToggle) {
+    installToggle.addEventListener('click', () => {
+      installToggle.classList.toggle('open');
+      installSteps.classList.toggle('visible');
+    });
+    // standalone 模式下隱藏安裝提示（已經安裝了）
+    if (window.matchMedia('(display-mode: standalone)').matches || navigator.standalone) {
+      $('install-guide').style.display = 'none';
+    }
   }
 
   // ===== Service Worker =====
