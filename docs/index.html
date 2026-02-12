@@ -288,6 +288,30 @@
       line-height: 1;
     }
 
+    /* 更新日誌 */
+    .changelog {
+      text-align: center;
+      padding: 0 0 8px;
+    }
+
+    .changelog-title {
+      font-size: 12px;
+      color: var(--text-tertiary);
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+    }
+
+    .changelog-entry {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    .changelog-date {
+      color: var(--text-tertiary);
+      font-size: 12px;
+    }
+
     .domain-name {
       font-weight: 500;
     }
@@ -485,6 +509,8 @@
       <p>術語白話翻譯快查</p>
     </div>
 
+    <div class="changelog" id="changelog"></div>
+
     <div class="search-box">
       <div class="search-wrapper">
         <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
@@ -544,6 +570,13 @@
 <script>
 (function() {
   'use strict';
+
+  // ===== 更新日誌（手動維護，最多 3 筆，新的放最前面）=====
+  const CHANGELOG = [
+    { date: '2026/2/12', text: '新增遊戲設計、法務、HR、影音動畫、專案管理 5 個領域（95 個術語）' },
+    { date: '2026/2/12', text: '既有領域補充 33 個高頻術語（軟體工程、股票、行銷、管理）' },
+    { date: '2026/2/12', text: '上線 PWA 搜尋網頁，涵蓋 13 個領域、495 個術語' },
+  ];
 
   let TERMS = [];
   let fuse = null;
@@ -778,7 +811,18 @@
     navigator.serviceWorker.register('sw.js').catch(() => {});
   }
 
+  // ===== 更新日誌渲染 =====
+  function renderChangelog() {
+    const el = $('changelog');
+    if (!CHANGELOG.length) { el.style.display = 'none'; return; }
+    el.innerHTML = '<div class="changelog-title">最近更新</div>' +
+      CHANGELOG.slice(0, 3).map(c =>
+        `<div class="changelog-entry"><span class="changelog-date">${c.date}</span> ${esc(c.text)}</div>`
+      ).join('');
+  }
+
   // ===== 初始化 =====
+  renderChangelog();
   searchInput.focus();
   loadTerms();
 })();

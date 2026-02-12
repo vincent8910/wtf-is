@@ -93,6 +93,21 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 5. 在主頁 `README.md` 的該領域單字速查表中新增一行（只放術語名稱 + 連結）
 6. 執行 `npm run build` 重建搜尋索引（或 push 後由 GitHub Actions 自動執行）
 
+## 更新日誌維護
+
+`docs/index.html` 頂部有一個 `CHANGELOG` 陣列，用來在 PWA 頁面顯示最近更新紀錄（最多 3 筆）。
+
+**何時更新**：每次新增領域或批次新增術語後，需更新此陣列。
+**格式**：`{ date: 'YYYY/M/D', text: '簡短描述' }`，新的放最前面，超過 3 筆時刪除最舊的。
+**範例**：
+```js
+const CHANGELOG = [
+  { date: '2026/2/12', text: '新增遊戲設計領域（45 個術語）' },
+  { date: '2026/2/12', text: '軟體工程補充 15 個高頻術語' },
+  { date: '2026/2/12', text: '上線 PWA 搜尋網頁' },
+];
+```
+
 ## Git 規範
 
 - Commit message 不要加 `Co-Authored-By:` 行
