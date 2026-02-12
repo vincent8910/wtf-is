@@ -21,6 +21,7 @@ const DOMAINS = [
   { dir: 'hr', label: '👥 人力資源' },
   { dir: 'audio-visual', label: '🔊 影音與動畫' },
   { dir: 'project-management', label: '📋 專案管理' },
+  { dir: 'crypto', label: '🪙 加密貨幣 / Web3' },
 ];
 
 function parseTerm(filePath, domain, domainLabel) {

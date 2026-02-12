@@ -63,6 +63,7 @@
 | [👥 人力資源](hr/README.md) | 12 | JD、Onboarding、PIP、RSU⋯⋯ |
 | [🔊 影音與動畫](audio-visual/README.md) | 13 | SFX、BGM、Rigging、3D Modeling⋯⋯ |
 | [📋 專案管理](project-management/README.md) | 12 | Sprint、Backlog、Kanban、Scrum⋯⋯ |
+| [🪙 加密貨幣 / Web3](crypto/README.md) | 80 | Blockchain、DeFi、NFT、HODL⋯⋯ |
 
 > **💡 點進各領域的完整頁面，每個術語都有這樣的詳細對照：**
 >
@@ -476,6 +477,50 @@
 | [Backlog](project-management/terms/backlog.md) | [Epic](project-management/terms/epic.md) | [Gantt Chart](project-management/terms/gantt-chart.md) | [Kanban](project-management/terms/kanban.md) |
 | [Milestone](project-management/terms/milestone.md) | [Retrospective](project-management/terms/retrospective.md) | [Scope Creep](project-management/terms/scope-creep.md) | [Sprint](project-management/terms/sprint.md) |
 | [Stand-up](project-management/terms/stand-up.md) | [User Story](project-management/terms/user-story.md) | [Velocity](project-management/terms/velocity.md) | [Waterfall](project-management/terms/waterfall.md) |
+
+---
+
+## 🪙 加密貨幣 / Web3
+
+### 大綱
+
+> 共收錄 **80 個**術語，[點此進入完整頁面](crypto/README.md)。
+
+| 分類 | 術語數 | 說明 |
+|------|:------:|------|
+| [基礎概念類](crypto/README.md#基礎概念類) | 13 | Blockchain、Bitcoin、Ethereum⋯⋯ |
+| [挖礦與驗證類](crypto/README.md#挖礦與驗證類) | 8 | Mining、PoW、PoS、Halving⋯⋯ |
+| [錢包與安全類](crypto/README.md#錢包與安全類) | 9 | Wallet、Seed Phrase、Private Key⋯⋯ |
+| [交易與市場類](crypto/README.md#交易與市場類) | 13 | CEX、DEX、槓桿、爆倉⋯⋯ |
+| [市場文化與行話類](crypto/README.md#市場文化與行話類) | 12 | HODL、FOMO、Rug Pull⋯⋯ |
+| [DeFi 去中心化金融類](crypto/README.md#defi-去中心化金融類) | 12 | Smart Contract、Staking、AMM⋯⋯ |
+| [NFT 與數位收藏類](crypto/README.md#nft-與數位收藏類) | 8 | NFT、Mint、Gas Fee、Airdrop⋯⋯ |
+| [技術架構類](crypto/README.md#技術架構類) | 5 | Layer 1/2、Bridge、Rollup⋯⋯ |
+
+### 單字速查表（A-Z）
+
+| | | | |
+|---|---|---|---|
+| [Address](crypto/terms/address.md) | [Airdrop](crypto/terms/airdrop.md) | [Altcoin](crypto/terms/altcoin.md) | [AMM](crypto/terms/amm.md) |
+| [AML](crypto/terms/aml.md) | [APY / APR](crypto/terms/apy-apr.md) | [ATH / ATL](crypto/terms/ath-atl.md) | [Bitcoin](crypto/terms/bitcoin.md) |
+| [Block Reward](crypto/terms/block-reward.md) | [Blockchain](crypto/terms/blockchain.md) | [Bridge](crypto/terms/bridge.md) | [Bull Market / Bear Market](crypto/terms/bull-market-bear-market.md) |
+| [Cold Wallet](crypto/terms/cold-wallet.md) | [Consensus](crypto/terms/consensus.md) | [Cryptocurrency](crypto/terms/cryptocurrency.md) | [DAO](crypto/terms/dao.md) |
+| [dApp](crypto/terms/dapp.md) | [Decentralization](crypto/terms/decentralization.md) | [DeFi](crypto/terms/defi.md) | [DEX](crypto/terms/dex.md) |
+| [Diamond Hands / Paper Hands](crypto/terms/diamond-hands-paper-hands.md) | [DYOR](crypto/terms/dyor.md) | [Ethereum](crypto/terms/ethereum.md) | [Exchange / CEX](crypto/terms/exchange-cex.md) |
+| [Flash Loan](crypto/terms/flash-loan.md) | [Floor Price](crypto/terms/floor-price.md) | [FOMO](crypto/terms/fomo.md) | [FUD](crypto/terms/fud.md) |
+| [Gas Fee](crypto/terms/gas-fee.md) | [Genesis Block](crypto/terms/genesis-block.md) | [Halving](crypto/terms/halving.md) | [Hardware Wallet](crypto/terms/hardware-wallet.md) |
+| [Hash](crypto/terms/hash.md) | [Hash Rate](crypto/terms/hash-rate.md) | [HODL](crypto/terms/hodl.md) | [Hot Wallet](crypto/terms/hot-wallet.md) |
+| [Impermanent Loss](crypto/terms/impermanent-loss.md) | [KYC](crypto/terms/kyc.md) | [Layer 1 / Layer 2](crypto/terms/layer-1-layer-2.md) | [Leverage](crypto/terms/leverage.md) |
+| [Liquidation](crypto/terms/liquidation.md) | [Liquidity Pool](crypto/terms/liquidity-pool.md) | [Long / Short](crypto/terms/long-short.md) | [Margin Trading](crypto/terms/margin-trading.md) |
+| [Market Cap](crypto/terms/market-cap.md) | [Mining](crypto/terms/mining.md) | [Mint](crypto/terms/mint.md) | [Multisig](crypto/terms/multisig.md) |
+| [NFT](crypto/terms/nft.md) | [Node](crypto/terms/node.md) | [Nonce](crypto/terms/nonce.md) | [Oracle](crypto/terms/oracle.md) |
+| [Order Book](crypto/terms/order-book.md) | [OTC](crypto/terms/otc.md) | [P2P](crypto/terms/p2p.md) | [PFP](crypto/terms/pfp.md) |
+| [Private Key](crypto/terms/private-key.md) | [Proof of Stake](crypto/terms/proof-of-stake.md) | [Proof of Work](crypto/terms/proof-of-work.md) | [Public Key](crypto/terms/public-key.md) |
+| [Pump and Dump](crypto/terms/pump-and-dump.md) | [Rollup](crypto/terms/rollup.md) | [Royalty](crypto/terms/royalty.md) | [Rug Pull](crypto/terms/rug-pull.md) |
+| [Seed Phrase](crypto/terms/seed-phrase.md) | [Sidechain](crypto/terms/sidechain.md) | [Slippage](crypto/terms/slippage.md) | [Smart Contract](crypto/terms/smart-contract.md) |
+| [Spot](crypto/terms/spot.md) | [Stablecoin](crypto/terms/stablecoin.md) | [Staking](crypto/terms/staking.md) | [To the Moon](crypto/terms/to-the-moon.md) |
+| [Token](crypto/terms/token.md) | [TVL](crypto/terms/tvl.md) | [WAGMI / NGMI](crypto/terms/wagmi-ngmi.md) | [Wallet](crypto/terms/wallet.md) |
+| [Whale](crypto/terms/whale.md) | [Whitelist](crypto/terms/whitelist.md) | [Whitepaper](crypto/terms/whitepaper.md) | [Yield Farming](crypto/terms/yield-farming.md) |
 
 ---
 
