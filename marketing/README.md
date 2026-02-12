@@ -29,7 +29,7 @@
 
 ## 大綱
 
-> 共收錄 **25 個**行銷企劃術語，點擊分類名稱直接跳轉。
+> 共收錄 **30 個**行銷企劃術語，點擊分類名稱直接跳轉。
 
 | 分類 | 術語數 | 說明 |
 |------|:------:|------|
@@ -37,6 +37,7 @@
 | [社群行銷類](#社群行銷類) | 4 | KOL、UGC、互動率⋯⋯ |
 | [企劃提案類](#企劃提案類) | 5 | TA、Persona、品牌定位⋯⋯ |
 | [數據分析類](#數據分析類) | 7 | GA、漏斗、轉換率⋯⋯ |
+| [行銷策略類](#行銷策略類) | 5 | Campaign、SEM、內容行銷⋯⋯ |
 
 > 想一次看完所有比喻？直接跳到 [比喻對照總表](#比喻對照總表)
 
@@ -52,7 +53,8 @@
 | [Funnel 漏斗](terms/funnel.md) | [GA（Google Analytics）](terms/ga.md) | [Heatmap 熱力圖](terms/heatmap.md) | [Impression 曝光](terms/impression.md) |
 | [KOL / KOC](terms/kol-koc.md) | [Persona 人物誌](terms/persona.md) | [Pixel 追蹤像素](terms/pixel.md) | [Reach 觸及率](terms/reach.md) |
 | [Retargeting 再行銷](terms/retargeting.md) | [ROAS](terms/roas.md) | [Slogan / Tagline](terms/slogan-tagline.md) | [TA 目標客群](terms/ta.md) |
-| [UGC 使用者原創內容](terms/ugc.md) | | | |
+| [UGC 使用者原創內容](terms/ugc.md) | [Campaign（活動企劃）](terms/campaign.md) | [SEM（搜尋引擎行銷）](terms/sem.md) | [Content Marketing（內容行銷）](terms/content-marketing.md) |
+| [Viral Marketing（病毒式行銷）](terms/viral-marketing.md) | [Media Buy（媒體採購）](terms/media-buy.md) | | |
 
 ---
 
@@ -117,6 +119,20 @@
 
 ---
 
+## 行銷策略類
+
+> 行銷的大方向怎麼規劃？用什麼方式觸及消費者？
+
+| 詞彙 | 一句話解釋 | 比喻 | 你會在哪聽到 | 詳細說明 |
+|------|-----------|------|-------------|---------|
+| Campaign（活動企劃） | 為了特定目標規劃的一整套行銷活動 | 一場有主題的園遊會 | 「這波 Campaign 的 KPI 是什麼？」 | [詳細](terms/campaign.md) |
+| SEM（搜尋引擎行銷） | 花錢在 Google 搜尋結果上買廣告 | 在黃頁上買版面 | 「SEM 的關鍵字出價太高了」 | [詳細](terms/sem.md) |
+| Content Marketing（內容行銷） | 用有價值的內容吸引消費者，而不是硬推廣告 | 開烹飪教室賣廚具 | 「我們的 Content Marketing 策略要調整」 | [詳細](terms/content-marketing.md) |
+| Viral Marketing（病毒式行銷） | 讓人主動分享、像病毒一樣擴散的行銷手法 | 同學間傳紙條，一個傳一個 | 「這支影片做到了 Viral」 | [詳細](terms/viral-marketing.md) |
+| Media Buy（媒體採購） | 花錢買廣告版位或曝光機會 | 買電視廣告時段 | 「這個月 Media Buy 預算多少？」 | [詳細](terms/media-buy.md) |
+
+---
+
 ## 比喻對照總表
 
 > 一次看完所有比喻，讓你對行銷術語建立直覺。
@@ -165,3 +181,13 @@
 | 跳出率 | 推開店門看一眼就走的人佔多少 |
 | 熱力圖 | 天氣預報的溫度圖，紅色是最多人看的地方 |
 | A/B Testing | 飲料店同時推兩種口味，哪個賣更好就上架哪個 |
+
+### 行銷策略類
+
+| 術語 | 比喻 |
+|------|------|
+| Campaign | 一場有主題的園遊會，所有攤位都圍繞同一個主題 |
+| SEM | 在黃頁上買版面，讓找東西的人第一眼看到你 |
+| Content Marketing | 開免費烹飪教室，順便賣廚具 |
+| Viral Marketing | 同學間傳紙條，一個傳一個根本停不下來 |
+| Media Buy | 買電視廣告時段，用錢換曝光機會 |
