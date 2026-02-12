@@ -29,7 +29,7 @@
 
 ## 大綱
 
-> 共收錄 **26 個**企業管理與營運術語，點擊分類名稱直接跳轉。
+> 共收錄 **32 個**企業管理與營運術語，點擊分類名稱直接跳轉。
 
 | 分類 | 術語數 | 說明 |
 |------|:------:|------|
@@ -39,6 +39,7 @@
 | [組織管理類](#組織管理類) | 4 | BU、利害關係人、組織架構⋯⋯ |
 | [法務合約類](#法務合約類) | 3 | NDA、MoU、Term Sheet |
 | [投資類](#投資類) | 4 | 估值、VC、股權稀釋、SWOT |
+| [創業與資本類](#創業與資本類) | 6 | ROI、Pitch、Burn Rate、IPO⋯⋯ |
 
 > 想一次看完所有比喻？直接跳到 [比喻對照總表](#比喻對照總表)
 
@@ -54,7 +55,8 @@
 | [NDA（保密協議）](terms/nda.md) | [OKR](terms/okr.md) | [Org Chart（組織架構）](terms/org-chart.md) | [P&L（損益表）](terms/pnl.md) |
 | [PDCA](terms/pdca.md) | [PMF（Product-Market Fit）](terms/pmf.md) | [Revenue（營業額）](terms/revenue.md) | [SOP](terms/sop.md) |
 | [Stakeholder（利害關係人）](terms/stakeholder.md) | [SWOT](terms/swot.md) | [Term Sheet](terms/term-sheet.md) | [Valuation（估值）](terms/valuation.md) |
-| [VC（創投）](terms/vc.md) | [商業模式](terms/business-model.md) | | |
+| [VC（創投）](terms/vc.md) | [商業模式](terms/business-model.md) | [ROI（投資報酬率）](terms/roi.md) | [Pitch / Pitch Deck](terms/pitch.md) |
+| [Burn Rate（燒錢速度）](terms/burn-rate.md) | [Runway（資金跑道）](terms/runway.md) | [IPO（首次公開發行）](terms/ipo.md) | [M&A（併購）](terms/m-and-a.md) |
 
 ---
 
@@ -138,6 +140,21 @@
 
 ---
 
+## 創業與資本類
+
+> 公司從創業到上市，這些詞你不能不知道。
+
+| 詞彙 | 一句話解釋 | 比喻 | 你會在哪聽到 | 詳細說明 |
+|------|-----------|------|-------------|---------|
+| ROI（投資報酬率） | 花了多少錢，賺回多少的比例 | 花 100 塊擺攤，賺了 150 回來，ROI 50% | 「這個專案的 ROI 是多少？」 | [→ 詳細](terms/roi.md) |
+| Pitch / Pitch Deck | 用簡報向投資人推銷你的公司 | 選秀節目上台表演 | 「下週要去跟創投 pitch」 | [→ 詳細](terms/pitch.md) |
+| Burn Rate（燒錢速度） | 公司每個月花掉多少現金 | 油箱的耗油速度 | 「我們的 burn rate 太高了」 | [→ 詳細](terms/burn-rate.md) |
+| Runway（資金跑道） | 手上的錢還能撐幾個月 | 飛機起飛前的跑道長度 | 「我們的 runway 只剩 6 個月」 | [→ 詳細](terms/runway.md) |
+| IPO（首次公開發行） | 公司第一次在股票市場上市 | 從私人小店變成連鎖品牌上架百貨公司 | 「我們計畫明年 IPO」 | [→ 詳細](terms/ipo.md) |
+| M&A（併購） | 一家公司買下或合併另一家公司 | 大魚吃小魚 | 「聽說我們要被 M&A 了」 | [→ 詳細](terms/m-and-a.md) |
+
+---
+
 ## 比喻對照總表
 
 > 每個管理術語，用一句生活比喻讓你秒懂。
@@ -197,3 +214,18 @@
 | VC（創投） | **星探**——找有潛力的新人投資，賭他會大紅 |
 | 股權稀釋 | **披薩多切幾塊**——你的塊數沒變，但比例縮水了 |
 | SWOT | **全身健檢**——好的壞的、內部外部都查一遍 |
+
+### 創業與資本類
+
+| 術語 | 比喻 |
+|------|------|
+| ROI（投資報酬率） | 花 100 塊擺攤，賺了 150 回來，ROI 50% |
+| Pitch / Pitch Deck | 選秀節目上台表演，短時間征服評審 |
+| Burn Rate | 油箱的耗油速度——每月燒多少現金 |
+| Runway | 飛機起飛前的跑道長度——錢還能撐多久 |
+| IPO | 從私人小店變成連鎖品牌上架百貨公司 |
+| M&A（併購） | 大魚吃小魚 |
+
+---
+
+**[← 回到主頁](../README.md)**
