@@ -59,6 +59,10 @@
 | [📊 數據分析](data-analytics/README.md) | 24 | 大數據、機器學習、留存率、LTV⋯⋯ |
 | [🎰 博弈](gambling/README.md) | 64 | 老虎機、RTP、百家樂、莊家優勢⋯⋯ |
 | [🎮 遊戲設計](game-design/README.md) | 45 | Core Loop、Gacha、RPG、Buff/Nerf⋯⋯ |
+| [📜 法務與智慧財產](legal/README.md) | 13 | IP、Copyright、GDPR、EULA⋯⋯ |
+| [👥 人力資源](hr/README.md) | 12 | JD、Onboarding、PIP、RSU⋯⋯ |
+| [🔊 影音與動畫](audio-visual/README.md) | 13 | SFX、BGM、Rigging、3D Modeling⋯⋯ |
+| [📋 專案管理](project-management/README.md) | 12 | Sprint、Backlog、Kanban、Scrum⋯⋯ |
 
 > **💡 點進各領域的完整頁面，每個術語都有這樣的詳細對照：**
 >
@@ -371,6 +375,96 @@
 | [Roguelike](game-design/terms/roguelike.md) | [RPG / MMORPG](game-design/terms/rpg-mmorpg.md) | [RTS](game-design/terms/rts.md) | [Sandbox](game-design/terms/sandbox-game.md) |
 | [Season（賽季）](game-design/terms/season.md) | [Skin](game-design/terms/skin.md) | [Spawn / Respawn](game-design/terms/spawn-respawn.md) | [Stamina](game-design/terms/stamina.md) |
 | [Tutorial / Onboarding](game-design/terms/tutorial-onboarding.md) | | | |
+
+---
+
+## 📜 法務與智慧財產
+
+### 大綱
+
+> 共收錄 **13 個**術語，[點此進入完整頁面](legal/README.md)。
+
+| 分類 | 術語數 | 說明 |
+|------|:------:|------|
+| [智慧財產類](legal/README.md#智慧財產類) | 5 | IP、Copyright、Trademark⋯⋯ |
+| [合約條款類](legal/README.md#合約條款類) | 4 | EULA、TOS、隱私政策⋯⋯ |
+| [法規遵循類](legal/README.md#法規遵循類) | 4 | GDPR、個資法、Compliance⋯⋯ |
+
+### 單字速查表（A-Z）
+
+| | | | |
+|---|---|---|---|
+| [Compliance](legal/terms/compliance.md) | [Copyright](legal/terms/copyright.md) | [EULA](legal/terms/eula.md) | [GDPR](legal/terms/gdpr.md) |
+| [IP（智慧財產權）](legal/terms/ip.md) | [Licensing](legal/terms/licensing.md) | [Patent](legal/terms/patent.md) | [Privacy Policy](legal/terms/privacy-policy.md) |
+| [TOS（服務條款）](legal/terms/tos.md) | [Trademark](legal/terms/trademark.md) | [個資法](legal/terms/personal-data-protection-act.md) | [競業條款 / NCA](legal/terms/nca.md) |
+| [遊戲分級](legal/terms/game-rating.md) | | | |
+
+---
+
+## 👥 人力資源
+
+### 大綱
+
+> 共收錄 **12 個**術語，[點此進入完整頁面](hr/README.md)。
+
+| 分類 | 術語數 | 說明 |
+|------|:------:|------|
+| [招募與入職類](hr/README.md#招募與入職類) | 4 | JD、Offer Letter、Onboarding⋯⋯ |
+| [績效與管理類](hr/README.md#績效與管理類) | 4 | 1-on-1、PIP、離職率⋯⋯ |
+| [薪酬與工作型態類](hr/README.md#薪酬與工作型態類) | 4 | RSU、Burnout、遠端工作⋯⋯ |
+
+### 單字速查表（A-Z）
+
+| | | | |
+|---|---|---|---|
+| [1-on-1](hr/terms/one-on-one.md) | [Burnout](hr/terms/burnout.md) | [Freelancer / Contractor](hr/terms/freelancer-contractor.md) | [Headcount](hr/terms/headcount.md) |
+| [JD](hr/terms/jd.md) | [Offer Letter](hr/terms/offer-letter.md) | [Onboarding](hr/terms/onboarding.md) | [PIP](hr/terms/pip.md) |
+| [Probation](hr/terms/probation.md) | [Remote / Hybrid](hr/terms/remote-hybrid.md) | [RSU / Stock Option](hr/terms/rsu-stock-option.md) | [Turnover Rate](hr/terms/turnover-rate.md) |
+
+---
+
+## 🔊 影音與動畫
+
+### 大綱
+
+> 共收錄 **13 個**術語，[點此進入完整頁面](audio-visual/README.md)。
+
+| 分類 | 術語數 | 說明 |
+|------|:------:|------|
+| [音效類](audio-visual/README.md#音效類) | 4 | SFX、BGM、Foley⋯⋯ |
+| [動畫類](audio-visual/README.md#動畫類) | 4 | Motion Capture、Rigging、Keyframe⋯⋯ |
+| [美術資源類](audio-visual/README.md#美術資源類) | 5 | 3D Modeling、Sprite、Particle Effect⋯⋯ |
+
+### 單字速查表（A-Z）
+
+| | | | |
+|---|---|---|---|
+| [3D Modeling](audio-visual/terms/3d-modeling.md) | [BGM](audio-visual/terms/bgm.md) | [Bone Animation](audio-visual/terms/bone-animation.md) | [Foley](audio-visual/terms/foley.md) |
+| [Keyframe](audio-visual/terms/keyframe.md) | [Motion Capture](audio-visual/terms/motion-capture.md) | [Particle Effect](audio-visual/terms/particle-effect.md) | [Pixel Art](audio-visual/terms/pixel-art.md) |
+| [Rigging](audio-visual/terms/rigging.md) | [SFX](audio-visual/terms/sfx.md) | [Sprite](audio-visual/terms/sprite.md) | [Tilemap](audio-visual/terms/tilemap.md) |
+| [Voice Over](audio-visual/terms/voice-over.md) | | | |
+
+---
+
+## 📋 專案管理
+
+### 大綱
+
+> 共收錄 **12 個**術語，[點此進入完整頁面](project-management/README.md)。
+
+| 分類 | 術語數 | 說明 |
+|------|:------:|------|
+| [敏捷開發類](project-management/README.md#敏捷開發類) | 6 | Sprint、Backlog、User Story⋯⋯ |
+| [規劃與追蹤類](project-management/README.md#規劃與追蹤類) | 4 | Epic、Milestone、Gantt Chart⋯⋯ |
+| [風險與方法論](project-management/README.md#風險與方法論) | 2 | Scope Creep、Waterfall |
+
+### 單字速查表（A-Z）
+
+| | | | |
+|---|---|---|---|
+| [Backlog](project-management/terms/backlog.md) | [Epic](project-management/terms/epic.md) | [Gantt Chart](project-management/terms/gantt-chart.md) | [Kanban](project-management/terms/kanban.md) |
+| [Milestone](project-management/terms/milestone.md) | [Retrospective](project-management/terms/retrospective.md) | [Scope Creep](project-management/terms/scope-creep.md) | [Sprint](project-management/terms/sprint.md) |
+| [Stand-up](project-management/terms/stand-up.md) | [User Story](project-management/terms/user-story.md) | [Velocity](project-management/terms/velocity.md) | [Waterfall](project-management/terms/waterfall.md) |
 
 ---
 

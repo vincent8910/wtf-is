@@ -17,6 +17,10 @@ const DOMAINS = [
   { dir: 'data-analytics', label: '📊 數據分析' },
   { dir: 'gambling', label: '🎲 博弈' },
   { dir: 'game-design', label: '🎮 遊戲設計' },
+  { dir: 'legal', label: '📜 法務與智慧財產' },
+  { dir: 'hr', label: '👥 人力資源' },
+  { dir: 'audio-visual', label: '🔊 影音與動畫' },
+  { dir: 'project-management', label: '📋 專案管理' },
 ];
 
 function parseTerm(filePath, domain, domainLabel) {
