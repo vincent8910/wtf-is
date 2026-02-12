@@ -653,7 +653,7 @@
 
   function renderResults(items) {
     if (items.length === 0) {
-      resultsEl.innerHTML = '<div class="no-results"><div class="emoji">🤷</div><div>找不到相關術語</div></div>';
+      resultsEl.innerHTML = '<div class="no-results"><div class="emoji">🤷</div><div>找不到相關術語</div><div style="margin-top:8px;font-size:13px">覺得應該要有這個詞？<a href="https://github.com/vincent8910/wtf-is/issues/new?title=建議新增術語：" target="_blank" rel="noopener" style="color:var(--accent)">告訴 vincent8910 把它加進來</a></div></div>';
       return;
     }
     resultsEl.innerHTML = items.map(t =>
