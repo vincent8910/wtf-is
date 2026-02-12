@@ -64,6 +64,9 @@
 | [🔊 影音與動畫](audio-visual/README.md) | 13 | SFX、BGM、Rigging、3D Modeling⋯⋯ |
 | [📋 專案管理](project-management/README.md) | 12 | Sprint、Backlog、Kanban、Scrum⋯⋯ |
 | [🪙 加密貨幣 / Web3](crypto/README.md) | 80 | Blockchain、DeFi、NFT、HODL⋯⋯ |
+| [🧩 UX / 產品設計](ux-product/README.md) | 15 | User Research、Pain Point、PRD⋯⋯ |
+| [💰 財務會計](finance-accounting/README.md) | 20 | 資產負債表、損益表、EBITDA、折舊⋯⋯ |
+| [🤖 AI / 機器學習](ai-ml/README.md) | 25 | LLM、GPT、Transformer、Prompt Engineering⋯⋯ |
 
 > **💡 點進各領域的完整頁面，每個術語都有這樣的詳細對照：**
 >
@@ -521,6 +524,81 @@
 | [Spot](crypto/terms/spot.md) | [Stablecoin](crypto/terms/stablecoin.md) | [Staking](crypto/terms/staking.md) | [To the Moon](crypto/terms/to-the-moon.md) |
 | [Token](crypto/terms/token.md) | [TVL](crypto/terms/tvl.md) | [WAGMI / NGMI](crypto/terms/wagmi-ngmi.md) | [Wallet](crypto/terms/wallet.md) |
 | [Whale](crypto/terms/whale.md) | [Whitelist](crypto/terms/whitelist.md) | [Whitepaper](crypto/terms/whitepaper.md) | [Yield Farming](crypto/terms/yield-farming.md) |
+
+---
+
+## 🧩 UX / 產品設計
+
+### 大綱
+
+> 共收錄 **15 個**術語，[點此進入完整頁面](ux-product/README.md)。
+
+| 分類 | 術語數 | 說明 |
+|------|:------:|------|
+| [使用者研究類](ux-product/README.md#使用者研究類) | 5 | User Research、Usability Testing、Pain Point⋯⋯ |
+| [設計方法類](ux-product/README.md#設計方法類) | 5 | Design Thinking、IA、互動設計⋯⋯ |
+| [產品策略類](ux-product/README.md#產品策略類) | 5 | Roadmap、PRD、北極星指標⋯⋯ |
+
+### 單字速查表（A-Z）
+
+| | | | |
+|---|---|---|---|
+| [Affordance（操作暗示）](ux-product/terms/affordance.md) | [Design Thinking（設計思考）](ux-product/terms/design-thinking.md) | [Feature Prioritization（功能優先排序）](ux-product/terms/feature-prioritization.md) | [Heuristic Evaluation（啟發式評估）](ux-product/terms/heuristic-evaluation.md) |
+| [Information Architecture（資訊架構）](ux-product/terms/information-architecture.md) | [Interaction Design（互動設計）](ux-product/terms/interaction-design.md) | [North Star Metric（北極星指標）](ux-product/terms/north-star-metric.md) | [Pain Point（痛點）](ux-product/terms/pain-point.md) |
+| [PRD（產品需求文件）](ux-product/terms/prd.md) | [Product Roadmap（產品路線圖）](ux-product/terms/product-roadmap.md) | [Responsive Design（響應式設計）](ux-product/terms/responsive-design.md) | [Usability Testing（可用性測試）](ux-product/terms/usability-testing.md) |
+| [User Journey（使用者旅程）](ux-product/terms/user-journey.md) | [User Research（使用者研究）](ux-product/terms/user-research.md) | [User Story（使用者故事）](ux-product/terms/user-story.md) | |
+
+---
+
+## 💰 財務會計
+
+### 大綱
+
+> 共收錄 **20 個**術語，[點此進入完整頁面](finance-accounting/README.md)。
+
+| 分類 | 術語數 | 說明 |
+|------|:------:|------|
+| [三大報表類](finance-accounting/README.md#三大報表類) | 5 | 資產負債表、損益表、現金流量表⋯⋯ |
+| [會計科目類](finance-accounting/README.md#會計科目類) | 6 | 營收、銷貨成本、營業費用、折舊⋯⋯ |
+| [稅務與合規類](finance-accounting/README.md#稅務與合規類) | 4 | 稅務、發票、審計、會計年度 |
+| [分析指標類](finance-accounting/README.md#分析指標類) | 5 | EBITDA、淨利、營運資金、負債比⋯⋯ |
+
+### 單字速查表（A-Z）
+
+| | | | |
+|---|---|---|---|
+| [Accounts Receivable / Payable（應收/應付帳款）](finance-accounting/terms/accounts-receivable-payable.md) | [Amortization（攤銷）](finance-accounting/terms/amortization.md) | [Audit（審計）](finance-accounting/terms/audit.md) | [Balance Sheet（資產負債表）](finance-accounting/terms/balance-sheet.md) |
+| [Break-even Point（損益平衡點）](finance-accounting/terms/break-even-point.md) | [Cash Flow Statement（現金流量表）](finance-accounting/terms/cash-flow-statement.md) | [COGS（銷貨成本）](finance-accounting/terms/cogs.md) | [Consolidated Statement（合併報表）](finance-accounting/terms/consolidated-statement.md) |
+| [Debt-to-Equity Ratio（負債比）](finance-accounting/terms/debt-to-equity-ratio.md) | [Depreciation（折舊）](finance-accounting/terms/depreciation.md) | [EBITDA](finance-accounting/terms/ebitda.md) | [Financial Statement（財務報表）](finance-accounting/terms/financial-statement.md) |
+| [Fiscal Year（會計年度）](finance-accounting/terms/fiscal-year.md) | [Income Statement（損益表）](finance-accounting/terms/income-statement.md) | [Invoice（發票）](finance-accounting/terms/invoice.md) | [Net Income（淨利）](finance-accounting/terms/net-income.md) |
+| [OPEX（營業費用）](finance-accounting/terms/opex.md) | [Revenue（營收）](finance-accounting/terms/revenue.md) | [Tax（稅務）](finance-accounting/terms/tax.md) | [Working Capital（營運資金）](finance-accounting/terms/working-capital.md) |
+
+---
+
+## 🤖 AI / 機器學習
+
+### 大綱
+
+> 共收錄 **25 個**術語，[點此進入完整頁面](ai-ml/README.md)。
+
+| 分類 | 術語數 | 說明 |
+|------|:------:|------|
+| [基礎概念類](ai-ml/README.md#基礎概念類) | 7 | AI、機器學習、深度學習、神經網路⋯⋯ |
+| [技術方法類](ai-ml/README.md#技術方法類) | 7 | 監督式學習、NLP、電腦視覺、分類⋯⋯ |
+| [模型與應用類](ai-ml/README.md#模型與應用類) | 6 | LLM、GPT、Transformer、RAG⋯⋯ |
+| [指標與問題類](ai-ml/README.md#指標與問題類) | 5 | 過擬合、偏差、幻覺、準確率⋯⋯ |
+
+### 單字速查表（A-Z）
+
+| | | | |
+|---|---|---|---|
+| [Accuracy（準確率）](ai-ml/terms/accuracy.md) | [AI（人工智慧）](ai-ml/terms/ai.md) | [Algorithm（演算法）](ai-ml/terms/algorithm.md) | [Bias（偏差）](ai-ml/terms/bias.md) |
+| [Classification（分類）](ai-ml/terms/classification.md) | [Computer Vision（電腦視覺）](ai-ml/terms/computer-vision.md) | [Dataset（資料集）](ai-ml/terms/dataset.md) | [Deep Learning（深度學習）](ai-ml/terms/deep-learning.md) |
+| [Fine-tuning（微調）](ai-ml/terms/fine-tuning.md) | [GPT](ai-ml/terms/gpt.md) | [Hallucination（幻覺）](ai-ml/terms/hallucination.md) | [LLM（大型語言模型）](ai-ml/terms/llm.md) |
+| [Machine Learning（機器學習）](ai-ml/terms/machine-learning.md) | [Model（模型）](ai-ml/terms/model.md) | [Neural Network（神經網路）](ai-ml/terms/neural-network.md) | [NLP（自然語言處理）](ai-ml/terms/nlp.md) |
+| [Overfitting（過擬合）](ai-ml/terms/overfitting.md) | [Prompt Engineering（提示工程）](ai-ml/terms/prompt-engineering.md) | [RAG（檢索增強生成）](ai-ml/terms/rag.md) | [Regression（迴歸）](ai-ml/terms/regression.md) |
+| [Reinforcement Learning（強化學習）](ai-ml/terms/reinforcement-learning.md) | [Supervised Learning（監督式學習）](ai-ml/terms/supervised-learning.md) | [Training（訓練）](ai-ml/terms/training.md) | [Transformer](ai-ml/terms/transformer.md) |
+| [Unsupervised Learning（非監督式學習）](ai-ml/terms/unsupervised-learning.md) | | | |
 
 ---
 

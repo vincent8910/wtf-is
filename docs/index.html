@@ -4,7 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>WTF is…？術語快查</title>
-  <meta name="description" content="多領域術語白話翻譯，搜尋即查">
+  <meta name="description" content="多領域術語白話翻譯，搜尋即查。軟體工程、股票投資、加密貨幣、行銷企劃⋯⋯用白話解釋專有名詞。">
+
+  <!-- SEO: Open Graph -->
+  <meta property="og:title" content="WTF is…？術語快查">
+  <meta property="og:description" content="多領域術語白話翻譯，搜尋即查。600+ 個專有名詞用白話解釋。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vincent8910.github.io/wtf-is/">
+  <meta property="og:image" content="https://vincent8910.github.io/wtf-is/icons/icon-512.png">
+  <meta property="og:locale" content="zh_TW">
+
   <meta name="theme-color" content="#1e293b" media="(prefers-color-scheme: dark)">
   <meta name="theme-color" content="#f8fafc" media="(prefers-color-scheme: light)">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -31,8 +40,9 @@
       --shadow-lg: 0 4px 12px rgba(0,0,0,0.1);
     }
 
+    /* 系統深色 */
     @media (prefers-color-scheme: dark) {
-      :root {
+      :root:not([data-theme="light"]) {
         --bg: #0f172a;
         --bg-card: #1e293b;
         --bg-input: #1e293b;
@@ -46,6 +56,22 @@
         --shadow: 0 1px 3px rgba(0,0,0,0.3);
         --shadow-lg: 0 4px 12px rgba(0,0,0,0.4);
       }
+    }
+
+    /* 手動深色 */
+    :root[data-theme="dark"] {
+      --bg: #0f172a;
+      --bg-card: #1e293b;
+      --bg-input: #1e293b;
+      --text: #f1f5f9;
+      --text-secondary: #94a3b8;
+      --text-tertiary: #64748b;
+      --border: #334155;
+      --accent: #60a5fa;
+      --accent-soft: #1e3a5f;
+      --tag-bg: #334155;
+      --shadow: 0 1px 3px rgba(0,0,0,0.3);
+      --shadow-lg: 0 4px 12px rgba(0,0,0,0.4);
     }
 
     body {
@@ -71,6 +97,7 @@
     .header {
       text-align: center;
       padding: 32px 0 24px;
+      position: relative;
     }
 
     .header h1 {
@@ -83,6 +110,30 @@
       color: var(--text-secondary);
       font-size: 14px;
       margin-top: 4px;
+    }
+
+    /* 深色模式切換 */
+    .theme-toggle {
+      position: absolute;
+      top: 32px;
+      right: 0;
+      background: var(--tag-bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 18px;
+      color: var(--text-secondary);
+      -webkit-tap-highlight-color: transparent;
+      transition: transform 0.15s;
+    }
+
+    .theme-toggle:active {
+      transform: scale(0.9);
     }
 
     .search-box {
@@ -155,10 +206,25 @@
       border-bottom: 1px solid var(--border);
       cursor: pointer;
       -webkit-tap-highlight-color: transparent;
+      outline: none;
     }
 
     .result-item:active {
       opacity: 0.7;
+    }
+
+    .result-item:focus-visible {
+      background: var(--accent-soft);
+      border-radius: 8px;
+      margin: 0 -8px;
+      padding: 14px 8px;
+    }
+
+    .result-item[aria-selected="true"] {
+      background: var(--accent-soft);
+      border-radius: 8px;
+      margin: 0 -8px;
+      padding: 14px 8px;
     }
 
     .result-title {
@@ -383,7 +449,7 @@
     }
 
     .detail-content {
-      padding: 16px 0 80px;
+      padding: 16px 0 0;
       font-size: 16px;
       line-height: 1.8;
     }
@@ -497,39 +563,155 @@
     .detail-content p:last-child:has(a[href*="README.md"]) {
       display: none;
     }
+
+    /* ===== 相關術語 ===== */
+    .related-terms {
+      margin-top: 24px;
+      padding: 20px 0 80px;
+      border-top: 1px solid var(--border);
+    }
+
+    .related-terms h3 {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text-secondary);
+      margin-bottom: 12px;
+    }
+
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+    }
+
+    .related-item {
+      display: block;
+      padding: 10px 12px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+      text-decoration: none;
+      color: var(--text);
+      transition: transform 0.1s;
+    }
+
+    .related-item:active {
+      transform: scale(0.97);
+    }
+
+    .related-item-title {
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .related-item-desc {
+      font-size: 12px;
+      color: var(--text-secondary);
+      margin-top: 2px;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    /* 最近查看 */
+    .recent-section {
+      padding: 0 0 16px;
+    }
+
+    .recent-section h2 {
+      font-size: 14px;
+      color: var(--text-tertiary);
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+    .recent-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .recent-chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 12px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      font-size: 13px;
+      color: var(--text);
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+      transition: transform 0.1s;
+    }
+
+    .recent-chip:active {
+      transform: scale(0.95);
+    }
+
+    /* Skip link for accessibility */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: var(--accent);
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 0 0 8px 0;
+      z-index: 100;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .skip-link:focus {
+      top: 0;
+    }
   </style>
 </head>
 <body>
 
+<a href="#search" class="skip-link">跳到搜尋</a>
+
 <!-- 搜尋頁 -->
-<div id="search-view">
+<div id="search-view" role="main">
   <div class="container">
     <div class="header">
       <h1>WTF is…？</h1>
       <p>術語白話翻譯快查</p>
+      <button class="theme-toggle" id="theme-toggle" aria-label="切換深色模式" title="切換深色模式">
+        <span id="theme-icon">🌙</span>
+      </button>
     </div>
 
-    <div class="changelog" id="changelog"></div>
+    <div class="changelog" id="changelog" aria-label="最近更新"></div>
 
     <div class="search-box">
-      <div class="search-wrapper">
-        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-        <input type="text" class="search-input" id="search" placeholder="搜尋術語…" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false">
-        <button class="search-clear" id="clear-btn" aria-label="清除">&times;</button>
+      <div class="search-wrapper" role="search">
+        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" class="search-input" id="search" placeholder="搜尋術語（支援中英文）…" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" role="combobox" aria-expanded="false" aria-controls="results" aria-label="搜尋術語">
+        <button class="search-clear" id="clear-btn" aria-label="清除搜尋">&times;</button>
       </div>
     </div>
 
-    <div id="result-count" class="result-count" style="display:none"></div>
-    <ul class="results" id="results"></ul>
+    <div id="result-count" class="result-count" style="display:none" aria-live="polite"></div>
+    <ul class="results" id="results" role="listbox" aria-label="搜尋結果"></ul>
 
-    <div class="domains" id="domains">
+    <div class="recent-section" id="recent-section" style="display:none">
+      <h2>最近查看</h2>
+      <div class="recent-list" id="recent-list"></div>
+    </div>
+
+    <div class="domains" id="domains" aria-label="依領域瀏覽">
       <h2>依領域瀏覽</h2>
-      <div class="domain-grid" id="domain-grid"></div>
+      <div class="domain-grid" id="domain-grid" role="list"></div>
     </div>
 
     <div class="install-guide" id="install-guide">
-      <button class="install-toggle" id="install-toggle">
-        <span class="arrow">&#9654;</span>
+      <button class="install-toggle" id="install-toggle" aria-expanded="false" aria-controls="install-steps">
+        <span class="arrow" aria-hidden="true">&#9654;</span>
         加到手機桌面，像 App 一樣開啟
       </button>
       <div class="install-steps" id="install-steps">
@@ -554,16 +736,20 @@
 </div>
 
 <!-- 詳細頁 -->
-<div id="detail-view">
+<div id="detail-view" role="main" aria-label="術語詳細內容">
   <div class="container">
     <div class="back-bar">
-      <button class="back-btn" id="back-btn">← 返回搜尋</button>
+      <button class="back-btn" id="back-btn" aria-label="返回搜尋頁">← 返回搜尋</button>
     </div>
     <div class="detail-header">
       <div class="detail-title" id="detail-title"></div>
       <div class="detail-meta" id="detail-meta"></div>
     </div>
     <div class="detail-content" id="detail-content"></div>
+    <div class="related-terms" id="related-terms" style="display:none">
+      <h3>相關術語</h3>
+      <div class="related-grid" id="related-grid"></div>
+    </div>
   </div>
 </div>
 
@@ -573,14 +759,16 @@
 
   // ===== 更新日誌（手動維護，最多 3 筆，新的放最前面）=====
   const CHANGELOG = [
+    { date: '2026/2/13', text: '新增 AI/機器學習、財務會計、UX/產品設計 3 個領域' },
     { date: '2026/2/13', text: '新增加密貨幣 / Web3 領域（80 個術語）' },
     { date: '2026/2/12', text: '新增遊戲設計、法務、HR、影音動畫、專案管理 5 個領域（95 個術語）' },
-    { date: '2026/2/12', text: '既有領域補充 33 個高頻術語（軟體工程、股票、行銷、管理）' },
   ];
 
-  let TERMS = [];
+  let TERMS = [];      // 搜尋索引（不含 content）
+  let CONTENT = null;  // 內容對應表（lazy loaded）
   let fuse = null;
   let currentView = 'search'; // 'search' | 'detail'
+  let selectedIndex = -1;     // 鍵盤導航用
 
   const $ = id => document.getElementById(id);
 
@@ -596,17 +784,108 @@
   const detailMeta = $('detail-meta');
   const detailContent = $('detail-content');
   const backBtn = $('back-btn');
+  const relatedTermsEl = $('related-terms');
+  const relatedGrid = $('related-grid');
+  const recentSection = $('recent-section');
+  const recentList = $('recent-list');
+
+  // ===== 深色模式 =====
+  const themeToggle = $('theme-toggle');
+  const themeIcon = $('theme-icon');
+
+  function getThemePref() {
+    return localStorage.getItem('theme') || 'auto';
+  }
+
+  function applyTheme(pref) {
+    const root = document.documentElement;
+    if (pref === 'auto') {
+      root.removeAttribute('data-theme');
+    } else {
+      root.setAttribute('data-theme', pref);
+    }
+    updateThemeIcon(pref);
+    localStorage.setItem('theme', pref);
+  }
+
+  function updateThemeIcon(pref) {
+    if (pref === 'dark') {
+      themeIcon.textContent = '☀️';
+    } else if (pref === 'light') {
+      themeIcon.textContent = '🌙';
+    } else {
+      // auto: show based on system
+      const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      themeIcon.textContent = isDark ? '☀️' : '🌙';
+    }
+  }
+
+  themeToggle.addEventListener('click', () => {
+    const current = getThemePref();
+    // auto → dark → light → auto
+    const next = current === 'auto' ? 'dark' : current === 'dark' ? 'light' : 'auto';
+    applyTheme(next);
+  });
+
+  applyTheme(getThemePref());
+
+  // ===== 最近查看 =====
+  function getRecentViewed() {
+    try {
+      return JSON.parse(localStorage.getItem('recentViewed') || '[]');
+    } catch { return []; }
+  }
+
+  function addRecentViewed(id) {
+    let recent = getRecentViewed().filter(r => r !== id);
+    recent.unshift(id);
+    if (recent.length > 10) recent = recent.slice(0, 10);
+    localStorage.setItem('recentViewed', JSON.stringify(recent));
+  }
+
+  function renderRecent() {
+    const recent = getRecentViewed();
+    if (!recent.length || !TERMS.length) {
+      recentSection.style.display = 'none';
+      return;
+    }
+    const validRecent = recent.filter(id => TERMS.find(t => t.id === id)).slice(0, 6);
+    if (!validRecent.length) {
+      recentSection.style.display = 'none';
+      return;
+    }
+    recentList.innerHTML = validRecent.map(id => {
+      const t = TERMS.find(t => t.id === id);
+      return `<button class="recent-chip" data-id="${id}">${esc(t.title)}</button>`;
+    }).join('');
+    recentSection.style.display = 'block';
+
+    recentList.addEventListener('click', e => {
+      const chip = e.target.closest('.recent-chip');
+      if (!chip) return;
+      navigateTo(chip.dataset.id);
+    });
+  }
 
   // ===== 載入資料 =====
   async function loadTerms() {
-    const resp = await fetch('terms.json');
-    TERMS = await resp.json();
+    try {
+      const resp = await fetch('terms-index.json');
+      TERMS = await resp.json();
+    } catch {
+      // 向下相容：如果 terms-index.json 不存在，用 terms.json
+      const resp = await fetch('terms.json');
+      const data = await resp.json();
+      TERMS = data.map(({ content, ...rest }) => rest);
+    }
+
     fuse = new Fuse(TERMS, {
       keys: [
-        { name: 'title', weight: 0.45 },
-        { name: 'oneLine', weight: 0.25 },
-        { name: 'metaphor', weight: 0.2 },
-        { name: 'id', weight: 0.1 },
+        { name: 'title', weight: 0.4 },
+        { name: 'aliases', weight: 0.25 },
+        { name: 'oneLine', weight: 0.2 },
+        { name: 'metaphor', weight: 0.1 },
+        { name: 'id', weight: 0.05 },
       ],
       threshold: 0.35,
       distance: 200,
@@ -614,7 +893,23 @@
       minMatchCharLength: 1,
     });
     buildDomainGrid();
+    renderRecent();
     handleRoute();
+  }
+
+  async function loadContent() {
+    if (CONTENT) return CONTENT;
+    try {
+      const resp = await fetch('terms-content.json');
+      CONTENT = await resp.json();
+    } catch {
+      // 向下相容：從 terms.json 取
+      const resp = await fetch('terms.json');
+      const data = await resp.json();
+      CONTENT = {};
+      data.forEach(t => { CONTENT[t.id] = t.content; });
+    }
+    return CONTENT;
   }
 
   // ===== 領域快捷 =====
@@ -625,10 +920,11 @@
       domains[t.domainLabel].count++;
     });
     domainGrid.innerHTML = Object.values(domains).map(d => {
-      const emoji = d.label.match(/^./u)?.[0] || '';
-      const name = d.label.replace(/^.\s*/, '');
-      return `<button class="domain-btn" data-domain="${d.domain}">
-        <span class="domain-emoji">${emoji}</span>
+      const parts = [...d.label];
+      const emoji = parts[0] || '';
+      const name = d.label.slice(emoji.length).trim();
+      return `<button class="domain-btn" data-domain="${d.domain}" role="listitem">
+        <span class="domain-emoji" aria-hidden="true">${emoji}</span>
         <span><span class="domain-name">${name}</span><br><span class="domain-count">${d.count} 個術語</span></span>
       </button>`;
     }).join('');
@@ -649,6 +945,7 @@
     resultCountEl.textContent = `${label}：${filtered.length} 個術語`;
     resultCountEl.style.display = 'block';
     domainsEl.style.display = 'none';
+    recentSection.style.display = 'none';
     clearBtn.classList.add('visible');
   }
 
@@ -658,6 +955,7 @@
     clearTimeout(debounceTimer);
     debounceTimer = setTimeout(doSearch, 150);
     clearBtn.classList.toggle('visible', searchInput.value.length > 0);
+    selectedIndex = -1;
   });
 
   clearBtn.addEventListener('click', () => {
@@ -666,7 +964,10 @@
     resultsEl.innerHTML = '';
     resultCountEl.style.display = 'none';
     domainsEl.style.display = 'block';
+    renderRecent();
     searchInput.focus();
+    searchInput.setAttribute('aria-expanded', 'false');
+    selectedIndex = -1;
   });
 
   function doSearch() {
@@ -675,23 +976,28 @@
       resultsEl.innerHTML = '';
       resultCountEl.style.display = 'none';
       domainsEl.style.display = 'block';
+      renderRecent();
+      searchInput.setAttribute('aria-expanded', 'false');
       return;
     }
     domainsEl.style.display = 'none';
+    recentSection.style.display = 'none';
     const results = fuse.search(q, { limit: 30 });
     const items = results.map(r => r.item);
     renderResults(items);
     resultCountEl.textContent = `找到 ${items.length} 個結果`;
     resultCountEl.style.display = 'block';
+    searchInput.setAttribute('aria-expanded', items.length > 0 ? 'true' : 'false');
   }
 
   function renderResults(items) {
+    selectedIndex = -1;
     if (items.length === 0) {
-      resultsEl.innerHTML = '<div class="no-results"><div class="emoji">🤷</div><div>找不到相關術語</div><div style="margin-top:8px;font-size:13px">覺得應該要有這個詞？<a href="https://github.com/vincent8910/wtf-is/issues/new?title=建議新增術語：" target="_blank" rel="noopener" style="color:var(--accent)">告訴 vincent8910 把它加進來</a></div></div>';
+      resultsEl.innerHTML = '<div class="no-results"><div class="emoji">🤷</div><div>找不到相關術語</div><div style="margin-top:8px;font-size:13px">覺得應該要有這個詞？<a href="https://github.com/vincent8910/wtf-is/issues/new?title=建議新增術語：" target="_blank" rel="noopener" style="color:var(--accent)">告訴 vincent8910 把它加進來</a>，或<a href="https://t.me/vincent8910" target="_blank" rel="noopener" style="color:var(--accent)">點這裡用 Telegram 告訴 vincent8910</a></div></div>';
       return;
     }
-    resultsEl.innerHTML = items.map(t =>
-      `<li class="result-item" data-id="${t.id}">
+    resultsEl.innerHTML = items.map((t, i) =>
+      `<li class="result-item" data-id="${t.id}" role="option" aria-selected="false" tabindex="-1" id="result-${i}">
         <div class="result-title">${esc(t.title)}</div>
         ${t.oneLine ? `<div class="result-oneline">${esc(t.oneLine)}</div>` : ''}
         <span class="result-tag">${esc(t.domainLabel)}</span>
@@ -705,18 +1011,55 @@
     navigateTo(item.dataset.id);
   });
 
+  // ===== 鍵盤導航搜尋結果 =====
+  searchInput.addEventListener('keydown', e => {
+    const items = resultsEl.querySelectorAll('.result-item');
+    if (!items.length) return;
+
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      selectedIndex = Math.min(selectedIndex + 1, items.length - 1);
+      updateSelection(items);
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      selectedIndex = Math.max(selectedIndex - 1, -1);
+      updateSelection(items);
+    } else if (e.key === 'Enter' && selectedIndex >= 0) {
+      e.preventDefault();
+      const id = items[selectedIndex].dataset.id;
+      navigateTo(id);
+    }
+  });
+
+  function updateSelection(items) {
+    items.forEach((item, i) => {
+      item.setAttribute('aria-selected', i === selectedIndex ? 'true' : 'false');
+    });
+    if (selectedIndex >= 0 && items[selectedIndex]) {
+      items[selectedIndex].scrollIntoView({ block: 'nearest' });
+      searchInput.setAttribute('aria-activedescendant', `result-${selectedIndex}`);
+    } else {
+      searchInput.removeAttribute('aria-activedescendant');
+    }
+  }
+
   // ===== 詳細頁 =====
-  function showDetail(id) {
+  async function showDetail(id) {
     const term = TERMS.find(t => t.id === id);
     if (!term) return;
+
+    // 更新頁面標題（SEO）
+    document.title = `${term.title} — WTF is…？`;
 
     detailTitle.textContent = term.title;
     detailMeta.innerHTML = `<span class="result-tag">${esc(term.domainLabel)}</span>`;
 
+    // 載入內容
+    const content = await loadContent();
+    let html = content[id] || '<p>內容載入中…</p>';
+
     // 處理內部連結：把 .md 連結轉成 hash
-    let html = term.content;
     html = html.replace(/href="([^"]*?)\.md"/g, (match, p1) => {
-      // 移除路徑前綴（如 ../terms/ 或 ./）
       const name = p1.replace(/^.*\//, '');
       return `href="#${name}"`;
     });
@@ -733,16 +1076,69 @@
       });
     });
 
+    // 記錄最近查看
+    addRecentViewed(id);
+
+    // 顯示相關術語
+    showRelatedTerms(term);
+
     searchView.style.display = 'none';
     detailView.style.display = 'block';
     window.scrollTo(0, 0);
     currentView = 'detail';
   }
 
+  function showRelatedTerms(term) {
+    // 找相關術語：同領域 + 內容中連結到的
+    const linkedIds = new Set();
+
+    // 從內容中提取連結的 term IDs
+    const content = CONTENT ? CONTENT[term.id] || '' : '';
+    const linkMatches = content.matchAll(/href="([^"]*?)\.md"/g);
+    for (const m of linkMatches) {
+      const name = m[1].replace(/^.*\//, '');
+      if (name !== 'README' && TERMS.find(t => t.id === name)) {
+        linkedIds.add(name);
+      }
+    }
+
+    // 同領域術語（排除自己和已連結的）
+    const sameDomain = TERMS.filter(t =>
+      t.domain === term.domain && t.id !== term.id && !linkedIds.has(t.id)
+    );
+
+    // 優先顯示連結到的，再補同領域的
+    const linked = [...linkedIds].map(id => TERMS.find(t => t.id === id)).filter(Boolean);
+    const related = [...linked, ...sameDomain].slice(0, 6);
+
+    if (related.length === 0) {
+      relatedTermsEl.style.display = 'none';
+      return;
+    }
+
+    relatedGrid.innerHTML = related.map(t =>
+      `<a class="related-item" data-id="${t.id}" href="#${t.id}">
+        <div class="related-item-title">${esc(t.title)}</div>
+        ${t.oneLine ? `<div class="related-item-desc">${esc(t.oneLine)}</div>` : ''}
+      </a>`
+    ).join('');
+
+    relatedGrid.querySelectorAll('.related-item').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        navigateTo(a.dataset.id);
+      });
+    });
+
+    relatedTermsEl.style.display = 'block';
+  }
+
   function showSearch() {
     detailView.style.display = 'none';
     searchView.style.display = 'block';
     currentView = 'search';
+    document.title = 'WTF is…？術語快查';
+    renderRecent();
     searchInput.focus();
   }
 
@@ -778,6 +1174,8 @@
         resultsEl.innerHTML = '';
         resultCountEl.style.display = 'none';
         domainsEl.style.display = 'block';
+        renderRecent();
+        selectedIndex = -1;
       }
     }
     // 任意鍵自動 focus 搜尋框（在搜尋頁時）
@@ -797,8 +1195,9 @@
   const installSteps = $('install-steps');
   if (installToggle) {
     installToggle.addEventListener('click', () => {
-      installToggle.classList.toggle('open');
+      const isOpen = installToggle.classList.toggle('open');
       installSteps.classList.toggle('visible');
+      installToggle.setAttribute('aria-expanded', isOpen);
     });
     // standalone 模式下隱藏安裝提示（已經安裝了）
     if (window.matchMedia('(display-mode: standalone)').matches || navigator.standalone) {

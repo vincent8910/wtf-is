@@ -28,6 +28,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/terms.json
+          git add docs/terms.json docs/terms-index.json docs/terms-content.json
           git diff --cached --quiet || git commit -m "chore: 自動更新搜尋索引"
           git push

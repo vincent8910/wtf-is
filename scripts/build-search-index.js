@@ -5,7 +5,11 @@ const path = require('path');
 const { marked } = require('marked');
 
 const ROOT = path.resolve(__dirname, '..');
-const OUT = path.join(ROOT, 'docs', 'terms.json');
+const DOCS = path.join(ROOT, 'docs');
+const OUT_INDEX = path.join(DOCS, 'terms-index.json');
+const OUT_CONTENT = path.join(DOCS, 'terms-content.json');
+// 保留舊檔以利向下相容（GitHub Actions 等）
+const OUT_LEGACY = path.join(DOCS, 'terms.json');
 
 const DOMAINS = [
   { dir: 'software-engineering', label: '💻 軟體工程' },
@@ -22,7 +26,56 @@ const DOMAINS = [
   { dir: 'audio-visual', label: '🔊 影音與動畫' },
   { dir: 'project-management', label: '📋 專案管理' },
   { dir: 'crypto', label: '🪙 加密貨幣 / Web3' },
+  { dir: 'ai-ml', label: '🤖 AI / 機器學習' },
+  { dir: 'finance-accounting', label: '💰 財務會計' },
+  { dir: 'ux-product', label: '🧩 UX / 產品設計' },
 ];
+
+/**
+ * 從 Markdown 中提取中文別名（用於搜尋）
+ * 抓取模式：
+ *   1. 標題括號中的中文：# Blockchain（區塊鏈）
+ *   2.「」內的中文術語名稱（前後有「叫」「稱」「是」等關鍵字）
+ *   3. 全名翻譯：中文叫「XXX」、中文是「XXX」
+ */
+function extractAliases(raw, title) {
+  const aliases = new Set();
+
+  // 1. 標題中的中文括號內容：# Term（中文名）或 # Term (中文名)
+  const titleParenMatch = raw.match(/^#\s+.+?[（(]([^）)]+)[）)]/m);
+  if (titleParenMatch) {
+    aliases.add(titleParenMatch[1].trim());
+  }
+
+  // 2. 中文叫「XXX」/ 中文是「XXX」/ 中文稱為「XXX」
+  const zhNamePatterns = [
+    /中文叫「([^」]+)」/g,
+    /中文(?:名)?(?:稱|是|叫做|叫作)「([^」]+)」/g,
+    /(?:又|也|俗|簡)稱「([^」]+)」/g,
+    /縮寫.*?[，,].*?[「]([^」]+)[」]/g,
+  ];
+  for (const pat of zhNamePatterns) {
+    let m;
+    while ((m = pat.exec(raw)) !== null) {
+      aliases.add(m[1].trim());
+    }
+  }
+
+  // 3. 全名在括號中：**XXX（中文全名）**
+  const fullNameMatches = raw.matchAll(/\*\*[A-Za-z][^*]*[（(]([^）)]+)[）)][^*]*\*\*/g);
+  for (const m of fullNameMatches) {
+    const inner = m[1].trim();
+    // 只保留含中文的
+    if (/[\u4e00-\u9fff]/.test(inner)) {
+      aliases.add(inner);
+    }
+  }
+
+  // 去除跟 title 完全相同的
+  aliases.delete(title);
+
+  return [...aliases].join(' ');
+}
 
 function parseTerm(filePath, domain, domainLabel) {
   const raw = fs.readFileSync(filePath, 'utf-8');
@@ -47,6 +100,9 @@ function parseTerm(filePath, domain, domainLabel) {
   const metaphorMatch = raw.match(/>\s*\*\*白話說[：:]\*\*\s*(.+)/);
   const metaphor = metaphorMatch ? metaphorMatch[1].trim() : '';
 
+  // 中文別名
+  const aliases = extractAliases(raw, title);
+
   // 完整內容轉 HTML（移除第一行標題，因為會在 UI 中另外顯示）
   const contentWithoutTitle = raw.replace(/^#\s+.+\n*/m, '');
   const content = marked(contentWithoutTitle);
@@ -56,6 +112,7 @@ function parseTerm(filePath, domain, domainLabel) {
     title,
     oneLine,
     metaphor,
+    aliases,
     domain,
     domainLabel,
     content,
@@ -82,11 +139,31 @@ function main() {
   // 按標題排序
   terms.sort((a, b) => a.title.localeCompare(b.title, 'zh-Hant'));
 
-  fs.writeFileSync(OUT, JSON.stringify(terms, null, 0), 'utf-8');
+  // === 輸出 1：輕量搜尋索引（不含 content）===
+  const indexData = terms.map(({ content, ...rest }) => rest);
+  fs.writeFileSync(OUT_INDEX, JSON.stringify(indexData, null, 0), 'utf-8');
 
-  const sizeKB = (fs.statSync(OUT).size / 1024).toFixed(1);
-  console.log(`✅ 已生成 ${OUT}`);
-  console.log(`   共 ${terms.length} 個術語，檔案大小 ${sizeKB} KB`);
+  // === 輸出 2：內容對應表（id → content）===
+  const contentMap = {};
+  terms.forEach(t => { contentMap[t.id] = t.content; });
+  fs.writeFileSync(OUT_CONTENT, JSON.stringify(contentMap, null, 0), 'utf-8');
+
+  // === 輸出 3：保留舊格式（向下相容）===
+  fs.writeFileSync(OUT_LEGACY, JSON.stringify(terms, null, 0), 'utf-8');
+
+  const indexKB = (fs.statSync(OUT_INDEX).size / 1024).toFixed(1);
+  const contentKB = (fs.statSync(OUT_CONTENT).size / 1024).toFixed(1);
+  const legacyKB = (fs.statSync(OUT_LEGACY).size / 1024).toFixed(1);
+
+  console.log(`✅ 已生成搜尋索引`);
+  console.log(`   共 ${terms.length} 個術語`);
+  console.log(`   terms-index.json   ${indexKB} KB（搜尋用）`);
+  console.log(`   terms-content.json ${contentKB} KB（內容用）`);
+  console.log(`   terms.json         ${legacyKB} KB（向下相容）`);
+
+  // 統計別名
+  const withAliases = terms.filter(t => t.aliases).length;
+  console.log(`   ${withAliases} 個術語含中文別名`);
 }
 
 main();

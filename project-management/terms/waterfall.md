@@ -31,7 +31,7 @@ Waterfall 的特點是：**每個階段都要完全做完，才能進到下一�
 
 **不適合 Waterfall 的例子**：開一間新餐廳
 - 如果你花半年研究菜單，結果開幕當天才發現客人根本不喜歡你的菜⋯⋯
-- 更好的做法是先做個小攤位試賣（[MVP](../../../software-engineering/terms/mvp.md)），邊做邊調整
+- 更好的做法是先做個小攤位試賣（[MVP](../../software-engineering/terms/mvp.md)），邊做邊調整
 
 **造句**：「這個政府標案用 **Waterfall** 做，需求要先全部定好、簽完約才能開始開發。」
 

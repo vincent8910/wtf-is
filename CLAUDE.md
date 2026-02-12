@@ -25,13 +25,25 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - `data-analytics/terms/*.md` — 數據分析術語的詳細說明頁
 - `gambling/README.md` — 博弈術語總覽
 - `gambling/terms/*.md` — 博弈術語的詳細說明頁
+- `game-design/` — 遊戲設計術語
+- `legal/` — 法務與智慧財產術語
+- `hr/` — 人力資源術語
+- `audio-visual/` — 影音與動畫術語
+- `project-management/` — 專案管理術語
+- `crypto/` — 加密貨幣 / Web3 術語
+- `ai-ml/` — AI / 機器學習術語
+- `finance-accounting/` — 財務會計術語
+- `ux-product/` — UX / 產品設計術語
 - `docs/` — 靜態搜尋網頁（部署此資料夾到 GitHub Pages）
   - `docs/index.html` — 單頁搜尋應用（Fuse.js 模糊搜尋 + PWA）
-  - `docs/terms.json` — 搜尋索引（由 build script 自動生成，勿手動編輯）
+  - `docs/terms-index.json` — 輕量搜尋索引（不含內容，由 build script 自動生成）
+  - `docs/terms-content.json` — 術語內容對應表（由 build script 自動生成）
+  - `docs/terms.json` — 完整搜尋索引（向下相容，由 build script 自動生成）
   - `docs/manifest.json` — PWA 配置
-  - `docs/sw.js` — Service Worker（離線快取）
+  - `docs/sw.js` — Service Worker（stale-while-revalidate 策略）
   - `docs/icons/` — PWA 圖示
-- `scripts/build-search-index.js` — 掃描所有 `terms/*.md` → 生成 `docs/terms.json`
+- `scripts/build-search-index.js` — 掃描所有 `terms/*.md` → 生成搜尋索引（3 個 JSON 檔）
+- `scripts/validate-terms.js` — 術語品質檢查工具（`npm run validate`）
 - `package.json` — Node.js 依賴（僅 `marked`）
 - `.github/workflows/build-search.yml` — GitHub Actions：術語變更時自動重建索引
 
