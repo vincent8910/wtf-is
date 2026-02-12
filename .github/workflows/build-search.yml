@@ -7,6 +7,9 @@ on:
       - '*/terms/*.md'
       - 'scripts/**'
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
