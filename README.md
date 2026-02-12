@@ -58,6 +58,7 @@
 | [🏢 企業管理與營運](management/README.md) | 26 | KPI、OKR、商業模式、組織管理⋯⋯ |
 | [📊 數據分析](data-analytics/README.md) | 24 | 大數據、機器學習、留存率、LTV⋯⋯ |
 | [🎰 博弈](gambling/README.md) | 64 | 老虎機、RTP、百家樂、莊家優勢⋯⋯ |
+| [🎮 遊戲設計](game-design/README.md) | 45 | Core Loop、Gacha、RPG、Buff/Nerf⋯⋯ |
 
 > **💡 點進各領域的完整頁面，每個術語都有這樣的詳細對照：**
 >
@@ -334,6 +335,42 @@
 | [中獎頻率（Hit Frequency）](gambling/terms/hit-frequency.md) | [幣商](gambling/terms/coin-dealer.md) | [帳房（Cage）](gambling/terms/cage.md) | [抽水（Rake）](gambling/terms/rake.md) |
 | [期望值（Expected Value）](gambling/terms/expected-value.md) | [牌靴（Shoe）](gambling/terms/shoe.md) | [莊家優勢（House Edge）](gambling/terms/house-edge.md) | [路單（Road Map）](gambling/terms/road-map.md) |
 | [轉輪帶（Reel Strip）](gambling/terms/reel-strip.md) | [洗碼（Rolling）](gambling/terms/rolling.md) | [變異數（Variance）](gambling/terms/variance.md) | [魚機（Fish Game）](gambling/terms/fish-game.md) |
+
+---
+
+## 🎮 遊戲設計
+
+### 大綱
+
+> 共收錄 **45 個**術語，[點此進入完整頁面](game-design/README.md)。
+
+| 分類 | 術語數 | 說明 |
+|------|:------:|------|
+| [核心概念](game-design/README.md#核心概念) | 5 | Core Loop、Meta Game、GDD⋯⋯ |
+| [商業模式](game-design/README.md#商業模式) | 6 | Gacha、Battle Pass、課金⋯⋯ |
+| [遊戲類型](game-design/README.md#遊戲類型) | 6 | RPG、MOBA、開放世界⋯⋯ |
+| [戰鬥機制](game-design/README.md#戰鬥機制) | 7 | Buff/Nerf、Cooldown、AOE⋯⋯ |
+| [社交系統](game-design/README.md#社交系統) | 4 | 公會、副本、排行榜⋯⋯ |
+| [營運機制](game-design/README.md#營運機制) | 6 | 賽季、DLC、每日登入⋯⋯ |
+| [開發流程](game-design/README.md#開發流程) | 4 | 關卡設計、新手教學、Playtest⋯⋯ |
+| [玩家用語](game-design/README.md#玩家用語) | 7 | Grinding、Lag、彩蛋、NPC⋯⋯ |
+
+### 單字速查表（A-Z）
+
+| | | | |
+|---|---|---|---|
+| [Achievement](game-design/terms/achievement.md) | [Aggro](game-design/terms/aggro.md) | [AOE](game-design/terms/aoe.md) | [Balancing](game-design/terms/balancing.md) |
+| [Battle Pass](game-design/terms/battle-pass.md) | [Boss](game-design/terms/boss.md) | [Buff / Debuff / Nerf](game-design/terms/buff-debuff-nerf.md) | [Cooldown](game-design/terms/cooldown.md) |
+| [Core Loop](game-design/terms/core-loop.md) | [Crafting](game-design/terms/crafting.md) | [Daily Login](game-design/terms/daily-login.md) | [Difficulty Curve](game-design/terms/difficulty-curve.md) |
+| [DLC](game-design/terms/dlc.md) | [Easter Egg](game-design/terms/easter-egg.md) | [Economy Design](game-design/terms/economy-design.md) | [F2P / P2W](game-design/terms/f2p-p2w.md) |
+| [Gacha](game-design/terms/gacha.md) | [GDD](game-design/terms/gdd.md) | [Grinding](game-design/terms/grinding.md) | [Guild（公會）](game-design/terms/guild.md) |
+| [Hitbox](game-design/terms/hitbox.md) | [HP / MP](game-design/terms/hp-mp.md) | [IAP / 課金](game-design/terms/iap.md) | [Inventory（背包）](game-design/terms/inventory.md) |
+| [Lag](game-design/terms/lag.md) | [Leaderboard](game-design/terms/leaderboard.md) | [Level Design](game-design/terms/level-design.md) | [Loot Box](game-design/terms/loot-box.md) |
+| [Meta Game](game-design/terms/meta-game.md) | [MOBA](game-design/terms/moba.md) | [NPC](game-design/terms/npc.md) | [Open World](game-design/terms/open-world.md) |
+| [Pay Wall](game-design/terms/pay-wall.md) | [Playtest](game-design/terms/playtest.md) | [PvP / PvE](game-design/terms/pvp-pve.md) | [Raid（副本）](game-design/terms/raid.md) |
+| [Roguelike](game-design/terms/roguelike.md) | [RPG / MMORPG](game-design/terms/rpg-mmorpg.md) | [RTS](game-design/terms/rts.md) | [Sandbox](game-design/terms/sandbox-game.md) |
+| [Season（賽季）](game-design/terms/season.md) | [Skin](game-design/terms/skin.md) | [Spawn / Respawn](game-design/terms/spawn-respawn.md) | [Stamina](game-design/terms/stamina.md) |
+| [Tutorial / Onboarding](game-design/terms/tutorial-onboarding.md) | | | |
 
 ---
 

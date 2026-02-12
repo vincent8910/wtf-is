@@ -16,6 +16,7 @@ const DOMAINS = [
   { dir: 'management', label: '💼 企業管理' },
   { dir: 'data-analytics', label: '📊 數據分析' },
   { dir: 'gambling', label: '🎲 博弈' },
+  { dir: 'game-design', label: '🎮 遊戲設計' },
 ];
 
 function parseTerm(filePath, domain, domainLabel) {
