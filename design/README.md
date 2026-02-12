@@ -29,11 +29,11 @@
 
 ## 大綱
 
-> 共收錄 **26 個**美術設計術語，點擊分類名稱直接跳轉。
+> 共收錄 **27 個**美術設計術語，點擊分類名稱直接跳轉。
 
 | 分類 | 術語數 | 說明 |
 |------|:------:|------|
-| [色彩類](#色彩類) | 6 | CMYK、RGB、色票、色彩模式、色溫、對比度 |
+| [色彩類](#色彩類) | 7 | CMYK、RGB、色票、色彩模式、色溫、對比度、飽和度 |
 | [輸出類](#輸出類) | 5 | DPI、出血、印刷四色、向量 / 點陣、切圖 |
 | [排版類](#排版類) | 5 | 字級行距、排版、格線系統、視覺階層、留白 |
 | [設計流程類](#設計流程類) | 5 | Wireframe、Mockup、Prototype、設計稿、設計系統 |
@@ -53,7 +53,7 @@
 | [Mockup](terms/mockup.md) | [Pantone（色票）](terms/pantone.md) | [Prototype](terms/prototype.md) | [RGB](terms/rgb.md) |
 | [Slicing（切圖）](terms/slicing.md) | [Typography（字級 / 字距 / 行距）](terms/typography.md) | [Vector / Raster（向量 / 點陣）](terms/vector-raster.md) | [Visual Hierarchy（視覺階層）](terms/visual-hierarchy.md) |
 | [Whitespace（留白）](terms/whitespace.md) | [Wireframe](terms/wireframe.md) | [去背](terms/clipping.md) | [印刷四色](terms/four-color-printing.md) |
-| [色彩模式](terms/color-mode.md) | [色溫](terms/color-temperature.md) | | |
+| [色彩模式](terms/color-mode.md) | [色溫](terms/color-temperature.md) | [飽和度（Saturation）](terms/saturation.md) | |
 
 ---
 
@@ -69,6 +69,7 @@
 | **色彩模式** | 決定顏色用什麼方式表示 | 攝氏 vs 華氏——同樣的溫度，不同的表示法 | 「這個檔案的**色彩模式**是 RGB 還是 CMYK？」 | [→ 詳細](terms/color-mode.md) |
 | **色溫** | 顏色的冷暖程度 | 家裡燈泡的黃光（暖）vs 白光（冷） | 「這個頁面的**色溫**太冷了，調暖一點。」 | [→ 詳細](terms/color-temperature.md) |
 | **對比度** | 畫面上亮跟暗的差距有多大 | 夜市招牌的黑底螢光黃字 vs 灰底淺灰字 | 「按鈕的**對比度**不夠，看不清楚。」 | [→ 詳細](terms/contrast.md) |
+| **飽和度（Saturation）** | 顏色鮮豔還是灰灰的程度 | 新買的紅 T-shirt vs 洗了 100 次褪色的 | 「背景**飽和度**降低一點，不然搶焦。」 | [→ 詳細](terms/saturation.md) |
 
 ---
 
@@ -142,6 +143,7 @@
 | 色彩模式 | 攝氏 vs 華氏——同樣的東西，不同的表示法 |
 | 色溫 | 家裡燈泡的黃光（暖）vs 白光（冷） |
 | 對比度 | 夜市招牌的黑底螢光黃字 |
+| 飽和度（Saturation） | 新買的紅 T-shirt vs 洗了 100 次褪色的 |
 
 ### 輸出
 
