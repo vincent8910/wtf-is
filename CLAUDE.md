@@ -20,6 +20,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - `design/terms/*.md` — 美術設計術語的詳細說明頁
 - `management/README.md` — 企業管理與營運術語總覽
 - `management/terms/*.md` — 企業管理術語的詳細說明頁
+- `data-analytics/README.md` — 數據分析術語總覽
+- `data-analytics/terms/*.md` — 數據分析術語的詳細說明頁
+- `gambling/README.md` — 博弈術語總覽
+- `gambling/terms/*.md` — 博弈術語的詳細說明頁
 
 ## 術語頁面模板
 

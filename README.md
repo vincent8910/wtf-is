@@ -31,6 +31,8 @@
 | [📣 行銷企劃](marketing/README.md) | 25 | 數位廣告、轉換率、社群行銷⋯⋯ |
 | [🎨 美術設計](design/README.md) | 26 | CMYK、出血、切圖、設計系統⋯⋯ |
 | [🏢 企業管理與營運](management/README.md) | 26 | KPI、OKR、商業模式、組織管理⋯⋯ |
+| [📊 數據分析](data-analytics/README.md) | 24 | 大數據、機器學習、留存率、LTV⋯⋯ |
+| [🎰 博弈](gambling/README.md) | 34 | 老虎機、RTP、百家樂、莊家優勢⋯⋯ |
 
 ---
 
