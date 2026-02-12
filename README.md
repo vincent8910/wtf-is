@@ -98,7 +98,7 @@
 | [Sync / Async](software-engineering/terms/sync-async.md) | [Technical Debt](software-engineering/terms/technical-debt.md) | [Terminal / CLI](software-engineering/terms/terminal-cli.md) | [Test Case](software-engineering/terms/test-case.md) |
 | [Timeout](software-engineering/terms/timeout.md) | [Token](software-engineering/terms/token.md) | [UAT](software-engineering/terms/uat.md) | [UI / UX](software-engineering/terms/ui-ux.md) |
 | [Unity](software-engineering/terms/unity.md) | [VPN](software-engineering/terms/vpn.md) | [VS Code](software-engineering/terms/vscode.md) | [Vulnerability](software-engineering/terms/vulnerability.md) |
-| [Webhook](software-engineering/terms/webhook.md) | | | |
+| [Webhook](software-engineering/terms/webhook.md) | [YAML](software-engineering/terms/yaml.md) | | |
 
 ---
 

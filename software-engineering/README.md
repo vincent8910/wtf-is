@@ -84,7 +84,7 @@
 | [Sync / Async](terms/sync-async.md) | [Technical Debt](terms/technical-debt.md) | [Terminal / CLI](terms/terminal-cli.md) | [Test Case](terms/test-case.md) |
 | [Timeout](terms/timeout.md) | [Token](terms/token.md) | [UAT](terms/uat.md) | [UI / UX](terms/ui-ux.md) |
 | [Unity](terms/unity.md) | [VPN](terms/vpn.md) | [VS Code](terms/vscode.md) | [Vulnerability](terms/vulnerability.md) |
-| [Webhook](terms/webhook.md) | | | |
+| [Webhook](terms/webhook.md) | [YAML](terms/yaml.md) | | |
 
 ---
 
@@ -129,6 +129,7 @@
 | **Agent** | 能自主規劃和執行任務的 AI | 自主做事的正職員工 | 「這個 **Agent** 會自己拆任務、自己跑，你只要看結果就好。」 | [→ 詳細](terms/agent.md) |
 | **SuperClaude** | 讓 Claude Code 更強的開源設定框架 | 員工培訓手冊 / 超級裝備包 | 「裝了 **SuperClaude** 之後，Claude Code 回答更有結構了。」 | [→ 詳細](terms/superclaude.md) |
 | **JSON** | 軟體之間傳資料用的標準格式 | 統一發票的格式 | 「API 回傳的是 **JSON** 格式。」 | [→ 詳細](terms/json.md) |
+| **YAML** | 給人看的設定檔格式，用縮排取代括號 | 條列式筆記 vs. 正式表格 | 「CI/CD 的設定要寫在 **YAML** 裡。」 | [→ 詳細](terms/yaml.md) |
 | **Framework / Library** | 別人寫好的現成工具，拿來用就好 | 工具箱 / 已裝潢好的廚房 | 「我們用的**框架**是 React。」 | [→ 詳細](terms/framework-library.md) |
 | **Cookie** | 網站存在你瀏覽器裡的小紙條，用來記住你是誰 | 手上蓋的入場章 | 「清除 **Cookie** 之後就要重新登入了。」 | [→ 詳細](terms/cookie.md) |
 | **Localhost（本機）** | 你自己電腦上跑的臨時網站，別人看不到 | 在自己家廚房試做新菜 | 「功能我在 **localhost** 跑過了，沒問題。」 | [→ 詳細](terms/localhost.md) |
@@ -376,6 +377,7 @@ PM 寫規格、追進度時會遇到的詞：
 | MCP | AI 的感官器官 |
 | Agent | 自主做事的正職員工 |
 | JSON | 統一發票的格式 |
+| YAML | 條列式筆記 vs. 正式表格 |
 | Framework / Library（框架 / 函式庫） | 工具箱 / 已裝潢好的廚房 |
 | Cookie | 手上蓋的入場章 |
 | Localhost（本機） | 在自己家廚房試做新菜 |
