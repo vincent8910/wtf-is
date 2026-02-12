@@ -50,6 +50,22 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 **[← 回到術語總覽](../README.md)**
 ```
 
+## 主頁 README.md 結構規範
+
+主頁作為全域索引，每個領域區塊包含：
+
+1. **大綱表**：分類 | 術語數 | 說明（連結指向領域 README 的錨點）
+2. **單字速查表（A-Z）**：純連結的 4 欄格子，只放術語名稱和連結，**不放**一句話解釋、分類等額外欄位
+
+速查表格式範例：
+```markdown
+| | | | |
+|---|---|---|---|
+| [術語A](domain/terms/a.md) | [術語B](domain/terms/b.md) | [術語C](domain/terms/c.md) | [術語D](domain/terms/d.md) |
+```
+
+詳細資訊（詞彙、一句話解釋、比喻、你會在哪聽到、詳細連結）放在各領域的 `README.md` 中，不放在主頁。
+
 ## 新增術語的步驟
 
 ### 軟體工程術語
@@ -57,13 +73,14 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 2. 按上方模板填寫內容
 3. 在 `software-engineering/README.md` 對應的類別表格中新增一行（含詞彙、一句話解釋、比喻、造句、詳細連結）
 4. 如果有合適比喻，也加到 `software-engineering/README.md` 底部的「比喻對照總表」
-5. 在主頁 `README.md` 的軟體工程單字速查表中新增一行
+5. 在主頁 `README.md` 的軟體工程單字速查表中新增一行（只放術語名稱 + 連結）
 
 ### 其他領域術語
 1. 在對應領域資料夾的 `terms/` 下建立 `術語名稱.md`（用英文小寫 kebab-case 命名）
 2. 按上方模板填寫內容（「回到總覽」連結指向該領域的 `../README.md`）
 3. 在該領域的 `README.md` 對應的類別表格中新增一行
 4. 如果有合適比喻，也加到該領域 README 底部的「比喻對照總表」
+5. 在主頁 `README.md` 的該領域單字速查表中新增一行（只放術語名稱 + 連結）
 
 ## Git 規範
 
@@ -75,4 +92,5 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - 比喻要用台灣人日常生活熟悉的事物（麥當勞、便利商店、Line 等）
 - 術語之間可以互相連結，用相對路徑 `[名稱](檔名.md)`
 - 所有內容使用**繁體中文（台灣用語）**
-- README 的表格欄位順序：詞彙 → 一句話解釋 → 比喻 → 你會在哪聽到 → 詳細說明連結
+- 各領域 README 的詳細表格欄位順序：詞彙 → 一句話解釋 → 比喻 → 你會在哪聽到 → 詳細說明連結
+- 主頁 README 的速查表只放術語名稱 + 連結（4 欄 A-Z 格子），不放額外欄位

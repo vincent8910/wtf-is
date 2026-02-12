@@ -41,6 +41,13 @@
 | [📊 數據分析](data-analytics/README.md) | 24 | 大數據、機器學習、留存率、LTV⋯⋯ |
 | [🎰 博弈](gambling/README.md) | 64 | 老虎機、RTP、百家樂、莊家優勢⋯⋯ |
 
+> **💡 點進各領域的完整頁面，每個術語都有這樣的詳細對照：**
+>
+> | 詞彙 | 一句話解釋 | 比喻 | 你會在哪聽到 |
+> |------|-----------|------|-------------|
+> | **Node.js** | 讓很多開發工具能運作的基礎環境 | 辦公室的水電 | 「你先裝 **Node.js**，不然跑不起來。」 |
+> | **npm** | 安裝軟體工具的地方 | App Store / 軟體商店 | 「用 **npm** install 就可以把工具裝起來了。」 |
+
 ---
 
 ## 💻 軟體工程
@@ -116,44 +123,19 @@
 | [衍生商品類](stock/README.md#衍生商品類) | 5 | 期貨、選擇權、權證⋯⋯ |
 | [基本面類](stock/README.md#基本面類) | 7 | EPS、本益比、ETF⋯⋯ |
 
-### 單字速查表
+### 單字速查表（A-Z）
 
-| 術語 | 分類 | 詳細說明 |
-|------|------|---------|
-| Call（買權） | 衍生商品 | [→ 看詳細](stock/terms/call.md) |
-| EPS | 基本面 | [→ 看詳細](stock/terms/eps.md) |
-| ETF | 基本面 | [→ 看詳細](stock/terms/etf.md) |
-| KD 指標 | 技術分析 | [→ 看詳細](stock/terms/kd.md) |
-| K 線（蠟燭圖） | 技術分析 | [→ 看詳細](stock/terms/k-line.md) |
-| MACD | 技術分析 | [→ 看詳細](stock/terms/macd.md) |
-| Put（賣權） | 衍生商品 | [→ 看詳細](stock/terms/put.md) |
-| RSI | 技術分析 | [→ 看詳細](stock/terms/rsi.md) |
-| 上影線 / 下影線 | 技術分析 | [→ 看詳細](stock/terms/shadow-line.md) |
-| 借券 | 信用交易 | [→ 看詳細](stock/terms/stock-lending.md) |
-| 內盤 / 外盤 | 交易 | [→ 看詳細](stock/terms/bid-ask.md) |
-| 均線（MA） | 技術分析 | [→ 看詳細](stock/terms/ma.md) |
-| 多頭 / 空頭 | 交易 | [→ 看詳細](stock/terms/bull-bear.md) |
-| 型態學 | 技術分析 | [→ 看詳細](stock/terms/chart-pattern.md) |
-| 市價單 | 交易 | [→ 看詳細](stock/terms/market-order.md) |
-| 支撐 / 壓力 | 技術分析 | [→ 看詳細](stock/terms/support-resistance.md) |
-| 成交量 | 技術分析 | [→ 看詳細](stock/terms/volume.md) |
-| 斷頭 | 信用交易 | [→ 看詳細](stock/terms/margin-call.md) |
-| 本益比（P/E） | 基本面 | [→ 看詳細](stock/terms/pe-ratio.md) |
-| 期貨 | 衍生商品 | [→ 看詳細](stock/terms/futures.md) |
-| 權證 | 衍生商品 | [→ 看詳細](stock/terms/warrant.md) |
-| 殖利率 | 基本面 | [→ 看詳細](stock/terms/dividend-yield.md) |
-| 法人 / 三大法人 | 基本面 | [→ 看詳細](stock/terms/institutional-investors.md) |
-| 漲停 / 跌停 | 交易 | [→ 看詳細](stock/terms/limit-up-down.md) |
-| 缺口（Gap） | 技術分析 | [→ 看詳細](stock/terms/gap.md) |
-| 融券 | 信用交易 | [→ 看詳細](stock/terms/short-selling.md) |
-| 融資 | 信用交易 | [→ 看詳細](stock/terms/margin-trading.md) |
-| 籌碼 | 基本面 | [→ 看詳細](stock/terms/chip-analysis.md) |
-| 掛單（限價單） | 交易 | [→ 看詳細](stock/terms/limit-order.md) |
-| 當沖 | 交易 | [→ 看詳細](stock/terms/day-trading.md) |
-| 停損 / 停利 | 交易 | [→ 看詳細](stock/terms/stop-loss-profit.md) |
-| 質押 | 信用交易 | [→ 看詳細](stock/terms/pledge.md) |
-| 選擇權（Options） | 衍生商品 | [→ 看詳細](stock/terms/options.md) |
-| 除權息 | 基本面 | [→ 看詳細](stock/terms/ex-dividend.md) |
+| | | | |
+|---|---|---|---|
+| [Call（買權）](stock/terms/call.md) | [EPS](stock/terms/eps.md) | [ETF](stock/terms/etf.md) | [KD 指標](stock/terms/kd.md) |
+| [K 線（蠟燭圖）](stock/terms/k-line.md) | [MACD](stock/terms/macd.md) | [Put（賣權）](stock/terms/put.md) | [RSI](stock/terms/rsi.md) |
+| [上影線 / 下影線](stock/terms/shadow-line.md) | [內盤 / 外盤](stock/terms/bid-ask.md) | [停損 / 停利](stock/terms/stop-loss-profit.md) | [借券](stock/terms/stock-lending.md) |
+| [均線（MA）](stock/terms/ma.md) | [多頭 / 空頭](stock/terms/bull-bear.md) | [型態學](stock/terms/chart-pattern.md) | [市價單](stock/terms/market-order.md) |
+| [成交量](stock/terms/volume.md) | [支撐 / 壓力](stock/terms/support-resistance.md) | [斷頭](stock/terms/margin-call.md) | [本益比（P/E）](stock/terms/pe-ratio.md) |
+| [期貨](stock/terms/futures.md) | [殖利率](stock/terms/dividend-yield.md) | [法人 / 三大法人](stock/terms/institutional-investors.md) | [漲停 / 跌停](stock/terms/limit-up-down.md) |
+| [當沖](stock/terms/day-trading.md) | [缺口（Gap）](stock/terms/gap.md) | [籌碼](stock/terms/chip-analysis.md) | [融券](stock/terms/short-selling.md) |
+| [融資](stock/terms/margin-trading.md) | [掛單（限價單）](stock/terms/limit-order.md) | [質押](stock/terms/pledge.md) | [選擇權（Options）](stock/terms/options.md) |
+| [除權息](stock/terms/ex-dividend.md) | [權證](stock/terms/warrant.md) | | |
 
 ---
 
@@ -170,39 +152,18 @@
 | [記憶體類](electronics/README.md#記憶體類) | 3 | DRAM、NAND、HBM⋯⋯ |
 | [電子零組件類](electronics/README.md#電子零組件類) | 9 | PCB、GPU、SMT⋯⋯ |
 
-### 單字速查表
+### 單字速查表（A-Z）
 
-| 術語 | 一句話解釋 | 詳細說明 |
-|------|-----------|---------|
-| ABF | 做高階載板用的關鍵材料 | [→ 詳細](electronics/terms/abf.md) |
-| ASIC | 為特定用途量身打造的晶片 | [→ 詳細](electronics/terms/asic.md) |
-| BOM | 做一個產品需要的零件清單 | [→ 詳細](electronics/terms/bom.md) |
-| CoWoS | 台積電的先進封裝技術 | [→ 詳細](electronics/terms/cowos.md) |
-| Die（晶粒） | 從晶圓上切下來的一顆晶片 | [→ 詳細](electronics/terms/die.md) |
-| DRAM | 斷電就消失的短期記憶體 | [→ 詳細](electronics/terms/dram.md) |
-| EDA | 設計晶片專用的軟體工具 | [→ 詳細](electronics/terms/eda.md) |
-| Fabless | 只設計不製造的晶片公司 | [→ 詳細](electronics/terms/fabless.md) |
-| Foundry（代工） | 專門幫別人製造晶片的工廠 | [→ 詳細](electronics/terms/foundry.md) |
-| GPU | 專門做大量計算的處理器 | [→ 詳細](electronics/terms/gpu.md) |
-| HBM | 專門給 AI 晶片用的超快記憶體 | [→ 詳細](electronics/terms/hbm.md) |
-| IC 設計 | 設計晶片的藍圖 | [→ 詳細](electronics/terms/ic-design.md) |
-| IP Core | 別人設計好的晶片零件 | [→ 詳細](electronics/terms/ip-core.md) |
-| NAND Flash | 斷電不會消失的儲存空間 | [→ 詳細](electronics/terms/nand-flash.md) |
-| ODM / OEM | 代工生產 / 連設計一起包 | [→ 詳細](electronics/terms/odm-oem.md) |
-| PCB | 所有電子零件住的那塊綠色板子 | [→ 詳細](electronics/terms/pcb.md) |
-| SMT | 用機器把零件貼到電路板上 | [→ 詳細](electronics/terms/smt.md) |
-| SoC | 把所有功能塞進同一顆晶片 | [→ 詳細](electronics/terms/soc.md) |
-| Tape-out（下線） | 晶片設計完成送去工廠的那一刻 | [→ 詳細](electronics/terms/tape-out.md) |
-| 先進封裝 | 把多顆晶片疊起來或並排封裝 | [→ 詳細](electronics/terms/advanced-packaging.md) |
-| 封裝 | 把裸晶片包起來變成可用的成品 | [→ 詳細](electronics/terms/packaging.md) |
-| 散熱模組 | 幫晶片降溫的零件 | [→ 詳細](electronics/terms/thermal-module.md) |
-| 晶圓（Wafer） | 做晶片的圓形薄片 | [→ 詳細](electronics/terms/wafer.md) |
-| 模組（Module） | 多個零件組成的功能單元 | [→ 詳細](electronics/terms/module.md) |
-| 測試（Testing） | 檢查晶片能不能正常運作 | [→ 詳細](electronics/terms/testing.md) |
-| 玻纖布 | PCB 裡面加強結構的材料 | [→ 詳細](electronics/terms/glass-fabric.md) |
-| 良率（Yield） | 做出來合格的比例有多高 | [→ 詳細](electronics/terms/yield.md) |
-| 製程節點（3nm/5nm） | 數字越小，晶片電路越精密 | [→ 詳細](electronics/terms/process-node.md) |
-| 載板（Substrate） | 晶片和電路板之間的翻譯層 | [→ 詳細](electronics/terms/substrate.md) |
+| | | | |
+|---|---|---|---|
+| [ABF](electronics/terms/abf.md) | [ASIC](electronics/terms/asic.md) | [BOM](electronics/terms/bom.md) | [CoWoS](electronics/terms/cowos.md) |
+| [Die（晶粒）](electronics/terms/die.md) | [DRAM](electronics/terms/dram.md) | [EDA](electronics/terms/eda.md) | [Fabless](electronics/terms/fabless.md) |
+| [Foundry（代工）](electronics/terms/foundry.md) | [GPU](electronics/terms/gpu.md) | [HBM](electronics/terms/hbm.md) | [IC 設計](electronics/terms/ic-design.md) |
+| [IP Core](electronics/terms/ip-core.md) | [NAND Flash](electronics/terms/nand-flash.md) | [ODM / OEM](electronics/terms/odm-oem.md) | [PCB](electronics/terms/pcb.md) |
+| [SMT](electronics/terms/smt.md) | [SoC](electronics/terms/soc.md) | [Tape-out（下線）](electronics/terms/tape-out.md) | [先進封裝](electronics/terms/advanced-packaging.md) |
+| [封裝](electronics/terms/packaging.md) | [散熱模組](electronics/terms/thermal-module.md) | [晶圓（Wafer）](electronics/terms/wafer.md) | [模組（Module）](electronics/terms/module.md) |
+| [測試（Testing）](electronics/terms/testing.md) | [玻纖布](electronics/terms/glass-fabric.md) | [良率（Yield）](electronics/terms/yield.md) | [製程節點（3nm/5nm）](electronics/terms/process-node.md) |
+| [載板（Substrate）](electronics/terms/substrate.md) | | | |
 
 ---
 
@@ -335,74 +296,26 @@
 | [線上博弈與開發類](gambling/README.md#線上博弈與開發類) | 2 | 真人荷官、遊戲大廳 |
 | [進階線上博弈與技術類](gambling/README.md#進階線上博弈與技術類) | 8 | 遊戲聚合商、白標平台、無縫錢包⋯⋯ |
 
-### 單字速查表
+### 單字速查表（A-Z）
 
-| 術語 | 分類 | 詳細說明 |
-|------|------|---------|
-| Affiliate（聯盟行銷） | 進階線上博弈與技術 | [→ 看詳細](gambling/terms/affiliate.md) |
-| AML（反洗錢） | 進階營運與合規 | [→ 看詳細](gambling/terms/aml.md) |
-| Ante（底注） | 進階桌遊與策略 | [→ 看詳細](gambling/terms/ante.md) |
-| Baccarat（百家樂） | 桌遊 | [→ 看詳細](gambling/terms/baccarat.md) |
-| Back Office（後台管理系統） | 進階線上博弈與技術 | [→ 看詳細](gambling/terms/back-office.md) |
-| Blackjack（21 點） | 桌遊 | [→ 看詳細](gambling/terms/blackjack.md) |
-| Bonus Game（獎勵遊戲） | 老虎機與電子遊戲 | [→ 看詳細](gambling/terms/bonus-game.md) |
-| Buy Feature（購買功能） | 進階老虎機與遊戲機制 | [→ 看詳細](gambling/terms/buy-feature.md) |
-| Card Counting（算牌） | 進階桌遊與策略 | [→ 看詳細](gambling/terms/card-counting.md) |
-| Cascading Reels（瀑布式消除） | 進階老虎機與遊戲機制 | [→ 看詳細](gambling/terms/cascading-reels.md) |
-| Comp（招待） | 進階營運與合規 | [→ 看詳細](gambling/terms/comp.md) |
-| Free Spin（免費旋轉） | 老虎機與電子遊戲 | [→ 看詳細](gambling/terms/free-spin.md) |
-| Gamble Feature（賭倍功能） | 進階老虎機與遊戲機制 | [→ 看詳細](gambling/terms/gamble-feature.md) |
-| Game Aggregator（遊戲聚合商） | 進階線上博弈與技術 | [→ 看詳細](gambling/terms/game-aggregator.md) |
-| Game Provider（遊戲供應商） | 進階線上博弈與技術 | [→ 看詳細](gambling/terms/game-provider.md) |
-| GGR（毛博弈收入） | 營運管理 | [→ 看詳細](gambling/terms/ggr.md) |
-| Hold and Spin（固定旋轉） | 進階老虎機與遊戲機制 | [→ 看詳細](gambling/terms/hold-and-spin.md) |
-| Hold Percentage（持有率） | 進階營運與合規 | [→ 看詳細](gambling/terms/hold-percentage.md) |
-| Insurance（保險） | 進階桌遊與策略 | [→ 看詳細](gambling/terms/insurance.md) |
-| Jackpot（頭獎） | 老虎機與電子遊戲 | [→ 看詳細](gambling/terms/jackpot.md) |
-| Junket（疊碼仔） | 進階營運與合規 | [→ 看詳細](gambling/terms/junket.md) |
-| KYC（認識你的客戶） | 進階營運與合規 | [→ 看詳細](gambling/terms/kyc.md) |
-| Live Dealer（真人荷官） | 線上博弈與開發 | [→ 看詳細](gambling/terms/live-dealer.md) |
-| Lobby（遊戲大廳） | 線上博弈與開發 | [→ 看詳細](gambling/terms/lobby.md) |
-| Megaways（百萬路線） | 進階老虎機與遊戲機制 | [→ 看詳細](gambling/terms/megaways.md) |
-| Multiplier（倍數） | 老虎機與電子遊戲 | [→ 看詳細](gambling/terms/multiplier.md) |
-| Natural（天牌） | 進階桌遊與策略 | [→ 看詳細](gambling/terms/natural.md) |
-| Odds（賠率） | 機率與數學 | [→ 看詳細](gambling/terms/odds.md) |
-| Pachinko（柏青哥） | 日式遊藝 | [→ 看詳細](gambling/terms/pachinko.md) |
-| Pachislot（柏青斯洛） | 日式遊藝 | [→ 看詳細](gambling/terms/pachislot.md) |
-| Payline（賠付線） | 老虎機與電子遊戲 | [→ 看詳細](gambling/terms/payline.md) |
-| Paytable（賠付表） | 老虎機與電子遊戲 | [→ 看詳細](gambling/terms/paytable.md) |
-| Progressive Jackpot（累積式頭獎） | 進階老虎機與遊戲機制 | [→ 看詳細](gambling/terms/progressive-jackpot.md) |
-| Provably Fair（可驗證公平） | 進階線上博弈與技術 | [→ 看詳細](gambling/terms/provably-fair.md) |
-| Responsible Gaming（負責任博弈） | 進階營運與合規 | [→ 看詳細](gambling/terms/responsible-gaming.md) |
-| RNG（亂數產生器） | 機率與數學 | [→ 看詳細](gambling/terms/rng.md) |
-| RTP（Return to Player） | 老虎機與電子遊戲 | [→ 看詳細](gambling/terms/rtp.md) |
-| Roulette（輪盤） | 桌遊 | [→ 看詳細](gambling/terms/roulette.md) |
-| Scatter（散佈符號） | 老虎機與電子遊戲 | [→ 看詳細](gambling/terms/scatter.md) |
-| Seamless Wallet（無縫錢包） | 進階線上博弈與技術 | [→ 看詳細](gambling/terms/seamless-wallet.md) |
-| Sic Bo（骰寶） | 桌遊 | [→ 看詳細](gambling/terms/sic-bo.md) |
-| Side Bet（邊注） | 進階桌遊與策略 | [→ 看詳細](gambling/terms/side-bet.md) |
-| Slot Machine（老虎機） | 老虎機與電子遊戲 | [→ 看詳細](gambling/terms/slot-machine.md) |
-| Squeeze（咪牌） | 進階桌遊與策略 | [→ 看詳細](gambling/terms/squeeze.md) |
-| Sticky Wild（黏著百搭） | 進階老虎機與遊戲機制 | [→ 看詳細](gambling/terms/sticky-wild.md) |
-| Theoretical Win（理論贏額） | 進階營運與合規 | [→ 看詳細](gambling/terms/theoretical-win.md) |
-| Volatility（波動度） | 老虎機與電子遊戲 | [→ 看詳細](gambling/terms/volatility.md) |
-| Wagering Requirement（流水要求） | 進階線上博弈與技術 | [→ 看詳細](gambling/terms/wagering-requirement.md) |
-| Ways to Win（中獎路徑） | 進階老虎機與遊戲機制 | [→ 看詳細](gambling/terms/ways-to-win.md) |
-| Whale（鯨魚） | 進階營運與合規 | [→ 看詳細](gambling/terms/whale.md) |
-| White Label（白標平台） | 進階線上博弈與技術 | [→ 看詳細](gambling/terms/white-label.md) |
-| Wild（百搭符號） | 老虎機與電子遊戲 | [→ 看詳細](gambling/terms/wild.md) |
-| 中獎頻率（Hit Frequency） | 老虎機與電子遊戲 | [→ 看詳細](gambling/terms/hit-frequency.md) |
-| 幣商 | 營運管理 | [→ 看詳細](gambling/terms/coin-dealer.md) |
-| 帳房（Cage） | 營運管理 | [→ 看詳細](gambling/terms/cage.md) |
-| 抽水（Rake） | 營運管理 | [→ 看詳細](gambling/terms/rake.md) |
-| 期望值（Expected Value） | 機率與數學 | [→ 看詳細](gambling/terms/expected-value.md) |
-| 牌靴（Shoe） | 桌遊 | [→ 看詳細](gambling/terms/shoe.md) |
-| 莊家優勢（House Edge） | 機率與數學 | [→ 看詳細](gambling/terms/house-edge.md) |
-| 路單（Road Map） | 桌遊 | [→ 看詳細](gambling/terms/road-map.md) |
-| 轉輪帶（Reel Strip） | 老虎機與電子遊戲 | [→ 看詳細](gambling/terms/reel-strip.md) |
-| 洗碼（Rolling） | 營運管理 | [→ 看詳細](gambling/terms/rolling.md) |
-| 變異數（Variance） | 機率與數學 | [→ 看詳細](gambling/terms/variance.md) |
-| 魚機（Fish Game） | 老虎機與電子遊戲 | [→ 看詳細](gambling/terms/fish-game.md) |
+| | | | |
+|---|---|---|---|
+| [Affiliate（聯盟行銷）](gambling/terms/affiliate.md) | [AML（反洗錢）](gambling/terms/aml.md) | [Ante（底注）](gambling/terms/ante.md) | [Baccarat（百家樂）](gambling/terms/baccarat.md) |
+| [Back Office（後台管理系統）](gambling/terms/back-office.md) | [Blackjack（21 點）](gambling/terms/blackjack.md) | [Bonus Game（獎勵遊戲）](gambling/terms/bonus-game.md) | [Buy Feature（購買功能）](gambling/terms/buy-feature.md) |
+| [Card Counting（算牌）](gambling/terms/card-counting.md) | [Cascading Reels（瀑布式消除）](gambling/terms/cascading-reels.md) | [Comp（招待）](gambling/terms/comp.md) | [Free Spin（免費旋轉）](gambling/terms/free-spin.md) |
+| [Gamble Feature（賭倍功能）](gambling/terms/gamble-feature.md) | [Game Aggregator（遊戲聚合商）](gambling/terms/game-aggregator.md) | [Game Provider（遊戲供應商）](gambling/terms/game-provider.md) | [GGR（毛博弈收入）](gambling/terms/ggr.md) |
+| [Hold and Spin（固定旋轉）](gambling/terms/hold-and-spin.md) | [Hold Percentage（持有率）](gambling/terms/hold-percentage.md) | [Insurance（保險）](gambling/terms/insurance.md) | [Jackpot（頭獎）](gambling/terms/jackpot.md) |
+| [Junket（疊碼仔）](gambling/terms/junket.md) | [KYC（認識你的客戶）](gambling/terms/kyc.md) | [Live Dealer（真人荷官）](gambling/terms/live-dealer.md) | [Lobby（遊戲大廳）](gambling/terms/lobby.md) |
+| [Megaways（百萬路線）](gambling/terms/megaways.md) | [Multiplier（倍數）](gambling/terms/multiplier.md) | [Natural（天牌）](gambling/terms/natural.md) | [Odds（賠率）](gambling/terms/odds.md) |
+| [Pachinko（柏青哥）](gambling/terms/pachinko.md) | [Pachislot（柏青斯洛）](gambling/terms/pachislot.md) | [Payline（賠付線）](gambling/terms/payline.md) | [Paytable（賠付表）](gambling/terms/paytable.md) |
+| [Progressive Jackpot（累積式頭獎）](gambling/terms/progressive-jackpot.md) | [Provably Fair（可驗證公平）](gambling/terms/provably-fair.md) | [Responsible Gaming（負責任博弈）](gambling/terms/responsible-gaming.md) | [RNG（亂數產生器）](gambling/terms/rng.md) |
+| [RTP（Return to Player）](gambling/terms/rtp.md) | [Roulette（輪盤）](gambling/terms/roulette.md) | [Scatter（散佈符號）](gambling/terms/scatter.md) | [Seamless Wallet（無縫錢包）](gambling/terms/seamless-wallet.md) |
+| [Sic Bo（骰寶）](gambling/terms/sic-bo.md) | [Side Bet（邊注）](gambling/terms/side-bet.md) | [Slot Machine（老虎機）](gambling/terms/slot-machine.md) | [Squeeze（咪牌）](gambling/terms/squeeze.md) |
+| [Sticky Wild（黏著百搭）](gambling/terms/sticky-wild.md) | [Theoretical Win（理論贏額）](gambling/terms/theoretical-win.md) | [Volatility（波動度）](gambling/terms/volatility.md) | [Wagering Requirement（流水要求）](gambling/terms/wagering-requirement.md) |
+| [Ways to Win（中獎路徑）](gambling/terms/ways-to-win.md) | [Whale（鯨魚）](gambling/terms/whale.md) | [White Label（白標平台）](gambling/terms/white-label.md) | [Wild（百搭符號）](gambling/terms/wild.md) |
+| [中獎頻率（Hit Frequency）](gambling/terms/hit-frequency.md) | [幣商](gambling/terms/coin-dealer.md) | [帳房（Cage）](gambling/terms/cage.md) | [抽水（Rake）](gambling/terms/rake.md) |
+| [期望值（Expected Value）](gambling/terms/expected-value.md) | [牌靴（Shoe）](gambling/terms/shoe.md) | [莊家優勢（House Edge）](gambling/terms/house-edge.md) | [路單（Road Map）](gambling/terms/road-map.md) |
+| [轉輪帶（Reel Strip）](gambling/terms/reel-strip.md) | [洗碼（Rolling）](gambling/terms/rolling.md) | [變異數（Variance）](gambling/terms/variance.md) | [魚機（Fish Game）](gambling/terms/fish-game.md) |
 
 ---
 
