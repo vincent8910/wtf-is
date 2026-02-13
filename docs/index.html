@@ -271,7 +271,48 @@
 
     /* 安裝提示 */
     .install-guide {
-      padding: 0 0 80px;
+      padding: 0 0 24px;
+    }
+
+    /* 頁尾 */
+    .site-footer {
+      text-align: center;
+      padding: 24px 0 40px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--text-tertiary);
+      line-height: 1.8;
+    }
+
+    .footer-name {
+      font-weight: 600;
+      color: var(--text-secondary);
+    }
+
+    .footer-links a {
+      color: var(--text-tertiary);
+      text-decoration: none;
+    }
+
+    .footer-links a:hover {
+      color: var(--accent);
+    }
+
+    .footer-sep {
+      margin: 0 6px;
+    }
+
+    .footer-built {
+      margin-top: 2px;
+    }
+
+    .footer-built a {
+      color: var(--text-tertiary);
+      text-decoration: none;
+    }
+
+    .footer-built a:hover {
+      color: var(--accent);
     }
 
     .install-toggle {
@@ -753,6 +794,17 @@
         </ol>
         <p class="tip">加到桌面後，打開就是全螢幕，不會有瀏覽器的網址列，而且支援離線使用。</p>
       </div>
+    <footer class="site-footer" id="site-footer">
+      <div class="footer-name">Vincent Chen</div>
+      <div class="footer-links">
+        <a href="https://github.com/vincent8910" target="_blank" rel="noopener">GitHub</a>
+        <span class="footer-sep">·</span>
+        <a href="https://t.me/vincent8910" target="_blank" rel="noopener">Telegram</a>
+        <span class="footer-sep">·</span>
+        <a href="mailto:vincent0935@gmail.com">Email</a>
+      </div>
+      <div class="footer-built">Built with <a href="https://claude.ai/code" target="_blank" rel="noopener">Claude Code</a></div>
+    </footer>
     </div>
   </div>
 </div>
@@ -802,6 +854,7 @@
   const changelogEl = $('changelog');
   const installGuide = $('install-guide');
   const isStandalone = window.matchMedia('(display-mode: standalone)').matches || navigator.standalone;
+  const siteFooter = $('site-footer');
   const domainGrid = $('domain-grid');
   const searchView = $('search-view');
   const detailView = $('detail-view');
@@ -974,6 +1027,7 @@
     domainsEl.style.display = 'none';
     changelogEl.style.display = 'none';
     installGuide.style.display = 'none';
+    siteFooter.style.display = 'none';
     recentSection.style.display = 'none';
     clearBtn.classList.add('visible');
     $('back-home').addEventListener('click', resetToHome);
@@ -996,6 +1050,7 @@
     domainsEl.style.display = 'block';
     changelogEl.style.display = '';
     if (!isStandalone) installGuide.style.display = '';
+    siteFooter.style.display = '';
     renderRecent();
     searchInput.focus();
     searchInput.setAttribute('aria-expanded', 'false');
@@ -1012,6 +1067,7 @@
       domainsEl.style.display = 'block';
       changelogEl.style.display = '';
       if (!isStandalone) installGuide.style.display = '';
+      siteFooter.style.display = '';
       renderRecent();
       searchInput.setAttribute('aria-expanded', 'false');
       return;
@@ -1019,6 +1075,7 @@
     domainsEl.style.display = 'none';
     changelogEl.style.display = 'none';
     installGuide.style.display = 'none';
+    siteFooter.style.display = 'none';
     recentSection.style.display = 'none';
     const results = fuse.search(q, { limit: 30 });
     const items = results.map(r => r.item);
