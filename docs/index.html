@@ -976,10 +976,11 @@
     handleRoute();
   }
 
-  async function loadContent() {
-    if (CONTENT) return CONTENT;
+  async function loadContent(bypassCache) {
+    if (CONTENT && !bypassCache) return CONTENT;
     try {
-      const resp = await fetch('terms-content.json');
+      const opts = bypassCache ? { cache: 'reload' } : {};
+      const resp = await fetch('terms-content.json', opts);
       CONTENT = await resp.json();
     } catch {
       // 向下相容：從 terms.json 取
@@ -1152,9 +1153,10 @@
     detailTitle.textContent = term.title;
     detailMeta.innerHTML = `<span class="result-tag">${esc(term.domainLabel)}</span>`;
 
-    // 載入內容
-    const content = await loadContent();
-    let html = content[id] || '<p>內容載入中…</p>';
+    // 載入內容（找不到時繞過快取重新 fetch）
+    let content = await loadContent();
+    if (!content[id]) content = await loadContent(true);
+    let html = content[id] || '<p>找不到此術語的內容，請重新整理頁面。</p>';
 
     // 處理內部連結：把 .md 連結轉成 hash
     html = html.replace(/href="([^"]*?)\.md"/g, (match, p1) => {
