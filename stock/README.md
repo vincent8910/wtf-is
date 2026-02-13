@@ -29,64 +29,51 @@
 
 ## 大綱
 
-> 共收錄 **41 個**股票投資術語，點擊分類名稱直接跳轉。
+> 共收錄 **94 個**股票投資術語，點擊分類名稱直接跳轉。
 
 | 分類 | 術語數 | 說明 |
 |------|:------:|------|
-| [技術分析類](#技術分析類) | 10 | K 線、均線、KD、MACD...... |
-| [交易類](#交易類) | 7 | 多空、漲跌停、當沖、掛單...... |
-| [信用交易類](#信用交易類) | 5 | 融資、融券、質押...... |
-| [衍生商品類](#衍生商品類) | 5 | 期貨、選擇權、權證...... |
-| [基本面類](#基本面類) | 7 | EPS、本益比、ETF...... |
-| [常識類](#常識類) | 7 | 大盤、散戶、利多利空、存股...... |
+| [技術分析類](#技術分析類) | 17 | K 線、均線、KD、MACD、布林通道、趨勢線⋯⋯ |
+| [交易類](#交易類) | 14 | 多空、漲跌停、當沖、套牢、追高殺低、波段⋯⋯ |
+| [信用交易類](#信用交易類) | 5 | 融資、融券、質押⋯⋯ |
+| [衍生商品類](#衍生商品類) | 5 | 期貨、選擇權、權證⋯⋯ |
+| [基本面類](#基本面類) | 13 | EPS、本益比、ETF、月營收、自由現金流⋯⋯ |
+| [常識類](#常識類) | 7 | 大盤、散戶、利多利空、存股⋯⋯ |
+| [投資策略類](#投資策略類) | 8 | 價值投資、成長投資、定期定額、資產配置⋯⋯ |
+| [美股入門類](#美股入門類) | 10 | 美股三大指數、ADR、熔斷、財報季⋯⋯ |
+| [台股制度類](#台股制度類) | 8 | 興櫃上櫃上市、零股、T+2、增減資⋯⋯ |
+| [投資心理與行話類](#投資心理與行話類) | 7 | 韭菜、接刀子、凹單、黑天鵝、VIX⋯⋯ |
 
 ---
 
 ## 單字速查表（A-Z / 筆劃排序）
 
-| 術語 | 分類 | 詳細說明 |
-|------|------|---------|
-| Call（買權） | 衍生商品 | [→ 看詳細](terms/call.md) |
-| EPS | 基本面 | [→ 看詳細](terms/eps.md) |
-| ETF | 基本面 | [→ 看詳細](terms/etf.md) |
-| KD 指標 | 技術分析 | [→ 看詳細](terms/kd.md) |
-| K 線（蠟燭圖） | 技術分析 | [→ 看詳細](terms/k-line.md) |
-| MACD | 技術分析 | [→ 看詳細](terms/macd.md) |
-| Put（賣權） | 衍生商品 | [→ 看詳細](terms/put.md) |
-| RSI | 技術分析 | [→ 看詳細](terms/rsi.md) |
-| 上影線 / 下影線 | 技術分析 | [→ 看詳細](terms/shadow-line.md) |
-| 借券 | 信用交易 | [→ 看詳細](terms/stock-lending.md) |
-| 內盤 / 外盤 | 交易 | [→ 看詳細](terms/bid-ask.md) |
-| 均線（MA） | 技術分析 | [→ 看詳細](terms/ma.md) |
-| 多頭 / 空頭 | 交易 | [→ 看詳細](terms/bull-bear.md) |
-| 型態學 | 技術分析 | [→ 看詳細](terms/chart-pattern.md) |
-| 市價單 | 交易 | [→ 看詳細](terms/market-order.md) |
-| support 支撐 / 壓力 | 技術分析 | [→ 看詳細](terms/support-resistance.md) |
-| 成交量 | 技術分析 | [→ 看詳細](terms/volume.md) |
-| 斷頭 | 信用交易 | [→ 看詳細](terms/margin-call.md) |
-| 本益比（P/E） | 基本面 | [→ 看詳細](terms/pe-ratio.md) |
-| 期貨 | 衍生商品 | [→ 看詳細](terms/futures.md) |
-| 權證 | 衍生商品 | [→ 看詳細](terms/warrant.md) |
-| 殖利率 | 基本面 | [→ 看詳細](terms/dividend-yield.md) |
-| 法人 / 三大法人 | 基本面 | [→ 看詳細](terms/institutional-investors.md) |
-| 漲停 / 跌停 | 交易 | [→ 看詳細](terms/limit-up-down.md) |
-| 缺口（Gap） | 技術分析 | [→ 看詳細](terms/gap.md) |
-| 融券 | 信用交易 | [→ 看詳細](terms/short-selling.md) |
-| 融資 | 信用交易 | [→ 看詳細](terms/margin-trading.md) |
-| 籌碼 | 基本面 | [→ 看詳細](terms/chip-analysis.md) |
-| 掛單（限價單） | 交易 | [→ 看詳細](terms/limit-order.md) |
-| 當沖 | 交易 | [→ 看詳細](terms/day-trading.md) |
-| 停損 / 停利 | 交易 | [→ 看詳細](terms/stop-loss-profit.md) |
-| 質押 | 信用交易 | [→ 看詳細](terms/pledge.md) |
-| 選擇權（Options） | 衍生商品 | [→ 看詳細](terms/options.md) |
-| 除權息 | 基本面 | [→ 看詳細](terms/ex-dividend.md) |
-| 大盤 / 加權指數 | 常識 | [→ 看詳細](terms/taiex.md) |
-| 散戶 | 常識 | [→ 看詳細](terms/retail-investor.md) |
-| 利多 / 利空 | 常識 | [→ 看詳細](terms/bullish-bearish-news.md) |
-| 存股 | 常識 | [→ 看詳細](terms/stock-accumulation.md) |
-| ROE / ROA | 常識 | [→ 看詳細](terms/roe-roa.md) |
-| 配息 / 填息 | 常識 | [→ 看詳細](terms/dividend-fill.md) |
-| 主力 | 常識 | [→ 看詳細](terms/major-player.md) |
+| | | | |
+|---|---|---|---|
+| [ADR](terms/adr.md) | [Call（買權）](terms/call.md) | [EPS](terms/eps.md) | [ETF](terms/etf.md) |
+| [KD 指標](terms/kd.md) | [K 線（蠟燭圖）](terms/k-line.md) | [MACD](terms/macd.md) | [Put（賣權）](terms/put.md) |
+| [ROE / ROA](terms/roe-roa.md) | [RSI](terms/rsi.md) | [SEC（美國證管會）](terms/sec-us.md) | [SPAC](terms/spac.md) |
+| [T+2 交割](terms/settlement.md) | [VIX（恐慌指數）](terms/vix.md) | [上影線 / 下影線](terms/shadow-line.md) | [主力](terms/major-player.md) |
+| [乖離率（BIAS）](terms/bias.md) | [借券](terms/stock-lending.md) | [內盤 / 外盤](terms/bid-ask.md) | [凹單](terms/holding-loss.md) |
+| [分散投資](terms/diversification.md) | [加碼 / 減碼](terms/position-sizing.md) | [均線（MA）](terms/ma.md) | [多頭 / 空頭](terms/bull-bear.md) |
+| [套牢 / 解套](terms/trapped.md) | [定期定額（DCA）](terms/dca.md) | [型態學](terms/chart-pattern.md) | [增資 / 減資](terms/capital-change.md) |
+| [市價單](terms/market-order.md) | [布林通道](terms/bollinger-bands.md) | [庫藏股](terms/stock-buyback.md) | [成交量](terms/volume.md) |
+| [成長投資](terms/growth-investing.md) | [抄底](terms/bottom-fishing.md) | [接刀子](terms/catching-knife.md) | [支撐 / 壓力](terms/support-resistance.md) |
+| [斷頭](terms/margin-call.md) | [本益比（P/E）](terms/pe-ratio.md) | [本益成長比（PEG）](terms/peg-ratio.md) | [景氣循環股](terms/cyclical-stock.md) |
+| [月營收](terms/monthly-revenue.md) | [期貨](terms/futures.md) | [未實現損益](terms/unrealized-pnl.md) | [殖利率](terms/dividend-yield.md) |
+| [毛利率 / 營業利益率 / 淨利率](terms/profit-margins.md) | [法人 / 三大法人](terms/institutional-investors.md) | [波段操作](terms/swing-trading.md) | [漲停 / 跌停](terms/limit-up-down.md) |
+| [當沖](terms/day-trading.md) | [盤前 / 盤後交易](terms/pre-after-market.md) | [盤整](terms/consolidation.md) | [美股三大指數](terms/us-indices.md) |
+| [背離](terms/divergence.md) | [自由現金流（FCF）](terms/free-cash-flow.md) | [興櫃 / 上櫃 / 上市](terms/listing-tiers.md) | [藍籌股](terms/blue-chip.md) |
+| [被動投資 / 主動投資](terms/passive-active.md) | [趨勢線](terms/trend-line.md) | [追高殺低](terms/chasing-selling.md) | [造市商](terms/market-maker.md) |
+| [配息 / 填息](terms/dividend-fill.md) | [量價關係](terms/volume-price.md) | [黃金交叉 / 死亡交叉](terms/golden-death-cross.md) | [零股交易](terms/odd-lot.md) |
+| [韭菜](terms/leek.md) | [風險報酬比](terms/risk-reward.md) | [費波那契回撤](terms/fibonacci.md) | [資產配置](terms/asset-allocation.md) |
+| [缺口（Gap）](terms/gap.md) | [財報季](terms/earnings-season.md) | [財報公布 / Earnings](terms/earnings.md) | [股價淨值比（P/B）](terms/pb-ratio.md) |
+| [股票分割](terms/stock-split.md) | [股票抽籤（IPO 申購）](terms/ipo-subscription.md) | [融券](terms/short-selling.md) | [融資](terms/margin-trading.md) |
+| [掛單（限價單）](terms/limit-order.md) | [攤平](terms/averaging-down.md) | [價值投資](terms/value-investing.md) | [權值股](terms/heavyweight-stock.md) |
+| [權證](terms/warrant.md) | [籌碼](terms/chip-analysis.md) | [質押](terms/pledge.md) | [停損 / 停利](terms/stop-loss-profit.md) |
+| [選擇權（Options）](terms/options.md) | [除權息](terms/ex-dividend.md) | [防禦型股票](terms/defensive-stock.md) | [台指期](terms/taiex-futures.md) |
+| [大盤 / 加權指數](terms/taiex.md) | [散戶](terms/retail-investor.md) | [利多 / 利空](terms/bullish-bearish-news.md) | [存股](terms/stock-accumulation.md) |
+| [熔斷機制](terms/circuit-breaker.md) | [黑天鵝](terms/black-swan.md) | | |
 
 ---
 
@@ -104,6 +91,13 @@
 | 支撐 / 壓力 | 股價跌不下去 / 漲不上去的價位 | 大樓的地板和天花板 | 「500 元有很強的支撐」 | [→ 詳細](terms/support-resistance.md) |
 | 型態學 | 用股價走勢的形狀預測未來方向 | 看雲的形狀猜天氣 | 「走出頭肩頂了，準備停損」 | [→ 詳細](terms/chart-pattern.md) |
 | 缺口（Gap） | 股價突然跳空，中間沒有成交 | 搭電梯直接從 3 樓跳到 7 樓 | 「下面還有缺口沒補」 | [→ 詳細](terms/gap.md) |
+| 布林通道（Bollinger Bands） | 用標準差畫出的股價正常活動範圍 | 小孩的正常體溫範圍 | 「股價碰到布林上軌了，小心回檔」 | [→ 詳細](terms/bollinger-bands.md) |
+| 黃金交叉 / 死亡交叉 | 短均線穿越長均線的買賣訊號 | 賽跑時後面的選手超越前面的 | 「月線黃金交叉了，多頭訊號」 | [→ 詳細](terms/golden-death-cross.md) |
+| 背離（Divergence） | 指標方向跟股價方向不一致 | 嘴巴說沒事但臉色越來越差 | 「MACD 出現頂背離，要小心了」 | [→ 詳細](terms/divergence.md) |
+| 趨勢線（Trend Line） | 連接高點或低點畫出的方向線 | 沿著山脊線走路的方向 | 「跌破上升趨勢線了，趨勢反轉」 | [→ 詳細](terms/trend-line.md) |
+| 量價關係 | 成交量和價格之間的配合判讀 | 演唱會歌手唱得好加上觀眾嗨翻 | 「價漲量增，多頭格局確認」 | [→ 詳細](terms/volume-price.md) |
+| 費波那契回撤（Fibonacci） | 用黃金比例預測回檔幅度 | 爬山休息時的歇腳點位置 | 「回測到 0.618 有機會反彈」 | [→ 詳細](terms/fibonacci.md) |
+| 乖離率（BIAS） | 股價偏離均線的程度 | 橡皮筋拉越遠彈回來越大力 | 「乖離率太高了，短線要修正」 | [→ 詳細](terms/bias.md) |
 
 ---
 
@@ -118,6 +112,13 @@
 | 市價單 | 不管多少錢，馬上用市場價格買/賣 | Uber Eats 上不看價格直接下單 | 「來不及了，直接市價買進！」 | [→ 詳細](terms/market-order.md) |
 | 停損 / 停利 | 賠到就認賠 / 賺到就獲利了結 | 去賭場前設好的預算上限 | 「設了 -10% 停損，跌到就砍」 | [→ 詳細](terms/stop-loss-profit.md) |
 | 內盤 / 外盤 | 用買價成交 vs 用賣價成交的量 | 老闆主動降價 vs 客人主動加價 | 「外盤比內盤多，買氣很強」 | [→ 詳細](terms/bid-ask.md) |
+| 套牢 / 解套 | 買了之後跌下去賣不掉 / 終於漲回來了 | 蝦皮買了衣服過了退貨期 | 「套在山頂上半年了，終於解套」 | [→ 詳細](terms/trapped.md) |
+| 追高殺低 | 漲的時候才買、跌的時候才賣 | 看到排隊名店就跟著排 | 「散戶最常犯的錯就是追高殺低」 | [→ 詳細](terms/chasing-selling.md) |
+| 抄底 | 趁股價跌到低點時買進 | 百貨公司換季大拍賣撿便宜 | 「你抄底了嗎？我覺得還會跌」 | [→ 詳細](terms/bottom-fishing.md) |
+| 波段操作（Swing Trading） | 抓一段漲幅就賣出，不長抱 | 衝浪——抓到一波浪就收手 | 「我做波段，賺 15% 就出場」 | [→ 詳細](terms/swing-trading.md) |
+| 盤整（Consolidation） | 股價在一個區間內橫向移動 | 等紅綠燈的時候 | 「盤整了兩週，要突破了嗎？」 | [→ 詳細](terms/consolidation.md) |
+| 攤平 | 越跌越買來降低平均成本 | 全聯鮮奶跌價再多買幾瓶拉低平均 | 「他一路攤平，結果越攤越平」 | [→ 詳細](terms/averaging-down.md) |
+| 加碼 / 減碼 | 增加或減少持股部位 | 吃到飽多夾或少夾一點菜 | 「看好就加碼，不確定就先減碼」 | [→ 詳細](terms/position-sizing.md) |
 
 ---
 
@@ -156,6 +157,12 @@
 | 法人 / 三大法人 | 外資、投信、自營商三大專業機構 | 菜市場裡的大盤商 | 「今天外資買超 100 億」 | [→ 詳細](terms/institutional-investors.md) |
 | ETF | 一次買一籃子股票的懶人投資法 | 好市多的綜合水果箱 | 「新手先買 0050 就對了」 | [→ 詳細](terms/etf.md) |
 | 籌碼 | 追蹤誰在買、誰在賣的分析方法 | 看誰在掃貨、誰在出清 | 「籌碼很集中，大戶在鎖貨」 | [→ 詳細](terms/chip-analysis.md) |
+| 毛利率 / 營業利益率 / 淨利率 | 三種利潤率，看公司賺錢效率 | 賣雞排的三種算帳方式 | 「毛利率下滑，成本壓力大」 | [→ 詳細](terms/profit-margins.md) |
+| 月營收 | 台股每月公布的營收數字 | 每月的考試成績單 | 「月營收年增 30%，超預期」 | [→ 詳細](terms/monthly-revenue.md) |
+| 自由現金流（FCF） | 公司真正可以自由運用的現金 | 薪水扣掉房租水電後真正能花的錢 | 「自由現金流是正的，財務健康」 | [→ 詳細](terms/free-cash-flow.md) |
+| 股價淨值比（P/B） | 股價除以每股淨值，衡量貴不貴 | 一間房子賣多少錢 vs 材料成本 | 「P/B 低於 1，股價比淨值便宜」 | [→ 詳細](terms/pb-ratio.md) |
+| 本益成長比（PEG） | 把成長性納入考量的本益比 | 不只看回本年數，還看生意成長速度 | 「PEG 小於 1，成長性被低估」 | [→ 詳細](terms/peg-ratio.md) |
+| 財報公布 / Earnings | 公司定期公布的成績單 | 學生的期中期末考成績 | 「財報優於預期，盤後大漲」 | [→ 詳細](terms/earnings.md) |
 
 ---
 
@@ -170,6 +177,67 @@
 | ROE / ROA | 衡量公司用股東的錢 / 總資產賺了多少的指標 | 用 100 塊本金賺了多少回來 | 「ROE 連續三年超過 20%，很厲害」 | [→ 詳細](terms/roe-roa.md) |
 | 配息 / 填息 | 配息是發股利給你，填息是股價漲回發之前的價格 | 分紅後公司的市值能不能自己補回來 | 「有配息但沒填息等於左手換右手」 | [→ 詳細](terms/dividend-fill.md) |
 | 主力 | 在市場上有能力影響股價的大咖 | 菜市場裡的大盤商 | 「主力在吃貨，看籌碼就知道」 | [→ 詳細](terms/major-player.md) |
+
+---
+
+## 投資策略類
+
+| 詞彙 | 一句話解釋 | 比喻 | 你會在哪聽到 | 詳細說明 |
+|------|-----------|------|------------|---------|
+| 價值投資（Value Investing） | 找被低估的好公司買進長抱 | 在二手市場找到被低估的名牌包 | 「巴菲特就是價值投資的代表」 | [→ 詳細](terms/value-investing.md) |
+| 成長投資（Growth Investing） | 買未來會快速成長的公司 | 投資剛開幕但排隊排到爆的餐廳 | 「成長股本益比高但未來潛力大」 | [→ 詳細](terms/growth-investing.md) |
+| 定期定額（DCA） | 每月固定時間固定金額買進 | 每月自動扣款的存錢計畫 | 「定期定額買 0050，懶人投資法」 | [→ 詳細](terms/dca.md) |
+| 資產配置（Asset Allocation） | 把錢分散放在不同類型的資產 | 不要把所有菜都放同一個冰箱 | 「股債比 7:3 的資產配置」 | [→ 詳細](terms/asset-allocation.md) |
+| 分散投資（Diversification） | 不要把雞蛋放在同一個籃子 | 出門不要把證件和錢都放同一個包 | 「至少分散到 5~10 檔股票」 | [→ 詳細](terms/diversification.md) |
+| 景氣循環股（Cyclical） | 跟著景氣好壞漲跌的股票 | 冰淇淋店夏天生意好冬天差 | 「航運股就是典型的景氣循環股」 | [→ 詳細](terms/cyclical-stock.md) |
+| 防禦型股票（Defensive） | 不管景氣好壞都相對穩定的股票 | 不管景氣好壞大家都要吃飯看病 | 「空頭時先轉進防禦型股票」 | [→ 詳細](terms/defensive-stock.md) |
+| 被動投資 / 主動投資 | 跟著指數走 vs 自己選股 | 搭公車 vs 自己騎車找路 | 「被動投資長期打敗大多數主動基金」 | [→ 詳細](terms/passive-active.md) |
+
+---
+
+## 美股入門類
+
+| 詞彙 | 一句話解釋 | 比喻 | 你會在哪聽到 | 詳細說明 |
+|------|-----------|------|------------|---------|
+| 美股三大指數 | 道瓊、S&P 500、那斯達克——美國最重要的三個股市指標 | 美國版的加權指數，三個不同角度 | 「S&P 500 昨天創新高了」 | [→ 詳細](terms/us-indices.md) |
+| ADR（美國存託憑證） | 外國公司在美國掛牌交易的方式 | 台灣小吃在美國開的授權分店 | 「台積電的 ADR 昨晚漲了」 | [→ 詳細](terms/adr.md) |
+| 盤前 / 盤後交易 | 正式開盤前後也能買賣 | 夜市收攤後還能跟老闆私下交易 | 「盤後財報公布，盤後大漲 5%」 | [→ 詳細](terms/pre-after-market.md) |
+| 熔斷機制（Circuit Breaker） | 跌太多自動暫停交易的保護機制 | 家裡電路跳電的保護開關 | 「2020 年美股一週熔斷兩次」 | [→ 詳細](terms/circuit-breaker.md) |
+| 股票分割（Stock Split） | 把一股拆成好幾股，降低單價 | 一塊 1000 元蛋糕切成 4 塊各 250 元 | 「特斯拉宣布 1 拆 3 股票分割」 | [→ 詳細](terms/stock-split.md) |
+| 藍籌股（Blue Chip） | 大型績優龍頭股 | 鼎泰豐等級的穩定老店 | 「買藍籌股比較安心」 | [→ 詳細](terms/blue-chip.md) |
+| SEC（美國證管會） | 美國管上市公司的監管機構 | 美國版的金管會 | 「SEC 對這家公司展開調查了」 | [→ 詳細](terms/sec-us.md) |
+| 財報季（Earnings Season） | 美股公司集中公布財報的時段 | 期末考週，所有公司集中交成績單 | 「財報季來了，要注意財報地雷」 | [→ 詳細](terms/earnings-season.md) |
+| SPAC（特殊目的收購公司） | 先募資上市再找公司併購的空殼 | 先開空的百貨商場，再找品牌進駐 | 「那家公司是透過 SPAC 上市的」 | [→ 詳細](terms/spac.md) |
+| 造市商（Market Maker） | 負責在市場上提供買賣報價的機構 | 外幣兌換所，隨時買賣 | 「造市商維持市場的流動性」 | [→ 詳細](terms/market-maker.md) |
+
+---
+
+## 台股制度類
+
+| 詞彙 | 一句話解釋 | 比喻 | 你會在哪聽到 | 詳細說明 |
+|------|-----------|------|------------|---------|
+| 興櫃 / 上櫃 / 上市 | 台灣股票的三個交易等級 | 夜市攤位→商場櫃位→百貨專櫃 | 「這家公司還在興櫃，風險比較高」 | [→ 詳細](terms/listing-tiers.md) |
+| 零股交易 | 不用買整張（1000 股），一股也能買 | 不用買一整箱可樂，一瓶也能買 | 「用零股買台積電，一股就好」 | [→ 詳細](terms/odd-lot.md) |
+| T+2 交割 | 買股票後第二天才扣款 | 蝦皮先下單，貨到付款 | 「注意交割款要準備好」 | [→ 詳細](terms/settlement.md) |
+| 增資 / 減資 | 公司增加或減少股本 | 合資開店追加投資或退還部分投資 | 「公司宣布現金減資，退還股東錢」 | [→ 詳細](terms/capital-change.md) |
+| 庫藏股（Stock Buyback） | 公司花錢買回自家股票 | 作者自己去書店買回自己的書 | 「公司實施庫藏股，護盤意味濃」 | [→ 詳細](terms/stock-buyback.md) |
+| 股票抽籤（IPO 申購） | 新股上市前的抽籤申購 | 搶限量球鞋的抽籤資格 | 「這次 IPO 抽籤有價差，趕快去抽」 | [→ 詳細](terms/ipo-subscription.md) |
+| 權值股 | 佔大盤指數比重大的股票 | 全班平均被學霸拉高 | 「台積電是最大的權值股」 | [→ 詳細](terms/heavyweight-stock.md) |
+| 台指期 | 追蹤加權指數的期貨合約 | 用預約價格買「整個台股市場」的走向 | 「台指期今天夜盤跌了 100 點」 | [→ 詳細](terms/taiex-futures.md) |
+
+---
+
+## 投資心理與行話類
+
+| 詞彙 | 一句話解釋 | 比喻 | 你會在哪聽到 | 詳細說明 |
+|------|-----------|------|------------|---------|
+| 韭菜 | 被反覆收割的散戶 | 割了又長、長了又割的韭菜田 | 「散戶就是韭菜，被主力割來割去」 | [→ 詳細](terms/leek.md) |
+| 接刀子（Catching a Falling Knife） | 股價暴跌時急著買進 | 一把菜刀從桌上掉下來你伸手去接 | 「不要去接刀子，等止穩再說」 | [→ 詳細](terms/catching-knife.md) |
+| 凹單 | 明知虧損卻死抱不放 | 明知道食物過期了還是不想丟 | 「不要凹單了，該停損就停損」 | [→ 詳細](terms/holding-loss.md) |
+| 未實現損益（Unrealized P&L） | 帳面上的賺賠，還沒賣不算真的 | 房子漲價了但沒賣，紙上富貴 | 「未實現獲利 30%，但還沒賣」 | [→ 詳細](terms/unrealized-pnl.md) |
+| 恐慌指數（VIX） | 衡量市場恐慌程度的指標 | 地震震度計，震度越高越恐慌 | 「VIX 飆到 40，市場超恐慌」 | [→ 詳細](terms/vix.md) |
+| 黑天鵝（Black Swan） | 無法預料的重大事件 | 以為天鵝都是白的，突然冒出黑的 | 「疫情就是一隻黑天鵝」 | [→ 詳細](terms/black-swan.md) |
+| 風險報酬比（Risk-Reward） | 可能賺多少 vs 可能賠多少的比例 | 夾娃娃機花 10 元可能夾到 500 元公仔 | 「風報比至少要 1:2 以上才值得做」 | [→ 詳細](terms/risk-reward.md) |
 
 ---
 
@@ -189,6 +257,13 @@
 | 支撐 / 壓力 | 大樓的地板和天花板 |
 | 型態學 | 看雲的形狀猜天氣 |
 | 缺口（Gap） | 搭電梯直接從 3 樓跳到 7 樓 |
+| 布林通道 | 小孩的正常體溫範圍 |
+| 黃金交叉 / 死亡交叉 | 賽跑時後面的選手超越前面的 |
+| 背離 | 嘴巴說沒事但臉色越來越差 |
+| 趨勢線 | 沿著山脊線走路的方向 |
+| 量價關係 | 演唱會歌手唱得好加上觀眾嗨翻 |
+| 費波那契回撤 | 爬山休息時的歇腳點位置 |
+| 乖離率 | 橡皮筋拉越遠彈回來越大力 |
 
 ### 交易類
 
@@ -201,6 +276,13 @@
 | 市價單 | Uber Eats 上不看價格直接下單 |
 | 停損 / 停利 | 去賭場前設好的預算上限和收手門檻 |
 | 內盤 / 外盤 | 老闆主動降價賣 vs 客人主動加價買 |
+| 套牢 / 解套 | 蝦皮買了衣服過了退貨期 |
+| 追高殺低 | 看到排隊名店就跟著排，收攤就跑 |
+| 抄底 | 百貨公司換季大拍賣撿便宜 |
+| 波段操作 | 衝浪——抓到一波浪就收手 |
+| 盤整 | 等紅綠燈的時候 |
+| 攤平 | 全聯鮮奶跌價再多買幾瓶拉低平均成本 |
+| 加碼 / 減碼 | 吃到飽多夾或少夾一點菜 |
 
 ### 信用交易類
 
@@ -233,6 +315,12 @@
 | 法人 / 三大法人 | 菜市場裡的大盤商 |
 | ETF | 好市多的綜合水果箱 |
 | 籌碼 | 看誰在掃貨、誰在出清的偵探工作 |
+| 毛利率 / 營業利益率 / 淨利率 | 賣雞排的三種算帳方式 |
+| 月營收 | 每月的考試成績單 |
+| 自由現金流 | 薪水扣掉房租水電後真正能花的錢 |
+| 股價淨值比（P/B） | 一間房子賣多少錢 vs 材料成本 |
+| 本益成長比（PEG） | 不只看回本年數，還看生意成長速度 |
+| 財報公布 / Earnings | 學生的期中期末考成績 |
 
 ### 常識類
 
@@ -245,6 +333,59 @@
 | ROE / ROA | 用 100 塊本金賺了多少回來 |
 | 配息 / 填息 | 分紅後公司市值能不能自己補回來 |
 | 主力 | 菜市場裡的大盤商 |
+
+### 投資策略類
+
+| 術語 | 比喻 |
+|------|------|
+| 價值投資 | 在二手市場找到被低估的名牌包 |
+| 成長投資 | 投資剛開幕但排隊排到爆的餐廳 |
+| 定期定額 | 每月自動扣款的存錢計畫 |
+| 資產配置 | 不要把所有菜都放同一個冰箱 |
+| 分散投資 | 出門不要把證件和錢都放同一個包 |
+| 景氣循環股 | 冰淇淋店夏天生意好冬天差 |
+| 防禦型股票 | 不管景氣好壞大家都要吃飯看病 |
+| 被動投資 / 主動投資 | 搭公車 vs 自己騎車找路 |
+
+### 美股入門類
+
+| 術語 | 比喻 |
+|------|------|
+| 美股三大指數 | 美國版的加權指數，三個不同角度看市場 |
+| ADR | 台灣小吃在美國開的授權分店 |
+| 盤前 / 盤後交易 | 夜市收攤後還能跟老闆私下交易 |
+| 熔斷機制 | 家裡電路跳電的保護開關 |
+| 股票分割 | 一塊 1000 元蛋糕切成 4 塊各 250 元 |
+| 藍籌股 | 鼎泰豐等級的穩定老店 |
+| SEC | 美國版的金管會 |
+| 財報季 | 期末考週，所有公司集中交成績單 |
+| SPAC | 先開空的百貨商場，再找品牌進駐 |
+| 造市商 | 外幣兌換所，隨時買賣 |
+
+### 台股制度類
+
+| 術語 | 比喻 |
+|------|------|
+| 興櫃 / 上櫃 / 上市 | 夜市攤位→商場櫃位→百貨專櫃 |
+| 零股交易 | 不用買整箱可樂，一瓶也能買 |
+| T+2 交割 | 蝦皮先下單，貨到付款 |
+| 增資 / 減資 | 合資開店追加投資或退還部分投資 |
+| 庫藏股 | 作者自己去書店買回自己的書 |
+| 股票抽籤 | 搶限量球鞋的抽籤資格 |
+| 權值股 | 全班平均被學霸拉高 |
+| 台指期 | 用預約價格買整個台股市場的走向 |
+
+### 投資心理與行話類
+
+| 術語 | 比喻 |
+|------|------|
+| 韭菜 | 割了又長、長了又割的韭菜田 |
+| 接刀子 | 菜刀從桌上掉下來你伸手去接 |
+| 凹單 | 明知道食物過期了還是不想丟 |
+| 未實現損益 | 房子漲價了但沒賣，紙上富貴 |
+| 恐慌指數（VIX） | 地震震度計，震度越高越恐慌 |
+| 黑天鵝 | 以為天鵝都是白的，突然冒出黑的 |
+| 風險報酬比 | 夾娃娃機花 10 元可能夾到 500 元公仔 |
 
 ---
 

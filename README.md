@@ -51,7 +51,7 @@
 | 領域 | 術語數 | 說明 |
 |------|:------:|------|
 | [💻 軟體工程](software-engineering/README.md) | 152 | API、Git、Deploy、Docker⋯⋯ |
-| [💹 股票投資](stock/README.md) | 41 | 技術分析、融資融券、期貨選擇權⋯⋯ |
+| [💹 股票投資](stock/README.md) | 94 | 技術分析、交易策略、美股台股制度⋯⋯ |
 | [🔬 電子產業](electronics/README.md) | 30 | 半導體、封裝測試、HBM⋯⋯ |
 | [📣 行銷企劃](marketing/README.md) | 30 | 數位廣告、轉換率、社群行銷⋯⋯ |
 | [🎨 美術設計](design/README.md) | 27 | CMYK、出血、切圖、設計系統⋯⋯ |
@@ -144,32 +144,49 @@
 
 ### 大綱
 
-> 共收錄 **41 個**術語，[點此進入完整頁面](stock/README.md)。
+> 共收錄 **94 個**術語，[點此進入完整頁面](stock/README.md)。
 
 | 分類 | 術語數 | 說明 |
 |------|:------:|------|
-| [技術分析類](stock/README.md#技術分析類) | 10 | K 線、均線、KD、MACD⋯⋯ |
-| [交易類](stock/README.md#交易類) | 7 | 多空、漲跌停、當沖、掛單⋯⋯ |
+| [技術分析類](stock/README.md#技術分析類) | 17 | K 線、均線、KD、MACD、布林通道、趨勢線⋯⋯ |
+| [交易類](stock/README.md#交易類) | 14 | 多空、漲跌停、當沖、套牢、追高殺低、波段⋯⋯ |
 | [信用交易類](stock/README.md#信用交易類) | 5 | 融資、融券、質押⋯⋯ |
 | [衍生商品類](stock/README.md#衍生商品類) | 5 | 期貨、選擇權、權證⋯⋯ |
-| [基本面類](stock/README.md#基本面類) | 7 | EPS、本益比、ETF⋯⋯ |
+| [基本面類](stock/README.md#基本面類) | 13 | EPS、本益比、ETF、月營收、自由現金流⋯⋯ |
 | [常識類](stock/README.md#常識類) | 7 | 大盤、散戶、利多利空、存股⋯⋯ |
+| [投資策略類](stock/README.md#投資策略類) | 8 | 價值投資、成長投資、定期定額、資產配置⋯⋯ |
+| [美股入門類](stock/README.md#美股入門類) | 10 | 美股三大指數、ADR、熔斷、財報季⋯⋯ |
+| [台股制度類](stock/README.md#台股制度類) | 8 | 興櫃上櫃上市、零股、T+2、增減資⋯⋯ |
+| [投資心理與行話類](stock/README.md#投資心理與行話類) | 7 | 韭菜、接刀子、凹單、黑天鵝、VIX⋯⋯ |
 
 ### 單字速查表（A-Z）
 
 | | | | |
 |---|---|---|---|
-| [Call（買權）](stock/terms/call.md) | [EPS](stock/terms/eps.md) | [ETF](stock/terms/etf.md) | [KD 指標](stock/terms/kd.md) |
-| [K 線（蠟燭圖）](stock/terms/k-line.md) | [MACD](stock/terms/macd.md) | [Put（賣權）](stock/terms/put.md) | [RSI](stock/terms/rsi.md) |
-| [上影線 / 下影線](stock/terms/shadow-line.md) | [內盤 / 外盤](stock/terms/bid-ask.md) | [停損 / 停利](stock/terms/stop-loss-profit.md) | [借券](stock/terms/stock-lending.md) |
-| [均線（MA）](stock/terms/ma.md) | [多頭 / 空頭](stock/terms/bull-bear.md) | [型態學](stock/terms/chart-pattern.md) | [市價單](stock/terms/market-order.md) |
-| [成交量](stock/terms/volume.md) | [支撐 / 壓力](stock/terms/support-resistance.md) | [斷頭](stock/terms/margin-call.md) | [本益比（P/E）](stock/terms/pe-ratio.md) |
-| [期貨](stock/terms/futures.md) | [殖利率](stock/terms/dividend-yield.md) | [法人 / 三大法人](stock/terms/institutional-investors.md) | [漲停 / 跌停](stock/terms/limit-up-down.md) |
-| [當沖](stock/terms/day-trading.md) | [缺口（Gap）](stock/terms/gap.md) | [籌碼](stock/terms/chip-analysis.md) | [融券](stock/terms/short-selling.md) |
-| [融資](stock/terms/margin-trading.md) | [掛單（限價單）](stock/terms/limit-order.md) | [質押](stock/terms/pledge.md) | [選擇權（Options）](stock/terms/options.md) |
-| [除權息](stock/terms/ex-dividend.md) | [權證](stock/terms/warrant.md) | [大盤 / 加權指數](stock/terms/taiex.md) | [散戶](stock/terms/retail-investor.md) |
-| [利多 / 利空](stock/terms/bullish-bearish-news.md) | [存股](stock/terms/stock-accumulation.md) | [ROE / ROA](stock/terms/roe-roa.md) | [配息 / 填息](stock/terms/dividend-fill.md) |
-| [主力](stock/terms/major-player.md) | | | |
+| [ADR](stock/terms/adr.md) | [Call（買權）](stock/terms/call.md) | [EPS](stock/terms/eps.md) | [ETF](stock/terms/etf.md) |
+| [KD 指標](stock/terms/kd.md) | [K 線（蠟燭圖）](stock/terms/k-line.md) | [MACD](stock/terms/macd.md) | [Put（賣權）](stock/terms/put.md) |
+| [ROE / ROA](stock/terms/roe-roa.md) | [RSI](stock/terms/rsi.md) | [SEC（美國證管會）](stock/terms/sec-us.md) | [SPAC](stock/terms/spac.md) |
+| [T+2 交割](stock/terms/settlement.md) | [VIX（恐慌指數）](stock/terms/vix.md) | [上影線 / 下影線](stock/terms/shadow-line.md) | [主力](stock/terms/major-player.md) |
+| [乖離率（BIAS）](stock/terms/bias.md) | [借券](stock/terms/stock-lending.md) | [內盤 / 外盤](stock/terms/bid-ask.md) | [凹單](stock/terms/holding-loss.md) |
+| [分散投資](stock/terms/diversification.md) | [加碼 / 減碼](stock/terms/position-sizing.md) | [均線（MA）](stock/terms/ma.md) | [多頭 / 空頭](stock/terms/bull-bear.md) |
+| [套牢 / 解套](stock/terms/trapped.md) | [定期定額（DCA）](stock/terms/dca.md) | [型態學](stock/terms/chart-pattern.md) | [增資 / 減資](stock/terms/capital-change.md) |
+| [市價單](stock/terms/market-order.md) | [布林通道](stock/terms/bollinger-bands.md) | [庫藏股](stock/terms/stock-buyback.md) | [成交量](stock/terms/volume.md) |
+| [成長投資](stock/terms/growth-investing.md) | [抄底](stock/terms/bottom-fishing.md) | [接刀子](stock/terms/catching-knife.md) | [支撐 / 壓力](stock/terms/support-resistance.md) |
+| [斷頭](stock/terms/margin-call.md) | [本益比（P/E）](stock/terms/pe-ratio.md) | [本益成長比（PEG）](stock/terms/peg-ratio.md) | [景氣循環股](stock/terms/cyclical-stock.md) |
+| [月營收](stock/terms/monthly-revenue.md) | [期貨](stock/terms/futures.md) | [未實現損益](stock/terms/unrealized-pnl.md) | [殖利率](stock/terms/dividend-yield.md) |
+| [毛利率 / 營業利益率 / 淨利率](stock/terms/profit-margins.md) | [法人 / 三大法人](stock/terms/institutional-investors.md) | [波段操作](stock/terms/swing-trading.md) | [漲停 / 跌停](stock/terms/limit-up-down.md) |
+| [當沖](stock/terms/day-trading.md) | [盤前 / 盤後交易](stock/terms/pre-after-market.md) | [盤整](stock/terms/consolidation.md) | [美股三大指數](stock/terms/us-indices.md) |
+| [背離](stock/terms/divergence.md) | [自由現金流（FCF）](stock/terms/free-cash-flow.md) | [興櫃 / 上櫃 / 上市](stock/terms/listing-tiers.md) | [藍籌股](stock/terms/blue-chip.md) |
+| [被動投資 / 主動投資](stock/terms/passive-active.md) | [趨勢線](stock/terms/trend-line.md) | [追高殺低](stock/terms/chasing-selling.md) | [造市商](stock/terms/market-maker.md) |
+| [配息 / 填息](stock/terms/dividend-fill.md) | [量價關係](stock/terms/volume-price.md) | [黃金交叉 / 死亡交叉](stock/terms/golden-death-cross.md) | [零股交易](stock/terms/odd-lot.md) |
+| [韭菜](stock/terms/leek.md) | [風險報酬比](stock/terms/risk-reward.md) | [費波那契回撤](stock/terms/fibonacci.md) | [資產配置](stock/terms/asset-allocation.md) |
+| [缺口（Gap）](stock/terms/gap.md) | [財報季](stock/terms/earnings-season.md) | [財報公布 / Earnings](stock/terms/earnings.md) | [股價淨值比（P/B）](stock/terms/pb-ratio.md) |
+| [股票分割](stock/terms/stock-split.md) | [股票抽籤（IPO 申購）](stock/terms/ipo-subscription.md) | [融券](stock/terms/short-selling.md) | [融資](stock/terms/margin-trading.md) |
+| [掛單（限價單）](stock/terms/limit-order.md) | [攤平](stock/terms/averaging-down.md) | [價值投資](stock/terms/value-investing.md) | [權值股](stock/terms/heavyweight-stock.md) |
+| [權證](stock/terms/warrant.md) | [籌碼](stock/terms/chip-analysis.md) | [質押](stock/terms/pledge.md) | [停損 / 停利](stock/terms/stop-loss-profit.md) |
+| [選擇權（Options）](stock/terms/options.md) | [除權息](stock/terms/ex-dividend.md) | [防禦型股票](stock/terms/defensive-stock.md) | [台指期](stock/terms/taiex-futures.md) |
+| [大盤 / 加權指數](stock/terms/taiex.md) | [散戶](stock/terms/retail-investor.md) | [利多 / 利空](stock/terms/bullish-bearish-news.md) | [存股](stock/terms/stock-accumulation.md) |
+| [熔斷機制](stock/terms/circuit-breaker.md) | [黑天鵝](stock/terms/black-swan.md) | | |
 
 ---
 
