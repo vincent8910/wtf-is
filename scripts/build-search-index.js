@@ -89,8 +89,8 @@ function parseTerm(filePath, domain, domainLabel) {
   let title = titleLine;
   let oneLine = '';
 
-  // 用 — 或 - 分隔標題和定義
-  const sepMatch = titleLine.match(/^(.+?)\s*[—–-]\s*(.+)$/);
+  // 用 — 或 – 分隔標題和定義（不含普通連字號 -，避免拆開 1-on-1 等術語名）
+  const sepMatch = titleLine.match(/^(.+?)\s*[—–]\s*(.+)$/);
   if (sepMatch) {
     title = sepMatch[1].trim();
     oneLine = sepMatch[2].trim();

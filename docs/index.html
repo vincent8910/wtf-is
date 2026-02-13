@@ -397,9 +397,22 @@
     }
 
     .result-count {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       font-size: 13px;
       color: var(--text-tertiary);
       padding: 8px 0;
+    }
+
+    .back-home {
+      font-size: 13px;
+      color: var(--accent);
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px 0;
+      -webkit-tap-highlight-color: transparent;
     }
 
     .no-results {
@@ -786,6 +799,9 @@
   const resultsEl = $('results');
   const resultCountEl = $('result-count');
   const domainsEl = $('domains');
+  const changelogEl = $('changelog');
+  const installGuide = $('install-guide');
+  const isStandalone = window.matchMedia('(display-mode: standalone)').matches || navigator.standalone;
   const domainGrid = $('domain-grid');
   const searchView = $('search-view');
   const detailView = $('detail-view');
@@ -953,11 +969,14 @@
     const filtered = TERMS.filter(t => t.domain === domain);
     const label = filtered[0]?.domainLabel || domain;
     renderResults(filtered);
-    resultCountEl.textContent = `${label}：${filtered.length} 個術語`;
-    resultCountEl.style.display = 'block';
+    resultCountEl.innerHTML = `<span>${label}：${filtered.length} 個術語</span><button class="back-home" id="back-home">← 回到首頁</button>`;
+    resultCountEl.style.display = 'flex';
     domainsEl.style.display = 'none';
+    changelogEl.style.display = 'none';
+    installGuide.style.display = 'none';
     recentSection.style.display = 'none';
     clearBtn.classList.add('visible');
+    $('back-home').addEventListener('click', resetToHome);
   }
 
   // ===== 搜尋 =====
@@ -969,17 +988,21 @@
     selectedIndex = -1;
   });
 
-  clearBtn.addEventListener('click', () => {
+  function resetToHome() {
     searchInput.value = '';
     clearBtn.classList.remove('visible');
     resultsEl.innerHTML = '';
     resultCountEl.style.display = 'none';
     domainsEl.style.display = 'block';
+    changelogEl.style.display = '';
+    if (!isStandalone) installGuide.style.display = '';
     renderRecent();
     searchInput.focus();
     searchInput.setAttribute('aria-expanded', 'false');
     selectedIndex = -1;
-  });
+  }
+
+  clearBtn.addEventListener('click', resetToHome);
 
   function doSearch() {
     const q = searchInput.value.trim();
@@ -987,11 +1010,15 @@
       resultsEl.innerHTML = '';
       resultCountEl.style.display = 'none';
       domainsEl.style.display = 'block';
+      changelogEl.style.display = '';
+      if (!isStandalone) installGuide.style.display = '';
       renderRecent();
       searchInput.setAttribute('aria-expanded', 'false');
       return;
     }
     domainsEl.style.display = 'none';
+    changelogEl.style.display = 'none';
+    installGuide.style.display = 'none';
     recentSection.style.display = 'none';
     const results = fuse.search(q, { limit: 30 });
     const items = results.map(r => r.item);
@@ -1214,8 +1241,8 @@
       installToggle.setAttribute('aria-expanded', isOpen);
     });
     // standalone 模式下隱藏安裝提示（已經安裝了）
-    if (window.matchMedia('(display-mode: standalone)').matches || navigator.standalone) {
-      $('install-guide').style.display = 'none';
+    if (isStandalone) {
+      installGuide.style.display = 'none';
     }
   }
 
