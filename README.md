@@ -66,7 +66,7 @@
 | [🪙 加密貨幣 / Web3](crypto/README.md) | 80 | Blockchain、DeFi、NFT、HODL⋯⋯ |
 | [🧩 UX / 產品設計](ux-product/README.md) | 15 | User Research、Pain Point、PRD⋯⋯ |
 | [💰 財務會計](finance-accounting/README.md) | 20 | 資產負債表、損益表、EBITDA、折舊⋯⋯ |
-| [🤖 AI / 機器學習](ai-ml/README.md) | 25 | LLM、GPT、Transformer、Prompt Engineering⋯⋯ |
+| [🤖 AI / 機器學習](ai-ml/README.md) | 27 | LLM、GPT、Transformer、Prompt Engineering⋯⋯ |
 
 > **💡 點進各領域的完整頁面，每個術語都有這樣的詳細對照：**
 >
@@ -596,13 +596,13 @@
 
 ### 大綱
 
-> 共收錄 **25 個**術語，[點此進入完整頁面](ai-ml/README.md)。
+> 共收錄 **27 個**術語，[點此進入完整頁面](ai-ml/README.md)。
 
 | 分類 | 術語數 | 說明 |
 |------|:------:|------|
 | [基礎概念類](ai-ml/README.md#基礎概念類) | 7 | AI、機器學習、深度學習、神經網路⋯⋯ |
 | [技術方法類](ai-ml/README.md#技術方法類) | 7 | 監督式學習、NLP、電腦視覺、分類⋯⋯ |
-| [模型與應用類](ai-ml/README.md#模型與應用類) | 6 | LLM、GPT、Transformer、RAG⋯⋯ |
+| [模型與應用類](ai-ml/README.md#模型與應用類) | 8 | LLM、GPT、Transformer、RAG、MCP、Skill⋯⋯ |
 | [指標與問題類](ai-ml/README.md#指標與問題類) | 5 | 過擬合、偏差、幻覺、準確率⋯⋯ |
 
 ### 單字速查表（A-Z）
@@ -612,10 +612,10 @@
 | [Accuracy（準確率）](ai-ml/terms/accuracy.md) | [AI（人工智慧）](ai-ml/terms/ai.md) | [Algorithm（演算法）](ai-ml/terms/algorithm.md) | [Bias（偏差）](ai-ml/terms/bias.md) |
 | [Classification（分類）](ai-ml/terms/classification.md) | [Computer Vision（電腦視覺）](ai-ml/terms/computer-vision.md) | [Dataset（資料集）](ai-ml/terms/dataset.md) | [Deep Learning（深度學習）](ai-ml/terms/deep-learning.md) |
 | [Fine-tuning（微調）](ai-ml/terms/fine-tuning.md) | [GPT](ai-ml/terms/gpt.md) | [Hallucination（幻覺）](ai-ml/terms/hallucination.md) | [LLM（大型語言模型）](ai-ml/terms/llm.md) |
-| [Machine Learning（機器學習）](ai-ml/terms/machine-learning.md) | [Model（模型）](ai-ml/terms/model.md) | [Neural Network（神經網路）](ai-ml/terms/neural-network.md) | [NLP（自然語言處理）](ai-ml/terms/nlp.md) |
-| [Overfitting（過擬合）](ai-ml/terms/overfitting.md) | [Prompt Engineering（提示工程）](ai-ml/terms/prompt-engineering.md) | [RAG（檢索增強生成）](ai-ml/terms/rag.md) | [Regression（迴歸）](ai-ml/terms/regression.md) |
-| [Reinforcement Learning（強化學習）](ai-ml/terms/reinforcement-learning.md) | [Supervised Learning（監督式學習）](ai-ml/terms/supervised-learning.md) | [Training（訓練）](ai-ml/terms/training.md) | [Transformer](ai-ml/terms/transformer.md) |
-| [Unsupervised Learning（非監督式學習）](ai-ml/terms/unsupervised-learning.md) | | | |
+| [Machine Learning（機器學習）](ai-ml/terms/machine-learning.md) | [MCP（模型上下文協議）](ai-ml/terms/mcp.md) | [Model（模型）](ai-ml/terms/model.md) | [Neural Network（神經網路）](ai-ml/terms/neural-network.md) |
+| [NLP（自然語言處理）](ai-ml/terms/nlp.md) | [Overfitting（過擬合）](ai-ml/terms/overfitting.md) | [Prompt Engineering（提示工程）](ai-ml/terms/prompt-engineering.md) | [RAG（檢索增強生成）](ai-ml/terms/rag.md) |
+| [Regression（迴歸）](ai-ml/terms/regression.md) | [Reinforcement Learning（強化學習）](ai-ml/terms/reinforcement-learning.md) | [Skill（技能）](ai-ml/terms/skill.md) | [Supervised Learning（監督式學習）](ai-ml/terms/supervised-learning.md) |
+| [Training（訓練）](ai-ml/terms/training.md) | [Transformer](ai-ml/terms/transformer.md) | [Unsupervised Learning（非監督式學習）](ai-ml/terms/unsupervised-learning.md) | |
 
 ---
 

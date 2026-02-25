@@ -29,13 +29,13 @@
 
 ## 大綱
 
-> 共收錄 **25 個** AI / 機器學習術語，點擊分類名稱直接跳轉。
+> 共收錄 **27 個** AI / 機器學習術語，點擊分類名稱直接跳轉。
 
 | 分類 | 術語數 | 說明 |
 |------|:------:|------|
 | [基礎概念類](#基礎概念類) | 7 | AI、機器學習、深度學習、神經網路⋯⋯ |
 | [技術方法類](#技術方法類) | 7 | 監督式學習、NLP、電腦視覺、分類⋯⋯ |
-| [模型與應用類](#模型與應用類) | 6 | LLM、GPT、Transformer、RAG⋯⋯ |
+| [模型與應用類](#模型與應用類) | 8 | LLM、GPT、Transformer、RAG、MCP、Skill⋯⋯ |
 | [指標與問題類](#指標與問題類) | 5 | 過擬合、偏差、幻覺、準確率⋯⋯ |
 
 > 想一次看完所有比喻？直接跳到 [比喻對照總表](#比喻對照總表)
@@ -49,10 +49,10 @@
 | [Accuracy（準確率）](terms/accuracy.md) | [AI（人工智慧）](terms/ai.md) | [Algorithm（演算法）](terms/algorithm.md) | [Bias（偏差）](terms/bias.md) |
 | [Classification（分類）](terms/classification.md) | [Computer Vision（電腦視覺）](terms/computer-vision.md) | [Dataset（資料集）](terms/dataset.md) | [Deep Learning（深度學習）](terms/deep-learning.md) |
 | [Fine-tuning（微調）](terms/fine-tuning.md) | [GPT](terms/gpt.md) | [Hallucination（幻覺）](terms/hallucination.md) | [LLM（大型語言模型）](terms/llm.md) |
-| [Machine Learning（機器學習）](terms/machine-learning.md) | [Model（模型）](terms/model.md) | [Neural Network（神經網路）](terms/neural-network.md) | [NLP（自然語言處理）](terms/nlp.md) |
-| [Overfitting（過擬合）](terms/overfitting.md) | [Prompt Engineering（提示工程）](terms/prompt-engineering.md) | [RAG（檢索增強生成）](terms/rag.md) | [Regression（迴歸）](terms/regression.md) |
-| [Reinforcement Learning（強化學習）](terms/reinforcement-learning.md) | [Supervised Learning（監督式學習）](terms/supervised-learning.md) | [Training（訓練）](terms/training.md) | [Transformer](terms/transformer.md) |
-| [Unsupervised Learning（非監督式學習）](terms/unsupervised-learning.md) | | | |
+| [Machine Learning（機器學習）](terms/machine-learning.md) | [MCP（模型上下文協議）](terms/mcp.md) | [Model（模型）](terms/model.md) | [Neural Network（神經網路）](terms/neural-network.md) |
+| [NLP（自然語言處理）](terms/nlp.md) | [Overfitting（過擬合）](terms/overfitting.md) | [Prompt Engineering（提示工程）](terms/prompt-engineering.md) | [RAG（檢索增強生成）](terms/rag.md) |
+| [Regression（迴歸）](terms/regression.md) | [Reinforcement Learning（強化學習）](terms/reinforcement-learning.md) | [Skill（技能）](terms/skill.md) | [Supervised Learning（監督式學習）](terms/supervised-learning.md) |
+| [Training（訓練）](terms/training.md) | [Transformer](terms/transformer.md) | [Unsupervised Learning（非監督式學習）](terms/unsupervised-learning.md) | |
 
 ---
 
@@ -100,6 +100,8 @@
 | Fine-tuning（微調） | 把通用 AI 調整成你的專屬版本 | 日本甜點師傅來台灣微調口味 | 「Fine-tune GPT 來做客服」 | [詳細](terms/fine-tuning.md) |
 | Prompt Engineering（提示工程） | 學會怎麼問問題，讓 AI 給更好的回答 | 剪頭髮時說清楚需求 vs 說「隨便剪」 | 「Prompt 要寫具體一點」 | [詳細](terms/prompt-engineering.md) |
 | RAG（檢索增強生成） | 讓 AI 先查資料再回答，減少亂掰 | 客服邊接電話邊查保單資料 | 「用 RAG 減少 AI 幻覺」 | [詳細](terms/rag.md) |
+| MCP（模型上下文協議） | 讓 AI 連接外部工具的統一標準 | USB-C 統一了所有充電線規格 | 「這個 AI 支援 MCP，能直接連各種工具」 | [詳細](terms/mcp.md) |
+| Skill（技能） | AI 能執行的一項特定能力 | 幫手機裝 App，裝什麼就會什麼 | 「這個 AI 有搜尋的 Skill」 | [詳細](terms/skill.md) |
 
 ---
 
@@ -155,6 +157,8 @@
 | Fine-tuning | 日本甜點師傅來台灣，花兩週適應在地口味 |
 | Prompt Engineering | 剪頭髮時具體說「兩側推短、上面留長」vs「隨便剪」 |
 | RAG | 客服邊接電話邊查保單，根據白紙黑字回答你 |
+| MCP | USB-C 統一了充電線規格——所有工具用同一種方式接上 AI |
+| Skill | 幫手機裝 App——裝了翻譯 App 就能翻譯，裝了計算機就能算數 |
 
 ### 指標與問題類
 
