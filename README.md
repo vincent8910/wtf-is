@@ -133,7 +133,8 @@
 | [Shader](software-engineering/terms/shader.md) | [Spec](software-engineering/terms/spec.md) | [SQL](software-engineering/terms/sql.md) | [SSH](software-engineering/terms/ssh.md) |
 | [SSL / TLS](software-engineering/terms/ssl-tls.md) | [Staging / Production](software-engineering/terms/staging-production.md) | [SuperClaude](software-engineering/terms/superclaude.md) | [Sync / Async](software-engineering/terms/sync-async.md) |
 | [Technical Debt](software-engineering/terms/technical-debt.md) | [Terminal / CLI](software-engineering/terms/terminal-cli.md) | [Test Case](software-engineering/terms/test-case.md) | [Thread](software-engineering/terms/thread.md) |
-| [Timeout](software-engineering/terms/timeout.md) | [Token](software-engineering/terms/token.md) | [TypeScript](software-engineering/terms/typescript.md) | [UAT](software-engineering/terms/uat.md) |
+| [Timeout](software-engineering/terms/timeout.md) | [tmux](software-engineering/terms/tmux.md) | [Token](software-engineering/terms/token.md) | [TypeScript](software-engineering/terms/typescript.md) |
+| [UAT](software-engineering/terms/uat.md) |
 | [UI / UX](software-engineering/terms/ui-ux.md) | [Unity](software-engineering/terms/unity.md) | [VPN](software-engineering/terms/vpn.md) | [VS Code](software-engineering/terms/vscode.md) |
 | [Vulnerability](software-engineering/terms/vulnerability.md) | [Webhook](software-engineering/terms/webhook.md) | [WebSocket](software-engineering/terms/websocket.md) | [WebView](software-engineering/terms/webview.md) |
 | [YAML](software-engineering/terms/yaml.md) | | | |

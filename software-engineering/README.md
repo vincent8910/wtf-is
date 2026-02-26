@@ -36,7 +36,7 @@
 | [基礎建設類](#基礎建設類) | 24 | 軟體開發的基礎環境與程式語言 |
 | [日常開發類](#日常開發類) | 19 | 開始接觸開發後會碰到的詞 |
 | [協作類](#協作類) | 14 | 跟團隊合作時出現的詞 |
-| [工具類](#工具類) | 8 | 開發工具與 AI 編程助手 |
+| [工具類](#工具類) | 9 | 開發工具與 AI 編程助手 |
 | [開會時聽不懂類](#開會時聽不懂類) | 22 | 開會、看 Slack 時最常一頭霧水的詞 |
 | [專案管理類](#專案管理類) | 8 | PM 寫規格、追進度時會遇到的詞 |
 | [出事了類](#出事了類) | 7 | 系統出問題時工程師會說的詞 |
@@ -85,7 +85,8 @@
 | [Shader](terms/shader.md) | [Spec](terms/spec.md) | [SQL](terms/sql.md) | [SSH](terms/ssh.md) |
 | [SSL / TLS](terms/ssl-tls.md) | [Staging / Production](terms/staging-production.md) | [SuperClaude](terms/superclaude.md) | [Sync / Async](terms/sync-async.md) |
 | [Technical Debt](terms/technical-debt.md) | [Terminal / CLI](terms/terminal-cli.md) | [Test Case](terms/test-case.md) | [Thread（執行緒）](terms/thread.md) |
-| [Timeout](terms/timeout.md) | [Token](terms/token.md) | [TypeScript](terms/typescript.md) | [UAT](terms/uat.md) |
+| [Timeout](terms/timeout.md) | [tmux](terms/tmux.md) | [Token](terms/token.md) | [TypeScript](terms/typescript.md) |
+| [UAT](terms/uat.md) |
 | [UI / UX](terms/ui-ux.md) | [Unity](terms/unity.md) | [VPN](terms/vpn.md) | [VS Code](terms/vscode.md) |
 | [Vulnerability](terms/vulnerability.md) | [Webhook](terms/webhook.md) | [WebSocket](terms/websocket.md) | [WebView](terms/webview.md) |
 | [YAML](terms/yaml.md) | | | |
@@ -191,6 +192,7 @@
 | **Claude Code** | Anthropic 的 CLI 編程工具，在終端機裡直接改你的程式碼 | 坐在你旁邊直接動手改的顧問 | 「我用 **Claude Code** 重構了那個模組。」 | [→ 詳細](terms/claude-code.md) |
 | **Gemini CLI** | Google 的 CLI 編程工具，在終端機裡用 Gemini AI 寫程式 | 直接打給 AI 包工頭的電話 | 「小功能我直接用 **Gemini CLI** 改。」 | [→ 詳細](terms/gemini-cli.md) |
 | **Linter（程式碼檢查器）** | 自動檢查程式碼風格和潛在問題的工具 | 文章的文法檢查器 | 「**Linter** 報了 20 個警告，先修一下。」 | [→ 詳細](terms/linter.md) |
+| **tmux** | 讓一個 Terminal 視窗同時開好幾塊工作區域，還能暫離回來繼續 | 一台電視變電視牆 | 「開 **tmux** 吧，斷線了工作還在跑。」 | [→ 詳細](terms/tmux.md) |
 
 ---
 
@@ -446,6 +448,7 @@ PM 寫規格、追進度時會遇到的詞：
 | Claude Code | 坐在你旁邊直接動手改的顧問 |
 | Gemini CLI | 直接打給 AI 包工頭的電話 |
 | Linter（程式碼檢查器） | 文章的文法檢查器 |
+| tmux | 一台電視變電視牆 |
 
 ### 開會時聽不懂
 
