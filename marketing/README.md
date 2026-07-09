@@ -29,7 +29,7 @@
 
 ## 大綱
 
-> 共收錄 **30 個**行銷企劃術語，點擊分類名稱直接跳轉。
+> 共收錄 **32 個**行銷企劃術語，點擊分類名稱直接跳轉。
 
 | 分類 | 術語數 | 說明 |
 |------|:------:|------|
@@ -38,6 +38,7 @@
 | [企劃提案類](#企劃提案類) | 5 | TA、Persona、品牌定位⋯⋯ |
 | [數據分析類](#數據分析類) | 7 | GA、漏斗、轉換率⋯⋯ |
 | [行銷策略類](#行銷策略類) | 5 | Campaign、SEM、內容行銷⋯⋯ |
+| [AI 行銷類](#ai-行銷類) | 2 | GEO、AI Overview⋯⋯ |
 
 > 想一次看完所有比喻？直接跳到 [比喻對照總表](#比喻對照總表)
 
@@ -47,14 +48,14 @@
 
 | | | | |
 |---|---|---|---|
-| [A/B Testing](terms/ab-testing.md) | [Attribution 歸因模型](terms/attribution.md) | [Bounce Rate 跳出率](terms/bounce-rate.md) | [Brand Positioning 品牌定位](terms/brand-positioning.md) |
-| [Brief 需求簡報](terms/brief.md) | [Community 粉絲經營](terms/community.md) | [Conversion Rate 轉換率](terms/conversion-rate.md) | [CPA](terms/cpa.md) |
-| [CPC](terms/cpc.md) | [CPM](terms/cpm.md) | [CTR 點擊率](terms/ctr.md) | [Engagement 互動率](terms/engagement.md) |
-| [Funnel 漏斗](terms/funnel.md) | [GA（Google Analytics）](terms/ga.md) | [Heatmap 熱力圖](terms/heatmap.md) | [Impression 曝光](terms/impression.md) |
-| [KOL / KOC](terms/kol-koc.md) | [Persona 人物誌](terms/persona.md) | [Pixel 追蹤像素](terms/pixel.md) | [Reach 觸及率](terms/reach.md) |
-| [Retargeting 再行銷](terms/retargeting.md) | [ROAS](terms/roas.md) | [Slogan / Tagline](terms/slogan-tagline.md) | [TA 目標客群](terms/ta.md) |
-| [UGC 使用者原創內容](terms/ugc.md) | [Campaign（活動企劃）](terms/campaign.md) | [SEM（搜尋引擎行銷）](terms/sem.md) | [Content Marketing（內容行銷）](terms/content-marketing.md) |
-| [Viral Marketing（病毒式行銷）](terms/viral-marketing.md) | [Media Buy（媒體採購）](terms/media-buy.md) | | |
+| [A/B Testing](terms/ab-testing.md) | [AI Overview](terms/ai-overview.md) | [Attribution 歸因模型](terms/attribution.md) | [Bounce Rate 跳出率](terms/bounce-rate.md) |
+| [Brand Positioning 品牌定位](terms/brand-positioning.md) | [Brief 需求簡報](terms/brief.md) | [Community 粉絲經營](terms/community.md) | [Conversion Rate 轉換率](terms/conversion-rate.md) |
+| [CPA](terms/cpa.md) | [CPC](terms/cpc.md) | [CPM](terms/cpm.md) | [CTR 點擊率](terms/ctr.md) |
+| [Engagement 互動率](terms/engagement.md) | [Funnel 漏斗](terms/funnel.md) | [GA（Google Analytics）](terms/ga.md) | [GEO（生成式引擎優化）](terms/geo.md) |
+| [Heatmap 熱力圖](terms/heatmap.md) | [Impression 曝光](terms/impression.md) | [KOL / KOC](terms/kol-koc.md) | [Persona 人物誌](terms/persona.md) |
+| [Pixel 追蹤像素](terms/pixel.md) | [Reach 觸及率](terms/reach.md) | [Retargeting 再行銷](terms/retargeting.md) | [ROAS](terms/roas.md) |
+| [Slogan / Tagline](terms/slogan-tagline.md) | [TA 目標客群](terms/ta.md) | [UGC 使用者原創內容](terms/ugc.md) | [Campaign（活動企劃）](terms/campaign.md) |
+| [SEM（搜尋引擎行銷）](terms/sem.md) | [Content Marketing（內容行銷）](terms/content-marketing.md) | [Viral Marketing（病毒式行銷）](terms/viral-marketing.md) | [Media Buy（媒體採購）](terms/media-buy.md) |
 
 ---
 
@@ -133,6 +134,17 @@
 
 ---
 
+## AI 行銷類
+
+> AI 正在改變搜尋和行銷的遊戲規則，這些是你需要知道的新詞。
+
+| 詞彙 | 一句話解釋 | 比喻 | 你會在哪聽到 | 詳細說明 |
+|------|-----------|------|-------------|---------|
+| GEO（生成式引擎優化） | 讓品牌出現在 AI 回答中的優化策略 | 讓 AI 推薦你的餐廳，而不只是 Google 排名 | 「現在光做 SEO 不夠了，要做 GEO」 | [詳細](terms/geo.md) |
+| AI Overview | Google 搜尋結果頂部的 AI 生成摘要 | 圖書館員幫你讀完書、整理重點唸給你聽 | 「我們的文章被 AI Overview 引用了」 | [詳細](terms/ai-overview.md) |
+
+---
+
 ## 比喻對照總表
 
 > 一次看完所有比喻，讓你對行銷術語建立直覺。
@@ -191,3 +203,10 @@
 | Content Marketing | 開免費烹飪教室，順便賣廚具 |
 | Viral Marketing | 同學間傳紙條，一個傳一個根本停不下來 |
 | Media Buy | 買電視廣告時段，用錢換曝光機會 |
+
+### AI 行銷類
+
+| 術語 | 比喻 |
+|------|------|
+| GEO | 讓 AI 推薦你的餐廳，而不只是 Google 搜尋排名靠前 |
+| AI Overview | 圖書館員幫你讀完書、整理重點唸給你聽——你不用自己翻書了 |

@@ -29,18 +29,18 @@
 
 ## 大綱
 
-> 共收錄 **152 個**軟體工程術語，點擊分類名稱直接跳轉。
+> 共收錄 **167 個**軟體工程術語，點擊分類名稱直接跳轉。
 
 | 分類 | 術語數 | 說明 |
 |------|:------:|------|
-| [基礎建設類](#基礎建設類) | 24 | 軟體開發的基礎環境與程式語言 |
+| [基礎建設類](#基礎建設類) | 27 | 軟體開發的基礎環境與程式語言 |
 | [日常開發類](#日常開發類) | 19 | 開始接觸開發後會碰到的詞 |
-| [協作類](#協作類) | 14 | 跟團隊合作時出現的詞 |
-| [工具類](#工具類) | 9 | 開發工具與 AI 編程助手 |
-| [開會時聽不懂類](#開會時聽不懂類) | 22 | 開會、看 Slack 時最常一頭霧水的詞 |
+| [協作類](#協作類) | 15 | 跟團隊合作時出現的詞 |
+| [工具類](#工具類) | 13 | 開發工具與 AI 編程助手 |
+| [開會時聽不懂類](#開會時聽不懂類) | 23 | 開會、看 Slack 時最常一頭霧水的詞 |
 | [專案管理類](#專案管理類) | 8 | PM 寫規格、追進度時會遇到的詞 |
 | [出事了類](#出事了類) | 7 | 系統出問題時工程師會說的詞 |
-| [依工程師類型分類](#依工程師類型分類) | 50 | 前端、後端、DevOps、Mobile、QA、資安⋯⋯ |
+| [依工程師類型分類](#依工程師類型分類) | 54 | 前端、後端、DevOps、Mobile、QA、資安⋯⋯ |
 
 > 想一次看完所有比喻？直接跳到 [比喻對照總表](#比喻對照總表)
 
@@ -51,45 +51,47 @@
 | | | | |
 |---|---|---|---|
 | [2FA](terms/2fa.md) | [A/B Testing](terms/ab-testing.md) | [Agent](terms/agent.md) | [Agile / Scrum](terms/agile-scrum.md) |
-| [Algorithm（演算法）](terms/algorithm.md) | [Antigravity](terms/antigravity.md) | [API](terms/api.md) | [API Key](terms/api-key.md) |
-| [App 審核](terms/app-review.md) | [Auth](terms/auth.md) | [AWS](terms/aws.md) | [Backup](terms/backup.md) |
-| [Blocker](terms/blocker.md) | [Branch](terms/branch.md) | [Bug / Debug](terms/bug-debug.md) | [Cache](terms/cache.md) |
-| [CDN](terms/cdn.md) | [CI/CD](terms/ci-cd.md) | [Claude](terms/claude.md) | [Claude Code](terms/claude-code.md) |
-| [Clone](terms/clone.md) | [Cloud](terms/cloud.md) | [Cocos Creator](terms/cocos-creator.md) | [Code Review](terms/code-review.md) |
-| [Commit](terms/commit.md) | [Compile / Build（編譯）](terms/compile-build.md) | [Component](terms/component.md) | [Concurrency](terms/concurrency.md) |
-| [Container / Docker](terms/container-docker.md) | [Conversion Rate](terms/conversion-rate.md) | [Cookie](terms/cookie.md) | [Crash](terms/crash.md) |
-| [Cron Job](terms/cron-job.md) | [CRUD](terms/crud.md) | [CSS](terms/css.md) | [Cursor](terms/cursor.md) |
-| [Dashboard](terms/dashboard.md) | [Data Lake / Warehouse](terms/data-lake-warehouse.md) | [Database](terms/database.md) | [Dependency](terms/dependency.md) |
-| [Deploy](terms/deploy.md) | [DevOps](terms/devops.md) | [DNS](terms/dns.md) | [Domain](terms/domain.md) |
-| [Downtime](terms/downtime.md) | [Edge Case](terms/edge-case.md) | [EKS](terms/eks.md) | [ELK Stack](terms/elk.md) |
-| [Encryption](terms/encryption.md) | [Endpoint](terms/endpoint.md) | [環境變數](terms/environment-variable.md) | [ETL](terms/etl.md) |
+| [AI Harness](terms/ai-harness.md) | [Algorithm（演算法）](terms/algorithm.md) | [Antigravity](terms/antigravity.md) | [API](terms/api.md) |
+| [API Key](terms/api-key.md) | [App 審核](terms/app-review.md) | [Auth](terms/auth.md) | [AWS](terms/aws.md) |
+| [Backup](terms/backup.md) | [Blocker](terms/blocker.md) | [Branch](terms/branch.md) | [Bug / Debug](terms/bug-debug.md) |
+| [Cache](terms/cache.md) | [CDN](terms/cdn.md) | [CI/CD](terms/ci-cd.md) | [Claude](terms/claude.md) |
+| [Claude Code](terms/claude-code.md) | [Clone](terms/clone.md) | [Cloud](terms/cloud.md) | [Cocos Creator](terms/cocos-creator.md) |
+| [Code Review](terms/code-review.md) | [Codex](terms/codex.md) | [Commit](terms/commit.md) | [Compile / Build（編譯）](terms/compile-build.md) |
+| [Component](terms/component.md) | [Concurrency](terms/concurrency.md) | [Container / Docker](terms/container-docker.md) | [Conversion Rate](terms/conversion-rate.md) |
+| [Cookie](terms/cookie.md) | [Crash](terms/crash.md) | [Cron Job](terms/cron-job.md) | [CRUD](terms/crud.md) |
+| [CSS](terms/css.md) | [Cursor](terms/cursor.md) | [Dashboard](terms/dashboard.md) | [Data Lake / Warehouse](terms/data-lake-warehouse.md) |
+| [Database](terms/database.md) | [Dependency](terms/dependency.md) | [Deploy](terms/deploy.md) | [DevOps](terms/devops.md) |
+| [DNS](terms/dns.md) | [Domain](terms/domain.md) | [Downtime](terms/downtime.md) | [Edge Case](terms/edge-case.md) |
+| [Edge Computing（邊緣運算）](terms/edge-computing.md) | [EKS](terms/eks.md) | [ELK Stack](terms/elk.md) | [Encryption](terms/encryption.md) |
+| [Endpoint](terms/endpoint.md) | [環境變數](terms/environment-variable.md) | [ETL](terms/etl.md) | [Event-Driven（事件驅動）](terms/event-driven.md) |
 | [Feature Flag](terms/feature-flag.md) | [Firewall](terms/firewall.md) | [FPS](terms/fps.md) | [Framework / Library](terms/framework-library.md) |
 | [Frontend / Backend](terms/frontend-backend.md) | [Full-Stack](terms/full-stack.md) | [GCP](terms/gcp.md) | [Gemini CLI](terms/gemini-cli.md) |
 | [Git](terms/git.md) | [Git Bash](terms/git-bash.md) | [GitHub](terms/github.md) | [Go / Golang](terms/golang.md) |
-| [H5](terms/h5.md) | [Hot Reload（熱重載）](terms/hot-reload.md) | [Hotfix](terms/hotfix.md) | [HTML](terms/html.md) |
-| [HTTP / HTTPS](terms/http-https.md) | [IDE](terms/ide.md) | [IP Address](terms/ip-address.md) | [JavaScript](terms/javascript.md) |
-| [JSON](terms/json.md) | [K8s](terms/k8s.md) | [Landing Page](terms/landing-page.md) | [Latency / Ping](terms/latency.md) |
-| [Legacy Code](terms/legacy-code.md) | [Linter（程式碼檢查器）](terms/linter.md) | [Load Balancer](terms/load-balancer.md) | [Localhost](terms/localhost.md) |
-| [Log](terms/log.md) | [Markdown](terms/markdown.md) | [Matchmaking](terms/matchmaking.md) | [MCP](terms/mcp.md) |
-| [Memory Leak（記憶體洩漏）](terms/memory-leak.md) | [Merge](terms/merge.md) | [Merge Conflict](terms/merge-conflict.md) | [Microservice](terms/microservice.md) |
-| [Middleware](terms/middleware.md) | [Migration（資料庫遷移）](terms/migration.md) | [MongoDB](terms/mongodb.md) | [Monitor / Alert](terms/monitor-alert.md) |
-| [MVP](terms/mvp.md) | [Native / Web App](terms/native-web-app.md) | [Node.js](terms/nodejs.md) | [npm](terms/npm.md) |
-| [OAuth](terms/oauth.md) | [Open Source](terms/open-source.md) | [ORM（物件關聯映射）](terms/orm.md) | [Phishing](terms/phishing.md) |
-| [Pipeline](terms/pipeline.md) | [Port](terms/port.md) | [PR（Pull Request）](terms/pull-request.md) | [Prompt](terms/prompt.md) |
-| [Protocol（通訊協定）](terms/protocol.md) | [Pull](terms/pull.md) | [Push](terms/push.md) | [Push Notification](terms/push-notification.md) |
-| [Python](terms/python.md) | [Rate Limit（速率限制）](terms/rate-limit.md) | [Redis](terms/redis.md) | [Refactor](terms/refactor.md) |
-| [Regression](terms/regression.md) | [Render](terms/render.md) | [Repo](terms/repo.md) | [REST / RESTful](terms/rest.md) |
-| [Rollback](terms/rollback.md) | [Rust](terms/rust.md) | [RWD](terms/rwd.md) | [S3](terms/s3.md) |
-| [SaaS](terms/saas.md) | [Sandbox](terms/sandbox.md) | [Scope](terms/scope.md) | [SDK](terms/sdk.md) |
-| [SemVer（語意化版本）](terms/semver.md) | [SEO](terms/seo.md) | [Server](terms/server.md) | [Session](terms/session.md) |
-| [Shader](terms/shader.md) | [Spec](terms/spec.md) | [SQL](terms/sql.md) | [SSH](terms/ssh.md) |
-| [SSL / TLS](terms/ssl-tls.md) | [Staging / Production](terms/staging-production.md) | [SuperClaude](terms/superclaude.md) | [Sync / Async](terms/sync-async.md) |
-| [Technical Debt](terms/technical-debt.md) | [Terminal / CLI](terms/terminal-cli.md) | [Test Case](terms/test-case.md) | [Thread（執行緒）](terms/thread.md) |
+| [GraphQL](terms/graphql.md) | [gRPC](terms/grpc.md) | [H5](terms/h5.md) | [Hot Reload（熱重載）](terms/hot-reload.md) |
+| [Hotfix](terms/hotfix.md) | [HTML](terms/html.md) | [HTTP / HTTPS](terms/http-https.md) | [IDE](terms/ide.md) |
+| [IP Address](terms/ip-address.md) | [JavaScript](terms/javascript.md) | [JSON](terms/json.md) | [K8s](terms/k8s.md) |
+| [Landing Page](terms/landing-page.md) | [Latency / Ping](terms/latency.md) | [Legacy Code](terms/legacy-code.md) | [Linter（程式碼檢查器）](terms/linter.md) |
+| [Load Balancer](terms/load-balancer.md) | [Localhost](terms/localhost.md) | [Log](terms/log.md) | [Markdown](terms/markdown.md) |
+| [Matchmaking](terms/matchmaking.md) | [MCP](terms/mcp.md) | [Memory Leak（記憶體洩漏）](terms/memory-leak.md) | [Merge](terms/merge.md) |
+| [Merge Conflict](terms/merge-conflict.md) | [Microservice](terms/microservice.md) | [Middleware](terms/middleware.md) | [Migration（資料庫遷移）](terms/migration.md) |
+| [MongoDB](terms/mongodb.md) | [Monitor / Alert](terms/monitor-alert.md) | [Monorepo（單一倉庫）](terms/monorepo.md) | [MVP](terms/mvp.md) |
+| [Native / Web App](terms/native-web-app.md) | [Node.js](terms/nodejs.md) | [npm](terms/npm.md) | [OAuth](terms/oauth.md) |
+| [Observability（可觀測性）](terms/observability.md) | [Open Source](terms/open-source.md) | [OpenClaw](terms/openclaw.md) | [ORM（物件關聯映射）](terms/orm.md) |
+| [Phishing](terms/phishing.md) | [Pipeline](terms/pipeline.md) | [Port](terms/port.md) | [PR（Pull Request）](terms/pull-request.md) |
+| [Prompt](terms/prompt.md) | [Protocol（通訊協定）](terms/protocol.md) | [Pull](terms/pull.md) | [Push](terms/push.md) |
+| [Push Notification](terms/push-notification.md) | [Python](terms/python.md) | [Rate Limit（速率限制）](terms/rate-limit.md) | [Redis](terms/redis.md) |
+| [Refactor](terms/refactor.md) | [Regression](terms/regression.md) | [Render](terms/render.md) | [Repo](terms/repo.md) |
+| [REST / RESTful](terms/rest.md) | [Rollback](terms/rollback.md) | [Rust](terms/rust.md) | [RWD](terms/rwd.md) |
+| [S3](terms/s3.md) | [SaaS](terms/saas.md) | [Sandbox](terms/sandbox.md) | [Scope](terms/scope.md) |
+| [SDK](terms/sdk.md) | [SemVer（語意化版本）](terms/semver.md) | [SEO](terms/seo.md) | [Server](terms/server.md) |
+| [Serverless（無伺服器）](terms/serverless.md) | [Session](terms/session.md) | [Shader](terms/shader.md) | [Spec](terms/spec.md) |
+| [SQL](terms/sql.md) | [SSH](terms/ssh.md) | [SSL / TLS](terms/ssl-tls.md) | [Staging / Production](terms/staging-production.md) |
+| [Sub-agent](terms/sub-agent.md) | [SuperClaude](terms/superclaude.md) | [Sync / Async](terms/sync-async.md) | [Technical Debt](terms/technical-debt.md) |
+| [Terminal / CLI](terms/terminal-cli.md) | [Terraform / IaC](terms/terraform-iac.md) | [Test Case](terms/test-case.md) | [Thread（執行緒）](terms/thread.md) |
 | [Timeout](terms/timeout.md) | [tmux](terms/tmux.md) | [Token](terms/token.md) | [TypeScript](terms/typescript.md) |
-| [UAT](terms/uat.md) |
-| [UI / UX](terms/ui-ux.md) | [Unity](terms/unity.md) | [VPN](terms/vpn.md) | [VS Code](terms/vscode.md) |
-| [Vulnerability](terms/vulnerability.md) | [Webhook](terms/webhook.md) | [WebSocket](terms/websocket.md) | [WebView](terms/webview.md) |
-| [YAML](terms/yaml.md) | | | |
+| [UAT](terms/uat.md) | [UI / UX](terms/ui-ux.md) | [Unity](terms/unity.md) | [VPN](terms/vpn.md) |
+| [VS Code](terms/vscode.md) | [Vulnerability](terms/vulnerability.md) | [WebAssembly (WASM)](terms/wasm.md) | [Webhook](terms/webhook.md) |
+| [WebSocket](terms/websocket.md) | [WebView](terms/webview.md) | [YAML](terms/yaml.md) | |
 
 ---
 
@@ -120,7 +122,10 @@
 | **Rust** | 又快又安全的程式語言 | 內建防撞系統的跑車 | 「這個服務效能要求高，用 **Rust** 來寫。」 | [→ 詳細](terms/rust.md) |
 | **Go / Golang** | Google 開發的高效能語言，擅長處理大量請求 | 能載很多人的快速公車 | 「這個 API 用 **Go** 來寫，效能會好很多。」 | [→ 詳細](terms/golang.md) |
 | **TypeScript** | JavaScript 加上型別檢查，寫錯更容易被抓到 | 有文法檢查的 Word | 「我們前端全面改用 **TypeScript** 了。」 | [→ 詳細](terms/typescript.md) |
+| **WebAssembly (WASM)** | 讓瀏覽器能跑接近原生速度的程式碼格式 | 腳踏車代步夠用，但需要速度時換上機車 | 「Figma 之所以流暢，是因為核心用了 **WASM**。」 | [→ 詳細](terms/wasm.md) |
 | **REST / RESTful** | 設計 API 的主流風格，用網址+動作來操作資料 | 圖書館的借還書規則 | 「這個 API 是 **RESTful** 的。」 | [→ 詳細](terms/rest.md) |
+| **GraphQL** | 讓前端精確指定要哪些資料的 API 查詢語言 | 自助餐，自己夾想吃的，不想吃的不拿 | 「用 **GraphQL** 之後，手機版流量省了 40%。」 | [→ 詳細](terms/graphql.md) |
+| **gRPC** | Google 開發的高效能服務間通訊協定 | 對講機溝通，快速即時，但外人聽不懂暗號 | 「內部微服務之間改用 **gRPC** 之後，延遲降了 60%。」 | [→ 詳細](terms/grpc.md) |
 | **WebSocket** | 瀏覽器和伺服器之間的即時雙向通道 | 打電話（隨時都能講話） | 「聊天室要用 **WebSocket** 才能即時收訊息。」 | [→ 詳細](terms/websocket.md) |
 | **Protocol（通訊協定）** | 電腦之間溝通時遵守的規則 | 寄信的郵政規格 | 「HTTP 是一種 **protocol**。」 | [→ 詳細](terms/protocol.md) |
 
@@ -174,6 +179,7 @@
 | **Pull（拉取）** | 把雲端最新的存檔下載到你的電腦 | 同步共用資料夾 | 「你先 **pull** 一下，我剛改了一些東西。」 | [→ 詳細](terms/pull.md) |
 | **Merge Conflict（合併衝突）** | 兩個人改到同一個地方，要手動決定用誰的版本 | 兩份企劃書的同一段不一樣 | 「我在解 **conflict**，要花點時間。」 | [→ 詳細](terms/merge-conflict.md) |
 | **Code Review（程式碼審查）** | 程式碼寫完請同事檢查的流程 | 文章校稿 | 「這個 PR 還在等 **code review**。」 | [→ 詳細](terms/code-review.md) |
+| **Monorepo** | 把多個相關專案放在同一個 Git 倉庫裡管理 | 開放式辦公室，所有人在同一層樓，溝通方便但可能吵 | 「我們決定遷移到 **Monorepo**，用 Turborepo 管理。」 | [→ 詳細](terms/monorepo.md) |
 | **SemVer（語意化版本）** | 用三組數字（1.2.3）標示軟體版本的規則 | 教科書的版次：第幾版.第幾刷.第幾次修正 | 「這次改了 API，major version 要升。」 | [→ 詳細](terms/semver.md) |
 
 ---
@@ -191,6 +197,10 @@
 | **Claude** | Anthropic 開發的 AI 助手，擅長寫作、分析、寫程式 | 什麼都懂一點的全能助理 | 「把需求丟給 **Claude**，讓它先寫初版。」 | [→ 詳細](terms/claude.md) |
 | **Claude Code** | Anthropic 的 CLI 編程工具，在終端機裡直接改你的程式碼 | 坐在你旁邊直接動手改的顧問 | 「我用 **Claude Code** 重構了那個模組。」 | [→ 詳細](terms/claude-code.md) |
 | **Gemini CLI** | Google 的 CLI 編程工具，在終端機裡用 Gemini AI 寫程式 | 直接打給 AI 包工頭的電話 | 「小功能我直接用 **Gemini CLI** 改。」 | [→ 詳細](terms/gemini-cli.md) |
+| **Codex** | OpenAI 的 AI coding agent，Claude Code 的主要競爭對手 | OpenAI 派出的 AI 工程師 | 「我們團隊一半用 Claude Code、一半用 **Codex**。」 | [→ 詳細](terms/codex.md) |
+| **OpenClaw** | 2026 年最紅的開源 AI coding agent | 免費的、社群打造的 AI 工程師助手 | 「我改用 **OpenClaw** 了，接 DeepSeek 超便宜。」 | [→ 詳細](terms/openclaw.md) |
+| **AI Harness** | 包裝 LLM API、管理工具呼叫和上下文的框架 | 幫你跟多個外包廠商溝通的管家 | 「我們用 LangChain 當 **AI Harness**。」 | [→ 詳細](terms/ai-harness.md) |
+| **Sub-agent** | AI agent 產生子 agent 來分工完成大型任務 | 主管把大案子拆給不同下屬 | 「主 agent 派了三個 **Sub-agent** 平行處理。」 | [→ 詳細](terms/sub-agent.md) |
 | **Linter（程式碼檢查器）** | 自動檢查程式碼風格和潛在問題的工具 | 文章的文法檢查器 | 「**Linter** 報了 20 個警告，先修一下。」 | [→ 詳細](terms/linter.md) |
 | **tmux** | 讓一個 Terminal 視窗同時開好幾塊工作區域，還能暫離回來繼續 | 一台電視變電視牆 | 「開 **tmux** 吧，斷線了工作還在跑。」 | [→ 詳細](terms/tmux.md) |
 
@@ -213,6 +223,7 @@
 | **Token（令牌）** | 系統發給你的臨時通行證 | 遊樂園手上的入場章 | 「**Token** 過期了，要重新登入。」 | [→ 詳細](terms/token.md) |
 | **OAuth** | 讓你用 Google、Facebook 帳號登入其他網站的機制 | 大樓管理處發的臨時通行證 | 「登入頁要加 **OAuth**，支援 Google 登入。」 | [→ 詳細](terms/oauth.md) |
 | **Microservice（微服務）** | 把一個大系統拆成很多獨立的小服務 | 美食街各攤位獨立經營 | 「我們要把系統拆成**微服務**架構。」 | [→ 詳細](terms/microservice.md) |
+| **Event-Driven（事件驅動）** | 系統的各部分靠「事件」互相溝通、觸發動作的架構 | 廣播系統，喊一聲「開飯了」，各部門自己去吃 | 「我們的訂單系統是 **Event-Driven** 的，下單後各服務自己處理。」 | [→ 詳細](terms/event-driven.md) |
 | **SEO（搜尋引擎優化）** | 讓網站在 Google 搜尋結果排更前面的技巧 | 把店開在大馬路上 | 「首頁的標題要改，**SEO** 分數太低了。」 | [→ 詳細](terms/seo.md) |
 | **A/B Testing** | 同時試兩個版本，用數據決定哪個比較好 | 飲料店同時推兩種新口味試賣 | 「這個設計先跑個 **A/B test** 看看。」 | [→ 詳細](terms/ab-testing.md) |
 | **Session（工作階段）** | 系統記住「你正在使用中」的那段時間 | 餐廳包廂的臨時號碼牌 | 「**Session** 過期了，要重新登入。」 | [→ 詳細](terms/session.md) |
@@ -311,8 +322,12 @@ PM 寫規格、追進度時會遇到的詞：
 | **CI/CD** | 程式碼寫完後自動測試、自動部署的流水線 | 迴轉壽司帶，做好自動送到客人面前 | 「**CI** 跑失敗了，有一個測試沒過。」 | [→ 詳細](terms/ci-cd.md) |
 | **Container / Docker（容器）** | 把程式和環境打包在一起，到哪都能跑 | 貨櫃，不管什麼船運，裡面的東西都好好的 | 「把這個服務包成 **Docker** image。」 | [→ 詳細](terms/container-docker.md) |
 | **Cloud（雲端）** | 不買自己的電腦，租別人的來跑程式 | 租辦公室而不是自己蓋大樓 | 「我們的服務都跑在 **AWS** 上。」 | [→ 詳細](terms/cloud.md) |
+| **Serverless（無伺服器）** | 不用管伺服器，程式碼丟上去就能跑，按用量計費 | 叫 Uber，要用才叫，按趟計費，不用自己養車 | 「這個 API 流量很低，用 **Serverless** 比較省錢。」 | [→ 詳細](terms/serverless.md) |
+| **Edge Computing（邊緣運算）** | 把運算放到離使用者最近的邊緣節點處理 | 便利商店比大賣場近，東西少但拿得快 | 「我們把 API 部署到 **Edge**，全球延遲都降到 50ms 以下。」 | [→ 詳細](terms/edge-computing.md) |
 | **Monitor / Alert（監控 / 告警）** | 自動盯著系統狀態，異常馬上通知 | 家裡的煙霧偵測器 | 「**Alert** 一直響，先去看看怎麼回事。」 | [→ 詳細](terms/monitor-alert.md) |
+| **Observability（可觀測性）** | 從 log、指標、追蹤等外部輸出理解系統內部狀態的能力 | 接上 OBD 診斷器，看到「第三缸點火異常」，不只是引擎燈亮 | 「導入 OpenTelemetry 之後，系統的 **可觀測性** 大幅提升。」 | [→ 詳細](terms/observability.md) |
 | **Load Balancer（負載均衡器）** | 把大量請求分散到不同伺服器 | 百貨公司手扶梯引導員 | 「**Load balancer** 會自動分流，應該沒問題。」 | [→ 詳細](terms/load-balancer.md) |
+| **Terraform / IaC** | 用程式碼定義和管理雲端基礎設施的做法 | 寫好食譜，照著做，每次味道都一樣 | 「我們所有基礎設施都用 **Terraform** 管理，不允許手動改。」 | [→ 詳細](terms/terraform-iac.md) |
 | **AWS** | Amazon 的雲端服務平台，市佔率全球第一 | Amazon 開的電腦出租公司 | 「我們的服務跑在 **AWS** 上。」 | [→ 詳細](terms/aws.md) |
 | **GCP** | Google 的雲端服務平台，AI 和資料分析特別強 | Google 開的電腦出租公司 | 「BigQuery 是 **GCP** 上的。」 | [→ 詳細](terms/gcp.md) |
 | **S3** | AWS 上的檔案儲存空間，容量無上限 | 容量無上限的雲端硬碟 | 「檔案上傳到 **S3** 上。」 | [→ 詳細](terms/s3.md) |
@@ -389,7 +404,10 @@ PM 寫規格、追進度時會遇到的詞：
 | Rust | 內建防撞系統的跑車 |
 | Go / Golang | 能載很多人的快速公車 |
 | TypeScript | 有文法檢查的 Word |
+| WebAssembly (WASM) | 腳踏車代步夠用，但需要速度時換上機車 |
 | REST / RESTful | 圖書館的借還書規則 |
+| GraphQL | 自助餐，自己夾想吃的，不想吃的不拿 |
+| gRPC | 對講機溝通，快速即時，但外人聽不懂暗號 |
 | WebSocket | 打電話（隨時雙向溝通） |
 | Protocol（通訊協定） | 寄信的郵政規格 |
 
@@ -434,6 +452,7 @@ PM 寫規格、追進度時會遇到的詞：
 | PR（Pull Request） | 公文會簽 |
 | Code Review（程式碼審查） | 文章校稿 |
 | Open Source（開源） | 公開食譜的餐廳 |
+| Monorepo | 開放式辦公室，所有人在同一層樓 |
 | SemVer（語意化版本） | 教科書的版次 |
 
 ### 工具
@@ -468,6 +487,7 @@ PM 寫規格、追進度時會遇到的詞：
 | OAuth | 大樓管理處發的臨時通行證 |
 | Session（工作階段） | 餐廳包廂的臨時號碼牌 |
 | Microservice（微服務） | 美食街各攤位獨立經營 |
+| Event-Driven（事件驅動） | 廣播系統，喊一聲「開飯了」，各部門自己去吃 |
 | SEO（搜尋引擎優化） | 把店開在大馬路上 |
 | A/B Testing | 飲料店同時推兩種新口味試賣 |
 | Landing Page（到達頁） | 週年慶特別佈置的百貨公司一樓 |
@@ -529,8 +549,12 @@ PM 寫規格、追進度時會遇到的詞：
 | CI/CD | 迴轉壽司的自動化流水線 |
 | Container / Docker（容器） | 標準化貨櫃 |
 | Cloud（雲端） | 租辦公室而不是自己蓋大樓 |
+| Serverless（無伺服器） | 叫 Uber，要用才叫，按趟計費 |
+| Edge Computing（邊緣運算） | 便利商店比大賣場近，東西少但拿得快 |
 | Monitor / Alert（監控 / 告警） | 家裡的煙霧偵測器 |
+| Observability（可觀測性） | 接上 OBD 診斷器，看到「第三缸點火異常」 |
 | Load Balancer（負載均衡器） | 百貨公司手扶梯引導員 |
+| Terraform / IaC | 寫好食譜，照著做，每次味道都一樣 |
 | AWS | Amazon 開的電腦出租公司 |
 | GCP | Google 開的電腦出租公司 |
 | S3 | 容量無上限的雲端硬碟 |

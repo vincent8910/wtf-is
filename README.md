@@ -50,12 +50,12 @@
 
 | 領域 | 術語數 | 說明 |
 |------|:------:|------|
-| [💻 軟體工程](software-engineering/README.md) | 152 | API、Git、Deploy、Docker⋯⋯ |
+| [💻 軟體工程](software-engineering/README.md) | 167 | API、Git、Deploy、Docker⋯⋯ |
 | [💹 股票投資](stock/README.md) | 94 | 技術分析、交易策略、美股台股制度⋯⋯ |
 | [🔬 電子產業](electronics/README.md) | 30 | 半導體、封裝測試、HBM⋯⋯ |
-| [📣 行銷企劃](marketing/README.md) | 30 | 數位廣告、轉換率、社群行銷⋯⋯ |
+| [📣 行銷企劃](marketing/README.md) | 32 | 數位廣告、轉換率、社群行銷⋯⋯ |
 | [🎨 美術設計](design/README.md) | 27 | CMYK、出血、切圖、設計系統⋯⋯ |
-| [🏢 企業管理與營運](management/README.md) | 32 | KPI、OKR、商業模式、組織管理⋯⋯ |
+| [🏢 企業管理與營運](management/README.md) | 33 | KPI、OKR、商業模式、組織管理⋯⋯ |
 | [📊 數據分析](data-analytics/README.md) | 24 | 大數據、機器學習、留存率、LTV⋯⋯ |
 | [🎰 博弈](gambling/README.md) | 64 | 老虎機、RTP、百家樂、莊家優勢⋯⋯ |
 | [🎮 遊戲設計](game-design/README.md) | 45 | Core Loop、Gacha、RPG、Buff/Nerf⋯⋯ |
@@ -66,7 +66,7 @@
 | [🪙 加密貨幣 / Web3](crypto/README.md) | 80 | Blockchain、DeFi、NFT、HODL⋯⋯ |
 | [🧩 UX / 產品設計](ux-product/README.md) | 15 | User Research、Pain Point、PRD⋯⋯ |
 | [💰 財務會計](finance-accounting/README.md) | 20 | 資產負債表、損益表、EBITDA、折舊⋯⋯ |
-| [🤖 AI / 機器學習](ai-ml/README.md) | 27 | LLM、GPT、Transformer、Prompt Engineering⋯⋯ |
+| [🤖 AI / 機器學習](ai-ml/README.md) | 44 | LLM、GPT、Transformer、Prompt Engineering⋯⋯ |
 
 > **💡 點進各領域的完整頁面，每個術語都有這樣的詳細對照：**
 >
@@ -81,39 +81,40 @@
 
 ### 大綱
 
-> 共收錄 **152 個**術語，[點此進入完整頁面](software-engineering/README.md)。
+> 共收錄 **167 個**術語，[點此進入完整頁面](software-engineering/README.md)。
 
 | 分類 | 術語數 | 說明 |
 |------|:------:|------|
-| [基礎建設類](software-engineering/README.md#基礎建設類) | 24 | 軟體開發的基礎環境與程式語言 |
+| [基礎建設類](software-engineering/README.md#基礎建設類) | 27 | 軟體開發的基礎環境與程式語言 |
 | [日常開發類](software-engineering/README.md#日常開發類) | 19 | 開始接觸開發後會碰到的詞 |
-| [協作類](software-engineering/README.md#協作類) | 14 | 跟團隊合作時出現的詞 |
-| [工具類](software-engineering/README.md#工具類) | 8 | 開發工具與 AI 編程助手 |
-| [開會時聽不懂類](software-engineering/README.md#開會時聽不懂類) | 22 | 開會、看 Slack 時最常一頭霧水的詞 |
+| [協作類](software-engineering/README.md#協作類) | 15 | 跟團隊合作時出現的詞 |
+| [工具類](software-engineering/README.md#工具類) | 13 | 開發工具與 AI 編程助手 |
+| [開會時聽不懂類](software-engineering/README.md#開會時聽不懂類) | 23 | 開會、看 Slack 時最常一頭霧水的詞 |
 | [專案管理類](software-engineering/README.md#專案管理類) | 8 | PM 寫規格、追進度時會遇到的詞 |
 | [出事了類](software-engineering/README.md#出事了類) | 7 | 系統出問題時工程師會說的詞 |
-| [依工程師類型分類](software-engineering/README.md#依工程師類型分類) | 50 | 前端、後端、DevOps、Mobile、QA、資安⋯⋯ |
+| [依工程師類型分類](software-engineering/README.md#依工程師類型分類) | 54 | 前端、後端、DevOps、Mobile、QA、資安⋯⋯ |
 
 ### 單字速查表（A-Z）
 
 | | | | |
 |---|---|---|---|
 | [2FA](software-engineering/terms/2fa.md) | [A/B Testing](software-engineering/terms/ab-testing.md) | [Agent](software-engineering/terms/agent.md) | [Agile / Scrum](software-engineering/terms/agile-scrum.md) |
-| [Algorithm](software-engineering/terms/algorithm.md) | [Antigravity](software-engineering/terms/antigravity.md) | [API](software-engineering/terms/api.md) | [API Key](software-engineering/terms/api-key.md) |
-| [App 審核](software-engineering/terms/app-review.md) | [Auth](software-engineering/terms/auth.md) | [AWS](software-engineering/terms/aws.md) | [Backup](software-engineering/terms/backup.md) |
-| [Blocker](software-engineering/terms/blocker.md) | [Branch](software-engineering/terms/branch.md) | [Bug / Debug](software-engineering/terms/bug-debug.md) | [Cache](software-engineering/terms/cache.md) |
-| [CDN](software-engineering/terms/cdn.md) | [CI/CD](software-engineering/terms/ci-cd.md) | [Claude](software-engineering/terms/claude.md) | [Claude Code](software-engineering/terms/claude-code.md) |
-| [Clone](software-engineering/terms/clone.md) | [Cloud](software-engineering/terms/cloud.md) | [Cocos Creator](software-engineering/terms/cocos-creator.md) | [Code Review](software-engineering/terms/code-review.md) |
-| [Commit](software-engineering/terms/commit.md) | [Compile / Build](software-engineering/terms/compile-build.md) | [Component](software-engineering/terms/component.md) | [Concurrency](software-engineering/terms/concurrency.md) |
-| [Container / Docker](software-engineering/terms/container-docker.md) | [Conversion Rate](software-engineering/terms/conversion-rate.md) | [Cookie](software-engineering/terms/cookie.md) | [Crash](software-engineering/terms/crash.md) |
-| [Cron Job](software-engineering/terms/cron-job.md) | [CRUD](software-engineering/terms/crud.md) | [CSS](software-engineering/terms/css.md) | [Cursor](software-engineering/terms/cursor.md) |
-| [Dashboard](software-engineering/terms/dashboard.md) | [Data Lake / Warehouse](software-engineering/terms/data-lake-warehouse.md) | [Database](software-engineering/terms/database.md) | [Dependency](software-engineering/terms/dependency.md) |
-| [Deploy](software-engineering/terms/deploy.md) | [DevOps](software-engineering/terms/devops.md) | [DNS](software-engineering/terms/dns.md) | [Domain](software-engineering/terms/domain.md) |
-| [Downtime](software-engineering/terms/downtime.md) | [Edge Case](software-engineering/terms/edge-case.md) | [EKS](software-engineering/terms/eks.md) | [ELK Stack](software-engineering/terms/elk.md) |
-| [Encryption](software-engineering/terms/encryption.md) | [Endpoint](software-engineering/terms/endpoint.md) | [環境變數](software-engineering/terms/environment-variable.md) | [ETL](software-engineering/terms/etl.md) |
-| [Feature Flag](software-engineering/terms/feature-flag.md) | [Firewall](software-engineering/terms/firewall.md) | [FPS](software-engineering/terms/fps.md) | [Framework / Library](software-engineering/terms/framework-library.md) |
-| [Frontend / Backend](software-engineering/terms/frontend-backend.md) | [Full-Stack](software-engineering/terms/full-stack.md) | [GCP](software-engineering/terms/gcp.md) | [Gemini CLI](software-engineering/terms/gemini-cli.md) |
-| [Git](software-engineering/terms/git.md) | [Git Bash](software-engineering/terms/git-bash.md) | [GitHub](software-engineering/terms/github.md) | [Go / Golang](software-engineering/terms/golang.md) |
+| [AI Harness](software-engineering/terms/ai-harness.md) | [Algorithm](software-engineering/terms/algorithm.md) | [Antigravity](software-engineering/terms/antigravity.md) | [API](software-engineering/terms/api.md) |
+| [API Key](software-engineering/terms/api-key.md) | [App 審核](software-engineering/terms/app-review.md) | [Auth](software-engineering/terms/auth.md) | [AWS](software-engineering/terms/aws.md) |
+| [Backup](software-engineering/terms/backup.md) | [Blocker](software-engineering/terms/blocker.md) | [Branch](software-engineering/terms/branch.md) | [Bug / Debug](software-engineering/terms/bug-debug.md) |
+| [Cache](software-engineering/terms/cache.md) | [CDN](software-engineering/terms/cdn.md) | [CI/CD](software-engineering/terms/ci-cd.md) | [Claude](software-engineering/terms/claude.md) |
+| [Claude Code](software-engineering/terms/claude-code.md) | [Clone](software-engineering/terms/clone.md) | [Cloud](software-engineering/terms/cloud.md) | [Cocos Creator](software-engineering/terms/cocos-creator.md) |
+| [Code Review](software-engineering/terms/code-review.md) | [Codex](software-engineering/terms/codex.md) | [Commit](software-engineering/terms/commit.md) | [Compile / Build](software-engineering/terms/compile-build.md) |
+| [Component](software-engineering/terms/component.md) | [Concurrency](software-engineering/terms/concurrency.md) | [Container / Docker](software-engineering/terms/container-docker.md) | [Conversion Rate](software-engineering/terms/conversion-rate.md) |
+| [Cookie](software-engineering/terms/cookie.md) | [Crash](software-engineering/terms/crash.md) | [Cron Job](software-engineering/terms/cron-job.md) | [CRUD](software-engineering/terms/crud.md) |
+| [CSS](software-engineering/terms/css.md) | [Cursor](software-engineering/terms/cursor.md) | [Dashboard](software-engineering/terms/dashboard.md) | [Data Lake / Warehouse](software-engineering/terms/data-lake-warehouse.md) |
+| [Database](software-engineering/terms/database.md) | [Dependency](software-engineering/terms/dependency.md) | [Deploy](software-engineering/terms/deploy.md) | [DevOps](software-engineering/terms/devops.md) |
+| [Downtime](software-engineering/terms/downtime.md) | [Edge Case](software-engineering/terms/edge-case.md) | [Edge Computing](software-engineering/terms/edge-computing.md) | [EKS](software-engineering/terms/eks.md) |
+| [ELK Stack](software-engineering/terms/elk.md) | [Encryption](software-engineering/terms/encryption.md) | [Endpoint](software-engineering/terms/endpoint.md) | [環境變數](software-engineering/terms/environment-variable.md) |
+| [ETL](software-engineering/terms/etl.md) | [Event-Driven](software-engineering/terms/event-driven.md) | [Feature Flag](software-engineering/terms/feature-flag.md) | [Firewall](software-engineering/terms/firewall.md) |
+| [FPS](software-engineering/terms/fps.md) | [Framework / Library](software-engineering/terms/framework-library.md) | [Frontend / Backend](software-engineering/terms/frontend-backend.md) | [Full-Stack](software-engineering/terms/full-stack.md) |
+| [GCP](software-engineering/terms/gcp.md) | [Gemini CLI](software-engineering/terms/gemini-cli.md) | [Git](software-engineering/terms/git.md) | [Git Bash](software-engineering/terms/git-bash.md) |
+| [GitHub](software-engineering/terms/github.md) | [Go / Golang](software-engineering/terms/golang.md) | [GraphQL](software-engineering/terms/graphql.md) | [gRPC](software-engineering/terms/grpc.md) |
 | [H5](software-engineering/terms/h5.md) | [Hot Reload](software-engineering/terms/hot-reload.md) | [Hotfix](software-engineering/terms/hotfix.md) | [HTML](software-engineering/terms/html.md) |
 | [HTTP / HTTPS](software-engineering/terms/http-https.md) | [IDE](software-engineering/terms/ide.md) | [IP Address](software-engineering/terms/ip-address.md) | [JavaScript](software-engineering/terms/javascript.md) |
 | [JSON](software-engineering/terms/json.md) | [K8s](software-engineering/terms/k8s.md) | [Landing Page](software-engineering/terms/landing-page.md) | [Latency / Ping](software-engineering/terms/latency.md) |
@@ -121,23 +122,23 @@
 | [Log](software-engineering/terms/log.md) | [Markdown](software-engineering/terms/markdown.md) | [Matchmaking](software-engineering/terms/matchmaking.md) | [MCP](software-engineering/terms/mcp.md) |
 | [Memory Leak](software-engineering/terms/memory-leak.md) | [Merge](software-engineering/terms/merge.md) | [Merge Conflict](software-engineering/terms/merge-conflict.md) | [Microservice](software-engineering/terms/microservice.md) |
 | [Middleware](software-engineering/terms/middleware.md) | [Migration](software-engineering/terms/migration.md) | [MongoDB](software-engineering/terms/mongodb.md) | [Monitor / Alert](software-engineering/terms/monitor-alert.md) |
-| [MVP](software-engineering/terms/mvp.md) | [Native / Web App](software-engineering/terms/native-web-app.md) | [Node.js](software-engineering/terms/nodejs.md) | [npm](software-engineering/terms/npm.md) |
-| [OAuth](software-engineering/terms/oauth.md) | [Open Source](software-engineering/terms/open-source.md) | [ORM](software-engineering/terms/orm.md) | [Phishing](software-engineering/terms/phishing.md) |
-| [Pipeline](software-engineering/terms/pipeline.md) | [Port](software-engineering/terms/port.md) | [PR（Pull Request）](software-engineering/terms/pull-request.md) | [Prompt](software-engineering/terms/prompt.md) |
-| [Protocol](software-engineering/terms/protocol.md) | [Pull](software-engineering/terms/pull.md) | [Push](software-engineering/terms/push.md) | [Push Notification](software-engineering/terms/push-notification.md) |
-| [Python](software-engineering/terms/python.md) | [Rate Limit](software-engineering/terms/rate-limit.md) | [Redis](software-engineering/terms/redis.md) | [Refactor](software-engineering/terms/refactor.md) |
-| [Regression](software-engineering/terms/regression.md) | [Render](software-engineering/terms/render.md) | [Repo](software-engineering/terms/repo.md) | [REST / RESTful](software-engineering/terms/rest.md) |
-| [Rollback](software-engineering/terms/rollback.md) | [Rust](software-engineering/terms/rust.md) | [RWD](software-engineering/terms/rwd.md) | [S3](software-engineering/terms/s3.md) |
-| [SaaS](software-engineering/terms/saas.md) | [Sandbox](software-engineering/terms/sandbox.md) | [Scope](software-engineering/terms/scope.md) | [SDK](software-engineering/terms/sdk.md) |
-| [SemVer](software-engineering/terms/semver.md) | [SEO](software-engineering/terms/seo.md) | [Server](software-engineering/terms/server.md) | [Session](software-engineering/terms/session.md) |
-| [Shader](software-engineering/terms/shader.md) | [Spec](software-engineering/terms/spec.md) | [SQL](software-engineering/terms/sql.md) | [SSH](software-engineering/terms/ssh.md) |
-| [SSL / TLS](software-engineering/terms/ssl-tls.md) | [Staging / Production](software-engineering/terms/staging-production.md) | [SuperClaude](software-engineering/terms/superclaude.md) | [Sync / Async](software-engineering/terms/sync-async.md) |
-| [Technical Debt](software-engineering/terms/technical-debt.md) | [Terminal / CLI](software-engineering/terms/terminal-cli.md) | [Test Case](software-engineering/terms/test-case.md) | [Thread](software-engineering/terms/thread.md) |
-| [Timeout](software-engineering/terms/timeout.md) | [tmux](software-engineering/terms/tmux.md) | [Token](software-engineering/terms/token.md) | [TypeScript](software-engineering/terms/typescript.md) |
-| [UAT](software-engineering/terms/uat.md) |
-| [UI / UX](software-engineering/terms/ui-ux.md) | [Unity](software-engineering/terms/unity.md) | [VPN](software-engineering/terms/vpn.md) | [VS Code](software-engineering/terms/vscode.md) |
-| [Vulnerability](software-engineering/terms/vulnerability.md) | [Webhook](software-engineering/terms/webhook.md) | [WebSocket](software-engineering/terms/websocket.md) | [WebView](software-engineering/terms/webview.md) |
-| [YAML](software-engineering/terms/yaml.md) | | | |
+| [Monorepo](software-engineering/terms/monorepo.md) | [MVP](software-engineering/terms/mvp.md) | [Native / Web App](software-engineering/terms/native-web-app.md) | [Node.js](software-engineering/terms/nodejs.md) |
+| [npm](software-engineering/terms/npm.md) | [OAuth](software-engineering/terms/oauth.md) | [Observability](software-engineering/terms/observability.md) | [Open Source](software-engineering/terms/open-source.md) |
+| [OpenClaw](software-engineering/terms/openclaw.md) | [ORM](software-engineering/terms/orm.md) | [Phishing](software-engineering/terms/phishing.md) | [Pipeline](software-engineering/terms/pipeline.md) |
+| [Port](software-engineering/terms/port.md) | [PR（Pull Request）](software-engineering/terms/pull-request.md) | [Prompt](software-engineering/terms/prompt.md) | [Protocol](software-engineering/terms/protocol.md) |
+| [Pull](software-engineering/terms/pull.md) | [Push](software-engineering/terms/push.md) | [Python](software-engineering/terms/python.md) | [Rate Limit](software-engineering/terms/rate-limit.md) |
+| [Redis](software-engineering/terms/redis.md) | [Refactor](software-engineering/terms/refactor.md) | [Regression](software-engineering/terms/regression.md) | [Render](software-engineering/terms/render.md) |
+| [Repo](software-engineering/terms/repo.md) | [REST / RESTful](software-engineering/terms/rest.md) | [Rollback](software-engineering/terms/rollback.md) | [Rust](software-engineering/terms/rust.md) |
+| [RWD](software-engineering/terms/rwd.md) | [S3](software-engineering/terms/s3.md) | [SaaS](software-engineering/terms/saas.md) | [Sandbox](software-engineering/terms/sandbox.md) |
+| [Scope](software-engineering/terms/scope.md) | [SDK](software-engineering/terms/sdk.md) | [SemVer](software-engineering/terms/semver.md) | [SEO](software-engineering/terms/seo.md) |
+| [Server](software-engineering/terms/server.md) | [Serverless](software-engineering/terms/serverless.md) | [Session](software-engineering/terms/session.md) | [Shader](software-engineering/terms/shader.md) |
+| [Spec](software-engineering/terms/spec.md) | [SQL](software-engineering/terms/sql.md) | [SSH](software-engineering/terms/ssh.md) | [SSL / TLS](software-engineering/terms/ssl-tls.md) |
+| [Staging / Production](software-engineering/terms/staging-production.md) | [Sub-agent](software-engineering/terms/sub-agent.md) | [SuperClaude](software-engineering/terms/superclaude.md) | [Sync / Async](software-engineering/terms/sync-async.md) |
+| [Technical Debt](software-engineering/terms/technical-debt.md) | [Terminal / CLI](software-engineering/terms/terminal-cli.md) | [Terraform / IaC](software-engineering/terms/terraform-iac.md) | [Test Case](software-engineering/terms/test-case.md) |
+| [Thread](software-engineering/terms/thread.md) | [Timeout](software-engineering/terms/timeout.md) | [tmux](software-engineering/terms/tmux.md) | [Token](software-engineering/terms/token.md) |
+| [TypeScript](software-engineering/terms/typescript.md) | [UAT](software-engineering/terms/uat.md) | [UI / UX](software-engineering/terms/ui-ux.md) | [Unity](software-engineering/terms/unity.md) |
+| [VPN](software-engineering/terms/vpn.md) | [VS Code](software-engineering/terms/vscode.md) | [Vulnerability](software-engineering/terms/vulnerability.md) | [WebAssembly (WASM)](software-engineering/terms/wasm.md) |
+| [Webhook](software-engineering/terms/webhook.md) | [WebSocket](software-engineering/terms/websocket.md) | [WebView](software-engineering/terms/webview.md) | [YAML](software-engineering/terms/yaml.md) |
 
 ---
 
@@ -223,7 +224,7 @@
 
 ### 大綱
 
-> 共收錄 **30 個**術語，[點此進入完整頁面](marketing/README.md)。
+> 共收錄 **32 個**術語，[點此進入完整頁面](marketing/README.md)。
 
 | 分類 | 術語數 | 說明 |
 |------|:------:|------|
@@ -244,7 +245,7 @@
 | [KOL / KOC](marketing/terms/kol-koc.md) | [Persona 人物誌](marketing/terms/persona.md) | [Pixel 追蹤像素](marketing/terms/pixel.md) | [Reach 觸及率](marketing/terms/reach.md) |
 | [Retargeting 再行銷](marketing/terms/retargeting.md) | [ROAS](marketing/terms/roas.md) | [Slogan / Tagline](marketing/terms/slogan-tagline.md) | [TA 目標客群](marketing/terms/ta.md) |
 | [UGC 使用者原創內容](marketing/terms/ugc.md) | [Campaign（活動企劃）](marketing/terms/campaign.md) | [SEM（搜尋引擎行銷）](marketing/terms/sem.md) | [Content Marketing（內容行銷）](marketing/terms/content-marketing.md) |
-| [Viral Marketing（病毒式行銷）](marketing/terms/viral-marketing.md) | [Media Buy（媒體採購）](marketing/terms/media-buy.md) | | |
+| [Viral Marketing（病毒式行銷）](marketing/terms/viral-marketing.md) | [Media Buy（媒體採購）](marketing/terms/media-buy.md) | [GEO（生成式引擎優化）](marketing/terms/geo.md) | [AI Overview](marketing/terms/ai-overview.md) |
 
 ---
 
@@ -280,7 +281,7 @@
 
 ### 大綱
 
-> 共收錄 **32 個**術語，[點此進入完整頁面](management/README.md)。
+> 共收錄 **33 個**術語，[點此進入完整頁面](management/README.md)。
 
 | 分類 | 術語數 | 說明 |
 |------|:------:|------|
@@ -296,14 +297,15 @@
 
 | | | | |
 |---|---|---|---|
-| [B2B / B2C](management/terms/b2b-b2c.md) | [BU（事業單位）](management/terms/bu.md) | [Cash Flow（現金流）](management/terms/cash-flow.md) | [Cost Structure（成本結構）](management/terms/cost-structure.md) |
-| [Cross-functional（跨部門協作）](management/terms/cross-functional.md) | [Dashboard（儀表板）](management/terms/dashboard.md) | [Dilution（股權稀釋）](management/terms/dilution.md) | [Gross Margin（毛利率）](management/terms/gross-margin.md) |
-| [GTM（Go-to-Market）](management/terms/gtm.md) | [KPI](management/terms/kpi.md) | [MoU（合作備忘錄）](management/terms/mou.md) | [MVP（最小可行產品）](management/terms/mvp.md) |
-| [NDA（保密協議）](management/terms/nda.md) | [OKR](management/terms/okr.md) | [Org Chart（組織架構）](management/terms/org-chart.md) | [P&L（損益表）](management/terms/pnl.md) |
-| [PDCA](management/terms/pdca.md) | [PMF（Product-Market Fit）](management/terms/pmf.md) | [Revenue（營業額）](management/terms/revenue.md) | [SOP](management/terms/sop.md) |
-| [Stakeholder（利害關係人）](management/terms/stakeholder.md) | [SWOT](management/terms/swot.md) | [Term Sheet](management/terms/term-sheet.md) | [Valuation（估值）](management/terms/valuation.md) |
-| [VC（創投）](management/terms/vc.md) | [商業模式](management/terms/business-model.md) | [ROI（投資報酬率）](management/terms/roi.md) | [Pitch / Pitch Deck](management/terms/pitch.md) |
-| [Burn Rate（燒錢速度）](management/terms/burn-rate.md) | [Runway（資金跑道）](management/terms/runway.md) | [IPO（首次公開發行）](management/terms/ipo.md) | [M&A（併購）](management/terms/m-and-a.md) |
+| [AI Governance（AI 治理）](management/terms/ai-governance.md) | [B2B / B2C](management/terms/b2b-b2c.md) | [BU（事業單位）](management/terms/bu.md) | [Cash Flow（現金流）](management/terms/cash-flow.md) |
+| [Cost Structure（成本結構）](management/terms/cost-structure.md) | [Cross-functional（跨部門協作）](management/terms/cross-functional.md) | [Dashboard（儀表板）](management/terms/dashboard.md) | [Dilution（股權稀釋）](management/terms/dilution.md) |
+| [Gross Margin（毛利率）](management/terms/gross-margin.md) | [GTM（Go-to-Market）](management/terms/gtm.md) | [KPI](management/terms/kpi.md) | [M&A（併購）](management/terms/m-and-a.md) |
+| [MoU（合作備忘錄）](management/terms/mou.md) | [MVP（最小可行產品）](management/terms/mvp.md) | [NDA（保密協議）](management/terms/nda.md) | [OKR](management/terms/okr.md) |
+| [Org Chart（組織架構）](management/terms/org-chart.md) | [P&L（損益表）](management/terms/pnl.md) | [PDCA](management/terms/pdca.md) | [Pitch / Pitch Deck](management/terms/pitch.md) |
+| [PMF（Product-Market Fit）](management/terms/pmf.md) | [Revenue（營業額）](management/terms/revenue.md) | [ROI（投資報酬率）](management/terms/roi.md) | [Runway（資金跑道）](management/terms/runway.md) |
+| [SOP](management/terms/sop.md) | [Stakeholder（利害關係人）](management/terms/stakeholder.md) | [SWOT](management/terms/swot.md) | [Term Sheet](management/terms/term-sheet.md) |
+| [Valuation（估值）](management/terms/valuation.md) | [VC（創投）](management/terms/vc.md) | [商業模式](management/terms/business-model.md) | [Burn Rate（燒錢速度）](management/terms/burn-rate.md) |
+| [IPO（首次公開發行）](management/terms/ipo.md) | [M&A（併購）](management/terms/m-and-a.md) | | |
 
 ---
 
@@ -597,26 +599,30 @@
 
 ### 大綱
 
-> 共收錄 **27 個**術語，[點此進入完整頁面](ai-ml/README.md)。
+> 共收錄 **44 個**術語，[點此進入完整頁面](ai-ml/README.md)。
 
 | 分類 | 術語數 | 說明 |
 |------|:------:|------|
-| [基礎概念類](ai-ml/README.md#基礎概念類) | 7 | AI、機器學習、深度學習、神經網路⋯⋯ |
-| [技術方法類](ai-ml/README.md#技術方法類) | 7 | 監督式學習、NLP、電腦視覺、分類⋯⋯ |
-| [模型與應用類](ai-ml/README.md#模型與應用類) | 8 | LLM、GPT、Transformer、RAG、MCP、Skill⋯⋯ |
-| [指標與問題類](ai-ml/README.md#指標與問題類) | 5 | 過擬合、偏差、幻覺、準確率⋯⋯ |
+| [基礎概念類](ai-ml/README.md#基礎概念類) | 10 | AI、機器學習、深度學習、神經網路⋯⋯ |
+| [技術方法類](ai-ml/README.md#技術方法類) | 8 | 監督式學習、NLP、電腦視覺、分類⋯⋯ |
+| [模型與應用類](ai-ml/README.md#模型與應用類) | 18 | LLM、GPT、Transformer、RAG、MCP、DeepSeek、Vibe Coding⋯⋯ |
+| [指標與問題類](ai-ml/README.md#指標與問題類) | 8 | 過擬合、偏差、幻覺、Slop、Shadow AI⋯⋯ |
 
 ### 單字速查表（A-Z）
 
 | | | | |
 |---|---|---|---|
-| [Accuracy（準確率）](ai-ml/terms/accuracy.md) | [AI（人工智慧）](ai-ml/terms/ai.md) | [Algorithm（演算法）](ai-ml/terms/algorithm.md) | [Bias（偏差）](ai-ml/terms/bias.md) |
-| [Classification（分類）](ai-ml/terms/classification.md) | [Computer Vision（電腦視覺）](ai-ml/terms/computer-vision.md) | [Dataset（資料集）](ai-ml/terms/dataset.md) | [Deep Learning（深度學習）](ai-ml/terms/deep-learning.md) |
-| [Fine-tuning（微調）](ai-ml/terms/fine-tuning.md) | [GPT](ai-ml/terms/gpt.md) | [Hallucination（幻覺）](ai-ml/terms/hallucination.md) | [LLM（大型語言模型）](ai-ml/terms/llm.md) |
-| [Machine Learning（機器學習）](ai-ml/terms/machine-learning.md) | [MCP（模型上下文協議）](ai-ml/terms/mcp.md) | [Model（模型）](ai-ml/terms/model.md) | [Neural Network（神經網路）](ai-ml/terms/neural-network.md) |
-| [NLP（自然語言處理）](ai-ml/terms/nlp.md) | [Overfitting（過擬合）](ai-ml/terms/overfitting.md) | [Prompt Engineering（提示工程）](ai-ml/terms/prompt-engineering.md) | [RAG（檢索增強生成）](ai-ml/terms/rag.md) |
-| [Regression（迴歸）](ai-ml/terms/regression.md) | [Reinforcement Learning（強化學習）](ai-ml/terms/reinforcement-learning.md) | [Skill（技能）](ai-ml/terms/skill.md) | [Supervised Learning（監督式學習）](ai-ml/terms/supervised-learning.md) |
-| [Training（訓練）](ai-ml/terms/training.md) | [Transformer](ai-ml/terms/transformer.md) | [Unsupervised Learning（非監督式學習）](ai-ml/terms/unsupervised-learning.md) | |
+| [Accuracy（準確率）](ai-ml/terms/accuracy.md) | [Agentic（代理式）](ai-ml/terms/agentic.md) | [AI（人工智慧）](ai-ml/terms/ai.md) | [Algorithm（演算法）](ai-ml/terms/algorithm.md) |
+| [Bias（偏差）](ai-ml/terms/bias.md) | [Classification（分類）](ai-ml/terms/classification.md) | [Computer Vision（電腦視覺）](ai-ml/terms/computer-vision.md) | [Context Window（上下文窗口）](ai-ml/terms/context-window.md) |
+| [Dataset（資料集）](ai-ml/terms/dataset.md) | [Deep Learning（深度學習）](ai-ml/terms/deep-learning.md) | [DeepSeek](ai-ml/terms/deepseek.md) | [Distillation（蒸餾）](ai-ml/terms/distillation.md) |
+| [Embedding](ai-ml/terms/embedding.md) | [Fine-tuning（微調）](ai-ml/terms/fine-tuning.md) | [GPT](ai-ml/terms/gpt.md) | [Guardrails（護欄）](ai-ml/terms/guardrails.md) |
+| [Hallucination（幻覺）](ai-ml/terms/hallucination.md) | [Inference（推論）](ai-ml/terms/inference.md) | [Latent Space（潛在空間）](ai-ml/terms/latent-space.md) | [LLM（大型語言模型）](ai-ml/terms/llm.md) |
+| [LRM（大型推理模型）](ai-ml/terms/lrm.md) | [Machine Learning（機器學習）](ai-ml/terms/machine-learning.md) | [MCP（模型上下文協議）](ai-ml/terms/mcp.md) | [Model（模型）](ai-ml/terms/model.md) |
+| [Multimodal（多模態）](ai-ml/terms/multimodal.md) | [Neural Network（神經網路）](ai-ml/terms/neural-network.md) | [NLP（自然語言處理）](ai-ml/terms/nlp.md) | [Overfitting（過擬合）](ai-ml/terms/overfitting.md) |
+| [Prompt Engineering（提示工程）](ai-ml/terms/prompt-engineering.md) | [RAG（檢索增強生成）](ai-ml/terms/rag.md) | [Regression（迴歸）](ai-ml/terms/regression.md) | [Reinforcement Learning（強化學習）](ai-ml/terms/reinforcement-learning.md) |
+| [RLHF](ai-ml/terms/rlhf.md) | [Shadow AI](ai-ml/terms/shadow-ai.md) | [Skill（技能）](ai-ml/terms/skill.md) | [SLM（小型語言模型）](ai-ml/terms/slm.md) |
+| [Slop](ai-ml/terms/slop.md) | [Supervised Learning（監督式學習）](ai-ml/terms/supervised-learning.md) | [Tokenizer（分詞器）](ai-ml/terms/tokenizer.md) | [Training（訓練）](ai-ml/terms/training.md) |
+| [Transformer](ai-ml/terms/transformer.md) | [Unsupervised Learning（非監督式學習）](ai-ml/terms/unsupervised-learning.md) | [Vector Database（向量資料庫）](ai-ml/terms/vector-database.md) | [Vibe Coding](ai-ml/terms/vibe-coding.md) |
 
 ---
 

@@ -29,7 +29,7 @@
 
 ## 大綱
 
-> 共收錄 **32 個**企業管理與營運術語，點擊分類名稱直接跳轉。
+> 共收錄 **33 個**企業管理與營運術語，點擊分類名稱直接跳轉。
 
 | 分類 | 術語數 | 說明 |
 |------|:------:|------|
@@ -40,6 +40,7 @@
 | [法務合約類](#法務合約類) | 3 | NDA、MoU、Term Sheet |
 | [投資類](#投資類) | 4 | 估值、VC、股權稀釋、SWOT |
 | [創業與資本類](#創業與資本類) | 6 | ROI、Pitch、Burn Rate、IPO⋯⋯ |
+| [AI 治理類](#ai-治理類) | 1 | AI Governance |
 
 > 想一次看完所有比喻？直接跳到 [比喻對照總表](#比喻對照總表)
 
@@ -49,14 +50,15 @@
 
 | | | | |
 |---|---|---|---|
-| [B2B / B2C](terms/b2b-b2c.md) | [BU（事業單位）](terms/bu.md) | [Cash Flow（現金流）](terms/cash-flow.md) | [Cost Structure（成本結構）](terms/cost-structure.md) |
-| [Cross-functional（跨部門協作）](terms/cross-functional.md) | [Dashboard（儀表板）](terms/dashboard.md) | [Dilution（股權稀釋）](terms/dilution.md) | [Gross Margin（毛利率）](terms/gross-margin.md) |
-| [GTM（Go-to-Market）](terms/gtm.md) | [KPI](terms/kpi.md) | [MoU（合作備忘錄）](terms/mou.md) | [MVP（最小可行產品）](terms/mvp.md) |
+| [AI Governance（AI 治理）](terms/ai-governance.md) | [B2B / B2C](terms/b2b-b2c.md) | [BU（事業單位）](terms/bu.md) | [Burn Rate（燒錢速度）](terms/burn-rate.md) |
+| [Cash Flow（現金流）](terms/cash-flow.md) | [Cost Structure（成本結構）](terms/cost-structure.md) | [Cross-functional（跨部門協作）](terms/cross-functional.md) | [Dashboard（儀表板）](terms/dashboard.md) |
+| [Dilution（股權稀釋）](terms/dilution.md) | [Gross Margin（毛利率）](terms/gross-margin.md) | [GTM（Go-to-Market）](terms/gtm.md) | [IPO（首次公開發行）](terms/ipo.md) |
+| [KPI](terms/kpi.md) | [M&A（併購）](terms/m-and-a.md) | [MoU（合作備忘錄）](terms/mou.md) | [MVP（最小可行產品）](terms/mvp.md) |
 | [NDA（保密協議）](terms/nda.md) | [OKR](terms/okr.md) | [Org Chart（組織架構）](terms/org-chart.md) | [P&L（損益表）](terms/pnl.md) |
-| [PDCA](terms/pdca.md) | [PMF（Product-Market Fit）](terms/pmf.md) | [Revenue（營業額）](terms/revenue.md) | [SOP](terms/sop.md) |
-| [Stakeholder（利害關係人）](terms/stakeholder.md) | [SWOT](terms/swot.md) | [Term Sheet](terms/term-sheet.md) | [Valuation（估值）](terms/valuation.md) |
-| [VC（創投）](terms/vc.md) | [商業模式](terms/business-model.md) | [ROI（投資報酬率）](terms/roi.md) | [Pitch / Pitch Deck](terms/pitch.md) |
-| [Burn Rate（燒錢速度）](terms/burn-rate.md) | [Runway（資金跑道）](terms/runway.md) | [IPO（首次公開發行）](terms/ipo.md) | [M&A（併購）](terms/m-and-a.md) |
+| [PDCA](terms/pdca.md) | [Pitch / Pitch Deck](terms/pitch.md) | [PMF（Product-Market Fit）](terms/pmf.md) | [Revenue（營業額）](terms/revenue.md) |
+| [ROI（投資報酬率）](terms/roi.md) | [Runway（資金跑道）](terms/runway.md) | [SOP](terms/sop.md) | [Stakeholder（利害關係人）](terms/stakeholder.md) |
+| [SWOT](terms/swot.md) | [Term Sheet](terms/term-sheet.md) | [Valuation（估值）](terms/valuation.md) | [VC（創投）](terms/vc.md) |
+| [商業模式](terms/business-model.md) | | | |
 
 ---
 
@@ -155,6 +157,16 @@
 
 ---
 
+## AI 治理類
+
+> AI 時代企業必須面對的新管理課題。
+
+| 詞彙 | 一句話解釋 | 比喻 | 你會在哪聽到 | 詳細說明 |
+|------|-----------|------|-------------|---------|
+| AI Governance（AI 治理） | 企業管控 AI 使用的政策與框架 | 公務車使用辦法——誰能開、能開去哪、出事怎麼辦 | 「我們需要制定 AI Governance 政策」 | [→ 詳細](terms/ai-governance.md) |
+
+---
+
 ## 比喻對照總表
 
 > 每個管理術語，用一句生活比喻讓你秒懂。
@@ -225,6 +237,12 @@
 | Runway | 飛機起飛前的跑道長度——錢還能撐多久 |
 | IPO | 從私人小店變成連鎖品牌上架百貨公司 |
 | M&A（併購） | 大魚吃小魚 |
+
+### AI 治理類
+
+| 術語 | 比喻 |
+|------|------|
+| AI Governance | 公務車使用辦法——誰能開、能開去哪、出事怎麼辦 |
 
 ---
 
