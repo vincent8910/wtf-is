@@ -52,7 +52,7 @@
 |------|:------:|------|
 | [💻 軟體工程](software-engineering/README.md) | 168 | API、Git、Deploy、Docker⋯⋯ |
 | [💹 股票投資](stock/README.md) | 96 | 技術分析、交易策略、美股台股制度⋯⋯ |
-| [🔬 電子產業](electronics/README.md) | 30 | 半導體、封裝測試、HBM⋯⋯ |
+| [🔬 電子產業](electronics/README.md) | 29 | 半導體、封裝測試、HBM⋯⋯ |
 | [📣 行銷企劃](marketing/README.md) | 37 | 數位廣告、轉換率、社群行銷⋯⋯ |
 | [🎨 美術設計](design/README.md) | 27 | CMYK、出血、切圖、設計系統⋯⋯ |
 | [🏢 企業管理與營運](management/README.md) | 37 | KPI、OKR、商業模式、組織管理⋯⋯ |
