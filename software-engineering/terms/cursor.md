@@ -32,7 +32,7 @@ Cursor 支援多種 AI 模型，包括 Claude、GPT 等，可以自己選擇要�
 
 - 2024-2025 年最熱門的 AI 開發工具之一，很多工程師都在討論
 - 它是 IDE（圖形介面），跟 [Claude Code](claude-code.md)、[Gemini CLI](gemini-cli.md) 這類 CLI 工具（純文字介面）是不同類型的工具
-- 有免費版，Pro 版約 $20/月
+- 有免費版，Pro 版約 $20/月（價格會變動，以官方公告為準）
 
 ---
 **[← 回到術語總覽](../README.md)**
