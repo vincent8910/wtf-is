@@ -29,7 +29,7 @@
 
 ## 大綱
 
-> 共收錄 **94 個**股票投資術語，點擊分類名稱直接跳轉。
+> 共收錄 **96 個**股票投資術語，點擊分類名稱直接跳轉。
 
 | 分類 | 術語數 | 說明 |
 |------|:------:|------|
@@ -40,7 +40,7 @@
 | [基本面類](#基本面類) | 13 | EPS、本益比、ETF、月營收、自由現金流⋯⋯ |
 | [常識類](#常識類) | 7 | 大盤、散戶、利多利空、存股⋯⋯ |
 | [投資策略類](#投資策略類) | 8 | 價值投資、成長投資、定期定額、資產配置⋯⋯ |
-| [美股入門類](#美股入門類) | 10 | 美股三大指數、ADR、熔斷、財報季⋯⋯ |
+| [美股入門類](#美股入門類) | 12 | 美股三大指數、Magnificent 7、ADR、GDR⋯⋯ |
 | [台股制度類](#台股制度類) | 8 | 興櫃上櫃上市、零股、T+2、增減資⋯⋯ |
 | [投資心理與行話類](#投資心理與行話類) | 7 | 韭菜、接刀子、凹單、黑天鵝、VIX⋯⋯ |
 
@@ -51,29 +51,29 @@
 | | | | |
 |---|---|---|---|
 | [ADR](terms/adr.md) | [Call（買權）](terms/call.md) | [EPS](terms/eps.md) | [ETF](terms/etf.md) |
-| [KD 指標](terms/kd.md) | [K 線（蠟燭圖）](terms/k-line.md) | [MACD](terms/macd.md) | [Put（賣權）](terms/put.md) |
-| [ROE / ROA](terms/roe-roa.md) | [RSI](terms/rsi.md) | [SEC（美國證管會）](terms/sec-us.md) | [SPAC](terms/spac.md) |
-| [T+2 交割](terms/settlement.md) | [VIX（恐慌指數）](terms/vix.md) | [上影線 / 下影線](terms/shadow-line.md) | [主力](terms/major-player.md) |
-| [乖離率（BIAS）](terms/bias.md) | [借券](terms/stock-lending.md) | [內盤 / 外盤](terms/bid-ask.md) | [凹單](terms/holding-loss.md) |
-| [分散投資](terms/diversification.md) | [加碼 / 減碼](terms/position-sizing.md) | [均線（MA）](terms/ma.md) | [多頭 / 空頭](terms/bull-bear.md) |
-| [套牢 / 解套](terms/trapped.md) | [定期定額（DCA）](terms/dca.md) | [型態學](terms/chart-pattern.md) | [增資 / 減資](terms/capital-change.md) |
-| [市價單](terms/market-order.md) | [布林通道](terms/bollinger-bands.md) | [庫藏股](terms/stock-buyback.md) | [成交量](terms/volume.md) |
-| [成長投資](terms/growth-investing.md) | [抄底](terms/bottom-fishing.md) | [接刀子](terms/catching-knife.md) | [支撐 / 壓力](terms/support-resistance.md) |
-| [斷頭](terms/margin-call.md) | [本益比（P/E）](terms/pe-ratio.md) | [本益成長比（PEG）](terms/peg-ratio.md) | [景氣循環股](terms/cyclical-stock.md) |
-| [月營收](terms/monthly-revenue.md) | [期貨](terms/futures.md) | [未實現損益](terms/unrealized-pnl.md) | [殖利率](terms/dividend-yield.md) |
-| [毛利率 / 營業利益率 / 淨利率](terms/profit-margins.md) | [法人 / 三大法人](terms/institutional-investors.md) | [波段操作](terms/swing-trading.md) | [漲停 / 跌停](terms/limit-up-down.md) |
-| [當沖](terms/day-trading.md) | [盤前 / 盤後交易](terms/pre-after-market.md) | [盤整](terms/consolidation.md) | [美股三大指數](terms/us-indices.md) |
-| [背離](terms/divergence.md) | [自由現金流（FCF）](terms/free-cash-flow.md) | [興櫃 / 上櫃 / 上市](terms/listing-tiers.md) | [藍籌股](terms/blue-chip.md) |
-| [被動投資 / 主動投資](terms/passive-active.md) | [趨勢線](terms/trend-line.md) | [追高殺低](terms/chasing-selling.md) | [造市商](terms/market-maker.md) |
-| [配息 / 填息](terms/dividend-fill.md) | [量價關係](terms/volume-price.md) | [黃金交叉 / 死亡交叉](terms/golden-death-cross.md) | [零股交易](terms/odd-lot.md) |
-| [韭菜](terms/leek.md) | [風險報酬比](terms/risk-reward.md) | [費波那契回撤](terms/fibonacci.md) | [資產配置](terms/asset-allocation.md) |
-| [缺口（Gap）](terms/gap.md) | [財報季](terms/earnings-season.md) | [財報公布 / Earnings](terms/earnings.md) | [股價淨值比（P/B）](terms/pb-ratio.md) |
-| [股票分割](terms/stock-split.md) | [股票抽籤（IPO 申購）](terms/ipo-subscription.md) | [融券](terms/short-selling.md) | [融資](terms/margin-trading.md) |
-| [掛單（限價單）](terms/limit-order.md) | [攤平](terms/averaging-down.md) | [價值投資](terms/value-investing.md) | [權值股](terms/heavyweight-stock.md) |
-| [權證](terms/warrant.md) | [籌碼](terms/chip-analysis.md) | [質押](terms/pledge.md) | [停損 / 停利](terms/stop-loss-profit.md) |
-| [選擇權（Options）](terms/options.md) | [除權息](terms/ex-dividend.md) | [防禦型股票](terms/defensive-stock.md) | [台指期](terms/taiex-futures.md) |
-| [大盤 / 加權指數](terms/taiex.md) | [散戶](terms/retail-investor.md) | [利多 / 利空](terms/bullish-bearish-news.md) | [存股](terms/stock-accumulation.md) |
-| [熔斷機制](terms/circuit-breaker.md) | [黑天鵝](terms/black-swan.md) | | |
+| [GDR（全球存託憑證）](terms/gdr.md) | [KD 指標](terms/kd.md) | [K 線（蠟燭圖）](terms/k-line.md) | [MACD](terms/macd.md) |
+| [Magnificent 7（美股七雄）](terms/magnificent-7.md) | [Put（賣權）](terms/put.md) | [ROE / ROA](terms/roe-roa.md) | [RSI](terms/rsi.md) |
+| [SEC（美國證管會）](terms/sec-us.md) | [SPAC](terms/spac.md) | [T+2 交割](terms/settlement.md) | [VIX（恐慌指數）](terms/vix.md) |
+| [上影線 / 下影線](terms/shadow-line.md) | [主力](terms/major-player.md) | [乖離率（BIAS）](terms/bias.md) | [借券](terms/stock-lending.md) |
+| [內盤 / 外盤](terms/bid-ask.md) | [凹單](terms/holding-loss.md) | [分散投資](terms/diversification.md) | [加碼 / 減碼](terms/position-sizing.md) |
+| [均線（MA）](terms/ma.md) | [多頭 / 空頭](terms/bull-bear.md) | [套牢 / 解套](terms/trapped.md) | [定期定額（DCA）](terms/dca.md) |
+| [型態學](terms/chart-pattern.md) | [增資 / 減資](terms/capital-change.md) | [市價單](terms/market-order.md) | [布林通道](terms/bollinger-bands.md) |
+| [庫藏股](terms/stock-buyback.md) | [成交量](terms/volume.md) | [成長投資](terms/growth-investing.md) | [抄底](terms/bottom-fishing.md) |
+| [接刀子](terms/catching-knife.md) | [支撐 / 壓力](terms/support-resistance.md) | [斷頭](terms/margin-call.md) | [本益比（P/E）](terms/pe-ratio.md) |
+| [本益成長比（PEG）](terms/peg-ratio.md) | [景氣循環股](terms/cyclical-stock.md) | [月營收](terms/monthly-revenue.md) | [期貨](terms/futures.md) |
+| [未實現損益](terms/unrealized-pnl.md) | [殖利率](terms/dividend-yield.md) | [毛利率 / 營業利益率 / 淨利率](terms/profit-margins.md) | [法人 / 三大法人](terms/institutional-investors.md) |
+| [波段操作](terms/swing-trading.md) | [漲停 / 跌停](terms/limit-up-down.md) | [當沖](terms/day-trading.md) | [盤前 / 盤後交易](terms/pre-after-market.md) |
+| [盤整](terms/consolidation.md) | [美股三大指數](terms/us-indices.md) | [背離](terms/divergence.md) | [自由現金流（FCF）](terms/free-cash-flow.md) |
+| [興櫃 / 上櫃 / 上市](terms/listing-tiers.md) | [藍籌股](terms/blue-chip.md) | [被動投資 / 主動投資](terms/passive-active.md) | [趨勢線](terms/trend-line.md) |
+| [追高殺低](terms/chasing-selling.md) | [造市商](terms/market-maker.md) | [配息 / 填息](terms/dividend-fill.md) | [量價關係](terms/volume-price.md) |
+| [黃金交叉 / 死亡交叉](terms/golden-death-cross.md) | [零股交易](terms/odd-lot.md) | [韭菜](terms/leek.md) | [風險報酬比](terms/risk-reward.md) |
+| [費波那契回撤](terms/fibonacci.md) | [資產配置](terms/asset-allocation.md) | [缺口（Gap）](terms/gap.md) | [財報季](terms/earnings-season.md) |
+| [財報公布 / Earnings](terms/earnings.md) | [股價淨值比（P/B）](terms/pb-ratio.md) | [股票分割](terms/stock-split.md) | [股票抽籤（IPO 申購）](terms/ipo-subscription.md) |
+| [融券](terms/short-selling.md) | [融資](terms/margin-trading.md) | [掛單（限價單）](terms/limit-order.md) | [攤平](terms/averaging-down.md) |
+| [價值投資](terms/value-investing.md) | [權值股](terms/heavyweight-stock.md) | [權證](terms/warrant.md) | [籌碼](terms/chip-analysis.md) |
+| [質押](terms/pledge.md) | [停損 / 停利](terms/stop-loss-profit.md) | [選擇權（Options）](terms/options.md) | [除權息](terms/ex-dividend.md) |
+| [防禦型股票](terms/defensive-stock.md) | [台指期](terms/taiex-futures.md) | [大盤 / 加權指數](terms/taiex.md) | [散戶](terms/retail-investor.md) |
+| [利多 / 利空](terms/bullish-bearish-news.md) | [存股](terms/stock-accumulation.md) | [熔斷機制](terms/circuit-breaker.md) | [黑天鵝](terms/black-swan.md) |
 
 ---
 
@@ -200,7 +200,9 @@
 | 詞彙 | 一句話解釋 | 比喻 | 你會在哪聽到 | 詳細說明 |
 |------|-----------|------|------------|---------|
 | 美股三大指數 | 道瓊、S&P 500、那斯達克——美國最重要的三個股市指標 | 美國版的加權指數，三個不同角度 | 「S&P 500 昨天創新高了」 | [→ 詳細](terms/us-indices.md) |
+| Magnificent 7（美股七雄） | 七家撐起美股大盤的科技巨頭 | 便利商店貨架上賣得最好的那幾款熱門商品 | 「這幾天大盤漲，其實是 Magnificent 7 在拉」 | [→ 詳細](terms/magnificent-7.md) |
 | ADR（美國存託憑證） | 外國公司在美國掛牌交易的方式 | 台灣小吃在美國開的授權分店 | 「台積電的 ADR 昨晚漲了」 | [→ 詳細](terms/adr.md) |
+| GDR（全球存託憑證） | 台灣公司跑到美國以外的海外市場籌資、掛牌交易的憑證 | ADR 是美國分店，GDR 是海外（歐洲）分店 | 「這家公司要去海外發行 GDR」 | [→ 詳細](terms/gdr.md) |
 | 盤前 / 盤後交易 | 正式開盤前後也能買賣 | 夜市收攤後還能跟老闆私下交易 | 「盤後財報公布，盤後大漲 5%」 | [→ 詳細](terms/pre-after-market.md) |
 | 熔斷機制（Circuit Breaker） | 跌太多自動暫停交易的保護機制 | 家裡電路跳電的保護開關 | 「2020 年美股一週熔斷兩次」 | [→ 詳細](terms/circuit-breaker.md) |
 | 股票分割（Stock Split） | 把一股拆成好幾股，降低單價 | 一塊 1000 元蛋糕切成 4 塊各 250 元 | 「特斯拉宣布 1 拆 3 股票分割」 | [→ 詳細](terms/stock-split.md) |
@@ -352,7 +354,9 @@
 | 術語 | 比喻 |
 |------|------|
 | 美股三大指數 | 美國版的加權指數，三個不同角度看市場 |
+| Magnificent 7 | 便利商店貨架上賣得最好的那幾款熱門商品 |
 | ADR | 台灣小吃在美國開的授權分店 |
+| GDR | ADR 的海外版——同一家公司的股權，開在歐洲市場 |
 | 盤前 / 盤後交易 | 夜市收攤後還能跟老闆私下交易 |
 | 熔斷機制 | 家裡電路跳電的保護開關 |
 | 股票分割 | 一塊 1000 元蛋糕切成 4 塊各 250 元 |

@@ -29,18 +29,19 @@
 
 ## 大綱
 
-> 共收錄 **33 個**企業管理與營運術語，點擊分類名稱直接跳轉。
+> 共收錄 **37 個**企業管理與營運術語，點擊分類名稱直接跳轉。
 
 | 分類 | 術語數 | 說明 |
 |------|:------:|------|
 | [績效管理類](#績效管理類) | 5 | KPI、OKR、PDCA⋯⋯ |
 | [商業模式類](#商業模式類) | 5 | B2B/B2C、商業模式、PMF⋯⋯ |
 | [財務基礎類](#財務基礎類) | 5 | P&L、毛利率、現金流⋯⋯ |
-| [組織管理類](#組織管理類) | 4 | BU、利害關係人、組織架構⋯⋯ |
+| [組織管理類](#組織管理類) | 5 | BU、利害關係人、組織架構、Fractional⋯⋯ |
 | [法務合約類](#法務合約類) | 3 | NDA、MoU、Term Sheet |
-| [投資類](#投資類) | 4 | 估值、VC、股權稀釋、SWOT |
+| [投資類](#投資類) | 5 | 估值、VC、股權稀釋、SWOT、ESG |
 | [創業與資本類](#創業與資本類) | 6 | ROI、Pitch、Burn Rate、IPO⋯⋯ |
-| [AI 治理類](#ai-治理類) | 1 | AI Governance |
+| [AI 治理類](#ai-治理類) | 2 | AI Governance、AI Washing |
+| [數位轉型類](#數位轉型類) | 1 | Digital Twin |
 
 > 想一次看完所有比喻？直接跳到 [比喻對照總表](#比喻對照總表)
 
@@ -50,9 +51,10 @@
 
 | | | | |
 |---|---|---|---|
-| [AI Governance（AI 治理）](terms/ai-governance.md) | [B2B / B2C](terms/b2b-b2c.md) | [BU（事業單位）](terms/bu.md) | [Burn Rate（燒錢速度）](terms/burn-rate.md) |
-| [Cash Flow（現金流）](terms/cash-flow.md) | [Cost Structure（成本結構）](terms/cost-structure.md) | [Cross-functional（跨部門協作）](terms/cross-functional.md) | [Dashboard（儀表板）](terms/dashboard.md) |
-| [Dilution（股權稀釋）](terms/dilution.md) | [Gross Margin（毛利率）](terms/gross-margin.md) | [GTM（Go-to-Market）](terms/gtm.md) | [IPO（首次公開發行）](terms/ipo.md) |
+| [AI Governance（AI 治理）](terms/ai-governance.md) | [AI Washing（AI 洗白）](terms/ai-washing.md) | [B2B / B2C](terms/b2b-b2c.md) | [BU（事業單位）](terms/bu.md) |
+| [Burn Rate（燒錢速度）](terms/burn-rate.md) | [Cash Flow（現金流）](terms/cash-flow.md) | [Cost Structure（成本結構）](terms/cost-structure.md) | [Cross-functional（跨部門協作）](terms/cross-functional.md) |
+| [Dashboard（儀表板）](terms/dashboard.md) | [Digital Twin（數位孿生）](terms/digital-twin.md) | [Dilution（股權稀釋）](terms/dilution.md) | [ESG](terms/esg.md) |
+| [Fractional（分時高管）](terms/fractional.md) | [Gross Margin（毛利率）](terms/gross-margin.md) | [GTM（Go-to-Market）](terms/gtm.md) | [IPO（首次公開發行）](terms/ipo.md) |
 | [KPI](terms/kpi.md) | [M&A（併購）](terms/m-and-a.md) | [MoU（合作備忘錄）](terms/mou.md) | [MVP（最小可行產品）](terms/mvp.md) |
 | [NDA（保密協議）](terms/nda.md) | [OKR](terms/okr.md) | [Org Chart（組織架構）](terms/org-chart.md) | [P&L（損益表）](terms/pnl.md) |
 | [PDCA](terms/pdca.md) | [Pitch / Pitch Deck](terms/pitch.md) | [PMF（Product-Market Fit）](terms/pmf.md) | [Revenue（營業額）](terms/revenue.md) |
@@ -114,6 +116,7 @@
 | Stakeholder | 跟這件事有關的所有人 | 辦婚禮時要顧到的所有人 | 「這個專案的 Stakeholder 有哪些？」 | [→ 詳細](terms/stakeholder.md) |
 | 跨部門協作 | 不同部門的人一起合作完成一件事 | 拍一部電影需要各種專業 | 「這是一個 cross-functional 的專案」 | [→ 詳細](terms/cross-functional.md) |
 | 組織架構 | 誰管誰、誰跟誰同部門的那張圖 | 家族族譜 | 「看一下 Org Chart 就知道找誰」 | [→ 詳細](terms/org-chart.md) |
+| Fractional（分時高管） | 一位高階主管，同時兼任好幾家公司的職位 | 社區記帳士同時幫好幾間小吃店做帳 | 「先找一位 Fractional CFO 一週來兩天」 | [→ 詳細](terms/fractional.md) |
 
 ---
 
@@ -139,6 +142,7 @@
 | VC（創投） | 專門投資新創公司的機構 | 星探：找有潛力的新人來培養 | 「我們在跟幾家 VC 談」 | [→ 詳細](terms/vc.md) |
 | 股權稀釋 | 拿了投資人的錢，持股比例就變小了 | 披薩多切幾塊，你的比例縮水 | 「這一輪稀釋多少？」 | [→ 詳細](terms/dilution.md) |
 | SWOT | 分析優勢、劣勢、機會、威脅的四格框架 | 全身健檢：好的壞的都查一遍 | 「來做一個 SWOT 分析」 | [→ 詳細](terms/swot.md) |
+| ESG | 公司除了賺不賺錢，還要在環境、社會、治理上交出成績單 | 幫小孩選學校不只看升學率，還看有沒有霸凌問題 | 「這家公司 ESG 評等很差，有些基金不敢買」 | [→ 詳細](terms/esg.md) |
 
 ---
 
@@ -164,6 +168,17 @@
 | 詞彙 | 一句話解釋 | 比喻 | 你會在哪聽到 | 詳細說明 |
 |------|-----------|------|-------------|---------|
 | AI Governance（AI 治理） | 企業管控 AI 使用的政策與框架 | 公務車使用辦法——誰能開、能開去哪、出事怎麼辦 | 「我們需要制定 AI Governance 政策」 | [→ 詳細](terms/ai-governance.md) |
+| AI Washing（AI 洗白） | 把舊功能包裝成「AI 驅動」，其實沒什麼真的 AI | 早餐店把「攪拌」改名叫「智慧攪拌工藝」 | 「這家公司財報 AI 出現幾十次，感覺是在 AI Washing」 | [→ 詳細](terms/ai-washing.md) |
+
+---
+
+## 數位轉型類
+
+> AI 之外，企業導入的其他新技術趨勢。
+
+| 詞彙 | 一句話解釋 | 比喻 | 你會在哪聽到 | 詳細說明 |
+|------|-----------|------|-------------|---------|
+| Digital Twin（數位孿生） | 幫實體工廠或機器，在電腦裡做一個一模一樣的分身 | 玩「模擬城市」，但這次模擬的是真實工廠 | 「新產線調機前，先在 Digital Twin 上跑過一輪」 | [→ 詳細](terms/digital-twin.md) |
 
 ---
 
@@ -209,6 +224,7 @@
 | Stakeholder | **辦婚禮要顧到的所有人**——新人、家長、賓客、攝影師⋯⋯ |
 | 跨部門協作 | **拍一部電影**——導演、編劇、演員、攝影各有專業 |
 | 組織架構 | **家族族譜**——誰是誰的上級，一看就懂 |
+| Fractional（分時高管） | **社區記帳士**——同時幫好幾間小吃店做帳，不屬於任何一家 |
 
 ### 法務合約類
 
@@ -226,6 +242,7 @@
 | VC（創投） | **星探**——找有潛力的新人投資，賭他會大紅 |
 | 股權稀釋 | **披薩多切幾塊**——你的塊數沒變，但比例縮水了 |
 | SWOT | **全身健檢**——好的壞的、內部外部都查一遍 |
+| ESG | 幫小孩選學校**不只看升學率**，還看有沒有霸凌問題 |
 
 ### 創業與資本類
 
@@ -243,6 +260,13 @@
 | 術語 | 比喻 |
 |------|------|
 | AI Governance | 公務車使用辦法——誰能開、能開去哪、出事怎麼辦 |
+| AI Washing | 早餐店把「攪拌」改名叫「智慧攪拌工藝」，蛋餅還是一樣的蛋餅 |
+
+### 數位轉型類
+
+| 術語 | 比喻 |
+|------|------|
+| Digital Twin | 玩「模擬城市」，但這次模擬的是真實存在的工廠 |
 
 ---
 

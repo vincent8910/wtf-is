@@ -29,14 +29,14 @@
 
 ## 大綱
 
-> 共收錄 **44 個** AI / 機器學習術語，點擊分類名稱直接跳轉。
+> 共收錄 **50 個** AI / 機器學習術語，點擊分類名稱直接跳轉。
 
 | 分類 | 術語數 | 說明 |
 |------|:------:|------|
 | [基礎概念類](#基礎概念類) | 10 | AI、機器學習、深度學習、神經網路⋯⋯ |
 | [技術方法類](#技術方法類) | 8 | 監督式學習、NLP、電腦視覺、分類⋯⋯ |
-| [模型與應用類](#模型與應用類) | 18 | LLM、GPT、Transformer、RAG、MCP、DeepSeek、Vibe Coding⋯⋯ |
-| [指標與問題類](#指標與問題類) | 8 | 過擬合、偏差、幻覺、Slop、Shadow AI⋯⋯ |
+| [模型與應用類](#模型與應用類) | 22 | LLM、GPT、Transformer、RAG、MCP、DeepSeek、Vibe Coding⋯⋯ |
+| [指標與問題類](#指標與問題類) | 10 | 過擬合、偏差、幻覺、Slop、Shadow AI⋯⋯ |
 
 > 想一次看完所有比喻？直接跳到 [比喻對照總表](#比喻對照總表)
 
@@ -46,17 +46,19 @@
 
 | | | | |
 |---|---|---|---|
-| [Accuracy（準確率）](terms/accuracy.md) | [Agentic（代理式）](terms/agentic.md) | [AI（人工智慧）](terms/ai.md) | [Algorithm（演算法）](terms/algorithm.md) |
-| [Bias（偏差）](terms/bias.md) | [Classification（分類）](terms/classification.md) | [Computer Vision（電腦視覺）](terms/computer-vision.md) | [Context Window（上下文窗口）](terms/context-window.md) |
-| [Dataset（資料集）](terms/dataset.md) | [Deep Learning（深度學習）](terms/deep-learning.md) | [DeepSeek](terms/deepseek.md) | [Distillation（蒸餾）](terms/distillation.md) |
+| [Accuracy（準確率）](terms/accuracy.md) | [Agentic（代理式）](terms/agentic.md) | [AI Companion（AI 陪伴）](terms/ai-companion.md) | [AI 眼鏡](terms/ai-glasses.md) |
+| [AI（人工智慧）](terms/ai.md) | [Algorithm（演算法）](terms/algorithm.md) | [Bias（偏差）](terms/bias.md) | [Classification（分類）](terms/classification.md) |
+| [Computer Vision（電腦視覺）](terms/computer-vision.md) | [Context Engineering（情境工程）](terms/context-engineering.md) | [Context Window（上下文窗口）](terms/context-window.md) | [Dataset（資料集）](terms/dataset.md) |
+| [Deep Learning（深度學習）](terms/deep-learning.md) | [Deepfake（深偽）](terms/deepfake.md) | [DeepSeek](terms/deepseek.md) | [Distillation（蒸餾）](terms/distillation.md) |
 | [Embedding](terms/embedding.md) | [Fine-tuning（微調）](terms/fine-tuning.md) | [GPT](terms/gpt.md) | [Guardrails（護欄）](terms/guardrails.md) |
 | [Hallucination（幻覺）](terms/hallucination.md) | [Inference（推論）](terms/inference.md) | [Latent Space（潛在空間）](terms/latent-space.md) | [LLM（大型語言模型）](terms/llm.md) |
 | [LRM（大型推理模型）](terms/lrm.md) | [Machine Learning（機器學習）](terms/machine-learning.md) | [MCP（模型上下文協議）](terms/mcp.md) | [Model（模型）](terms/model.md) |
 | [Multimodal（多模態）](terms/multimodal.md) | [Neural Network（神經網路）](terms/neural-network.md) | [NLP（自然語言處理）](terms/nlp.md) | [Overfitting（過擬合）](terms/overfitting.md) |
-| [Prompt Engineering（提示工程）](terms/prompt-engineering.md) | [RAG（檢索增強生成）](terms/rag.md) | [Regression（迴歸）](terms/regression.md) | [Reinforcement Learning（強化學習）](terms/reinforcement-learning.md) |
-| [RLHF](terms/rlhf.md) | [Shadow AI](terms/shadow-ai.md) | [Skill（技能）](terms/skill.md) | [SLM（小型語言模型）](terms/slm.md) |
-| [Slop](terms/slop.md) | [Supervised Learning（監督式學習）](terms/supervised-learning.md) | [Tokenizer（分詞器）](terms/tokenizer.md) | [Training（訓練）](terms/training.md) |
-| [Transformer](terms/transformer.md) | [Unsupervised Learning（非監督式學習）](terms/unsupervised-learning.md) | [Vector Database（向量資料庫）](terms/vector-database.md) | [Vibe Coding](terms/vibe-coding.md) |
+| [Physical AI（物理 AI）](terms/physical-ai.md) | [Prompt Engineering（提示工程）](terms/prompt-engineering.md) | [Prompt Injection（提示詞注入）](terms/prompt-injection.md) | [RAG（檢索增強生成）](terms/rag.md) |
+| [Regression（迴歸）](terms/regression.md) | [Reinforcement Learning（強化學習）](terms/reinforcement-learning.md) | [RLHF](terms/rlhf.md) | [Shadow AI](terms/shadow-ai.md) |
+| [Skill（技能）](terms/skill.md) | [SLM（小型語言模型）](terms/slm.md) | [Slop](terms/slop.md) | [Supervised Learning（監督式學習）](terms/supervised-learning.md) |
+| [Tokenizer（分詞器）](terms/tokenizer.md) | [Training（訓練）](terms/training.md) | [Transformer](terms/transformer.md) | [Unsupervised Learning（非監督式學習）](terms/unsupervised-learning.md) |
+| [Vector Database（向量資料庫）](terms/vector-database.md) | [Vibe Coding](terms/vibe-coding.md) | | |
 
 ---
 
@@ -120,6 +122,10 @@
 | SLM（小型語言模型） | 輕量版 AI，能跑在筆電或手機上 | 機車——便宜靈活，日常夠用 | 「用 SLM 就夠了，省錢」 | [詳細](terms/slm.md) |
 | Agentic（代理式） | AI 自己規劃步驟、自己動手完成多步驟任務 | 能幹的助理，你說一個目標，他自己想辦法達成，不用交代每一步 | 「2026 年的趨勢是 Agentic Workflow」 | [詳細](terms/agentic.md) |
 | Vibe Coding | 用自然語言讓 AI 寫程式，不仔細審查就用 | 跟師傅說要什麼風格，不看施工圖 | 「我 Vibe Coding 了一個小工具」 | [詳細](terms/vibe-coding.md) |
+| AI Companion（AI 陪伴） | 專門陪你聊天、假裝很懂你的 AI | 手機裡的「虛擬男友／女友」App，24 小時都在線 | 「美國多州立法管制 AI Companion，怕小孩對 AI 產生情感依賴」 | [詳細](terms/ai-companion.md) |
+| AI 眼鏡 | 戴在臉上、隨時待命的 AI 助理 | 把 Siri 藏進一副眼鏡裡，看到什麼就能問 | 「他戴著 AI 眼鏡去日本玩，路標直接翻譯給他聽」 | [詳細](terms/ai-glasses.md) |
+| Physical AI（物理 AI） | 讓 AI 從螢幕走進真實世界，長出手腳 | 把 AI 裝進機器人、汽車、工廠機台裡 | 「黃仁勳說，物理 AI 的時代來了」 | [詳細](terms/physical-ai.md) |
+| Context Engineering（情境工程） | 不只教 AI 怎麼問，而是餵給它「對的資料」 | 幫代班同事把客戶資料、訂單紀錄都準備好 | 「這個 AI 專案失敗不是 Prompt 寫不好，是 Context Engineering 沒做好」 | [詳細](terms/context-engineering.md) |
 
 ---
 
@@ -137,6 +143,8 @@
 | Dataset（資料集） | AI 學習用的教材 | 學生的課本和練習題 | 「Dataset 太小，模型效果不好」 | [詳細](terms/dataset.md) |
 | Shadow AI | 員工私下使用未經公司核准的 AI 工具 | 員工偷偷用私人隨身碟帶資料回家 | 「70% 員工都在用 Shadow AI」 | [詳細](terms/shadow-ai.md) |
 | Slop | AI 產出的低品質垃圾內容 | 速食店機器大量生產的沒靈魂食物 | 「這段程式碼是 Slop 吧？」 | [詳細](terms/slop.md) |
+| Deepfake（深偽） | 用 AI 換臉換聲，做出以假亂真的假影片假語音 | 詐騙集團請了世界最厲害的化妝師和配音員 | 「視訊裡看到熟面孔也可能是 Deepfake，匯款前要多方確認」 | [詳細](terms/deepfake.md) |
+| Prompt Injection（提示詞注入） | 用一段話騙 AI 做壞事 | 偷塞一張紙條到 AI 客服桌上，寫著忘記規矩 | 「上線 AI 代理人前，一定要做好 Guardrails，防止 Prompt Injection」 | [詳細](terms/prompt-injection.md) |
 
 ---
 
@@ -194,6 +202,10 @@
 | SLM | 機車——載不了冰箱，但搬幾箱書綽綽有餘，便宜又靈活 |
 | Agentic | 能幹的助理，你說一個目標，他自己想辦法達成 |
 | Vibe Coding | 跟裝潢師傅說「我要北歐風」，不看施工圖就讓他動工 |
+| AI Companion | 手機裡的「虛擬男友／女友」App，24 小時都在線、假裝很懂你 |
+| AI 眼鏡 | 把 Siri 藏進一副眼鏡裡，看到什麼就能開口問 |
+| Physical AI | 把 AI 裝進機器人、汽車、工廠機台裡，讓它長出手腳 |
+| Context Engineering | 幫代班同事把客戶資料、訂單紀錄都準備好，不只是教他怎麼問 |
 
 ### 指標與問題類
 
@@ -207,3 +219,5 @@
 | Dataset | 學生的課本和練習題——教材品質決定學生程度 |
 | Shadow AI | 員工偷偷用私人隨身碟把公司資料帶回家處理 |
 | Slop | 速食店用機器大量生產的食物——看起來像那麼回事，但沒靈魂 |
+| Deepfake | 詐騙集團請了世界最厲害的化妝師和配音員，做出以假亂真的分身 |
+| Prompt Injection | 偷塞一張紙條到 AI 客服桌上，寫著「忘記你原本的規矩」 |

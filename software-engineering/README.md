@@ -29,7 +29,7 @@
 
 ## 大綱
 
-> 共收錄 **167 個**軟體工程術語，點擊分類名稱直接跳轉。
+> 共收錄 **168 個**軟體工程術語，點擊分類名稱直接跳轉。
 
 | 分類 | 術語數 | 說明 |
 |------|:------:|------|
@@ -38,7 +38,7 @@
 | [協作類](#協作類) | 15 | 跟團隊合作時出現的詞 |
 | [工具類](#工具類) | 13 | 開發工具與 AI 編程助手 |
 | [開會時聽不懂類](#開會時聽不懂類) | 23 | 開會、看 Slack 時最常一頭霧水的詞 |
-| [專案管理類](#專案管理類) | 8 | PM 寫規格、追進度時會遇到的詞 |
+| [專案管理類](#專案管理類) | 9 | PM 寫規格、追進度時會遇到的詞 |
 | [出事了類](#出事了類) | 7 | 系統出問題時工程師會說的詞 |
 | [依工程師類型分類](#依工程師類型分類) | 54 | 前端、後端、DevOps、Mobile、QA、資安⋯⋯ |
 
@@ -85,13 +85,13 @@
 | [S3](terms/s3.md) | [SaaS](terms/saas.md) | [Sandbox](terms/sandbox.md) | [Scope](terms/scope.md) |
 | [SDK](terms/sdk.md) | [SemVer（語意化版本）](terms/semver.md) | [SEO](terms/seo.md) | [Server](terms/server.md) |
 | [Serverless（無伺服器）](terms/serverless.md) | [Session](terms/session.md) | [Shader](terms/shader.md) | [Spec](terms/spec.md) |
-| [SQL](terms/sql.md) | [SSH](terms/ssh.md) | [SSL / TLS](terms/ssl-tls.md) | [Staging / Production](terms/staging-production.md) |
-| [Sub-agent](terms/sub-agent.md) | [SuperClaude](terms/superclaude.md) | [Sync / Async](terms/sync-async.md) | [Technical Debt](terms/technical-debt.md) |
-| [Terminal / CLI](terms/terminal-cli.md) | [Terraform / IaC](terms/terraform-iac.md) | [Test Case](terms/test-case.md) | [Thread（執行緒）](terms/thread.md) |
-| [Timeout](terms/timeout.md) | [tmux](terms/tmux.md) | [Token](terms/token.md) | [TypeScript](terms/typescript.md) |
-| [UAT](terms/uat.md) | [UI / UX](terms/ui-ux.md) | [Unity](terms/unity.md) | [VPN](terms/vpn.md) |
-| [VS Code](terms/vscode.md) | [Vulnerability](terms/vulnerability.md) | [WebAssembly (WASM)](terms/wasm.md) | [Webhook](terms/webhook.md) |
-| [WebSocket](terms/websocket.md) | [WebView](terms/webview.md) | [YAML](terms/yaml.md) | |
+| [Spec-Driven Development（規格驅動開發）](terms/spec-driven-development.md) | [SQL](terms/sql.md) | [SSH](terms/ssh.md) | [SSL / TLS](terms/ssl-tls.md) |
+| [Staging / Production](terms/staging-production.md) | [Sub-agent](terms/sub-agent.md) | [SuperClaude](terms/superclaude.md) | [Sync / Async](terms/sync-async.md) |
+| [Technical Debt](terms/technical-debt.md) | [Terminal / CLI](terms/terminal-cli.md) | [Terraform / IaC](terms/terraform-iac.md) | [Test Case](terms/test-case.md) |
+| [Thread（執行緒）](terms/thread.md) | [Timeout](terms/timeout.md) | [tmux](terms/tmux.md) | [Token](terms/token.md) |
+| [TypeScript](terms/typescript.md) | [UAT](terms/uat.md) | [UI / UX](terms/ui-ux.md) | [Unity](terms/unity.md) |
+| [VPN](terms/vpn.md) | [VS Code](terms/vscode.md) | [Vulnerability](terms/vulnerability.md) | [WebAssembly (WASM)](terms/wasm.md) |
+| [Webhook](terms/webhook.md) | [WebSocket](terms/websocket.md) | [WebView](terms/webview.md) | [YAML](terms/yaml.md) |
 
 ---
 
@@ -252,6 +252,7 @@ PM 寫規格、追進度時會遇到的詞：
 | **Agile / Scrum（敏捷開發）** | 把大專案切成小段，快速交付、快速調整 | 邊吃邊點的火鍋 | 「我們跑 **Scrum**，兩週一個 sprint。」 | [→ 詳細](terms/agile-scrum.md) |
 | **MVP** | 用最少的功能先上線試水溫 | 夜市擺攤試賣 | 「先做個 **MVP** 測試看看。」 | [→ 詳細](terms/mvp.md) |
 | **Feature Flag（功能開關）** | 不用重新部署，就能開關某個功能 | 電燈開關 | 「先用 **feature flag** 控制，只開給內部測試。」 | [→ 詳細](terms/feature-flag.md) |
+| **Spec-Driven Development（規格驅動開發）** | 先把需求寫成規格，再讓 AI 照著規格寫程式 | 裝潢前先簽好設計圖，工班照圖施工 | 「這次專案我們用 **Spec-Driven Development**，先把規格寫清楚。」 | [→ 詳細](terms/spec-driven-development.md) |
 
 ---
 
@@ -509,6 +510,7 @@ PM 寫規格、追進度時會遇到的詞：
 | Agile / Scrum（敏捷開發） | 邊吃邊點的火鍋 |
 | MVP（最小可行產品） | 夜市擺攤試賣 |
 | Feature Flag（功能開關） | 電燈開關 |
+| Spec-Driven Development（規格驅動開發） | 裝潢前先簽好設計圖，工班照圖施工 |
 
 ### 出事了
 
