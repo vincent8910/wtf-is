@@ -47,6 +47,12 @@
 
 > 💡 最簡單的記法：Authentication = 「**你是不是**你」，Authorization = 「**你能不能**做這件事」。
 
+## 為什麼要知道這個詞？
+
+- 工程師討論「這個功能要不要做 auth」時，你要能反問「是驗證身分，還是限制權限？」——兩者要做的事完全不同
+- 幾乎每個系統都會用到：只要牽涉「登入」或「權限分級」，就一定會碰到 Authentication / Authorization
+- 出問題時比較好溝通：使用者「登入失敗」是 Authentication 的問題，「登入了但看不到某個功能」是 Authorization 的問題，講對詞才能讓工程師快速定位
+
 ---
 
 **[← 回到術語總覽](../README.md)** · **[了解 API Key →](api-key.md)**

@@ -18,6 +18,13 @@ Node.js 是一個讓 JavaScript（一種程式語言）能在你電腦上執行�
 - 你要看 PDF → 需要先裝 Adobe Reader
 - 你要用 Claude Code → 需要先裝 Node.js
 
+## 生活比喻 / 實際例子
+
+Node.js 就像手機裡的「作業系統」——你平常不會直接感覺到它存在，但沒有它，任何 App 都打不開。
+
+- 你想用 Claude Code，電腦卻沒裝 Node.js，就像你想開 App 但手機沒有作業系統——工具根本跑不起來
+- 裝好 Node.js 之後，很多開發工具就能直接執行，你甚至不需要知道它在背後做了什麼
+
 ## 安裝
 
 👉 **[Node.js 官方網站](https://nodejs.org/)**

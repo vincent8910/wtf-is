@@ -16,6 +16,14 @@ VS Code 全名是 **Visual Studio Code**，是 Microsoft（微軟）推出的免
 2. **AI IDE 的基底**：很多 AI [IDE](ide.md) 都是「基於 VS Code 改造的」——像 Cursor、Google Antigravity 都是。所以學會 VS Code 的基本操作，用這些工具就能快速上手
 3. **搭配 GitHub Copilot**：在 VS Code 裡安裝 GitHub Copilot 外掛，就有 AI 輔助功能
 
+## 生活比喻 / 實際例子
+
+VS Code 就像一本可以無限加外掛的筆記本：
+
+- 原廠筆記本：打開就能寫字、記事情——VS Code 裝好就能編輯任何文字檔案
+- 加裝翻譯外掛：筆記本多了即時翻譯功能——VS Code 裝上 Markdown 外掛，就能邊寫邊看排版預覽
+- 加裝 AI 助手外掛：筆記本會自動幫你接話、抓錯字——VS Code 裝上 GitHub Copilot，寫程式或改文件時 AI 會主動幫你補完內容
+
 ## 我需要安裝它嗎？
 
 **看你的需求：**
