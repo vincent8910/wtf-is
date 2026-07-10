@@ -1154,9 +1154,10 @@
     detailMeta.innerHTML = `<span class="result-tag">${esc(term.domainLabel)}</span>`;
 
     // 載入內容（找不到時繞過快取重新 fetch）
+    const contentKey = `${term.domain}/${term.id}`;
     let content = await loadContent();
-    if (!content[id]) content = await loadContent(true);
-    let html = content[id] || '<p>找不到此術語的內容，請重新整理頁面。</p>';
+    if (!content[contentKey] && !content[id]) content = await loadContent(true);
+    let html = content[contentKey] || content[id] || '<p>找不到此術語的內容，請重新整理頁面。</p>';
 
     // 處理內部連結：把 .md 連結轉成 hash
     html = html.replace(/href="([^"]*?)\.md"/g, (match, p1) => {
@@ -1193,7 +1194,7 @@
     const linkedIds = new Set();
 
     // 從內容中提取連結的 term IDs
-    const content = CONTENT ? CONTENT[term.id] || '' : '';
+    const content = CONTENT ? (CONTENT[`${term.domain}/${term.id}`] || CONTENT[term.id] || '') : '';
     const linkMatches = content.matchAll(/href="([^"]*?)\.md"/g);
     for (const m of linkMatches) {
       const name = m[1].replace(/^.*\//, '');

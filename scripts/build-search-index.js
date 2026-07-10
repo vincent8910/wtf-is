@@ -143,9 +143,10 @@ function main() {
   const indexData = terms.map(({ content, ...rest }) => rest);
   fs.writeFileSync(OUT_INDEX, JSON.stringify(indexData, null, 0), 'utf-8');
 
-  // === 輸出 2：內容對應表（id → content）===
+  // === 輸出 2：內容對應表（domain/id → content）===
+  // 用 domain/id 當 key，避免跨領域同名術語（如 bias、mcp、token）互相覆蓋
   const contentMap = {};
-  terms.forEach(t => { contentMap[t.id] = t.content; });
+  terms.forEach(t => { contentMap[`${t.domain}/${t.id}`] = t.content; });
   fs.writeFileSync(OUT_CONTENT, JSON.stringify(contentMap, null, 0), 'utf-8');
 
   // === 輸出 3：保留舊格式（向下相容）===

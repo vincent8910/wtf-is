@@ -1,4 +1,4 @@
-const CACHE_NAME = 'wtf-is-v2';
+const CACHE_NAME = 'wtf-is-v3';
 
 // 核心資源：app shell
 const CORE_ASSETS = [
