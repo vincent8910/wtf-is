@@ -29,13 +29,14 @@
 
 ## 大綱
 
-> 共收錄 **50 個** AI / 機器學習術語，點擊分類名稱直接跳轉。
+> 共收錄 **53 個** AI / 機器學習術語，點擊分類名稱直接跳轉。
 
 | 分類 | 術語數 | 說明 |
 |------|:------:|------|
 | [基礎概念類](#基礎概念類) | 10 | AI、機器學習、深度學習、神經網路⋯⋯ |
 | [技術方法類](#技術方法類) | 8 | 監督式學習、NLP、電腦視覺、分類⋯⋯ |
 | [模型與應用類](#模型與應用類) | 22 | LLM、GPT、Transformer、RAG、MCP、DeepSeek、Vibe Coding⋯⋯ |
+| [AI Agent 與協作類](#ai-agent-與協作類) | 3 | AI Sandbox、Multi-Agent System、A2A⋯⋯ |
 | [指標與問題類](#指標與問題類) | 10 | 過擬合、偏差、幻覺、Slop、Shadow AI⋯⋯ |
 
 > 想一次看完所有比喻？直接跳到 [比喻對照總表](#比喻對照總表)
@@ -57,9 +58,9 @@
 | [Physical AI（物理 AI）](terms/physical-ai.md) | [Prompt Engineering（提示工程）](terms/prompt-engineering.md) | [Prompt Injection（提示詞注入）](terms/prompt-injection.md) | [RAG（檢索增強生成）](terms/rag.md) |
 | [Regression（迴歸）](terms/regression.md) | [Reinforcement Learning（強化學習）](terms/reinforcement-learning.md) | [RLHF](terms/rlhf.md) | [Shadow AI](terms/shadow-ai.md) |
 | [Skill（技能）](terms/skill.md) | [SLM（小型語言模型）](terms/slm.md) | [Slop](terms/slop.md) | [Supervised Learning（監督式學習）](terms/supervised-learning.md) |
+| [A2A](terms/a2a.md) | [AI Sandbox（AI 隔離環境）](terms/ai-sandbox.md) | [Multi-Agent System（多代理系統）](terms/multi-agent-system.md) | |
 | [Tokenizer（分詞器）](terms/tokenizer.md) | [Training（訓練）](terms/training.md) | [Transformer](terms/transformer.md) | [Unsupervised Learning（非監督式學習）](terms/unsupervised-learning.md) |
 | [Vector Database（向量資料庫）](terms/vector-database.md) | [Vibe Coding](terms/vibe-coding.md) | | |
-
 ---
 
 ## 基礎概念類
@@ -126,6 +127,18 @@
 | AI 眼鏡 | 戴在臉上、隨時待命的 AI 助理 | 把 Siri 藏進一副眼鏡裡，看到什麼就能問 | 「他戴著 AI 眼鏡去日本玩，路標直接翻譯給他聽」 | [詳細](terms/ai-glasses.md) |
 | Physical AI（物理 AI） | 讓 AI 從螢幕走進真實世界，長出手腳 | 把 AI 裝進機器人、汽車、工廠機台裡 | 「黃仁勳說，物理 AI 的時代來了」 | [詳細](terms/physical-ai.md) |
 | Context Engineering（情境工程） | 不只教 AI 怎麼問，而是餵給它「對的資料」 | 幫代班同事把客戶資料、訂單紀錄都準備好 | 「這個 AI 專案失敗不是 Prompt 寫不好，是 Context Engineering 沒做好」 | [詳細](terms/context-engineering.md) |
+
+---
+
+## AI Agent 與協作類
+
+> AI 開始自己規劃、使用工具、分工合作後，會遇到這些新詞。
+
+| 詞彙 | 一句話解釋 | 比喻 | 你會在哪聽到 | 詳細說明 |
+|------|-----------|------|-------------|---------|
+| AI Sandbox（AI 隔離環境） | 限制 AI 檔案、指令與網路活動範圍的隔離環境 | 沒有總鑰匙的工作室 | 「先在 Sandbox 裡測試，不要直接碰 production」 | [詳細](terms/ai-sandbox.md) |
+| Multi-Agent System（多代理系統） | 多個有角色與協作規則的 Agent 系統 | 分工明確的 AI 團隊 | 「這不是多個聊天視窗，而是 Multi-Agent System」 | [詳細](terms/multi-agent-system.md) |
+| A2A（Agent-to-Agent） | Agent 與 Agent 之間的協作與通訊概念 | AI 團隊的對講機 | 「MCP 連工具，A2A 連另一個 Agent」 | [詳細](terms/a2a.md) |
 
 ---
 
@@ -206,6 +219,14 @@
 | AI 眼鏡 | 把 Siri 藏進一副眼鏡裡，看到什麼就能開口問 |
 | Physical AI | 把 AI 裝進機器人、汽車、工廠機台裡，讓它長出手腳 |
 | Context Engineering | 幫代班同事把客戶資料、訂單紀錄都準備好，不只是教他怎麼問 |
+
+### AI Agent 與協作類
+
+| 術語 | 比喻 |
+|------|------|
+| AI Sandbox | 給新員工一間沒有總鑰匙的安全工作室 |
+| Multi-Agent System | PM、工程師、QA 各司其職的專案團隊 |
+| A2A | 不同部門 Agent 之間的對講機 |
 
 ### 指標與問題類
 
