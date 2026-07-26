@@ -29,7 +29,7 @@
 
 ## 大綱
 
-> 共收錄 **168 個**軟體工程術語，點擊分類名稱直接跳轉。
+> 共收錄 **169 個**軟體工程術語，點擊分類名稱直接跳轉。
 
 | 分類 | 術語數 | 說明 |
 |------|:------:|------|
@@ -40,6 +40,7 @@
 | [開會時聽不懂類](#開會時聽不懂類) | 23 | 開會、看 Slack 時最常一頭霧水的詞 |
 | [專案管理類](#專案管理類) | 9 | PM 寫規格、追進度時會遇到的詞 |
 | [出事了類](#出事了類) | 7 | 系統出問題時工程師會說的詞 |
+| [供應鏈安全類](#供應鏈安全類) | 1 | 依賴更新、套件風險與軟體供應鏈防護 |
 | [依工程師類型分類](#依工程師類型分類) | 54 | 前端、後端、DevOps、Mobile、QA、資安⋯⋯ |
 
 > 想一次看完所有比喻？直接跳到 [比喻對照總表](#比喻對照總表)
@@ -60,8 +61,8 @@
 | [Component](terms/component.md) | [Concurrency](terms/concurrency.md) | [Container / Docker](terms/container-docker.md) | [Conversion Rate](terms/conversion-rate.md) |
 | [Cookie](terms/cookie.md) | [Crash](terms/crash.md) | [Cron Job](terms/cron-job.md) | [CRUD](terms/crud.md) |
 | [CSS](terms/css.md) | [Cursor](terms/cursor.md) | [Dashboard](terms/dashboard.md) | [Data Lake / Warehouse](terms/data-lake-warehouse.md) |
-| [Database](terms/database.md) | [Dependency](terms/dependency.md) | [Deploy](terms/deploy.md) | [DevOps](terms/devops.md) |
-| [DNS](terms/dns.md) | [Domain](terms/domain.md) | [Downtime](terms/downtime.md) | [Edge Case](terms/edge-case.md) |
+| [Database](terms/database.md) | [Dependency](terms/dependency.md) | [Dependency Cooldown](terms/dependency-cooldown.md) | [Deploy](terms/deploy.md) |
+| [DevOps](terms/devops.md) | [DNS](terms/dns.md) | [Domain](terms/domain.md) | [Downtime](terms/downtime.md) |
 | [Edge Computing（邊緣運算）](terms/edge-computing.md) | [EKS](terms/eks.md) | [ELK Stack](terms/elk.md) | [Encryption](terms/encryption.md) |
 | [Endpoint](terms/endpoint.md) | [環境變數](terms/environment-variable.md) | [ETL](terms/etl.md) | [Event-Driven（事件驅動）](terms/event-driven.md) |
 | [Feature Flag](terms/feature-flag.md) | [Firewall](terms/firewall.md) | [FPS](terms/fps.md) | [Framework / Library](terms/framework-library.md) |
@@ -153,6 +154,7 @@
 | **Cron Job（排程任務）** | 設定好時間，讓電腦自動去做某件事 | 掃地機器人的定時排程 | 「**Cron job** 每天凌晨 3 點自動備份。」 | [→ 詳細](terms/cron-job.md) |
 | **Sandbox（沙盒）** | 安全的測試環境，怎麼搞都不會影響正式系統 | 小朋友的沙坑 | 「金流先用 **sandbox** 測，不要用正式環境。」 | [→ 詳細](terms/sandbox.md) |
 | **Dependency（依賴套件）** | 你的程式需要靠別人寫好的工具才能跑 | 泡麵需要熱水才能吃 | 「這個 **dependency** 有安全漏洞，要更新。」 | [→ 詳細](terms/dependency.md) |
+| **Dependency Cooldown（依賴更新冷卻期）** | 套件新版本先觀察一段時間，再進入自動更新流程 | 新品先放觀察區 | 「我們對一般 dependency update 設定 **cooldown**，安全修補則走例外流程。」 | [→ 詳細](terms/dependency-cooldown.md) |
 | **ORM（物件關聯映射）** | 用程式語言操作資料庫，不用寫 SQL | 請翻譯幫你跟外國人溝通 | 「我們用 **ORM** 來操作 DB，不用自己寫 SQL。」 | [→ 詳細](terms/orm.md) |
 | **Migration（資料庫遷移）** | 用程式碼管理資料庫結構的變更紀錄 | 搬家紀錄，記住每次改了什麼 | 「記得跑 **migration**，資料表結構才會更新。」 | [→ 詳細](terms/migration.md) |
 | **Compile / Build（編譯 / 建置）** | 把人寫的程式碼轉成電腦能跑的版本 | 把食譜寫成工廠的 SOP | 「**Build** 失敗了，程式碼有語法錯誤。」 | [→ 詳細](terms/compile-build.md) |
@@ -269,6 +271,16 @@ PM 寫規格、追進度時會遇到的詞：
 | **Backup（備份）** | 把資料複製一份存到另一個地方，以防萬一 | 重要文件影印一份放別處 | 「幸好有 **backup**，不然資料就全沒了。」 | [→ 詳細](terms/backup.md) |
 | **Timeout（逾時）** | 等太久了，系統決定不等了 | 打客服響太久自動掛斷 | 「後端回應太慢，**timeout** 了。」 | [→ 詳細](terms/timeout.md) |
 | **Memory Leak（記憶體洩漏）** | 程式用完記憶體忘了還回去，越吃越多 | 借了書一直不還，圖書館書越來越少 | 「系統越跑越慢，應該有 **memory leak**。」 | [→ 詳細](terms/memory-leak.md) |
+
+---
+
+## 供應鏈安全類
+
+> 軟體不只包含自己寫的程式，也包含大量外部套件；這些詞用來理解更新與供應鏈風險。
+
+| 詞彙 | 一句話解釋 | 比喻 | 你會在哪聽到 | 詳細說明 |
+|------|-----------|------|-------------|---------|
+| **Dependency Cooldown（依賴更新冷卻期）** | 套件新版本先觀察一段時間，再進入自動更新流程 | 新品先放觀察區 | 「Dependabot 的 **cooldown** 可以降低剛發布套件的供應鏈風險。」 | [→ 詳細](terms/dependency-cooldown.md) |
 
 ---
 
@@ -431,6 +443,7 @@ PM 寫規格、追進度時會遇到的詞：
 | Cron Job（排程任務） | 掃地機器人的定時排程 |
 | Sandbox（沙盒） | 小朋友的沙坑 |
 | Dependency（依賴套件） | 泡麵需要熱水才能吃 |
+| Dependency Cooldown（依賴更新冷卻期） | 新品先放觀察區 |
 | ORM（物件關聯映射） | 請翻譯幫你跟外國人溝通 |
 | Migration（資料庫遷移） | 搬家紀錄，記住每次改了什麼 |
 | Compile / Build（編譯） | 把食譜寫成工廠的 SOP |

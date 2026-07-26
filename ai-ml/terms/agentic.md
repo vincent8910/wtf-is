@@ -30,6 +30,27 @@ Agentic 的核心特徵：
 - **迭代修正**：做錯了會自己發現並修正
 - **多步驟**：不是一問一答，而是完成整個任務
 
+## 短任務與長時程任務
+
+Agentic 不代表任務一定能可靠地跑很久。可以先區分：
+
+| 類型 | 特徵 | 需要特別處理的風險 |
+|---|---|---|
+| 短任務 Agent | 幾個步驟內完成，例如查資料、改一個小檔案 | 工具權限、輸出正確性 |
+| 長時程 Agent | 持續較長時間、跨多個階段與工具完成目標 | 狀態遺失、錯誤累積、成本失控、權限漂移 |
+
+長時程任務通常需要 checkpoint、明確驗證點、可恢復狀態、人工接管與停止條件。不能因為 Agent 能自己規劃，就假設它會永遠朝正確方向前進。
+
+## 如何評估 Agent 是否真的可靠？
+
+不要只看最後回答像不像人，還要觀察：
+
+- **Task success rate**：任務是否真的完成
+- **Tool-call correctness**：是否正確使用工具
+- **Recovery rate**：遇到錯誤後能否恢復
+- **Human handoff rate**：需要人工接管的比例
+- **Cost per successful task**：每次成功完成任務的總成本
+
 [Claude Code](../../software-engineering/terms/claude-code.md)、[Sub-agent](../../software-engineering/terms/sub-agent.md) 都是 Agentic AI 的實際應用。
 
 ## 生活比喻 / 實際例子
