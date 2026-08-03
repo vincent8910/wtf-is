@@ -29,13 +29,13 @@
 
 ## 大綱
 
-> 共收錄 **53 個** AI / 機器學習術語，點擊分類名稱直接跳轉。
+> 共收錄 **54 個** AI / 機器學習術語，點擊分類名稱直接跳轉。
 
 | 分類 | 術語數 | 說明 |
 |------|:------:|------|
 | [基礎概念類](#基礎概念類) | 10 | AI、機器學習、深度學習、神經網路⋯⋯ |
 | [技術方法類](#技術方法類) | 8 | 監督式學習、NLP、電腦視覺、分類⋯⋯ |
-| [模型與應用類](#模型與應用類) | 22 | LLM、GPT、Transformer、RAG、MCP、DeepSeek、Vibe Coding⋯⋯ |
+| [模型與應用類](#模型與應用類) | 23 | LLM、GPT、Transformer、RAG、MCP、DeepSeek、Vibe Coding、Context Compaction⋯⋯ |
 | [AI Agent 與協作類](#ai-agent-與協作類) | 3 | AI Sandbox、Multi-Agent System、A2A⋯⋯ |
 | [指標與問題類](#指標與問題類) | 10 | 過擬合、偏差、幻覺、Slop、Shadow AI⋯⋯ |
 
@@ -50,7 +50,8 @@
 | [Accuracy（準確率）](terms/accuracy.md) | [Agentic（代理式）](terms/agentic.md) | [AI Companion（AI 陪伴）](terms/ai-companion.md) | [AI 眼鏡](terms/ai-glasses.md) |
 | [AI（人工智慧）](terms/ai.md) | [Algorithm（演算法）](terms/algorithm.md) | [Bias（偏差）](terms/bias.md) | [Classification（分類）](terms/classification.md) |
 | [Computer Vision（電腦視覺）](terms/computer-vision.md) | [Context Engineering（情境工程）](terms/context-engineering.md) | [Context Window（上下文窗口）](terms/context-window.md) | [Dataset（資料集）](terms/dataset.md) |
-| [Deep Learning（深度學習）](terms/deep-learning.md) | [Deepfake（深偽）](terms/deepfake.md) | [DeepSeek](terms/deepseek.md) | [Distillation（蒸餾）](terms/distillation.md) |
+| [Context Compaction（上下文壓縮）](terms/context-compaction.md) | [Deep Learning（深度學習）](terms/deep-learning.md) | [Deepfake（深偽）](terms/deepfake.md) | [DeepSeek](terms/deepseek.md) |
+| [Distillation（蒸餾）](terms/distillation.md) | | | |
 | [Embedding](terms/embedding.md) | [Fine-tuning（微調）](terms/fine-tuning.md) | [GPT](terms/gpt.md) | [Guardrails（護欄）](terms/guardrails.md) |
 | [Hallucination（幻覺）](terms/hallucination.md) | [Inference（推論）](terms/inference.md) | [Latent Space（潛在空間）](terms/latent-space.md) | [LLM（大型語言模型）](terms/llm.md) |
 | [LRM（大型推理模型）](terms/lrm.md) | [Machine Learning（機器學習）](terms/machine-learning.md) | [MCP（模型上下文協議）](terms/mcp.md) | [Model（模型）](terms/model.md) |
@@ -58,6 +59,7 @@
 | [Physical AI（物理 AI）](terms/physical-ai.md) | [Prompt Engineering（提示工程）](terms/prompt-engineering.md) | [Prompt Injection（提示詞注入）](terms/prompt-injection.md) | [RAG（檢索增強生成）](terms/rag.md) |
 | [Regression（迴歸）](terms/regression.md) | [Reinforcement Learning（強化學習）](terms/reinforcement-learning.md) | [RLHF](terms/rlhf.md) | [Shadow AI](terms/shadow-ai.md) |
 | [Skill（技能）](terms/skill.md) | [SLM（小型語言模型）](terms/slm.md) | [Slop](terms/slop.md) | [Supervised Learning（監督式學習）](terms/supervised-learning.md) |
+| [Context Compaction（上下文壓縮）](terms/context-compaction.md) | | | |
 | [A2A](terms/a2a.md) | [AI Sandbox（AI 隔離環境）](terms/ai-sandbox.md) | [Multi-Agent System（多代理系統）](terms/multi-agent-system.md) | |
 | [Tokenizer（分詞器）](terms/tokenizer.md) | [Training（訓練）](terms/training.md) | [Transformer](terms/transformer.md) | [Unsupervised Learning（非監督式學習）](terms/unsupervised-learning.md) |
 | [Vector Database（向量資料庫）](terms/vector-database.md) | [Vibe Coding](terms/vibe-coding.md) | | |
@@ -219,6 +221,7 @@
 | AI 眼鏡 | 把 Siri 藏進一副眼鏡裡，看到什麼就能開口問 |
 | Physical AI | 把 AI 裝進機器人、汽車、工廠機台裡，讓它長出手腳 |
 | Context Engineering | 幫代班同事把客戶資料、訂單紀錄都準備好，不只是教他怎麼問 |
+| Context Compaction | 把逐字稿整理成交接紀錄，保留下一步需要的資訊 |
 
 ### AI Agent 與協作類
 
