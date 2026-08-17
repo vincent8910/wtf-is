@@ -29,7 +29,7 @@
 
 ## 大綱
 
-> 共收錄 **54 個** AI / 機器學習術語，點擊分類名稱直接跳轉。
+> 共收錄 **55 個** AI / 機器學習術語，點擊分類名稱直接跳轉。
 
 | 分類 | 術語數 | 說明 |
 |------|:------:|------|
@@ -37,7 +37,7 @@
 | [技術方法類](#技術方法類) | 8 | 監督式學習、NLP、電腦視覺、分類⋯⋯ |
 | [模型與應用類](#模型與應用類) | 23 | LLM、GPT、Transformer、RAG、MCP、DeepSeek、Vibe Coding、Context Compaction⋯⋯ |
 | [AI Agent 與協作類](#ai-agent-與協作類) | 3 | AI Sandbox、Multi-Agent System、A2A⋯⋯ |
-| [指標與問題類](#指標與問題類) | 10 | 過擬合、偏差、幻覺、Slop、Shadow AI⋯⋯ |
+| [指標與問題類](#指標與問題類) | 11 | Agent Evaluation、過擬合、偏差、幻覺、Slop、Shadow AI⋯⋯ |
 
 > 想一次看完所有比喻？直接跳到 [比喻對照總表](#比喻對照總表)
 
@@ -47,7 +47,7 @@
 
 | | | | |
 |---|---|---|---|
-| [Accuracy（準確率）](terms/accuracy.md) | [Agentic（代理式）](terms/agentic.md) | [AI Companion（AI 陪伴）](terms/ai-companion.md) | [AI 眼鏡](terms/ai-glasses.md) |
+| [Accuracy（準確率）](terms/accuracy.md) | [Agent Evaluation（代理評估）](terms/agent-evaluation.md) | [Agentic（代理式）](terms/agentic.md) | [AI Companion（AI 陪伴）](terms/ai-companion.md) |
 | [AI（人工智慧）](terms/ai.md) | [Algorithm（演算法）](terms/algorithm.md) | [Bias（偏差）](terms/bias.md) | [Classification（分類）](terms/classification.md) |
 | [Computer Vision（電腦視覺）](terms/computer-vision.md) | [Context Engineering（情境工程）](terms/context-engineering.md) | [Context Window（上下文窗口）](terms/context-window.md) | [Dataset（資料集）](terms/dataset.md) |
 | [Context Compaction（上下文壓縮）](terms/context-compaction.md) | [Deep Learning（深度學習）](terms/deep-learning.md) | [Deepfake（深偽）](terms/deepfake.md) | [DeepSeek](terms/deepseek.md) |
@@ -155,6 +155,7 @@
 | Hallucination（幻覺） | AI 一本正經地胡說八道 | 很愛面子、不懂也不說「我不知道」的朋友 | 「ChatGPT 有時候會 Hallucinate」 | [詳細](terms/hallucination.md) |
 | Guardrails（護欄） | 限制和約束 AI 行為，避免產出有害或錯誤內容的安全機制 | 給新員工一本 SOP：這些能答、那些要轉主管、絕對不能說的 | 「我們的 AI 客服有 Guardrails，碰到法律問題會自動轉人工」 | [詳細](terms/guardrails.md) |
 | Accuracy（準確率） | AI 猜對了多少比例 | 考試成績——答對幾題 | 「模型準確率有 95%」 | [詳細](terms/accuracy.md) |
+| Agent Evaluation（代理評估） | 用可重複的任務和規則檢查 AI Agent 是否真的做對事 | 出一組真實工作題目驗收新助理 | 「先跑 Agent Evaluation 再換模型」 | [詳細](terms/agent-evaluation.md) |
 | Dataset（資料集） | AI 學習用的教材 | 學生的課本和練習題 | 「Dataset 太小，模型效果不好」 | [詳細](terms/dataset.md) |
 | Shadow AI | 員工私下使用未經公司核准的 AI 工具 | 員工偷偷用私人隨身碟帶資料回家 | 「70% 員工都在用 Shadow AI」 | [詳細](terms/shadow-ai.md) |
 | Slop | AI 產出的低品質垃圾內容 | 速食店機器大量生產的沒靈魂食物 | 「這段程式碼是 Slop 吧？」 | [詳細](terms/slop.md) |
@@ -240,6 +241,7 @@
 | Hallucination | 很愛面子的朋友，不懂也不說「我不知道」，硬掰一個答案 |
 | Guardrails | 給新員工一本 SOP：這些能答、那些要轉主管、絕對不能說的 |
 | Accuracy | 考試成績——答對 80 題就是 80 分 |
+| Agent Evaluation | 出一組真實工作題目驗收新助理，還要檢查過程有沒有越權 |
 | Dataset | 學生的課本和練習題——教材品質決定學生程度 |
 | Shadow AI | 員工偷偷用私人隨身碟把公司資料帶回家處理 |
 | Slop | 速食店用機器大量生產的食物——看起來像那麼回事，但沒靈魂 |
