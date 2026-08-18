@@ -223,7 +223,7 @@
 | **Server（伺服器）** | 24 小時待命、專門服務請求的電腦 | 24 小時不打烊的服務生 | 「**Server** 掛了，網站打不開。」 | [→ 詳細](terms/server.md) |
 | **Auth（驗證/授權）** | Authentication 確認你是誰，Authorization 確認你能做什麼 | 門口警衛 / 樓層門禁 | 「**Auth** 做好了嗎？使用者登入有問題。」 | [→ 詳細](terms/auth.md) |
 | **Token（令牌）** | 系統發給你的臨時通行證 | 遊樂園手上的入場章 | 「**Token** 過期了，要重新登入。」 | [→ 詳細](terms/token.md) |
-| **OAuth** | 讓你用 Google、Facebook 帳號登入其他網站的機制 | 大樓管理處發的臨時通行證 | 「登入頁要加 **OAuth**，支援 Google 登入。」 | [→ 詳細](terms/oauth.md) |
+| **OAuth** | 讓應用程式安全取得其他服務授權的標準協議 | 大樓管理處發的臨時通行證 | 「登入頁要加 **OAuth**，支援 Google 登入。」 | [→ 詳細](terms/oauth.md) |
 | **Microservice（微服務）** | 把一個大系統拆成很多獨立的小服務 | 美食街各攤位獨立經營 | 「我們要把系統拆成**微服務**架構。」 | [→ 詳細](terms/microservice.md) |
 | **Event-Driven（事件驅動）** | 系統的各部分靠「事件」互相溝通、觸發動作的架構 | 廣播系統，喊一聲「開飯了」，各部門自己去吃 | 「我們的訂單系統是 **Event-Driven** 的，下單後各服務自己處理。」 | [→ 詳細](terms/event-driven.md) |
 | **SEO（搜尋引擎優化）** | 讓網站在 Google 搜尋結果排更前面的技巧 | 把店開在大馬路上 | 「首頁的標題要改，**SEO** 分數太低了。」 | [→ 詳細](terms/seo.md) |
