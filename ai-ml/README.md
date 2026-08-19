@@ -29,13 +29,13 @@
 
 ## 大綱
 
-> 共收錄 **55 個** AI / 機器學習術語，點擊分類名稱直接跳轉。
+> 共收錄 **56 個** AI / 機器學習術語，點擊分類名稱直接跳轉。
 
 | 分類 | 術語數 | 說明 |
 |------|:------:|------|
 | [基礎概念類](#基礎概念類) | 10 | AI、機器學習、深度學習、神經網路⋯⋯ |
 | [技術方法類](#技術方法類) | 8 | 監督式學習、NLP、電腦視覺、分類⋯⋯ |
-| [模型與應用類](#模型與應用類) | 23 | LLM、GPT、Transformer、RAG、MCP、DeepSeek、Vibe Coding、Context Compaction⋯⋯ |
+| [模型與應用類](#模型與應用類) | 24 | LLM、GPT、Transformer、RAG、MCP、Agent Plugin、DeepSeek、Vibe Coding⋯⋯ |
 | [AI Agent 與協作類](#ai-agent-與協作類) | 3 | AI Sandbox、Multi-Agent System、A2A⋯⋯ |
 | [指標與問題類](#指標與問題類) | 11 | Agent Evaluation、過擬合、偏差、幻覺、Slop、Shadow AI⋯⋯ |
 
@@ -47,7 +47,7 @@
 
 | | | | |
 |---|---|---|---|
-| [Accuracy（準確率）](terms/accuracy.md) | [Agent Evaluation（代理評估）](terms/agent-evaluation.md) | [Agentic（代理式）](terms/agentic.md) | [AI Companion（AI 陪伴）](terms/ai-companion.md) |
+| [Accuracy（準確率）](terms/accuracy.md) | [Agent Evaluation（代理評估）](terms/agent-evaluation.md) | [Agent Plugin（代理外掛）](terms/agent-plugin.md) | [Agentic（代理式）](terms/agentic.md) |
 | [AI（人工智慧）](terms/ai.md) | [Algorithm（演算法）](terms/algorithm.md) | [Bias（偏差）](terms/bias.md) | [Classification（分類）](terms/classification.md) |
 | [Computer Vision（電腦視覺）](terms/computer-vision.md) | [Context Engineering（情境工程）](terms/context-engineering.md) | [Context Window（上下文窗口）](terms/context-window.md) | [Dataset（資料集）](terms/dataset.md) |
 | [Context Compaction（上下文壓縮）](terms/context-compaction.md) | [Deep Learning（深度學習）](terms/deep-learning.md) | [Deepfake（深偽）](terms/deepfake.md) | [DeepSeek](terms/deepseek.md) |
@@ -120,7 +120,8 @@
 | Skill（技能） | AI 能執行的一項特定能力 | 幫手機裝 App，裝什麼就會什麼 | 「這個 AI 有搜尋的 Skill」 | [詳細](terms/skill.md) |
 | Context Window（上下文窗口） | AI 一次能「記住」多少資訊的上限 | 桌子大小——越大能同時攤開越多文件 | 「超過 Context Window 它就忘了」 | [詳細](terms/context-window.md) |
 | DeepSeek | 用極低成本做出頂尖 AI 的中國公司 | 用十分之一預算做出同等級的菜 | 「DeepSeek 出來後 NVIDIA 股價跌了」 | [詳細](terms/deepseek.md) |
-| LRM（大型推理模型） | 會「想一想」再回答的 AI，強調邏輯推理 | 數學老師一步步推導 vs 搶答選手 | 「複雜問題用 LRM 比較準」 | [詳細](terms/lrm.md) |
+| LRM（大型推理模型） | 會「想一想」再回答的 AI，強調邏輯推理 | 數學老師一步步推導 vs 搶答選手憑直覺回答 | 「複雜問題用 LRM 比較準」 | [詳細](terms/lrm.md) |
+| Agent Plugin（代理外掛） | 把 Skill、MCP Server 等 Agent 能力打包成可跨工具安裝的套件 | 一個裝滿工具、說明書和插頭的工具箱，帶到不同工作室都能用 | 「這個 Agent Plugin 可以在不同 Agent Client 共用」 | [詳細](terms/agent-plugin.md) |
 | Multimodal（多模態） | 能同時處理文字、圖片、語音、影片的 AI | 面對面的朋友 vs 只能傳文字的筆友 | 「新版 GPT 是 Multimodal 的」 | [詳細](terms/multimodal.md) |
 | SLM（小型語言模型） | 輕量版 AI，能跑在筆電或手機上 | 機車——便宜靈活，日常夠用 | 「用 SLM 就夠了，省錢」 | [詳細](terms/slm.md) |
 | Agentic（代理式） | AI 自己規劃步驟、自己動手完成多步驟任務 | 能幹的助理，你說一個目標，他自己想辦法達成，不用交代每一步 | 「2026 年的趨勢是 Agentic Workflow」 | [詳細](terms/agentic.md) |
@@ -214,6 +215,7 @@
 | Context Window | 桌子大小——桌子越大，能同時攤開越多文件對照 |
 | DeepSeek | 用十分之一的食材成本，做出跟米其林三星一樣好吃的菜 |
 | LRM | 數學老師一步步推導答案 vs 搶答選手憑直覺回答 |
+| Agent Plugin | 把 Skill、MCP Server 與設定打包的可攜式工具箱 |
 | Multimodal | 面對面的朋友能看你的照片、聽你說話 vs 只能傳文字的筆友 |
 | SLM | 機車——載不了冰箱，但搬幾箱書綽綽有餘，便宜又靈活 |
 | Agentic | 能幹的助理，你說一個目標，他自己想辦法達成 |
