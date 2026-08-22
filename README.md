@@ -66,7 +66,7 @@
 | [🪙 加密貨幣 / Web3](crypto/README.md) | 80 | Blockchain、DeFi、NFT、HODL⋯⋯ |
 | [🧩 UX / 產品設計](ux-product/README.md) | 15 | User Research、Pain Point、PRD⋯⋯ |
 | [💰 財務會計](finance-accounting/README.md) | 20 | 資產負債表、損益表、EBITDA、折舊⋯⋯ |
-| [🤖 AI / 機器學習](ai-ml/README.md) | 56 | LLM、GPT、Transformer、Prompt Engineering、AI Agent⋯⋯ |
+| [🤖 AI / 機器學習](ai-ml/README.md) | 57 | LLM、GPT、Transformer、Prompt Engineering、AI Agent⋯⋯ |
 
 > **💡 點進各領域的完整頁面，每個術語都有這樣的詳細對照：**
 >
@@ -610,8 +610,8 @@
 |------|:------:|------|
 | [基礎概念類](ai-ml/README.md#基礎概念類) | 10 | AI、機器學習、深度學習、神經網路⋯⋯ |
 | [技術方法類](ai-ml/README.md#技術方法類) | 8 | 監督式學習、NLP、電腦視覺、分類⋯⋯ |
-| [模型與應用類](ai-ml/README.md#模型與應用類) | 23 | LLM、GPT、Transformer、RAG、MCP、DeepSeek、Vibe Coding、Context Compaction⋯⋯ |
-| [AI Agent 與協作類](ai-ml/README.md#ai-agent-與協作類) | 3 | AI Sandbox、Multi-Agent System、A2A⋯⋯ |
+| [模型與應用類](ai-ml/README.md#模型與應用類) | 24 | LLM、GPT、Transformer、RAG、MCP、DeepSeek、Vibe Coding、Context Compaction⋯⋯ |
+| [AI Agent 與協作類](ai-ml/README.md#ai-agent-與協作類) | 4 | AI Sandbox、Multi-Agent System、A2A、Shared Agent Session⋯⋯ |
 | [指標與問題類](ai-ml/README.md#指標與問題類) | 11 | Agent Evaluation、過擬合、偏差、幻覺、Slop、Shadow AI⋯⋯ |
 
 ### 單字速查表（A-Z）

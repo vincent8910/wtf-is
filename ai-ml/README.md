@@ -29,14 +29,14 @@
 
 ## 大綱
 
-> 共收錄 **56 個** AI / 機器學習術語，點擊分類名稱直接跳轉。
+> 共收錄 **57 個** AI / 機器學習術語，點擊分類名稱直接跳轉。
 
 | 分類 | 術語數 | 說明 |
 |------|:------:|------|
 | [基礎概念類](#基礎概念類) | 10 | AI、機器學習、深度學習、神經網路⋯⋯ |
 | [技術方法類](#技術方法類) | 8 | 監督式學習、NLP、電腦視覺、分類⋯⋯ |
 | [模型與應用類](#模型與應用類) | 24 | LLM、GPT、Transformer、RAG、MCP、Agent Plugin、DeepSeek、Vibe Coding⋯⋯ |
-| [AI Agent 與協作類](#ai-agent-與協作類) | 3 | AI Sandbox、Multi-Agent System、A2A⋯⋯ |
+| [AI Agent 與協作類](#ai-agent-與協作類) | 4 | AI Sandbox、Multi-Agent System、A2A、Shared Agent Session⋯⋯ |
 | [指標與問題類](#指標與問題類) | 11 | Agent Evaluation、過擬合、偏差、幻覺、Slop、Shadow AI⋯⋯ |
 
 > 想一次看完所有比喻？直接跳到 [比喻對照總表](#比喻對照總表)
@@ -58,9 +58,10 @@
 | [Multimodal（多模態）](terms/multimodal.md) | [Neural Network（神經網路）](terms/neural-network.md) | [NLP（自然語言處理）](terms/nlp.md) | [Overfitting（過擬合）](terms/overfitting.md) |
 | [Physical AI（物理 AI）](terms/physical-ai.md) | [Prompt Engineering（提示工程）](terms/prompt-engineering.md) | [Prompt Injection（提示詞注入）](terms/prompt-injection.md) | [RAG（檢索增強生成）](terms/rag.md) |
 | [Regression（迴歸）](terms/regression.md) | [Reinforcement Learning（強化學習）](terms/reinforcement-learning.md) | [RLHF](terms/rlhf.md) | [Shadow AI](terms/shadow-ai.md) |
-| [Skill（技能）](terms/skill.md) | [SLM（小型語言模型）](terms/slm.md) | [Slop](terms/slop.md) | [Supervised Learning（監督式學習）](terms/supervised-learning.md) |
+| [Shared Agent Session（共享代理工作階段）](terms/shared-agent-session.md) | [Skill（技能）](terms/skill.md) | [SLM（小型語言模型）](terms/slm.md) | [Slop](terms/slop.md) |
+| [Supervised Learning（監督式學習）](terms/supervised-learning.md) | | | |
 | [Context Compaction（上下文壓縮）](terms/context-compaction.md) | | | |
-| [A2A](terms/a2a.md) | [AI Sandbox（AI 隔離環境）](terms/ai-sandbox.md) | [Multi-Agent System（多代理系統）](terms/multi-agent-system.md) | |
+| [A2A](terms/a2a.md) | [AI Sandbox（AI 隔離環境）](terms/ai-sandbox.md) | [Multi-Agent System（多代理系統）](terms/multi-agent-system.md) | [Shared Agent Session（共享代理工作階段）](terms/shared-agent-session.md) |
 | [Tokenizer（分詞器）](terms/tokenizer.md) | [Training（訓練）](terms/training.md) | [Transformer](terms/transformer.md) | [Unsupervised Learning（非監督式學習）](terms/unsupervised-learning.md) |
 | [Vector Database（向量資料庫）](terms/vector-database.md) | [Vibe Coding](terms/vibe-coding.md) | | |
 ---
@@ -141,7 +142,8 @@
 |------|-----------|------|-------------|---------|
 | AI Sandbox（AI 隔離環境） | 限制 AI 檔案、指令與網路活動範圍的隔離環境 | 沒有總鑰匙的工作室 | 「先在 Sandbox 裡測試，不要直接碰 production」 | [詳細](terms/ai-sandbox.md) |
 | Multi-Agent System（多代理系統） | 多個有角色與協作規則的 Agent 系統 | 分工明確的 AI 團隊 | 「這不是多個聊天視窗，而是 Multi-Agent System」 | [詳細](terms/multi-agent-system.md) |
-| A2A（Agent-to-Agent） | Agent 與 Agent 之間的協作與通訊概念 | AI 團隊的對講機 | 「MCP 連工具，A2A 連另一個 Agent」 | [詳細](terms/a2a.md) |
+| [A2A（Agent-to-Agent）](terms/a2a.md) | Agent 與 Agent 之間的協作與通訊概念 | AI 團隊的對講機 | 「MCP 連工具，A2A 連另一個 Agent」 | [詳細](terms/a2a.md) |
+| Shared Agent Session（共享代理工作階段） | 多人共同查看、引導與審查同一個 Agent 工作階段 | 團隊在會議室看著外包工程師一起做事 | 「讓 QA 也加入 Shared Agent Session，一起看 Agent 的差異和測試結果」 | [詳細](terms/shared-agent-session.md) |
 
 ---
 
@@ -233,6 +235,7 @@
 | AI Sandbox | 給新員工一間沒有總鑰匙的安全工作室 |
 | Multi-Agent System | PM、工程師、QA 各司其職的專案團隊 |
 | A2A | 不同部門 Agent 之間的對講機 |
+| Shared Agent Session | 團隊一起看著、引導同一個 AI 助理工作的會議室 |
 
 ### 指標與問題類
 
