@@ -29,14 +29,14 @@
 
 ## 大綱
 
-> 共收錄 **57 個** AI / 機器學習術語，點擊分類名稱直接跳轉。
+> 共收錄 **58 個** AI / 機器學習術語，點擊分類名稱直接跳轉。
 
 | 分類 | 術語數 | 說明 |
 |------|:------:|------|
 | [基礎概念類](#基礎概念類) | 10 | AI、機器學習、深度學習、神經網路⋯⋯ |
 | [技術方法類](#技術方法類) | 8 | 監督式學習、NLP、電腦視覺、分類⋯⋯ |
 | [模型與應用類](#模型與應用類) | 24 | LLM、GPT、Transformer、RAG、MCP、Agent Plugin、DeepSeek、Vibe Coding⋯⋯ |
-| [AI Agent 與協作類](#ai-agent-與協作類) | 4 | AI Sandbox、Multi-Agent System、A2A、Shared Agent Session⋯⋯ |
+| [AI Agent 與協作類](#ai-agent-與協作類) | 5 | AI Sandbox、Multi-Agent System、A2A、Agent Identity⋯⋯ |
 | [指標與問題類](#指標與問題類) | 11 | Agent Evaluation、過擬合、偏差、幻覺、Slop、Shadow AI⋯⋯ |
 
 > 想一次看完所有比喻？直接跳到 [比喻對照總表](#比喻對照總表)
@@ -47,7 +47,7 @@
 
 | | | | |
 |---|---|---|---|
-| [Accuracy（準確率）](terms/accuracy.md) | [Agent Evaluation（代理評估）](terms/agent-evaluation.md) | [Agent Plugin（代理外掛）](terms/agent-plugin.md) | [Agentic（代理式）](terms/agentic.md) |
+| [Accuracy（準確率）](terms/accuracy.md) | [Agent Evaluation（代理評估）](terms/agent-evaluation.md) | [Agent Identity（代理身分）](terms/agent-identity.md) | [Agent Plugin（代理外掛）](terms/agent-plugin.md) |
 | [AI（人工智慧）](terms/ai.md) | [Algorithm（演算法）](terms/algorithm.md) | [Bias（偏差）](terms/bias.md) | [Classification（分類）](terms/classification.md) |
 | [Computer Vision（電腦視覺）](terms/computer-vision.md) | [Context Engineering（情境工程）](terms/context-engineering.md) | [Context Window（上下文窗口）](terms/context-window.md) | [Dataset（資料集）](terms/dataset.md) |
 | [Context Compaction（上下文壓縮）](terms/context-compaction.md) | [Deep Learning（深度學習）](terms/deep-learning.md) | [Deepfake（深偽）](terms/deepfake.md) | [DeepSeek](terms/deepseek.md) |
@@ -143,6 +143,7 @@
 | AI Sandbox（AI 隔離環境） | 限制 AI 檔案、指令與網路活動範圍的隔離環境 | 沒有總鑰匙的工作室 | 「先在 Sandbox 裡測試，不要直接碰 production」 | [詳細](terms/ai-sandbox.md) |
 | Multi-Agent System（多代理系統） | 多個有角色與協作規則的 Agent 系統 | 分工明確的 AI 團隊 | 「這不是多個聊天視窗，而是 Multi-Agent System」 | [詳細](terms/multi-agent-system.md) |
 | [A2A（Agent-to-Agent）](terms/a2a.md) | Agent 與 Agent 之間的協作與通訊概念 | AI 團隊的對講機 | 「MCP 連工具，A2A 連另一個 Agent」 | [詳細](terms/a2a.md) |
+| Agent Identity（代理身分） | 識別 Agent、代表對象與委派權限的身分機制 | 公司員工證加訪客登記 | 「長流程 Agent 要有可稽核的 Agent Identity」 | [詳細](terms/agent-identity.md) |
 | Shared Agent Session（共享代理工作階段） | 多人共同查看、引導與審查同一個 Agent 工作階段 | 團隊在會議室看著外包工程師一起做事 | 「讓 QA 也加入 Shared Agent Session，一起看 Agent 的差異和測試結果」 | [詳細](terms/shared-agent-session.md) |
 
 ---
@@ -235,6 +236,7 @@
 | AI Sandbox | 給新員工一間沒有總鑰匙的安全工作室 |
 | Multi-Agent System | PM、工程師、QA 各司其職的專案團隊 |
 | A2A | 不同部門 Agent 之間的對講機 |
+| Agent Identity | 公司員工證加訪客登記，確認 Agent 是誰、代表誰、能進哪些房間 |
 | Shared Agent Session | 團隊一起看著、引導同一個 AI 助理工作的會議室 |
 
 ### 指標與問題類
