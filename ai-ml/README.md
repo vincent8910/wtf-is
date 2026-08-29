@@ -29,14 +29,14 @@
 
 ## 大綱
 
-> 共收錄 **58 個** AI / 機器學習術語，點擊分類名稱直接跳轉。
+> 共收錄 **59 個** AI / 機器學習術語，點擊分類名稱直接跳轉。
 
 | 分類 | 術語數 | 說明 |
 |------|:------:|------|
 | [基礎概念類](#基礎概念類) | 10 | AI、機器學習、深度學習、神經網路⋯⋯ |
 | [技術方法類](#技術方法類) | 8 | 監督式學習、NLP、電腦視覺、分類⋯⋯ |
 | [模型與應用類](#模型與應用類) | 24 | LLM、GPT、Transformer、RAG、MCP、Agent Plugin、DeepSeek、Vibe Coding⋯⋯ |
-| [AI Agent 與協作類](#ai-agent-與協作類) | 5 | AI Sandbox、Multi-Agent System、A2A、Agent Identity⋯⋯ |
+| [AI Agent 與協作類](#ai-agent-與協作類) | 6 | AI Sandbox、Multi-Agent System、A2A、Agent Identity、Zero Trust AI Agent⋯⋯ |
 | [指標與問題類](#指標與問題類) | 11 | Agent Evaluation、過擬合、偏差、幻覺、Slop、Shadow AI⋯⋯ |
 
 > 想一次看完所有比喻？直接跳到 [比喻對照總表](#比喻對照總表)
@@ -62,6 +62,7 @@
 | [Supervised Learning（監督式學習）](terms/supervised-learning.md) | | | |
 | [Context Compaction（上下文壓縮）](terms/context-compaction.md) | | | |
 | [A2A](terms/a2a.md) | [AI Sandbox（AI 隔離環境）](terms/ai-sandbox.md) | [Multi-Agent System（多代理系統）](terms/multi-agent-system.md) | [Shared Agent Session（共享代理工作階段）](terms/shared-agent-session.md) |
+| [Zero Trust AI Agent（零信任 AI 代理）](terms/zero-trust-ai-agent.md) | | | |
 | [Tokenizer（分詞器）](terms/tokenizer.md) | [Training（訓練）](terms/training.md) | [Transformer](terms/transformer.md) | [Unsupervised Learning（非監督式學習）](terms/unsupervised-learning.md) |
 | [Vector Database（向量資料庫）](terms/vector-database.md) | [Vibe Coding](terms/vibe-coding.md) | | |
 ---
@@ -145,6 +146,7 @@
 | [A2A（Agent-to-Agent）](terms/a2a.md) | Agent 與 Agent 之間的協作與通訊概念 | AI 團隊的對講機 | 「MCP 連工具，A2A 連另一個 Agent」 | [詳細](terms/a2a.md) |
 | Agent Identity（代理身分） | 識別 Agent、代表對象與委派權限的身分機制 | 公司員工證加訪客登記 | 「長流程 Agent 要有可稽核的 Agent Identity」 | [詳細](terms/agent-identity.md) |
 | Shared Agent Session（共享代理工作階段） | 多人共同查看、引導與審查同一個 Agent 工作階段 | 團隊在會議室看著外包工程師一起做事 | 「讓 QA 也加入 Shared Agent Session，一起看 Agent 的差異和測試結果」 | [詳細](terms/shared-agent-session.md) |
+| Zero Trust AI Agent（零信任 AI 代理） | 不把模型判斷當成安全邊界，讓身分、隔離與確定性規則在模型外攔住危險操作 | 外包員工每筆付款都要驗證、限額和簽核 | 「能改資料的 Agent 要用 Zero Trust AI Agent 架構」 | [詳細](terms/zero-trust-ai-agent.md) |
 
 ---
 
@@ -238,6 +240,7 @@
 | A2A | 不同部門 Agent 之間的對講機 |
 | Agent Identity | 公司員工證加訪客登記，確認 Agent 是誰、代表誰、能進哪些房間 |
 | Shared Agent Session | 團隊一起看著、引導同一個 AI 助理工作的會議室 |
+| Zero Trust AI Agent | 外包員工每筆付款都要驗證、限額和簽核 |
 
 ### 指標與問題類
 
