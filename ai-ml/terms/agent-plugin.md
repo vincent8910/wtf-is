@@ -10,7 +10,9 @@ AI Agent 往往不只需要一項能力：可能要先讀一份工作說明，�
 
 它和 **Skill** 的差別是：Skill 比較像工具箱裡的一把工具；Plugin 則是裝載一把或多把工具、使用說明與連接設定的整包套件。Plugin 也可能包含 [MCP](mcp.md) Server 設定，但「能安裝」不等於「自動取得所有權限」，仍要檢查來源、授權與網路／檔案邊界。
 
-GitHub 在 2026 年 8 月 12 日的官方 Changelog 說明 Agent Plugins 1.0：同一個 Plugin 可在相容的 Agent Client 間共用，並可把 Skill 與 MCP Server 包在同一個可安裝套件中。這是規格與支援範圍的說明，不代表每個 Agent 工具都已支援。
+Agent Plugins 規格的官方文件目前標示 **1.0.0 為 Published**，而 **1.1.0 為 Working Draft**；因此這裡只把 1.0.0 當作已發布版本，不把草稿功能寫成穩定標準。1.0.0 的核心契約是：根目錄放 `plugin.json`，Skill 放在 `skills/`，MCP Server 設定放在獨立的 `mcp.json`；其中 `plugin.json` 的 `$schema` 要指向對應版本，不能把 MCP 設定隨意內嵌在 manifest 裡。
+
+GitHub 在 2026 年 8 月 12 日的官方 Changelog 說明，Agent Plugins 1.0 已可在 VS Code、Copilot CLI、GitHub Copilot SDK 與 Copilot app 使用；8 月 25 日又把 MCP Server、Plugin、Skill 與 Canvas 集中到 Copilot app 的 Customize 頁面。這些是特定產品的支援狀態，不代表每個 Agent Client 都已支援，也不代表安裝 Plugin 就自動取得工具權限。
 
 ## 生活比喻 / 實際例子
 
@@ -33,7 +35,7 @@ GitHub 在 2026 年 8 月 12 日的官方 Changelog 說明 Agent Plugins 1.0：�
 - 同一套 Plugin 若能跨 Client 使用，可以減少重複維護，但要確認各 Client 的支援範圍
 - Plugin 可能攜帶外部工具設定，安裝前要檢查來源、權限與供應鏈風險
 
-**官方參考：** [GitHub Changelog：Agent Plugins 1.0](https://github.blog/changelog/2026-08-12-agent-plugins-1-0-in-vs-code-copilot-cli-and-the-copilot-app/)
+**官方參考：** [Agent Plugins 1.0.0 規格](https://agent-plugins.org/specification/) · [GitHub Changelog：Agent Plugins 1.0](https://github.blog/changelog/2026-08-12-agent-plugins-1-0-in-vs-code-copilot-cli-and-the-copilot-app) · [GitHub Changelog：Copilot app Customize](https://github.blog/changelog/2026-08-25-github-copilot-app-customize-tab-is-generally-available/)
 
 ---
 **[← 回到 AI / 機器學習總覽](../README.md)**
