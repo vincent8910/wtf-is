@@ -29,13 +29,13 @@
 
 ## 大綱
 
-> 共收錄 **59 個** AI / 機器學習術語，點擊分類名稱直接跳轉。
+> 共收錄 **60 個** AI / 機器學習術語，點擊分類名稱直接跳轉。
 
 | 分類 | 術語數 | 說明 |
 |------|:------:|------|
 | [基礎概念類](#基礎概念類) | 10 | AI、機器學習、深度學習、神經網路⋯⋯ |
 | [技術方法類](#技術方法類) | 8 | 監督式學習、NLP、電腦視覺、分類⋯⋯ |
-| [模型與應用類](#模型與應用類) | 24 | LLM、GPT、Transformer、RAG、MCP、Agent Plugin、DeepSeek、Vibe Coding⋯⋯ |
+| [模型與應用類](#模型與應用類) | 25 | LLM、GPT、Transformer、RAG、MCP、Agent Plugin、Progressive Discovery、Vibe Coding⋯⋯ |
 | [AI Agent 與協作類](#ai-agent-與協作類) | 6 | AI Sandbox、Multi-Agent System、A2A、Agent Identity、Zero Trust AI Agent⋯⋯ |
 | [指標與問題類](#指標與問題類) | 11 | Agent Evaluation、過擬合、偏差、幻覺、Slop、Shadow AI⋯⋯ |
 
@@ -57,6 +57,7 @@
 | [LRM（大型推理模型）](terms/lrm.md) | [Machine Learning（機器學習）](terms/machine-learning.md) | [MCP（模型上下文協議）](terms/mcp.md) | [Model（模型）](terms/model.md) |
 | [Multimodal（多模態）](terms/multimodal.md) | [Neural Network（神經網路）](terms/neural-network.md) | [NLP（自然語言處理）](terms/nlp.md) | [Overfitting（過擬合）](terms/overfitting.md) |
 | [Physical AI（物理 AI）](terms/physical-ai.md) | [Prompt Engineering（提示工程）](terms/prompt-engineering.md) | [Prompt Injection（提示詞注入）](terms/prompt-injection.md) | [RAG（檢索增強生成）](terms/rag.md) |
+| [Progressive Discovery（漸進式探索）](terms/progressive-discovery.md) | | | |
 | [Regression（迴歸）](terms/regression.md) | [Reinforcement Learning（強化學習）](terms/reinforcement-learning.md) | [RLHF](terms/rlhf.md) | [Shadow AI](terms/shadow-ai.md) |
 | [Shared Agent Session（共享代理工作階段）](terms/shared-agent-session.md) | [Skill（技能）](terms/skill.md) | [SLM（小型語言模型）](terms/slm.md) | [Slop](terms/slop.md) |
 | [Supervised Learning（監督式學習）](terms/supervised-learning.md) | | | |
@@ -132,6 +133,7 @@
 | AI 眼鏡 | 戴在臉上、隨時待命的 AI 助理 | 把 Siri 藏進一副眼鏡裡，看到什麼就能問 | 「他戴著 AI 眼鏡去日本玩，路標直接翻譯給他聽」 | [詳細](terms/ai-glasses.md) |
 | Physical AI（物理 AI） | 讓 AI 從螢幕走進真實世界，長出手腳 | 把 AI 裝進機器人、汽車、工廠機台裡 | 「黃仁勳說，物理 AI 的時代來了」 | [詳細](terms/physical-ai.md) |
 | Context Engineering（情境工程） | 不只教 AI 怎麼問，而是餵給它「對的資料」 | 幫代班同事把客戶資料、訂單紀錄都準備好 | 「這個 AI 專案失敗不是 Prompt 寫不好，是 Context Engineering 沒做好」 | [詳細](terms/context-engineering.md) |
+| Progressive Discovery（漸進式探索） | 先提供少量入口，再依任務需要逐步揭露更多工具或能力 | 圖書館先給你分類目錄，需要時才帶你到指定書架，不把整座圖書館搬到桌上 | 「工具太多時，先用 Progressive Discovery 找到相關能力」 | [詳細](terms/progressive-discovery.md) |
 
 ---
 

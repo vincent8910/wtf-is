@@ -31,6 +31,8 @@ MCP 官方目前列出的最新規格版本是 **2026-07-28**。這代表 MCP �
 
 這些內容應視為協定版本的具體規格，不代表每個 MCP Client、Server 或 SDK 已經全部支援。實際整合前，仍要查該工具的版本、相容性與限制。
 
+MCP 官方在 2026 年 8 月 22 日發布的 roadmap，已把 **Progressive Discovery（漸進式探索）**列為 **Improved primitives** 的發展方向：Server 先提供小型入口，等對話逐漸明確後再揭露更多工具目錄。這是 roadmap 上的發展方向，不代表目前所有 MCP Server 都已支援；實作時仍要確認具體產品的能力與 fallback 行為。
+
 ## 生活比喻 / 實際例子
 
 想像你家的電器插座：
@@ -78,10 +80,11 @@ MCP 讓 AI 工具整合更容易，但規格會演進。讀到產品文件時，
 2. Client 與 Server 支援哪些 capabilities
 3. 是否支援新版無狀態流程、MRTR 或 Tasks
 4. 授權、資料邊界與安全控制由誰負責
+5. 工具數量很大時，是否有 [Progressive Discovery](progressive-discovery.md) 或其他漸進式探索機制
 
 這跟 [Skill](skill.md)、[Agentic](agentic.md) 與 [AI Sandbox](ai-sandbox.md) 的概念有關：MCP 負責連接方式，Skill 描述可重用能力，Agentic 描述自主工作模式，而 Sandbox 控制執行邊界。
 
-**官方參考：** [MCP 2026-07-28 Specification](https://modelcontextprotocol.io/specification/2026-07-28) · [Changelog](https://modelcontextprotocol.io/specification/2026-07-28/changelog)
+**官方參考：** [MCP 2026-07-28 Specification](https://modelcontextprotocol.io/specification/2026-07-28) · [Changelog](https://modelcontextprotocol.io/specification/2026-07-28/changelog) · [MCP 官方 roadmap（2026-08-22）](https://blog.modelcontextprotocol.io/posts/mcp-roadmap/)
 
 ---
 **[← 回到 AI / 機器學習總覽](../README.md)**
