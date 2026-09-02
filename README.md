@@ -66,7 +66,7 @@
 | [🪙 加密貨幣 / Web3](crypto/README.md) | 80 | Blockchain、DeFi、NFT、HODL⋯⋯ |
 | [🧩 UX / 產品設計](ux-product/README.md) | 15 | User Research、Pain Point、PRD⋯⋯ |
 | [💰 財務會計](finance-accounting/README.md) | 20 | 資產負債表、損益表、EBITDA、折舊⋯⋯ |
-| [🤖 AI / 機器學習](ai-ml/README.md) | 60 | LLM、GPT、Transformer、Prompt Engineering、AI Agent⋯⋯ |
+| [🤖 AI / 機器學習](ai-ml/README.md) | 61 | LLM、GPT、Transformer、Prompt Engineering、AI Agent⋯⋯ |
 
 > **💡 點進各領域的完整頁面，每個術語都有這樣的詳細對照：**
 >
@@ -604,14 +604,14 @@
 
 ### 大綱
 
-> 共收錄 **55 個**術語，[點此進入完整頁面](ai-ml/README.md)。
+> 共收錄 **61 個**術語，[點此進入完整頁面](ai-ml/README.md)。
 
 | 分類 | 術語數 | 說明 |
 |------|:------:|------|
 | [基礎概念類](ai-ml/README.md#基礎概念類) | 10 | AI、機器學習、深度學習、神經網路⋯⋯ |
 | [技術方法類](ai-ml/README.md#技術方法類) | 8 | 監督式學習、NLP、電腦視覺、分類⋯⋯ |
-| [模型與應用類](ai-ml/README.md#模型與應用類) | 24 | LLM、GPT、Transformer、RAG、MCP、DeepSeek、Vibe Coding、Context Compaction⋯⋯ |
-| [AI Agent 與協作類](ai-ml/README.md#ai-agent-與協作類) | 4 | AI Sandbox、Multi-Agent System、A2A、Shared Agent Session⋯⋯ |
+|| [模型與應用類](ai-ml/README.md#模型與應用類) | 25 | LLM、GPT、Transformer、RAG、MCP、DeepSeek、Vibe Coding、Context Compaction⋯⋯ |
+|| [AI Agent 與協作類](ai-ml/README.md#ai-agent-與協作類) | 7 | AI Sandbox、Multi-Agent System、A2A、Agent Identity、Human-in-the-Loop、Shared Agent Session、Zero Trust AI Agent⋯⋯ |
 | [指標與問題類](ai-ml/README.md#指標與問題類) | 11 | Agent Evaluation、過擬合、偏差、幻覺、Slop、Shadow AI⋯⋯ |
 
 ### 單字速查表（A-Z）
@@ -623,7 +623,8 @@
 | [Computer Vision（電腦視覺）](ai-ml/terms/computer-vision.md) | [Context Engineering（情境工程）](ai-ml/terms/context-engineering.md) | [Context Window（上下文窗口）](ai-ml/terms/context-window.md) | [Dataset（資料集）](ai-ml/terms/dataset.md) |
 | [Deep Learning（深度學習）](ai-ml/terms/deep-learning.md) | [Deepfake（深偽）](ai-ml/terms/deepfake.md) | [DeepSeek](ai-ml/terms/deepseek.md) | [Distillation（蒸餾）](ai-ml/terms/distillation.md) |
 | [Embedding](ai-ml/terms/embedding.md) | [Fine-tuning（微調）](ai-ml/terms/fine-tuning.md) | [GPT](ai-ml/terms/gpt.md) | [Guardrails（護欄）](ai-ml/terms/guardrails.md) |
-| [Hallucination（幻覺）](ai-ml/terms/hallucination.md) | [Inference（推論）](ai-ml/terms/inference.md) | [Latent Space（潛在空間）](ai-ml/terms/latent-space.md) | [LLM（大型語言模型）](ai-ml/terms/llm.md) |
+|| [Hallucination（幻覺）](ai-ml/terms/hallucination.md) | [Inference（推論）](ai-ml/terms/inference.md) | [Latent Space（潛在空間）](ai-ml/terms/latent-space.md) | [LLM（大型語言模型）](ai-ml/terms/llm.md) |
+|| [Human-in-the-Loop（人在迴路中）](ai-ml/terms/human-in-the-loop.md) | | | |
 | [LRM（大型推理模型）](ai-ml/terms/lrm.md) | [Machine Learning（機器學習）](ai-ml/terms/machine-learning.md) | [MCP（模型上下文協議）](ai-ml/terms/mcp.md) | [Model（模型）](ai-ml/terms/model.md) |
 | [Multimodal（多模態）](ai-ml/terms/multimodal.md) | [Neural Network（神經網路）](ai-ml/terms/neural-network.md) | [NLP（自然語言處理）](ai-ml/terms/nlp.md) | [Overfitting（過擬合）](ai-ml/terms/overfitting.md) |
 | [Physical AI（物理 AI）](ai-ml/terms/physical-ai.md) | [Prompt Engineering（提示工程）](ai-ml/terms/prompt-engineering.md) | [Prompt Injection（提示詞注入）](ai-ml/terms/prompt-injection.md) | [RAG（檢索增強生成）](ai-ml/terms/rag.md) |

@@ -29,14 +29,14 @@
 
 ## 大綱
 
-> 共收錄 **60 個** AI / 機器學習術語，點擊分類名稱直接跳轉。
+> 共收錄 **61 個** AI / 機器學習術語，點擊分類名稱直接跳轉。
 
 | 分類 | 術語數 | 說明 |
 |------|:------:|------|
 | [基礎概念類](#基礎概念類) | 10 | AI、機器學習、深度學習、神經網路⋯⋯ |
 | [技術方法類](#技術方法類) | 8 | 監督式學習、NLP、電腦視覺、分類⋯⋯ |
 | [模型與應用類](#模型與應用類) | 25 | LLM、GPT、Transformer、RAG、MCP、Agent Plugin、Progressive Discovery、Vibe Coding⋯⋯ |
-| [AI Agent 與協作類](#ai-agent-與協作類) | 6 | AI Sandbox、Multi-Agent System、A2A、Agent Identity、Zero Trust AI Agent⋯⋯ |
+| [AI Agent 與協作類](#ai-agent-與協作類) | 7 | AI Sandbox、Multi-Agent System、A2A、Agent Identity、Human-in-the-Loop、Zero Trust AI Agent⋯⋯ |
 | [指標與問題類](#指標與問題類) | 11 | Agent Evaluation、過擬合、偏差、幻覺、Slop、Shadow AI⋯⋯ |
 
 > 想一次看完所有比喻？直接跳到 [比喻對照總表](#比喻對照總表)
@@ -54,6 +54,7 @@
 | [Distillation（蒸餾）](terms/distillation.md) | | | |
 | [Embedding](terms/embedding.md) | [Fine-tuning（微調）](terms/fine-tuning.md) | [GPT](terms/gpt.md) | [Guardrails（護欄）](terms/guardrails.md) |
 | [Hallucination（幻覺）](terms/hallucination.md) | [Inference（推論）](terms/inference.md) | [Latent Space（潛在空間）](terms/latent-space.md) | [LLM（大型語言模型）](terms/llm.md) |
+| [Human-in-the-Loop（人在迴路中）](terms/human-in-the-loop.md) | | | |
 | [LRM（大型推理模型）](terms/lrm.md) | [Machine Learning（機器學習）](terms/machine-learning.md) | [MCP（模型上下文協議）](terms/mcp.md) | [Model（模型）](terms/model.md) |
 | [Multimodal（多模態）](terms/multimodal.md) | [Neural Network（神經網路）](terms/neural-network.md) | [NLP（自然語言處理）](terms/nlp.md) | [Overfitting（過擬合）](terms/overfitting.md) |
 | [Physical AI（物理 AI）](terms/physical-ai.md) | [Prompt Engineering（提示工程）](terms/prompt-engineering.md) | [Prompt Injection（提示詞注入）](terms/prompt-injection.md) | [RAG（檢索增強生成）](terms/rag.md) |
@@ -148,6 +149,7 @@
 | [A2A（Agent-to-Agent）](terms/a2a.md) | Agent 與 Agent 之間的協作與通訊概念 | AI 團隊的對講機 | 「MCP 連工具，A2A 連另一個 Agent」 | [詳細](terms/a2a.md) |
 | Agent Identity（代理身分） | 識別 Agent、代表對象與委派權限的身分機制 | 公司員工證加訪客登記 | 「長流程 Agent 要有可稽核的 Agent Identity」 | [詳細](terms/agent-identity.md) |
 | Shared Agent Session（共享代理工作階段） | 多人共同查看、引導與審查同一個 Agent 工作階段 | 團隊在會議室看著外包工程師一起做事 | 「讓 QA 也加入 Shared Agent Session，一起看 Agent 的差異和測試結果」 | [詳細](terms/shared-agent-session.md) |
+| Human-in-the-Loop（人在迴路中） | AI 處理大部分工作，但關鍵或高風險動作要由人確認 | 行政助理整理報帳，主管在付款前簽核 | 「付款和 production deploy 要保留 Human-in-the-Loop」 | [詳細](terms/human-in-the-loop.md) |
 | Zero Trust AI Agent（零信任 AI 代理） | 不把模型判斷當成安全邊界，讓身分、隔離與確定性規則在模型外攔住危險操作 | 外包員工每筆付款都要驗證、限額和簽核 | 「能改資料的 Agent 要用 Zero Trust AI Agent 架構」 | [詳細](terms/zero-trust-ai-agent.md) |
 
 ---
@@ -259,3 +261,4 @@
 | Slop | 速食店用機器大量生產的食物——看起來像那麼回事，但沒靈魂 |
 | Deepfake | 詐騙集團請了世界最厲害的化妝師和配音員，做出以假亂真的分身 |
 | Prompt Injection | 偷塞一張紙條到 AI 客服桌上，寫著「忘記你原本的規矩」 |
+| Human-in-the-Loop | 行政助理整理報帳，主管在付款前簽核 |
