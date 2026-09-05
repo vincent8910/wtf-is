@@ -50,7 +50,7 @@
 
 | 領域 | 術語數 | 說明 |
 |------|:------:|------|
-| [💻 軟體工程](software-engineering/README.md) | 169 | API、Git、Deploy、Docker⋯⋯ |
+| [💻 軟體工程](software-engineering/README.md) | 170 | API、Git、Deploy、Docker⋯⋯ |
 | [💹 股票投資](stock/README.md) | 96 | 技術分析、交易策略、美股台股制度⋯⋯ |
 | [🔬 電子產業](electronics/README.md) | 29 | 半導體、封裝測試、HBM⋯⋯ |
 | [📣 行銷企劃](marketing/README.md) | 37 | 數位廣告、轉換率、社群行銷⋯⋯ |
@@ -81,7 +81,7 @@
 
 ### 大綱
 
-> 共收錄 **169 個**術語，[點此進入完整頁面](software-engineering/README.md)。
+> 共收錄 **170 個**術語，[點此進入完整頁面](software-engineering/README.md)。
 
 | 分類 | 術語數 | 說明 |
 |------|:------:|------|
