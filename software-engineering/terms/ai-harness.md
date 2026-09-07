@@ -6,7 +6,7 @@
 
 ## 它到底是什麼？
 
-**AI Harness** 是一種框架（Framework），用來包裝和管理 [LLM](../../ai-ml/terms/llm.md) 的 API 呼叫。
+**AI Harness** 是包在 [LLM](../../ai-ml/terms/llm.md) 外面的執行框架，用來管理模型如何取得上下文、呼叫工具、保存狀態，以及何時重試、並行或停止。它不只是把 API 包成另一個函式。
 
 當你的應用程式要使用 AI 時，直接呼叫 API 會遇到很多麻煩事：
 
@@ -31,6 +31,14 @@
 
 **AI Harness** 不只是 API 包裝層。對 Agentic 工作流來說，它也可能負責執行迴圈、工具權限、上下文、狀態保存、重試、評估與停止條件。
 
+近期官方實務也顯示，Harness 的價值在「如何編排完整任務」，不在單次呼叫看起來省了多少 token：
+
+- GitHub 2026 年 9 月 2 日的工程說明指出，過度壓短工具輸出，可能迫使 Agent 重讀或重跑，反而增加整體成本；應保留完成任務所需的資訊，並以整個 workflow 的成功率、時間與成本驗證改動。
+- GitHub 2026 年 9 月 4 日介紹的 HydraFusion，會依任務的推理、產碼、除錯與工具使用需求，選擇直接完成、加入 review／revision 或升級的流程；這種「只在值得時增加模型呼叫」的做法叫選擇性編排。
+- GitHub 2026 年 9 月 3 日示範平行 Agent 時，讓每個 session 使用獨立 Git worktree。平行不等於共用同一個工作樹；隔離是避免互相覆蓋的前提。
+
+因此，設計或評估 Harness 時，除了模型清單，也要明確記錄：任務級成本、延遲、重試與恢復率、工具／背景工作的編排、隔離邊界，以及失敗時是否能安全停止或交給人處理。
+
 評估一個 AI Harness 時，不要只問「支援哪個模型」，還要看：
 
 - 任務成功率與回歸測試覆蓋率
@@ -54,6 +62,8 @@
 - 「我們用 LangChain 當 **AI Harness**，這樣切換模型很方便」
 - 「這個 **AI Harness** 幫我們處理了 token 計算和上下文管理」
 - 「不要自己從零寫 AI 整合，用現成的 **AI Harness** 框架比較快」
+- 「這次不要只比較每次 tool call 的 token，要看 AI Harness 完成整個任務花多少成本。」
+- 「平行跑兩個 Coding Agent 前，先讓 Harness 為每個 session 建獨立 worktree。」
 
 ## 為什麼要知道這個詞？
 
@@ -61,6 +71,9 @@
 - 了解這個概念，你就知道為什麼工程師不是「直接呼叫 ChatGPT API」就好
 - 跟 [MCP](mcp.md)、[Agent](agent.md)、[Sub-agent](sub-agent.md) 概念密切相關
 - 選對 AI Harness 可以省下大量開發時間
+
+---
+**官方參考：** [GitHub：How we make AI coding more cost efficient without sacrificing task quality（2026-09-02）](https://github.blog/ai-and-ml/github-copilot/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality/) · [Project HydraFusion（2026-09-04）](https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/) · [Run several agents at once（2026-09-03）](https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-run-several-agents-at-once/)
 
 ---
 **[← 回到術語總覽](../README.md)**
