@@ -17,6 +17,8 @@
 
 GitHub 在 2026 年 8 月 21 日的官方 Changelog，分別說明 GitHub Copilot 在 Slack 與 Microsoft Teams 的 shared agentic work：團隊可從原本的討論開始 Agent session，查看計畫、差異與產出，並在 Agent 非同步工作時共同引導。這些功能當時仍標示為 public preview；這裡收錄的是跨產品的工作模式，不代表所有聊天工具都已支援相同功能。
 
+GitHub 在 2026 年 9 月 3 日進一步示範同一專案平行執行多個 Agent session：每個 session 使用自己的 Git worktree，並保留自己的上下文。這裡要分清楚兩件事：共享 session 是讓人共同觀察與引導；平行執行則是讓不同工作彼此隔離。若多個 Agent 直接共用一個工作樹，可能互相覆蓋檔案或讓測試結果失去歸屬，因此應先建立隔離的 worktree，再把變更交給人審查與合併。
+
 ## 和其他概念有什麼不同？
 
 | 概念 | 重點 |
@@ -46,12 +48,12 @@ GitHub 在 2026 年 8 月 21 日的官方 Changelog，分別說明 GitHub Copilo
 
 - Agent 開始進入團隊協作工具後，工作不再只是「一個人對一個聊天機器人」
 - 共用脈絡能減少轉述，但也會讓權限、敏感資料與責任歸屬更重要
-- 看到產品宣稱支援 shared agent work 時，要確認是否真的能查看工具呼叫、差異、狀態與停止權限
+- 看到產品宣稱支援 shared agent work 時，要確認是否真的能查看工具呼叫、差異、狀態與停止權限；平行工作則要另外確認是否有隔離 worktree
 - **Public preview 不等於穩定標準**；導入前仍要查支援範圍、資料邊界、稽核紀錄與人工接管方式
 
 相關：[Agentic（代理式）](agentic.md)、[Multi-Agent System（多代理系統）](multi-agent-system.md)、[Agent Evaluation（代理評估）](agent-evaluation.md)、[AI Sandbox（AI 隔離環境）](ai-sandbox.md)
 
-**官方參考：** [GitHub Changelog：The new GitHub Copilot experience in Slack](https://github.blog/changelog/2026-08-21-the-new-github-copilot-experience-in-slack) · [GitHub Changelog：Shared agentic work with GitHub Copilot in Microsoft Teams](https://github.blog/changelog/2026-08-21-shared-agentic-work-with-github-copilot-in-microsoft-teams)
+**官方參考：** [GitHub Changelog：The new GitHub Copilot experience in Slack](https://github.blog/changelog/2026-08-21-the-new-github-copilot-experience-in-slack) · [GitHub Changelog：Shared agentic work with GitHub Copilot in Microsoft Teams](https://github.blog/changelog/2026-08-21-shared-agentic-work-with-github-copilot-in-microsoft-teams) · [GitHub：Run several agents at once](https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-run-several-agents-at-once/)
 
 ---
 **[← 回到 AI / 機器學習總覽](../README.md)**
