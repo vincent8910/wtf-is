@@ -14,7 +14,9 @@ AI Agent 可能需要讀檔、執行指令、安裝套件或呼叫網路。Sandb
 - 限制網路連線與外部服務
 - 讓測試在隔離環境中執行
 
-它不是「相信 AI 不會犯錯」，而是讓錯誤的影響範圍被控制住。
+它不是「相信 AI 不會犯錯」，而是讓錯誤的影響範圍被控制住。還要分清楚兩種責任：沙盒限制實際能做的事；組織政策則決定哪些限制必須套用，而且可能比使用者在 IDE 裡的個人設定更優先。
+
+例如企業管理的沙盒政策可能同時管制檔案系統、網路、Proxy、開發工具，甚至 macOS Keychain。這類集中管理的限制，應該透過政策診斷或等價的稽核方式確認「有設定」也確實「有生效」；不能只看設定畫面顯示正常，就當成安全邊界已經成立。產品的預覽功能或特定 IDE 實作也可能尚未是穩定標準，文件中應標明適用範圍與狀態。
 
 ## 生活比喻 / 實際例子
 
@@ -32,7 +34,10 @@ AI Agent 可能需要讀檔、執行指令、安裝套件或呼叫網路。Sandb
 
 Sandbox 仍要搭配最小權限、[Guardrails](guardrails.md)、[Prompt Injection](prompt-injection.md)、Git diff、測試與 rollback。它是安全邊界，不是取代人工驗收的魔法。
 
-在 AI Coding、Agent、Computer Use 與自動化工作流中，Sandbox 是從「AI 會做事」走向「AI 可以安全做事」的關鍵概念。
+在 AI Coding、Agent、Computer Use 與自動化工作流中，Sandbox 是從「AI 會做事」走向「AI 可以安全做事」的關鍵概念。GitHub 2026 年 9 月 8 日的官方 Changelog 也示範了企業集中管理沙盒政策的做法：管理員可控制沙盒啟用、檔案系統與網路存取等範圍，且受管理的限制會優先於使用者設定；這是產品案例，不代表所有平台都採用相同能力或優先順序。
+
+---
+**官方參考：** [GitHub Changelog：Enterprise-managed sandbox in Copilot for JetBrains（2026-09-08，公開預覽）](https://github.blog/changelog/2026-09-08-enterprise-managed-sandbox-in-copilot-for-jetbrains/)
 
 ---
 **[← 回到 AI / 機器學習總覽](../README.md)**
