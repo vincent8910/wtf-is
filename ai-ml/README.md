@@ -29,14 +29,14 @@
 
 ## 大綱
 
-> 共收錄 **62 個** AI / 機器學習術語，點擊分類名稱直接跳轉。
+> 共收錄 **63 個** AI / 機器學習術語，點擊分類名稱直接跳轉。
 
 | 分類 | 術語數 | 說明 |
 |------|:------:|------|
 | [基礎概念類](#基礎概念類) | 10 | AI、機器學習、深度學習、神經網路⋯⋯ |
 | [技術方法類](#技術方法類) | 8 | 監督式學習、NLP、電腦視覺、分類⋯⋯ |
 | [模型與應用類](#模型與應用類) | 25 | LLM、GPT、Transformer、RAG、MCP、Agent Plugin、Progressive Discovery、Vibe Coding⋯⋯ |
-| [AI Agent 與協作類](#ai-agent-與協作類) | 8 | AI Sandbox、Multi-Agent System、A2A、Agent Identity、Human-in-the-Loop、Content Exclusion、Zero Trust AI Agent⋯⋯ |
+| [AI Agent 與協作類](#ai-agent-與協作類) | 9 | AI Sandbox、Multi-Agent System、A2A、Agent Identity、Agent Permissions、Human-in-the-Loop、Content Exclusion、Zero Trust AI Agent⋯⋯ |
 | [指標與問題類](#指標與問題類) | 11 | Agent Evaluation、過擬合、偏差、幻覺、Slop、Shadow AI⋯⋯ |
 
 > 想一次看完所有比喻？直接跳到 [比喻對照總表](#比喻對照總表)
@@ -47,9 +47,9 @@
 
 | | | | |
 |---|---|---|---|
-| [Accuracy（準確率）](terms/accuracy.md) | [Agent Evaluation（代理評估）](terms/agent-evaluation.md) | [Agent Identity（代理身分）](terms/agent-identity.md) | [Agent Plugin（代理外掛）](terms/agent-plugin.md) |
-| [AI（人工智慧）](terms/ai.md) | [Algorithm（演算法）](terms/algorithm.md) | [Bias（偏差）](terms/bias.md) | [Classification（分類）](terms/classification.md) |
-| [Computer Vision（電腦視覺）](terms/computer-vision.md) | [Context Engineering（情境工程）](terms/context-engineering.md) | [Context Window（上下文窗口）](terms/context-window.md) | [Dataset（資料集）](terms/dataset.md) |
+| [Accuracy（準確率）](terms/accuracy.md) | [Agent Evaluation（代理評估）](terms/agent-evaluation.md) | [Agent Identity（代理身分）](terms/agent-identity.md) | [Agent Permissions（代理權限）](terms/agent-permissions.md) |
+| [Agent Plugin（代理外掛）](terms/agent-plugin.md) | [AI（人工智慧）](terms/ai.md) | [Algorithm（演算法）](terms/algorithm.md) | [Bias（偏差）](terms/bias.md) |
+| [Classification（分類）](terms/classification.md) | [Computer Vision（電腦視覺）](terms/computer-vision.md) | [Context Engineering（情境工程）](terms/context-engineering.md) | [Context Window（上下文窗口）](terms/context-window.md) |
 | [Context Compaction（上下文壓縮）](terms/context-compaction.md) | [Deep Learning（深度學習）](terms/deep-learning.md) | [Deepfake（深偽）](terms/deepfake.md) | [DeepSeek](terms/deepseek.md) |
 | [Distillation（蒸餾）](terms/distillation.md) | | | |
 | [Embedding](terms/embedding.md) | [Fine-tuning（微調）](terms/fine-tuning.md) | [GPT](terms/gpt.md) | [Guardrails（護欄）](terms/guardrails.md) |
@@ -149,6 +149,7 @@
 | Multi-Agent System（多代理系統） | 多個有角色與協作規則的 Agent 系統 | 分工明確的 AI 團隊 | 「這不是多個聊天視窗，而是 Multi-Agent System」 | [詳細](terms/multi-agent-system.md) |
 | [A2A（Agent-to-Agent）](terms/a2a.md) | Agent 與 Agent 之間的協作與通訊概念 | AI 團隊的對講機 | 「MCP 連工具，A2A 連另一個 Agent」 | [詳細](terms/a2a.md) |
 | Agent Identity（代理身分） | 識別 Agent、代表對象與委派權限的身分機制 | 公司員工證加訪客登記 | 「長流程 Agent 要有可稽核的 Agent Identity」 | [詳細](terms/agent-identity.md) |
+| Agent Permissions（代理權限） | 決定 Agent 哪些操作可直接做、要先詢問或一律禁止 | 助理的門禁表 | 「先把高風險操作設成 Ask 或 Deny」 | [詳細](terms/agent-permissions.md) |
 | Shared Agent Session（共享代理工作階段） | 多人共同查看、引導與審查同一個 Agent 工作階段 | 團隊在會議室看著外包工程師一起做事 | 「讓 QA 也加入 Shared Agent Session，一起看 Agent 的差異和測試結果」 | [詳細](terms/shared-agent-session.md) |
 | Human-in-the-Loop（人在迴路中） | AI 處理大部分工作，但關鍵或高風險動作要由人確認 | 行政助理整理報帳，主管在付款前簽核 | 「付款和 production deploy 要保留 Human-in-the-Loop」 | [詳細](terms/human-in-the-loop.md) |
 | Content Exclusion（內容排除） | 明確禁止 AI 把特定檔案或資料帶進工作上下文 | 助理進辦公室前，先把機密文件鎖進櫃子 | 「先設定 Content Exclusion，再讓 Agent 搜尋專案」 | [詳細](terms/content-exclusion.md) |
