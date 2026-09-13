@@ -81,7 +81,7 @@
 
 ### 大綱
 
-> 共收錄 **170 個**術語，[點此進入完整頁面](software-engineering/README.md)。
+> 共收錄 **171 個**術語，[點此進入完整頁面](software-engineering/README.md)。
 
 | 分類 | 術語數 | 說明 |
 |------|:------:|------|
