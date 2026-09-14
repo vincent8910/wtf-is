@@ -36,8 +36,9 @@
 - GitHub 2026 年 9 月 2 日的工程說明指出，過度壓短工具輸出，可能迫使 Agent 重讀或重跑，反而增加整體成本；應保留完成任務所需的資訊，並以整個 workflow 的成功率、時間與成本驗證改動。
 - GitHub 2026 年 9 月 4 日介紹的 HydraFusion，會依任務的推理、產碼、除錯與工具使用需求，選擇直接完成、加入 review／revision 或升級的流程；這種「只在值得時增加模型呼叫」的做法叫選擇性編排。
 - GitHub 2026 年 9 月 3 日示範平行 Agent 時，讓每個 session 使用獨立 Git worktree。平行不等於共用同一個工作樹；隔離是避免互相覆蓋的前提。
+- OpenAI 2026 年 9 月 10 日公布的 Agents API，將受管理的 Codex Harness 與執行環境包成 API：Harness 負責上下文壓縮、工具搜尋、程式化工具呼叫、子 Agent 協作與長時間執行；開發者仍要選擇沙箱、檔案、套件、Skill 與權限邊界。這說明 Harness 可以是持續維護的執行基礎設施，而不只是幾個 API wrapper。
 
-因此，設計或評估 Harness 時，除了模型清單，也要明確記錄：任務級成本、延遲、重試與恢復率、工具／背景工作的編排、隔離邊界，以及失敗時是否能安全停止或交給人處理。
+因此，設計或評估 Harness 時，除了模型清單，也要明確記錄：任務級成本、延遲、重試與恢復率、工具／背景工作的編排、上下文壓縮策略、隔離邊界，以及失敗時是否能安全停止或交給人處理。長時程任務尤其要確認 Agent 能否跨多個上下文窗口延續狀態，而不是只把對話塞進更大的窗口。
 
 評估一個 AI Harness 時，不要只問「支援哪個模型」，還要看：
 
@@ -73,7 +74,7 @@
 - 選對 AI Harness 可以省下大量開發時間
 
 ---
-**官方參考：** [GitHub：How we make AI coding more cost efficient without sacrificing task quality（2026-09-02）](https://github.blog/ai-and-ml/github-copilot/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality/) · [Project HydraFusion（2026-09-04）](https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/) · [Run several agents at once（2026-09-03）](https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-run-several-agents-at-once/)
+**官方參考：** [GitHub：How we make AI coding more cost efficient without sacrificing task quality（2026-09-02）](https://github.blog/ai-and-ml/github-copilot/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality/) · [Project HydraFusion（2026-09-04）](https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/) · [Run several agents at once（2026-09-03）](https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-run-several-agents-at-once/) · [OpenAI：Introducing the Agents API（2026-09-10）](https://openai.com/index/introducing-the-agents-api/)
 
 ---
 **[← 回到術語總覽](../README.md)**
