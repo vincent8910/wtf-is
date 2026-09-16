@@ -22,6 +22,8 @@
 
 GitHub 2026 年 9 月 2 日分享的實務是先用 agentic coding benchmark 做離線比較，再用受控線上實驗驗證候選改動；這提醒我們：離線通過是篩選證據，不是直接宣稱 production 已驗收。若改動涉及輸出壓縮或背景工作編排，也要檢查 Agent 是否因資訊遺失而重讀、重跑或多花回合。
 
+GitHub 2026 年 9 月 11 日的 Code Review 更新又示範兩個可泛化的評估方向：讓 Agent 在隔離的權限邊界內實際執行 build、測試、腳本或 API 查詢，並用多個 Agent 各自檢查後再合併結果。前者是在驗證「它真的查過」而不是只看懂檔案，後者能增加覆蓋面；但兩者都不能取代固定資料集、軌跡檢查與真實 Provider 驗收。官方公布的改善數字屬於 GitHub 自家實驗，不應直接當成所有 Agent 的保證。
+
 OpenAI Agents SDK 在 2026 年 8 月的官方 release notes 中新增 provider-neutral testing utilities，讓 Agent、Sandbox、Realtime 和 Voice workflow 可以在不呼叫 Provider 的情況下做可重複測試；這是測試工具，不等於整個 Agent 已經通過真實 Provider 驗收。
 
 ## 生活比喻 / 實際例子
@@ -50,7 +52,7 @@ OpenAI Agents SDK 在 2026 年 8 月的官方 release notes 中新增 provider-n
 - 同一個模型換了 Harness、工具或預算，結果可能改變；比較時要固定條件或清楚標示差異
 - 效率最佳化要看完整任務的成功率、成本、延遲與重試，不要只看單次模型呼叫的 token
 
-**官方參考：** [GitHub：How we make AI coding more cost efficient without sacrificing task quality（2026-09-02）](https://github.blog/ai-and-ml/github-copilot/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality/)
+**官方參考：** [GitHub Changelog：Auto-resolution and analysis updates in Copilot code review（2026-09-11）](https://github.blog/changelog/2026-09-11-auto-resolution-and-analysis-updates-in-copilot-code-review/) · [GitHub：How we make AI coding more cost efficient without sacrificing task quality（2026-09-02）](https://github.blog/ai-and-ml/github-copilot/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality/)
 
 相關： [Agentic（代理式）](agentic.md)、[AI Sandbox（AI 隔離環境）](ai-sandbox.md)、[AI Harness](../../software-engineering/terms/ai-harness.md)、[Guardrails（護欄）](guardrails.md)、[Accuracy（準確率）](accuracy.md)
 
