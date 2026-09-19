@@ -36,9 +36,20 @@
 - **PM：**「匯出報表要等很久，可以做成非同步嗎？按下匯出後先做別的，好了再通知我。」
 - **工程師：**「這裡是 sync 的，所以前面沒做完，後面就不會動。」
 
+### AI Agent 的實際例子：非同步函式呼叫
+
+在語音 Agent 或聊天 Agent 裡，使用者不一定要等工具完成才繼續互動。Agent 可以先發出查詢天氣、訂位或資料庫搜尋的請求，一邊繼續理解使用者的下一句話，等工具結果回來後再把資訊接回對話。這就是 **非同步函式呼叫（asynchronous function calling）**。
+
+它和「平行執行」不完全相同：非同步重點是**發出工作後不用原地阻塞**；是否同時跑多個工作，還要看系統的編排方式、資料相依性與權限規則。Google 2026 年 9 月 15 日介紹 Gemini Live 時，便把背景執行 API／工具呼叫列為即時語音 Agent 的能力之一。
+
+**造句：**「語音 Agent 查航班時要用非同步函式呼叫，不然使用者講下一句話時整個對話會卡住。」
+
 ## 為什麼要知道這個詞？
 
 當你覺得某個功能「用起來很卡」或「要等很久」，通常工程師的解法就是改成 async。理解這個概念，你就能更精準地描述問題：「這個可以做成非同步嗎？讓使用者不用傻等。」
+
+---
+**官方參考：** [Google：New Gemini Audio models for developers（2026-09-15）](https://blog.google/innovation-and-ai/technology/developers-tools/build-real-time-voice-applications-gemini-audio/)
 
 ---
 **[← 回到術語總覽](../README.md)**
