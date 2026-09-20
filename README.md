@@ -66,7 +66,7 @@
 | [🪙 加密貨幣 / Web3](crypto/README.md) | 80 | Blockchain、DeFi、NFT、HODL⋯⋯ |
 | [🧩 UX / 產品設計](ux-product/README.md) | 15 | User Research、Pain Point、PRD⋯⋯ |
 | [💰 財務會計](finance-accounting/README.md) | 20 | 資產負債表、損益表、EBITDA、折舊⋯⋯ |
-| [🤖 AI / 機器學習](ai-ml/README.md) | 63 | LLM、GPT、Transformer、Prompt Engineering、AI Agent⋯⋯ |
+| [🤖 AI / 機器學習](ai-ml/README.md) | 64 | LLM、GPT、Transformer、Prompt Engineering、AI Agent⋯⋯ |
 
 > **💡 點進各領域的完整頁面，每個術語都有這樣的詳細對照：**
 >
@@ -604,7 +604,7 @@
 
 ### 大綱
 
-> 共收錄 **63 個**術語，[點此進入完整頁面](ai-ml/README.md)。
+> 共收錄 **64 個**術語，[點此進入完整頁面](ai-ml/README.md)。
 
 | 分類 | 術語數 | 說明 |
 |------|:------:|------|
@@ -626,7 +626,8 @@
 || [Hallucination（幻覺）](ai-ml/terms/hallucination.md) | [Inference（推論）](ai-ml/terms/inference.md) | [Latent Space（潛在空間）](ai-ml/terms/latent-space.md) | [LLM（大型語言模型）](ai-ml/terms/llm.md) |
 || [Human-in-the-Loop（人在迴路中）](ai-ml/terms/human-in-the-loop.md) | | | |
 | [LRM（大型推理模型）](ai-ml/terms/lrm.md) | [Machine Learning（機器學習）](ai-ml/terms/machine-learning.md) | [MCP（模型上下文協議）](ai-ml/terms/mcp.md) | [Model（模型）](ai-ml/terms/model.md) |
-| [Multimodal（多模態）](ai-ml/terms/multimodal.md) | [Neural Network（神經網路）](ai-ml/terms/neural-network.md) | [NLP（自然語言處理）](ai-ml/terms/nlp.md) | [Overfitting（過擬合）](ai-ml/terms/overfitting.md) |
+| [Model Routing（模型路由）](ai-ml/terms/model-routing.md) | [Multimodal（多模態）](ai-ml/terms/multimodal.md) | [Neural Network（神經網路）](ai-ml/terms/neural-network.md) | [NLP（自然語言處理）](ai-ml/terms/nlp.md) |
+| [Overfitting（過擬合）](ai-ml/terms/overfitting.md) | | | |
 | [Physical AI（物理 AI）](ai-ml/terms/physical-ai.md) | [Prompt Engineering（提示工程）](ai-ml/terms/prompt-engineering.md) | [Prompt Injection（提示詞注入）](ai-ml/terms/prompt-injection.md) | [RAG（檢索增強生成）](ai-ml/terms/rag.md) |
 | [Regression（迴歸）](ai-ml/terms/regression.md) | [Reinforcement Learning（強化學習）](ai-ml/terms/reinforcement-learning.md) | [RLHF](ai-ml/terms/rlhf.md) | [Shadow AI](ai-ml/terms/shadow-ai.md) |
 | [Skill（技能）](ai-ml/terms/skill.md) | [SLM（小型語言模型）](ai-ml/terms/slm.md) | [Slop](ai-ml/terms/slop.md) | [Supervised Learning（監督式學習）](ai-ml/terms/supervised-learning.md) |
