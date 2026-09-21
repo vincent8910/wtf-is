@@ -40,6 +40,8 @@
 
 因此，設計或評估 Harness 時，除了模型清單，也要明確記錄：任務級成本、延遲、重試與恢復率、工具／背景工作的編排、上下文壓縮策略、隔離邊界，以及失敗時是否能安全停止或交給人處理。長時程任務尤其要確認 Agent 能否跨多個上下文窗口延續狀態，而不是只把對話塞進更大的窗口。
 
+Harness 也要把執行狀態和使用狀況留下可解讀的訊號。GitHub 2026 年 9 月 17 日的 usage metrics API 將 Skill、custom agent、MCP server、slash command 與 plugin 分開統計，讓管理者看見哪些能力被採用、使用了多少種不同能力；但 MCP 的互動計數只代表連線或重連嘗試，成功與失敗都算，不能誤讀成工具呼叫成功次數。對長流程 Agent，這表示 Harness 應同時保留工具 trace、任務結果與錯誤狀態，不能只看一個 usage counter。
+
 評估一個 AI Harness 時，不要只問「支援哪個模型」，還要看：
 
 - 任務成功率與回歸測試覆蓋率
@@ -74,7 +76,7 @@
 - 選對 AI Harness 可以省下大量開發時間
 
 ---
-**官方參考：** [GitHub：How we make AI coding more cost efficient without sacrificing task quality（2026-09-02）](https://github.blog/ai-and-ml/github-copilot/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality/) · [Project HydraFusion（2026-09-04）](https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/) · [Run several agents at once（2026-09-03）](https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-run-several-agents-at-once/) · [OpenAI：Introducing the Agents API（2026-09-10）](https://openai.com/index/introducing-the-agents-api/)
+**官方參考：** [GitHub Changelog：Agentic CLI customizations now in the usage metrics API（2026-09-17）](https://github.blog/changelog/2026-09-17-agentic-cli-customizations-now-in-the-usage-metrics-api) · [GitHub：How we make AI coding more cost efficient without sacrificing task quality（2026-09-02）](https://github.blog/ai-and-ml/github-copilot/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality/) · [Project HydraFusion（2026-09-04）](https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/) · [Run several agents at once（2026-09-03）](https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-run-several-agents-at-once/) · [OpenAI：Introducing the Agents API（2026-09-10）](https://openai.com/index/introducing-the-agents-api/)
 
 ---
 **[← 回到術語總覽](../README.md)**
