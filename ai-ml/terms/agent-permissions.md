@@ -14,6 +14,8 @@
 
 權限最好細分到具體的操作種類，而不是只寫一個模糊的「可以用終端機」。常見控制面向包括：Shell 命令、檔案讀取與編輯、網路網域、資料寫入、外部工具，以及是否需要人工核准。還要定義政策優先順序：組織管理的限制不能被使用者設定、自動核准或過去保存的核准紀錄繞過。
 
+權限政策也不應只寫在 Agent 的 Prompt 裡。Google 2026 年 9 月 15 日的零信任 Agent 實務把治理移到平台層：除了先列出的規則檢查，還用意圖判斷與異常行為偵測處理「語法合法但業務意圖可疑」的操作，例如看似正常的退款其實是社交工程。這不代表可以放棄確定性檢查，而是把 **Allow / Ask / Deny**、交易上限、身分驗證與行為監控疊在一起；平台管理者的政策也應與 Agent 開發者分離，避免應用程式自己替自己放寬門禁。
+
 它和 [AI Sandbox](ai-sandbox.md) 有關但不相同：Sandbox 限制 Agent 實際能碰到的環境；Agent Permissions 則回答「某一種操作在這個環境裡能不能做、是否要先問人」。兩者應一起設計，並用 [Zero Trust AI Agent](zero-trust-ai-agent.md) 的思路讓關鍵限制留在模型之外。
 
 GitHub 於 2026 年 9 月 9 日公布的企業管理權限案例，將 Copilot Agent 操作分成 blocked、需要人工核准與可直接執行三類，涵蓋 Shell、檔案讀寫和網路網域。這是 GitHub Copilot 的產品實作，不代表所有 Agent 平台都有相同的設定名稱或優先順序；可把它當作權限政策的具體例子，而不是通用標準。
@@ -44,7 +46,7 @@ GitHub 於 2026 年 9 月 9 日公布的企業管理權限案例，將 Copilot A
 
 相關：[AI Sandbox](ai-sandbox.md)、[Zero Trust AI Agent](zero-trust-ai-agent.md)、[Human-in-the-Loop](human-in-the-loop.md)、[Prompt Injection](prompt-injection.md)、[Agent Identity](agent-identity.md)
 
-**官方參考：** [GitHub Changelog：Enterprise managed permissions for GitHub Copilot agent operations（2026-09-09）](https://github.blog/changelog/2026-09-09-enterprise-managed-permissions-for-github-copilot-agent-operations/) · [GitHub 文件：Enterprise managed settings — deny, ask, allow](https://docs.github.com/enterprise-cloud@latest/copilot/reference/enterprise-administrators/enterprise-managed-settings#deny-ask-allow)
+**官方參考：** [Google Developers Blog：Build zero-trust AI agents that judge intent not just syntax（2026-09-15）](https://developers.googleblog.com/build-zero-trust-ai-agents-that-judge-intent-not-just-syntax/) · [GitHub Changelog：Enterprise managed permissions for GitHub Copilot agent operations（2026-09-09）](https://github.blog/changelog/2026-09-09-enterprise-managed-permissions-for-github-copilot-agent-operations/) · [GitHub 文件：Enterprise managed settings — deny, ask, allow](https://docs.github.com/enterprise-cloud@latest/copilot/reference/enterprise-managed-settings#deny-ask-allow)
 
 ---
 **[← 回到 AI / 機器學習總覽](../README.md)**

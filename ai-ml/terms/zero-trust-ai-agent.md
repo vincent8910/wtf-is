@@ -24,7 +24,7 @@
 - **只靠 Prompt**：在合約上寫「請勿亂花錢」，但仍把公司信用卡交給他
 - **零信任做法**：每筆付款都要用員工身分簽核，付款系統限制金額，危險腳本只能在沒有網路的隔離房間執行，最後還要經過固定規則檢查
 
-Google 2026-08-17 的官方 Agent Development Kit 文章以退款 Agent 為例，提出三層控制：硬體支援的寫入簽章、使用 gVisor 的程式隔離，以及檢查輸入輸出與交易限制的 deterministic semantic gateway。重點不是宣稱模型永遠安全，而是讓模型判斷錯誤時，基礎設施仍能拒絕不合理的副作用。
+Google 2026-08-17 的官方 Agent Development Kit 文章以退款 Agent 為例，提出三層控制：硬體支援的寫入簽章、使用 gVisor 的程式隔離，以及檢查輸入輸出與交易限制的 deterministic semantic gateway。2026-09-15 的後續文章再把控制推進到 runtime governance：用意圖閘門與異常偵測補足「語法正確不代表意圖安全」的盲點，並由平台或安全管理者在 Agent 程式之外維護政策。重點不是宣稱模型永遠安全，而是讓模型判斷錯誤時，基礎設施仍能拒絕不合理的副作用。
 
 **造句：**
 
@@ -41,7 +41,7 @@ Google 2026-08-17 的官方 Agent Development Kit 文章以退款 Agent 為例�
 
 相關：[Agent Identity](agent-identity.md)、[AI Sandbox](ai-sandbox.md)、[Guardrails](guardrails.md)、[Prompt Injection](prompt-injection.md)、[Agent Evaluation](agent-evaluation.md)
 
-**官方參考：** [Google Developers Blog：Build zero-trust AI agents with Google's Agent Development Kit（2026-08-17）](https://developers.googleblog.com/build-zero-trust-ai-agents-with-googles-agent-development-kit/)
+**官方參考：** [Google Developers Blog：Build zero-trust AI agents that judge intent, not just syntax（2026-09-15）](https://developers.googleblog.com/build-zero-trust-ai-agents-that-judge-intent-not-just-syntax/) · [Google Developers Blog：Build zero-trust AI agents with Google's Agent Development Kit（2026-08-17）](https://developers.googleblog.com/build-zero-trust-ai-agents-with-googles-agent-development-kit/)
 
 ---
 **[← 回到 AI / 機器學習總覽](../README.md)**
