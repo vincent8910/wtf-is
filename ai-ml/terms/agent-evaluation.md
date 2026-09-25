@@ -26,6 +26,8 @@ GitHub 2026 年 9 月 2 日分享的實務是先用 agentic coding benchmark 做
 
 GitHub 2026 年 9 月 11 日的 Code Review 更新又示範兩個可泛化的評估方向：讓 Agent 在隔離的權限邊界內實際執行 build、測試、腳本或 API 查詢，並用多個 Agent 各自檢查後再合併結果。前者是在驗證「它真的查過」而不是只看懂檔案，後者能增加覆蓋面；但兩者都不能取代固定資料集、軌跡檢查與真實 Provider 驗收。官方公布的改善數字屬於 GitHub 自家實驗，不應直接當成所有 Agent 的保證。
 
+Anthropic 2026 年 9 月 18 日宣布與 Accenture 建立 embedded evaluators，讓獨立評估者和模型開發團隊一起做模型評估、紅隊測試、alignment assessment 與 safeguard 測試。這個案例可抽象成一個實務原則：評估不應只在產品完成後才做一次，而要把獨立視角、真實使用情境與安全測試嵌入開發流程；但「嵌入式評估」仍然需要清楚的測試範圍、資料隔離、評分規則與可重現證據，不能只用評估者掛名取代驗收。
+
 OpenAI Agents SDK 在 2026 年 8 月的官方 release notes 中新增 provider-neutral testing utilities，讓 Agent、Sandbox、Realtime 和 Voice workflow 可以在不呼叫 Provider 的情況下做可重複測試；這是測試工具，不等於整個 Agent 已經通過真實 Provider 驗收。
 
 ## 生活比喻 / 實際例子
@@ -55,7 +57,7 @@ OpenAI Agents SDK 在 2026 年 8 月的官方 release notes 中新增 provider-n
 - 同一個模型換了 Harness、工具或預算，結果可能改變；比較時要固定條件或清楚標示差異
 - 效率最佳化要看完整任務的成功率、成本、延遲與重試，不要只看單次模型呼叫的 token
 
-**官方參考：** [GitHub Changelog：Agentic CLI customizations now in the usage metrics API（2026-09-17）](https://github.blog/changelog/2026-09-17-agentic-cli-customizations-now-in-the-usage-metrics-api) · [GitHub Changelog：Auto-resolution and analysis updates in Copilot code review（2026-09-11）](https://github.blog/changelog/2026-09-11-auto-resolution-and-analysis-updates-in-copilot-code-review/) · [GitHub：How we make AI coding more cost efficient without sacrificing task quality（2026-09-02）](https://github.blog/ai-and-ml/github-copilot/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality/)
+**官方參考：** [GitHub Changelog：Agentic CLI customizations now in the usage metrics API（2026-09-17）](https://github.blog/changelog/2026-09-17-agentic-cli-customizations-now-in-the-usage-metrics-api) · [GitHub Changelog：Auto-resolution and analysis updates in Copilot code review（2026-09-11）](https://github.blog/changelog/2026-09-11-auto-resolution-and-analysis-updates-in-copilot-code-review/) · [Anthropic：Partnering with Accenture on embedded evaluation（2026-09-18）](https://www.anthropic.com/news/accenture-embedded-evaluation) · [GitHub：How we make AI coding more cost efficient without sacrificing task quality（2026-09-02）](https://github.blog/ai-and-ml/github-copilot/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality/)
 
 相關： [Agentic（代理式）](agentic.md)、[AI Sandbox（AI 隔離環境）](ai-sandbox.md)、[AI Harness](../../software-engineering/terms/ai-harness.md)、[Guardrails（護欄）](guardrails.md)、[Accuracy（準確率）](accuracy.md)
 

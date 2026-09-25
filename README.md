@@ -66,7 +66,7 @@
 | [🪙 加密貨幣 / Web3](crypto/README.md) | 80 | Blockchain、DeFi、NFT、HODL⋯⋯ |
 | [🧩 UX / 產品設計](ux-product/README.md) | 15 | User Research、Pain Point、PRD⋯⋯ |
 | [💰 財務會計](finance-accounting/README.md) | 20 | 資產負債表、損益表、EBITDA、折舊⋯⋯ |
-| [🤖 AI / 機器學習](ai-ml/README.md) | 64 | LLM、GPT、Transformer、Prompt Engineering、AI Agent⋯⋯ |
+| [🤖 AI / 機器學習](ai-ml/README.md) | 65 | LLM、GPT、Transformer、Prompt Engineering、AI Agent⋯⋯ |
 
 > **💡 點進各領域的完整頁面，每個術語都有這樣的詳細對照：**
 >
@@ -604,22 +604,22 @@
 
 ### 大綱
 
-> 共收錄 **64 個**術語，[點此進入完整頁面](ai-ml/README.md)。
+> 共收錄 **65 個**術語，[點此進入完整頁面](ai-ml/README.md)。
 
 | 分類 | 術語數 | 說明 |
 |------|:------:|------|
 | [基礎概念類](ai-ml/README.md#基礎概念類) | 10 | AI、機器學習、深度學習、神經網路⋯⋯ |
 | [技術方法類](ai-ml/README.md#技術方法類) | 8 | 監督式學習、NLP、電腦視覺、分類⋯⋯ |
-|| [模型與應用類](ai-ml/README.md#模型與應用類) | 25 | LLM、GPT、Transformer、RAG、MCP、DeepSeek、Vibe Coding、Context Compaction⋯⋯ |
-| [AI Agent 與協作類](ai-ml/README.md#ai-agent-與協作類) | 9 | AI Sandbox、Multi-Agent System、A2A、Agent Identity、Agent Permissions、Human-in-the-Loop、Shared Agent Session、Zero Trust AI Agent⋯⋯ |
+| [模型與應用類](ai-ml/README.md#模型與應用類) | 26 | LLM、GPT、Transformer、RAG、MCP、DeepSeek、Vibe Coding、Context Compaction⋯⋯ |
+| [AI Agent 與協作類](ai-ml/README.md#ai-agent-與協作類) | 10 | AI Sandbox、Multi-Agent System、A2A、Agent Memory、Agent Identity、Agent Permissions、Human-in-the-Loop、Shared Agent Session、Zero Trust AI Agent⋯⋯ |
 | [指標與問題類](ai-ml/README.md#指標與問題類) | 11 | Agent Evaluation、過擬合、偏差、幻覺、Slop、Shadow AI⋯⋯ |
 
 ### 單字速查表（A-Z）
 
 | | | | |
 |---|---|---|---|
-| [Accuracy（準確率）](ai-ml/terms/accuracy.md) | [Agent Evaluation（代理評估）](ai-ml/terms/agent-evaluation.md) | [Agent Identity（代理身分）](ai-ml/terms/agent-identity.md) | [Agent Permissions（代理權限）](ai-ml/terms/agent-permissions.md) |
-| [Agentic（代理式）](ai-ml/terms/agentic.md) | [Agent Plugin（代理外掛）](ai-ml/terms/agent-plugin.md) | [AI Companion（AI 陪伴）](ai-ml/terms/ai-companion.md) | [AI（人工智慧）](ai-ml/terms/ai.md) |
+| [Accuracy（準確率）](ai-ml/terms/accuracy.md) | [Agent Evaluation（代理評估）](ai-ml/terms/agent-evaluation.md) | [Agent Identity（代理身分）](ai-ml/terms/agent-identity.md) | [Agent Memory（代理記憶）](ai-ml/terms/agent-memory.md) |
+| [Agent Permissions（代理權限）](ai-ml/terms/agent-permissions.md) | [Agentic（代理式）](ai-ml/terms/agentic.md) | [Agent Plugin（代理外掛）](ai-ml/terms/agent-plugin.md) | [AI Companion（AI 陪伴）](ai-ml/terms/ai-companion.md) |
 | [Algorithm（演算法）](ai-ml/terms/algorithm.md) | [Bias（偏差）](ai-ml/terms/bias.md) | [Classification（分類）](ai-ml/terms/classification.md) | [Computer Vision（電腦視覺）](ai-ml/terms/computer-vision.md) |
 | [Deep Learning（深度學習）](ai-ml/terms/deep-learning.md) | [Deepfake（深偽）](ai-ml/terms/deepfake.md) | [DeepSeek](ai-ml/terms/deepseek.md) | [Distillation（蒸餾）](ai-ml/terms/distillation.md) |
 | [Embedding](ai-ml/terms/embedding.md) | [Fine-tuning（微調）](ai-ml/terms/fine-tuning.md) | [GPT](ai-ml/terms/gpt.md) | [Guardrails（護欄）](ai-ml/terms/guardrails.md) |

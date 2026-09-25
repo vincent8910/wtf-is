@@ -29,14 +29,14 @@
 
 ## 大綱
 
-> 共收錄 **64 個** AI / 機器學習術語，點擊分類名稱直接跳轉。
+> 共收錄 **65 個** AI / 機器學習術語，點擊分類名稱直接跳轉。
 
 | 分類 | 術語數 | 說明 |
 |------|:------:|------|
 | [基礎概念類](#基礎概念類) | 10 | AI、機器學習、深度學習、神經網路⋯⋯ |
 | [技術方法類](#技術方法類) | 8 | 監督式學習、NLP、電腦視覺、分類⋯⋯ |
 | [模型與應用類](#模型與應用類) | 26 | LLM、GPT、Transformer、RAG、MCP、Agent Plugin、Progressive Discovery、Model Routing⋯⋯ |
-| [AI Agent 與協作類](#ai-agent-與協作類) | 9 | AI Sandbox、Multi-Agent System、A2A、Agent Identity、Agent Permissions、Human-in-the-Loop、Content Exclusion、Zero Trust AI Agent⋯⋯ |
+| [AI Agent 與協作類](#ai-agent-與協作類) | 10 | AI Sandbox、Multi-Agent System、A2A、Agent Memory、Agent Identity、Agent Permissions、Human-in-the-Loop、Content Exclusion、Zero Trust AI Agent⋯⋯ |
 | [指標與問題類](#指標與問題類) | 11 | Agent Evaluation、過擬合、偏差、幻覺、Slop、Shadow AI⋯⋯ |
 
 > 想一次看完所有比喻？直接跳到 [比喻對照總表](#比喻對照總表)
@@ -48,7 +48,8 @@
 | | | | |
 |---|---|---|---|
 | [Accuracy（準確率）](terms/accuracy.md) | [Agent Evaluation（代理評估）](terms/agent-evaluation.md) | [Agent Identity（代理身分）](terms/agent-identity.md) | [Agent Permissions（代理權限）](terms/agent-permissions.md) |
-| [Agent Plugin（代理外掛）](terms/agent-plugin.md) | [AI（人工智慧）](terms/ai.md) | [Algorithm（演算法）](terms/algorithm.md) | [Bias（偏差）](terms/bias.md) |
+| [Agent Memory（代理記憶）](terms/agent-memory.md) | [Agent Plugin（代理外掛）](terms/agent-plugin.md) | [AI（人工智慧）](terms/ai.md) | [Algorithm（演算法）](terms/algorithm.md) |
+| [Bias（偏差）](terms/bias.md) | | | |
 | [Classification（分類）](terms/classification.md) | [Computer Vision（電腦視覺）](terms/computer-vision.md) | [Context Engineering（情境工程）](terms/context-engineering.md) | [Context Window（上下文窗口）](terms/context-window.md) |
 | [Context Compaction（上下文壓縮）](terms/context-compaction.md) | [Deep Learning（深度學習）](terms/deep-learning.md) | [Deepfake（深偽）](terms/deepfake.md) | [DeepSeek](terms/deepseek.md) |
 | [Distillation（蒸餾）](terms/distillation.md) | | | |
@@ -247,7 +248,8 @@
 | AI Sandbox | 給新員工一間沒有總鑰匙的安全工作室 |
 | Multi-Agent System | PM、工程師、QA 各司其職的專案團隊 |
 | A2A | 不同部門 Agent 之間的對講機 |
-| Agent Identity | 公司員工證加訪客登記，確認 Agent 是誰、代表誰、能進哪些房間 |
+| Agent Identity（代理身分） | 公司員工證加訪客登記，確認 Agent 是誰、代表誰、能進哪些房間 |
+| Agent Memory | 專案助理整理好的工作筆記與交接簿，需要時再翻出來 |
 | Shared Agent Session | 團隊一起看著、引導同一個 AI 助理工作的會議室 |
 | Zero Trust AI Agent | 外包員工每筆付款都要驗證、限額和簽核 |
 
