@@ -66,7 +66,7 @@
 | [🪙 加密貨幣 / Web3](crypto/README.md) | 80 | Blockchain、DeFi、NFT、HODL⋯⋯ |
 | [🧩 UX / 產品設計](ux-product/README.md) | 15 | User Research、Pain Point、PRD⋯⋯ |
 | [💰 財務會計](finance-accounting/README.md) | 20 | 資產負債表、損益表、EBITDA、折舊⋯⋯ |
-| [🤖 AI / 機器學習](ai-ml/README.md) | 67 | LLM、GPT、Transformer、Prompt Engineering、AI Agent⋯⋯ |
+| [🤖 AI / 機器學習](ai-ml/README.md) | 68 | LLM、GPT、Transformer、Prompt Engineering、AI Agent⋯⋯ |
 
 > **💡 點進各領域的完整頁面，每個術語都有這樣的詳細對照：**
 >
@@ -630,6 +630,7 @@
 | [Overfitting（過擬合）](ai-ml/terms/overfitting.md) | | | |
 | [Physical AI（物理 AI）](ai-ml/terms/physical-ai.md) | [Prompt Engineering（提示工程）](ai-ml/terms/prompt-engineering.md) | [Prompt Injection（提示詞注入）](ai-ml/terms/prompt-injection.md) | [RAG（檢索增強生成）](ai-ml/terms/rag.md) |
 | [Regression（迴歸）](ai-ml/terms/regression.md) | [Reinforcement Learning（強化學習）](ai-ml/terms/reinforcement-learning.md) | [RLHF](ai-ml/terms/rlhf.md) | [Shadow AI](ai-ml/terms/shadow-ai.md) |
+| [Risk-based Tool Approval（風險分級工具核准）](ai-ml/terms/risk-based-tool-approval.md) | | | |
 | [Skill（技能）](ai-ml/terms/skill.md) | [SLM（小型語言模型）](ai-ml/terms/slm.md) | [Slop](ai-ml/terms/slop.md) | [Supervised Learning（監督式學習）](ai-ml/terms/supervised-learning.md) |
 | [Tokenizer（分詞器）](ai-ml/terms/tokenizer.md) | [Training（訓練）](ai-ml/terms/training.md) | [Transformer](ai-ml/terms/transformer.md) | [Unsupervised Learning（非監督式學習）](ai-ml/terms/unsupervised-learning.md) |
 | [Vector Database（向量資料庫）](ai-ml/terms/vector-database.md) | [Vibe Coding](ai-ml/terms/vibe-coding.md) | | |
