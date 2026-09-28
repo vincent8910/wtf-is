@@ -25,6 +25,12 @@
 
 近期官方案例把這個概念稱為讓 Agent 具備「institutional memory」：把組織文件與過去工作整理成之後可查詢的上下文，而不是每次只依賴目前對話。這也提醒我們，記憶不是單純把資料庫接上去，而是要設計保存、檢索、更新與治理流程。
 
+### 近期產品案例：把修正模式保存成可重用記憶
+
+GitHub 在 2026 年 9 月 25 日的 Changelog 說明，Agentic Autofix（公開預覽）可以讀取已啟用的 Copilot Memory，利用專案既有脈絡修復安全警示；完成修正後，也能把修正模式保存成記憶，供之後的安全警示、Code Review 或 Cloud Agent 參考。這是「記住可重用工作模式」的產品案例，不代表所有 Agent 都有相同的記憶格式、權限或刪除機制。
+
+因此，導入 Agent Memory 時要追問：哪些內容能寫入、誰能讀取、記憶如何標示來源與版本、如何撤銷或刪除，以及錯誤的修正模式是否可能被反覆放大。
+
 ## 生活比喻 / 實際例子
 
 像一位長期合作的專案助理：
@@ -50,7 +56,7 @@
 - 驗收時不只要測「記不記得」，還要測能否正確取回、更新、忘記與隔離
 - 記憶保存的是工作狀態，不代表內容天然正確；重要決策仍要保留來源與人工驗收
 
-**官方參考：** [OpenAI：How V7 gives AI agents institutional memory（2026-09-21）](https://openai.com/index/v7/)
+**官方參考：** [OpenAI：How V7 gives AI agents institutional memory（2026-09-21）](https://openai.com/index/v7/) · [GitHub Changelog：Agentic autofix now uses Copilot Memory（2026-09-25）](https://github.blog/changelog/2026-09-25-agentic-autofix-now-uses-copilot-memory)
 
 相關： [Context Window（上下文窗口）](context-window.md)、[Context Compaction（上下文壓縮）](context-compaction.md)、[Context Engineering（情境工程）](context-engineering.md)、[RAG（檢索增強生成）](rag.md)、[Agent Evaluation（代理評估）](agent-evaluation.md)、[Content Exclusion（內容排除）](content-exclusion.md)
 

@@ -12,7 +12,7 @@
 - **中風險**：例如修改工作區檔案、呼叫可能消耗額度的服務，先顯示操作內容或請人確認
 - **高風險**：例如刪除資料、修改正式環境或對外發送內容，一律保留人工核准
 
-有些平台會用 AI 輔助核准，嘗試自動通過低風險工具呼叫，把高風險操作留給人決定。這是產品實作方式，不是所有 Agent 平台都共用的標準；導入時仍要確認誰判定風險、哪些規則不可被覆蓋，以及核准是否會持續套用到之後的操作。
+有些平台會用 AI 輔助核准，嘗試自動通過低風險工具呼叫，把高風險操作留給人決定；也可能讓使用者對單一工具建立持續性的控制。這些是產品實作方式，不是所有 Agent 平台都共用的標準；導入時仍要確認誰判定風險、哪些規則不可被覆蓋，以及核准是否會持續套用到之後的操作。一次核准不應被誤當成永久信任。
 
 它和 [Agent Permissions](agent-permissions.md) 的關係是：Agent Permissions 定義 **Allow / Ask / Deny** 的權限政策；Risk-based Tool Approval 則提供一種依風險套用這些決策的方法。它也不能取代 [Human-in-the-Loop](human-in-the-loop.md)、沙箱、身分驗證與操作日誌。
 
@@ -39,8 +39,9 @@
 - 風險分級能把效率和安全放在同一套政策裡衡量
 - 自動核准仍要受組織 Deny 規則、最小權限、沙箱和人工閘門限制
 - 評估時要測低、中、高風險路徑，也要測未知工具、失敗回應與規則被覆蓋的情況
+- 若平台支援「記住這個工具的設定」，要確認它的範圍、有效期限、撤銷方式，以及組織層 Deny 規則能否覆蓋它
 
-**官方參考：** [GitHub Changelog：New features and improvements in Copilot for JetBrains（2026-09-22）](https://github.blog/changelog/2026-09-22-new-features-and-improvements-in-copilot-for-jetbrains/) · [GitHub 文件：Enterprise managed settings — deny, ask, allow](https://docs.github.com/enterprise-cloud@latest/copilot/reference/enterprise-managed-settings#deny-ask-allow)
+**官方參考：** [GitHub Changelog：New features and improvements in Copilot for JetBrains（2026-09-22）](https://github.blog/changelog/2026-09-22-new-features-and-improvements-in-copilot-for-jetbrains/)（該頁描述低風險 assisted approvals 與 MCP 逐工具持續控制，仍屬產品功能） · [GitHub 文件：Enterprise managed settings — deny, ask, allow](https://docs.github.com/enterprise-cloud@latest/copilot/reference/enterprise-managed-settings#deny-ask-allow)
 
 相關：[Agent Permissions](agent-permissions.md)、[Human-in-the-Loop](human-in-the-loop.md)、[AI Sandbox](ai-sandbox.md)、[Zero Trust AI Agent](zero-trust-ai-agent.md)
 
