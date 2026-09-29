@@ -36,8 +36,10 @@ Sandbox 仍要搭配最小權限、[Guardrails](guardrails.md)、[Prompt Injecti
 
 在 AI Coding、Agent、Computer Use 與自動化工作流中，Sandbox 是從「AI 會做事」走向「AI 可以安全做事」的關鍵概念。GitHub 2026 年 9 月 8 日的官方 Changelog 也示範了企業集中管理沙盒政策的做法：管理員可控制沙盒啟用、檔案系統與網路存取等範圍，且受管理的限制會優先於使用者設定；這是產品案例，不代表所有平台都採用相同能力或優先順序。
 
+GitHub 在 2026 年 9 月 23 日又公布本機 Sandbox 預覽功能，將檔案、網路與 credentials 的存取限制套用到本機 repository／working tree session。這個案例有兩個容易被忽略的邊界：功能是公開預覽，且本機 sandbox 不會自動套用到 cloud sandbox 或 remote host；另外，如果作業系統無法執行要求的政策，應該讓 shell 失敗，而不是默默退回未隔離模式。
+
 ---
-**官方參考：** [GitHub Changelog：Enterprise-managed sandbox in Copilot for JetBrains（2026-09-08，公開預覽）](https://github.blog/changelog/2026-09-08-enterprise-managed-sandbox-in-copilot-for-jetbrains/)
+**官方參考：** [GitHub Changelog：Enterprise-managed sandbox in Copilot for JetBrains（2026-09-08，公開預覽）](https://github.blog/changelog/2026-09-08-enterprise-managed-sandbox-in-copilot-for-jetbrains/) · [GitHub Changelog：Local sandboxing in the GitHub Copilot app（2026-09-23，公開預覽）](https://github.blog/changelog/2026-09-23-local-sandboxing-in-the-github-copilot-app)
 
 ---
 **[← 回到 AI / 機器學習總覽](../README.md)**

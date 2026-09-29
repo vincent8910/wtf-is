@@ -55,6 +55,8 @@ OpenAI 在 2026 年 9 月 6 日公開的研究說明中，把「能在人類指�
 - 把「成功完成任務」和「產出值得採用的研究結果」分開驗證
 - 無法確認結果或遇到安全風險時，停止並交給人類判斷
 
+Anthropic 在 2026 年 9 月 23 日分享的生命科學研究案例，展示了另一種長時程 Agentic workflow：約 950 個 Agent 平行搜尋超過 200,000 個 reverse transcriptase 候選，先產生可讀報告，再由人類研究者審查並在實驗室驗證少數候選。這個案例適合用來理解「Agent 負責擴大搜尋與提出假設，人類負責證據審查與實驗確認」的分工；它不是「Agent 自己完成科學發現」的普遍保證，因為研究團隊仍保留提示、篩選、實驗與採用結論等人工閘門。
+
 ## 如何評估 Agent 是否真的可靠？
 
 不要只看最後回答像不像人，還要觀察：
@@ -87,5 +89,7 @@ OpenAI 在 2026 年 9 月 6 日公開的研究說明中，把「能在人類指�
 
 ---
 **官方參考：** [OpenAI：Research acceleration: The view inside OpenAI（2026-09-06）](https://openai.com/index/research-acceleration-view-inside-openai)
+
+[Anthropic：Claude discovers a novel enzyme system with CRISPR-like repeats（2026-09-23）](https://www.anthropic.com/news/claude-discovers-novel-enzyme-system)
 
 **[← 回到 AI / 機器學習總覽](../README.md)**
