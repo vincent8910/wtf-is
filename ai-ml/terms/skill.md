@@ -17,6 +17,12 @@ Skill 就是 AI 助手能執行的一種**特定能力**。
 
 在不同的 AI 工具裡，Skill 可能被叫作能力、工具或 Action。**Plugin（外掛）則通常是裝載一個或多個 Skill、MCP Server 與設定的套件**，不一定只等於單一 Skill；可以參考 [Agent Plugin（代理外掛）](agent-plugin.md)。
 
+### Skill 與 MCP 的正式串接方向
+
+Skill 不只可以靠某個產品自己的安裝格式提供。MCP 官方的 **Skills Extension** 工作組，正在定義如何透過 MCP 發現、分發與使用 Agent Skill；目前方向是以 MCP Resource 為基礎，並沿著 Extensions Track 發展。官方文件列出的 SEP-2640 已是 Final，但它是擴充規格，不代表所有 MCP Client、Server 或 SDK 都已支援。
+
+這個方向把兩件事分開：Skill 負責提供較完整的工作說明與流程知識，MCP 負責讓相容的主機找到並取得它；它也不等於把 Skill、Server、子 Agent 和設定全部打包成一個 Plugin。安裝或啟用前，仍要檢查來源、內容、權限與主機實際支援狀態。
+
 ## 生活比喻 / 實際例子
 
 想像你請了一個超聰明的助理，但他第一天什麼工具都沒有：
@@ -34,7 +40,9 @@ AI 的 Skill 也是這樣——每裝一個，它就多一種能力。
 
 ## 為什麼要知道這個詞？
 
-當你在用 AI 工具時，常常會看到「這個 AI 有什麼 Skill」或「支援哪些 Plugin」。了解這個概念，你就知道 AI 不是天生什麼都會的——它的能力取決於裝了哪些 Skill。選對工具 + 選對 Skill，AI 才能真正幫到你。這跟 [MCP](mcp.md) 的概念很相關——MCP 可以讓 AI 連接外部工具，而 Plugin 可以把多項能力一起打包。
+當你在用 AI 工具時，常常會看到「這個 AI 有什麼 Skill」或「支援哪些 Plugin」。了解這個概念，你就知道 AI 不是天生什麼都會的——它的能力取決於裝了哪些 Skill。選對工具 + 選對 Skill，AI 才能真正幫到你。這跟 [MCP](mcp.md) 的概念很相關——MCP 可以讓 AI 連接外部工具，也正在發展透過 Resource 發現與消費 Skill 的擴充；Plugin 則可以把多項能力一起打包，但兩者不是同一件事。
+
+**官方參考：** [MCP Skills Over MCP Working Group Charter](https://modelcontextprotocol.io/community/working-groups/skills-over-mcp)（SEP-2640 Skills Extension；Extensions Track，需確認 Client／Server 支援狀態）
 
 ---
 **[← 回到 AI / 機器學習總覽](../README.md)**

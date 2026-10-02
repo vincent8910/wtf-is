@@ -33,6 +33,12 @@ MCP 官方目前列出的最新規格版本是 **2026-07-28**。這代表 MCP �
 
 MCP 官方在 2026 年 8 月 22 日發布的 roadmap，已把 **Progressive Discovery（漸進式探索）**列為 **Improved primitives** 的發展方向：Server 先提供小型入口，等對話逐漸明確後再揭露更多工具目錄。這是 roadmap 上的發展方向，不代表目前所有 MCP Server 都已支援；實作時仍要確認具體產品的能力與 fallback 行為。
 
+### Skills Extension：用 MCP 發現與取得 Agent Skill
+
+MCP 官方的 **Skills Extension** 工作組正在處理另一個相鄰問題：Agent Skill 這種較完整的工作說明與流程知識，如何由 MCP 主機發現、分發與使用。官方工作組文件把 SEP-2640 描述為以 **Resources** 為基礎、走 **Extensions Track** 的 Skills Extension；它不是把 Plugin／bundle 打包格式直接納入 MCP，也不代表每個 Client 都已經支援。
+
+這可以想成圖書館的差別：MCP 原本像是規定「怎麼借書、怎麼查資料」，Skills Extension 則讓圖書館能用一致方式讓你發現並取用一整本工作手冊。導入時仍要確認主機是否支援該 extension、Skill 內容來自哪裡，以及取回內容後會獲得哪些工具或權限。
+
 ## 生活比喻 / 實際例子
 
 想像你家的電器插座：
@@ -84,7 +90,7 @@ MCP 讓 AI 工具整合更容易，但規格會演進。讀到產品文件時，
 
 這跟 [Skill](skill.md)、[Agentic](agentic.md) 與 [AI Sandbox](ai-sandbox.md) 的概念有關：MCP 負責連接方式，Skill 描述可重用能力，Agentic 描述自主工作模式，而 Sandbox 控制執行邊界。
 
-**官方參考：** [MCP 2026-07-28 Specification](https://modelcontextprotocol.io/specification/2026-07-28) · [Changelog](https://modelcontextprotocol.io/specification/2026-07-28/changelog) · [MCP 官方 roadmap（2026-08-22）](https://blog.modelcontextprotocol.io/posts/mcp-roadmap/)
+**官方參考：** [MCP 2026-07-28 Specification](https://modelcontextprotocol.io/specification/2026-07-28) · [Changelog](https://modelcontextprotocol.io/specification/2026-07-28/changelog) · [MCP 官方 roadmap（2026-08-22）](https://blog.modelcontextprotocol.io/posts/mcp-roadmap/) · [Skills Over MCP Working Group Charter](https://modelcontextprotocol.io/community/working-groups/skills-over-mcp)（SEP-2640，Extensions Track）
 
 ---
 **[← 回到 AI / 機器學習總覽](../README.md)**
