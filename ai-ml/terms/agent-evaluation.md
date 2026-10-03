@@ -18,6 +18,8 @@
 
 一次「跑通」不代表 Agent 可靠。好的評估集要包含邊界條件、錯誤回應、權限限制、長流程中斷，以及接近真實 Provider payload 的資料。若評估資料本身不代表真實使用情境，漂亮的分數也可能只是考古題考得好。
 
+評估結果至少要分成兩種問題：**能力評估**是找出 Agent 現在能不能完成較難的新任務；**回歸評估**是確認原本已經會的任務沒有退步。前者可以接受一開始分數不高，後者則應接近全數通過，兩者混在一個百分比裡，會看不出「變強」和「沒有變差」的差別。每個任務也應多跑幾次，因為 Agent 的輸出不是每次都一樣。
+
 評估 Agent 時，還要把 **Harness 一起寫進實驗條件**。同一個模型在不同工具、上下文壓縮、重試、隔離環境與預算下，可能得到完全不同的結果；若只報模型名稱和最後答案，其他人無法重現，也不能公平比較。至少應記錄：模型與版本、Harness／工具介面、可用 turn／token／時間預算、重試規則、資料版本、評分規則，以及是否有人工或安全閘門。
 
 GitHub 2026 年 9 月 2 日分享的實務是先用 agentic coding benchmark 做離線比較，再用受控線上實驗驗證候選改動；這提醒我們：離線通過是篩選證據，不是直接宣稱 production 已驗收。若改動涉及輸出壓縮或背景工作編排，也要檢查 Agent 是否因資訊遺失而重讀、重跑或多花回合。
@@ -29,6 +31,10 @@ GitHub 2026 年 9 月 11 日的 Code Review 更新又示範兩個可泛化的評
 Anthropic 2026 年 9 月 18 日宣布與 Accenture 建立 embedded evaluators，讓獨立評估者和模型開發團隊一起做模型評估、紅隊測試、alignment assessment 與 safeguard 測試。這個案例可抽象成一個實務原則：評估不應只在產品完成後才做一次，而要把獨立視角、真實使用情境與安全測試嵌入開發流程；但「嵌入式評估」仍然需要清楚的測試範圍、資料隔離、評分規則與可重現證據，不能只用評估者掛名取代驗收。
 
 OpenAI Agents SDK 在 2026 年 8 月的官方 release notes 中新增 provider-neutral testing utilities，讓 Agent、Sandbox、Realtime 和 Voice workflow 可以在不呼叫 Provider 的情況下做可重複測試；這是測試工具，不等於整個 Agent 已經通過真實 Provider 驗收。
+
+OpenAI 2026 年 10 月 2 日的模型指南則建議，上線前用代表性任務同時量測成功率、延遲與每次成功任務成本，並把 steering、非同步工具與平行委派納入長任務設計。這提醒我們：評估不能只測單次模型回答，也要測整個 Agent loop 在等待、重試、委派與上下文壓縮後是否仍能完成工作。
+
+GitHub 2026 年 10 月 1 日整理的實務問題也指出，Agent 評估要回答「程式真的能不能工作」而不只是 benchmark 分數好不好看；可觀察的執行驗證、權限邊界與供應鏈風險，都應成為測試設計的一部分。這些是官方活動內容，不是已完成的產品功能承諾，因此本文只抽象化為評估方向，不把單一產品名稱當成通用標準。
 
 ## 生活比喻 / 實際例子
 
@@ -56,8 +62,9 @@ OpenAI Agents SDK 在 2026 年 8 月的官方 release notes 中新增 provider-n
 - 評估規則要寫清楚「什麼算成功、什麼算安全失敗」，不能只報一個漂亮百分比
 - 同一個模型換了 Harness、工具或預算，結果可能改變；比較時要固定條件或清楚標示差異
 - 效率最佳化要看完整任務的成功率、成本、延遲與重試，不要只看單次模型呼叫的 token
+- 「能力評估分數變高，不代表回歸評估沒有退步；兩套題目要分開看。」
 
-**官方參考：** [GitHub Changelog：Agentic CLI customizations now in the usage metrics API（2026-09-17）](https://github.blog/changelog/2026-09-17-agentic-cli-customizations-now-in-the-usage-metrics-api) · [GitHub Changelog：Auto-resolution and analysis updates in Copilot code review（2026-09-11）](https://github.blog/changelog/2026-09-11-auto-resolution-and-analysis-updates-in-copilot-code-review/) · [Anthropic：Partnering with Accenture on embedded evaluation（2026-09-18）](https://www.anthropic.com/news/accenture-embedded-evaluation) · [GitHub：How we make AI coding more cost efficient without sacrificing task quality（2026-09-02）](https://github.blog/ai-and-ml/github-copilot/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality/)
+**官方參考：** [OpenAI：A model guide for the GPT-6 family（2026-10-02）](https://openai.com/index/practical-guide-building-gpt-6/) · [GitHub：10 technical talks I’m excited about at GitHub Universe 2026（2026-10-01）](https://github.blog/news-insights/company-news/10-technical-talks-im-excited-about-at-github-universe-2026) · [GitHub Changelog：Agentic CLI customizations now in the usage metrics API（2026-09-17）](https://github.blog/changelog/2026-09-17-agentic-cli-customizations-now-in-the-usage-metrics-api) · [GitHub Changelog：Auto-resolution and analysis updates in Copilot code review（2026-09-11）](https://github.blog/changelog/2026-09-11-auto-resolution-and-analysis-updates-in-copilot-code-review/) · [Anthropic：Partnering with Accenture on embedded evaluation（2026-09-18）](https://www.anthropic.com/news/accenture-embedded-evaluation) · [GitHub：How we make AI coding more cost efficient without sacrificing task quality（2026-09-02）](https://github.blog/ai-and-ml/github-copilot/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality/)
 
 相關： [Agentic（代理式）](agentic.md)、[AI Sandbox（AI 隔離環境）](ai-sandbox.md)、[AI Harness](../../software-engineering/terms/ai-harness.md)、[Guardrails（護欄）](guardrails.md)、[Accuracy（準確率）](accuracy.md)
 

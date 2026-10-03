@@ -37,6 +37,8 @@
 - GitHub 2026 年 9 月 4 日介紹的 HydraFusion，會依任務的推理、產碼、除錯與工具使用需求，選擇直接完成、加入 review／revision 或升級的流程；這種「只在值得時增加模型呼叫」的做法叫選擇性編排。
 - GitHub 2026 年 9 月 3 日示範平行 Agent 時，讓每個 session 使用獨立 Git worktree。平行不等於共用同一個工作樹；隔離是避免互相覆蓋的前提。
 - OpenAI 2026 年 9 月 10 日公布的 Agents API，將受管理的 Codex Harness 與執行環境包成 API：Harness 負責上下文壓縮、工具搜尋、程式化工具呼叫、子 Agent 協作與長時間執行；開發者仍要選擇沙箱、檔案、套件、Skill 與權限邊界。這說明 Harness 可以是持續維護的執行基礎設施，而不只是幾個 API wrapper。
+- OpenAI 2026 年 10 月 2 日的模型指南進一步把 Harness 的責任說得更實際：長任務要處理上下文壓縮、非同步工具、平行委派與中途 steering；上線前要用代表性任務量測成功率、延遲與「每次成功任務成本」，並清楚寫出什麼能自主做、什麼需要人批准。這些都是執行框架的控制面，不是單靠 Prompt 就能補上的規則。
+- GitHub 2026 年 10 月 1 日整理 Agent 實務時，特別把記憶、評估、權限、供應鏈安全與可重複的 Skill 放在同一張工程問題清單上。換句話說，Harness 不只要讓 Agent「動起來」，還要讓工具邊界、上下文來源、安裝的依賴與驗證結果可追蹤。
 
 因此，設計或評估 Harness 時，除了模型清單，也要明確記錄：任務級成本、延遲、重試與恢復率、工具／背景工作的編排、上下文壓縮策略、隔離邊界，以及失敗時是否能安全停止或交給人處理。長時程任務尤其要確認 Agent 能否跨多個上下文窗口延續狀態，而不是只把對話塞進更大的窗口。
 
@@ -50,7 +52,7 @@ Harness 也要把執行狀態和使用狀況留下可解讀的訊號。GitHub 20
 - 失敗後能否恢復，或安全地交給人類接管
 - 同一任務能否重現與比較
 
-**模型能力不等於完整 Agent 系統能力。** 最後成果取決於模型、Harness、工具、資料、權限與驗收流程的組合。
+**模型能力不等於完整 Agent 系統能力。** 最後成果取決於模型、Harness、工具、資料、權限與驗收流程的組合。實務上應把「完成任務、留下證據、失敗時安全停下」視為同一個契約，而不是只看模型回覆是否漂亮。
 
 常見的 AI Harness 框架：LangChain、LlamaIndex、Semantic Kernel、Vercel AI SDK 等。
 
@@ -76,7 +78,7 @@ Harness 也要把執行狀態和使用狀況留下可解讀的訊號。GitHub 20
 - 選對 AI Harness 可以省下大量開發時間
 
 ---
-**官方參考：** [GitHub Changelog：Agentic CLI customizations now in the usage metrics API（2026-09-17）](https://github.blog/changelog/2026-09-17-agentic-cli-customizations-now-in-the-usage-metrics-api) · [GitHub：How we make AI coding more cost efficient without sacrificing task quality（2026-09-02）](https://github.blog/ai-and-ml/github-copilot/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality/) · [Project HydraFusion（2026-09-04）](https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/) · [Run several agents at once（2026-09-03）](https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-run-several-agents-at-once/) · [OpenAI：Introducing the Agents API（2026-09-10）](https://openai.com/index/introducing-the-agents-api/)
+**官方參考：** [OpenAI：A model guide for the GPT-6 family（2026-10-02）](https://openai.com/index/practical-guide-building-gpt-6/) · [GitHub：10 technical talks I’m excited about at GitHub Universe 2026（2026-10-01）](https://github.blog/news-insights/company-news/10-technical-talks-im-excited-about-at-github-universe-2026) · [GitHub Changelog：Agentic CLI customizations now in the usage metrics API（2026-09-17）](https://github.blog/changelog/2026-09-17-agentic-cli-customizations-now-in-the-usage-metrics-api) · [GitHub：How we make AI coding more cost efficient without sacrificing task quality（2026-09-02）](https://github.blog/ai-and-ml/github-copilot/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality/) · [Project HydraFusion（2026-09-04）](https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/) · [Run several agents at once（2026-09-03）](https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-run-several-agents-at-once/) · [OpenAI：Introducing the Agents API（2026-09-10）](https://openai.com/index/introducing-the-agents-api/)
 
 ---
 **[← 回到術語總覽](../README.md)**
