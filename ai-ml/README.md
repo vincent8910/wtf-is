@@ -29,13 +29,13 @@
 
 ## 大綱
 
-> 共收錄 **69 個** AI / 機器學習術語，點擊分類名稱直接跳轉。
+> 共收錄 **70 個** AI / 機器學習術語，點擊分類名稱直接跳轉。
 
 | 分類 | 術語數 | 說明 |
 |------|:------:|------|
 | [基礎概念類](#基礎概念類) | 10 | AI、機器學習、深度學習、神經網路⋯⋯ |
 | [技術方法類](#技術方法類) | 8 | 監督式學習、NLP、電腦視覺、分類⋯⋯ |
-| [模型與應用類](#模型與應用類) | 26 | LLM、GPT、Transformer、RAG、MCP、Agent Plugin、Progressive Discovery、Model Routing⋯⋯ |
+| [模型與應用類](#模型與應用類) | 27 | LLM、GPT、Transformer、RAG、MCP、Computer Use、Agent Plugin、Progressive Discovery、Model Routing⋯⋯ |
 | [AI Agent 與協作類](#ai-agent-與協作類) | 12 | AI Sandbox、Multi-Agent System、A2A、Agent Memory、Agent Identity、Agent Permissions、Risk-based Tool Approval、Agent Anomaly Detection、Human-in-the-Loop、Content Exclusion、Zero Trust AI Agent⋯⋯ |
 | [指標與問題類](#指標與問題類) | 13 | Agent Evaluation、Behavioral Evaluation、Safety Case、過擬合、偏差、幻覺、Slop、Shadow AI⋯⋯ |
 
@@ -51,7 +51,7 @@
 | [Agent Memory（代理記憶）](terms/agent-memory.md) | [Agent Permissions（代理權限）](terms/agent-permissions.md) | [Agent Plugin（代理外掛）](terms/agent-plugin.md) | [AI（人工智慧）](terms/ai.md) |
 | [Algorithm（演算法）](terms/algorithm.md) | [Behavioral Evaluation（行為評估）](terms/behavioral-evaluation.md) | | |
 | [Bias（偏差）](terms/bias.md) | | | |
-| [Classification（分類）](terms/classification.md) | [Computer Vision（電腦視覺）](terms/computer-vision.md) | [Context Engineering（情境工程）](terms/context-engineering.md) | [Context Window（上下文窗口）](terms/context-window.md) |
+| [Classification（分類）](terms/classification.md) | [Computer Use（電腦操作代理）](terms/computer-use.md) | [Computer Vision（電腦視覺）](terms/computer-vision.md) | [Context Engineering（情境工程）](terms/context-engineering.md) |
 | [Context Compaction（上下文壓縮）](terms/context-compaction.md) | [Deep Learning（深度學習）](terms/deep-learning.md) | [Deepfake（深偽）](terms/deepfake.md) | [DeepSeek](terms/deepseek.md) |
 | [Distillation（蒸餾）](terms/distillation.md) | | | |
 | [Embedding](terms/embedding.md) | [Fine-tuning（微調）](terms/fine-tuning.md) | [GPT](terms/gpt.md) | [Guardrails（護欄）](terms/guardrails.md) |
@@ -142,6 +142,7 @@
 | Context Engineering（情境工程） | 不只教 AI 怎麼問，而是餵給它「對的資料」 | 幫代班同事把客戶資料、訂單紀錄都準備好 | 「這個 AI 專案失敗不是 Prompt 寫不好，是 Context Engineering 沒做好」 | [詳細](terms/context-engineering.md) |
 | Progressive Discovery（漸進式探索） | 先提供少量入口，再依任務需要逐步揭露更多工具或能力 | 圖書館先給你分類目錄，需要時才帶你到指定書架，不把整座圖書館搬到桌上 | 「工具太多時，先用 Progressive Discovery 找到相關能力」 | [詳細](terms/progressive-discovery.md) |
 | Model Routing（模型路由） | 依任務需要，在成本、品質、延遲與政策之間選擇合適的 AI 模型 | 醫院掛號分流，簡單問題交櫃台，複雜問題交專科醫師 | 「用 Model Routing 把簡單請求交給小模型」 | [詳細](terms/model-routing.md) |
+| Computer Use（電腦操作代理） | 讓 AI 透過畫面、滑鼠、鍵盤或無障礙介面操作桌面程式 | 請一位看得到螢幕、能使用滑鼠鍵盤的數位助理代你操作 | 「這個流程沒有 API，可以先用 Computer Use 操作舊系統」 | [詳細](terms/computer-use.md) |
 
 ---
 
@@ -247,6 +248,7 @@
 | Physical AI | 把 AI 裝進機器人、汽車、工廠機台裡，讓它長出手腳 |
 | Context Engineering | 幫代班同事把客戶資料、訂單紀錄都準備好，不只是教他怎麼問 |
 | Context Compaction | 把逐字稿整理成交接紀錄，保留下一步需要的資訊 |
+| Computer Use | 請一位看得到螢幕、能使用滑鼠鍵盤的數位助理代你操作沒有 API 的舊系統 |
 
 ### AI Agent 與協作類
 
