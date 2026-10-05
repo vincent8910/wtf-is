@@ -50,7 +50,7 @@
 
 | 領域 | 術語數 | 說明 |
 |------|:------:|------|
-| [💻 軟體工程](software-engineering/README.md) | 171 | API、Git、Deploy、Docker⋯⋯ |
+| [💻 軟體工程](software-engineering/README.md) | 172 | API、Git、Deploy、Docker⋯⋯ |
 | [💹 股票投資](stock/README.md) | 96 | 技術分析、交易策略、美股台股制度⋯⋯ |
 | [🔬 電子產業](electronics/README.md) | 29 | 半導體、封裝測試、HBM⋯⋯ |
 | [📣 行銷企劃](marketing/README.md) | 37 | 數位廣告、轉換率、社群行銷⋯⋯ |
@@ -110,6 +110,7 @@
 | [CSS](software-engineering/terms/css.md) | [Cursor](software-engineering/terms/cursor.md) | [Dashboard](software-engineering/terms/dashboard.md) | [Data Lake / Warehouse](software-engineering/terms/data-lake-warehouse.md) |
 | [Database](software-engineering/terms/database.md) | [Dependency](software-engineering/terms/dependency.md) | [Dependency Cooldown](software-engineering/terms/dependency-cooldown.md) | [Deploy](software-engineering/terms/deploy.md) |
 | [DevOps](software-engineering/terms/devops.md) | [DNS](software-engineering/terms/dns.md) | [Domain](software-engineering/terms/domain.md) | [Downtime](software-engineering/terms/downtime.md) |
+| [Dynamic Workflow（動態工作流）](software-engineering/terms/dynamic-workflow.md) | | | |
 | [Edge Computing](software-engineering/terms/edge-computing.md) | [EKS](software-engineering/terms/eks.md) | [ELK Stack](software-engineering/terms/elk.md) | [Encryption](software-engineering/terms/encryption.md) |
 | [Endpoint](software-engineering/terms/endpoint.md) | [環境變數](software-engineering/terms/environment-variable.md) | [ETL](software-engineering/terms/etl.md) | [Event-Driven](software-engineering/terms/event-driven.md) |
 | [Feature Flag](software-engineering/terms/feature-flag.md) | [Firewall](software-engineering/terms/firewall.md) | [FPS](software-engineering/terms/fps.md) | [Framework / Library](software-engineering/terms/framework-library.md) |

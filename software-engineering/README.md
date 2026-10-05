@@ -29,14 +29,14 @@
 
 ## 大綱
 
-> 共收錄 **171 個**軟體工程術語，點擊分類名稱直接跳轉。
+> 共收錄 **172 個**軟體工程術語，點擊分類名稱直接跳轉。
 
 | 分類 | 術語數 | 說明 |
 |------|:------:|------|
 | [基礎建設類](#基礎建設類) | 27 | 軟體開發的基礎環境與程式語言 |
 | [日常開發類](#日常開發類) | 19 | 開始接觸開發後會碰到的詞 |
 | [協作類](#協作類) | 15 | 跟團隊合作時出現的詞 |
-| [工具類](#工具類) | 13 | 開發工具與 AI 編程助手 |
+| [工具類](#工具類) | 14 | 開發工具與 AI 編程助手 |
 | [開會時聽不懂類](#開會時聽不懂類) | 23 | 開會、看 Slack 時最常一頭霧水的詞 |
 | [專案管理類](#專案管理類) | 9 | PM 寫規格、追進度時會遇到的詞 |
 | [出事了類](#出事了類) | 7 | 系統出問題時工程師會說的詞 |
@@ -63,6 +63,7 @@
 | [CSS](terms/css.md) | [Cursor](terms/cursor.md) | [Dashboard](terms/dashboard.md) | [Data Lake / Warehouse](terms/data-lake-warehouse.md) |
 | [Database](terms/database.md) | [Dependency](terms/dependency.md) | [Dependency Cooldown](terms/dependency-cooldown.md) | [Deploy](terms/deploy.md) |
 | [DevOps](terms/devops.md) | [DNS](terms/dns.md) | [Domain](terms/domain.md) | [Downtime](terms/downtime.md) |
+| [Dynamic Workflow（動態工作流）](terms/dynamic-workflow.md) | | | |
 | [Edge Computing（邊緣運算）](terms/edge-computing.md) | [EKS](terms/eks.md) | [ELK Stack](terms/elk.md) | [Encryption](terms/encryption.md) |
 | [Endpoint](terms/endpoint.md) | [環境變數](terms/environment-variable.md) | [ETL](terms/etl.md) | [Event-Driven（事件驅動）](terms/event-driven.md) |
 | [Feature Flag](terms/feature-flag.md) | [Firewall](terms/firewall.md) | [FPS](terms/fps.md) | [Framework / Library](terms/framework-library.md) |
@@ -204,6 +205,7 @@
 | **Codex** | OpenAI 的 AI coding agent，Claude Code 的主要競爭對手 | OpenAI 派出的 AI 工程師 | 「我們團隊一半用 Claude Code、一半用 **Codex**。」 | [→ 詳細](terms/codex.md) |
 | **OpenClaw** | 2026 年最紅的開源 AI coding agent | 免費的、社群打造的 AI 工程師助手 | 「我改用 **OpenClaw** 了，接 DeepSeek 超便宜。」 | [→ 詳細](terms/openclaw.md) |
 | **AI Harness** | 包裝 LLM API、管理工具呼叫和上下文的框架 | 幫你跟多個外包廠商溝通的管家 | 「我們用 LangChain 當 **AI Harness**。」 | [→ 詳細](terms/ai-harness.md) |
+| **Dynamic Workflow（動態工作流）** | 用程式碼編排 Agent 的順序、平行、分支與結果合併 | 活動總召手上的自動化分工表 | 「複雜任務改用 **Dynamic Workflow**，比較容易追蹤每一步。」 | [→ 詳細](terms/dynamic-workflow.md) |
 | **Sub-agent** | AI agent 產生子 agent 來分工完成大型任務 | 主管把大案子拆給不同下屬 | 「主 agent 派了三個 **Sub-agent** 平行處理。」 | [→ 詳細](terms/sub-agent.md) |
 | **Linter（程式碼檢查器）** | 自動檢查程式碼風格和潛在問題的工具 | 文章的文法檢查器 | 「**Linter** 報了 20 個警告，先修一下。」 | [→ 詳細](terms/linter.md) |
 | **tmux** | 讓一個 Terminal 視窗同時開好幾塊工作區域，還能暫離回來繼續 | 一台電視變電視牆 | 「開 **tmux** 吧，斷線了工作還在跑。」 | [→ 詳細](terms/tmux.md) |
@@ -484,6 +486,8 @@ PM 寫規格、追進度時會遇到的詞：
 | Claude | 什麼都懂一點的全能助理 |
 | Claude Code | 坐在你旁邊直接動手改的顧問 |
 | Gemini CLI | 直接打給 AI 包工頭的電話 |
+| AI Harness | 幫你跟多個外包廠商溝通的管家 |
+| Dynamic Workflow（動態工作流） | 活動總召手上的自動化分工表 |
 | Linter（程式碼檢查器） | 文章的文法檢查器 |
 | tmux | 一台電視變電視牆 |
 
