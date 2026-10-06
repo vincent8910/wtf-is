@@ -29,6 +29,8 @@
 
 GitHub 在 2026 年 9 月 25 日的 Changelog 說明，Agentic Autofix（公開預覽）可以讀取已啟用的 Copilot Memory，利用專案既有脈絡修復安全警示；完成修正後，也能把修正模式保存成記憶，供之後的安全警示、Code Review 或 Cloud Agent 參考。這是「記住可重用工作模式」的產品案例，不代表所有 Agent 都有相同的記憶格式、權限或刪除機制。
 
+GitHub 在 2026 年 10 月 1 日介紹 GitHub Universe 的相關研究時也提醒：從一串真實 Pull Request 累積上下文，未必會讓 Agent 變聰明，過多或不相關的歷史反而可能傷害表現。因此 Agent Memory 不只是「存得越多越好」，還要驗證什麼時候該取回、什麼時候該忘記，以及加入記憶後任務成功率是否真的改善。這是研究與活動預告中的工程方向，不代表所有產品都已提供相同功能。
+
 因此，導入 Agent Memory 時要追問：哪些內容能寫入、誰能讀取、記憶如何標示來源與版本、如何撤銷或刪除，以及錯誤的修正模式是否可能被反覆放大。
 
 ## 生活比喻 / 實際例子
@@ -47,6 +49,7 @@ GitHub 在 2026 年 9 月 25 日的 Changelog 說明，Agentic Autofix（公開�
 - 「不要把整份聊天紀錄都塞進 Agent Memory，要先整理成可驗證的工作記憶。」
 - 「Memory retrieval 找錯資料時，Agent 可能比沒有記憶更有自信地做錯事。」
 - 「跨客戶的 Agent Memory 必須做租戶隔離，不能因為相似關鍵字就互相污染。」
+- 「記憶不是越多越好；先用真實任務驗證累積的上下文是否幫忙，否則要讓 Agent 知道何時不要取回。」
 
 ## 為什麼要知道這個詞？
 
@@ -56,7 +59,7 @@ GitHub 在 2026 年 9 月 25 日的 Changelog 說明，Agentic Autofix（公開�
 - 驗收時不只要測「記不記得」，還要測能否正確取回、更新、忘記與隔離
 - 記憶保存的是工作狀態，不代表內容天然正確；重要決策仍要保留來源與人工驗收
 
-**官方參考：** [OpenAI：How V7 gives AI agents institutional memory（2026-09-21）](https://openai.com/index/v7/) · [GitHub Changelog：Agentic autofix now uses Copilot Memory（2026-09-25）](https://github.blog/changelog/2026-09-25-agentic-autofix-now-uses-copilot-memory)
+**官方參考：** [GitHub：10 technical talks I’m excited about at GitHub Universe 2026（2026-10-01）](https://github.blog/news-insights/company-news/10-technical-talks-im-excited-about-at-github-universe-2026) · [OpenAI：How V7 gives AI agents institutional memory（2026-09-21）](https://openai.com/index/v7/) · [GitHub Changelog：Agentic autofix now uses Copilot Memory（2026-09-25）](https://github.blog/changelog/2026-09-25-agentic-autofix-now-uses-copilot-memory)
 
 相關： [Context Window（上下文窗口）](context-window.md)、[Context Compaction（上下文壓縮）](context-compaction.md)、[Context Engineering（情境工程）](context-engineering.md)、[RAG（檢索增強生成）](rag.md)、[Agent Evaluation（代理評估）](agent-evaluation.md)、[Content Exclusion（內容排除）](content-exclusion.md)
 

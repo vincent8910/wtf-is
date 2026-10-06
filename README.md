@@ -81,7 +81,7 @@
 
 ### 大綱
 
-> 共收錄 **171 個**術語，[點此進入完整頁面](software-engineering/README.md)。
+> 共收錄 **172 個**術語，[點此進入完整頁面](software-engineering/README.md)。
 
 | 分類 | 術語數 | 說明 |
 |------|:------:|------|
@@ -605,15 +605,15 @@
 
 ### 大綱
 
-> 共收錄 **65 個**術語，[點此進入完整頁面](ai-ml/README.md)。
+> 共收錄 **70 個**術語，[點此進入完整頁面](ai-ml/README.md)。
 
 | 分類 | 術語數 | 說明 |
 |------|:------:|------|
 | [基礎概念類](ai-ml/README.md#基礎概念類) | 10 | AI、機器學習、深度學習、神經網路⋯⋯ |
 | [技術方法類](ai-ml/README.md#技術方法類) | 8 | 監督式學習、NLP、電腦視覺、分類⋯⋯ |
-| [模型與應用類](ai-ml/README.md#模型與應用類) | 26 | LLM、GPT、Transformer、RAG、MCP、DeepSeek、Vibe Coding、Context Compaction⋯⋯ |
-| [AI Agent 與協作類](ai-ml/README.md#ai-agent-與協作類) | 10 | AI Sandbox、Multi-Agent System、A2A、Agent Memory、Agent Identity、Agent Permissions、Human-in-the-Loop、Shared Agent Session、Zero Trust AI Agent⋯⋯ |
-| [指標與問題類](ai-ml/README.md#指標與問題類) | 11 | Agent Evaluation、過擬合、偏差、幻覺、Slop、Shadow AI⋯⋯ |
+| [模型與應用類](ai-ml/README.md#模型與應用類) | 27 | LLM、GPT、Transformer、RAG、MCP、DeepSeek、Vibe Coding、Context Compaction⋯⋯ |
+| [AI Agent 與協作類](ai-ml/README.md#ai-agent-與協作類) | 12 | AI Sandbox、Multi-Agent System、A2A、Agent Memory、Agent Identity、Agent Permissions、Agent Anomaly Detection、Human-in-the-Loop、Shared Agent Session、Zero Trust AI Agent⋯⋯ |
+| [指標與問題類](ai-ml/README.md#指標與問題類) | 13 | Agent Evaluation、Behavioral Evaluation、過擬合、偏差、幻覺、Slop、Shadow AI⋯⋯ |
 
 ### 單字速查表（A-Z）
 

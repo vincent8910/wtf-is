@@ -10,6 +10,8 @@ Trusted Publishing 通常利用 **OpenID Connect（OIDC）**：發布平台收�
 
 以 npm 為例，GitHub 在 2026 年 9 月 3 日宣布，每個套件可以設定多組互相獨立的 trusted publishing（OIDC）設定，分別對應穩定版、預發布版或 staging workflow。設定可以允許先 stage，再經過人工核准；直接發布則要在每組設定中另外開啟。這些是 npm 的產品行為，不代表所有套件 registry 都有相同介面。
 
+GitHub 在 2026 年 9 月 30 日又補上 **dist-tag 管理**的選擇性權限。dist-tag 是 `latest`、`next`、`beta` 這類「目前推薦哪個版本」的指標；新的 `Allow npm dist-tag` 權限預設關閉，而且和直接發布權限分開。也就是說，某個 workflow 可以被允許把既有版本推成 `latest`，但不代表它同時能發布新版本。這是供應鏈最小權限的具體例子：只開需要的能力，不因為已經信任 OIDC 就一次放大所有發布操作。
+
 ## 生活比喻 / 實際例子
 
 想像公司倉庫出貨：不要把一把永久有效的總鑰匙放在每個外包人員手上，而是讓物流系統在每次出貨時發一張只在短時間有效、並寫明「哪間分店、哪張出貨單」的通行證。倉庫核對通行證後才放行，出貨完通行證就失效。
@@ -29,7 +31,9 @@ Trusted Publishing 通常利用 **OpenID Connect（OIDC）**：發布平台收�
 | 長期 token | 把固定密碼交給 workflow | 外洩後可能長時間被重複使用 |
 | Trusted Publishing | 每次用短期 OIDC 身分，依來源條件授權 | 減少長期憑證與人工管理負擔 |
 | Staged Publishing | 先暫存版本，掃描或人工核准後才公開 | 在發布與公開之間增加安全閘門 |
-| Provenance | 附帶「由哪個來源建出來」的可驗證證據 | 讓使用者或平台追溯產物來源；不等於自動授權發布 |
+- **Provenance** | 附帶「由哪個來源建出來」的可驗證證據 | 讓使用者或平台追溯產物來源；不等於自動授權發布 |
+
+要特別分清楚「發布套件」和「移動版本標籤」：前者是新增一個版本，後者可能改變使用者執行 `npm install package` 時拿到的版本。即使兩者都使用 OIDC，也應分開授權、記錄與稽核。
 
 Trusted Publishing 不是「完全不用驗證」，也不是只要開啟 OIDC 就安全。仍要限制 workflow 權限、審查第三方 action、保護 environment，並確認 registry 實際核對哪些欄位。設定多組規則時，不應假設平台會依固定順序比對。
 
@@ -40,7 +44,7 @@ Trusted Publishing 不是「完全不用驗證」，也不是只要開啟 OIDC �
 - staged、惡意程式掃描與人工核准可以形成發布前的安全閘門
 - 供應鏈安全要同時看身分、workflow 權限、建置環境、產物來源與 registry 規則，不能只看一個綠色勾勾
 
-**官方參考：** [GitHub Changelog：Multiple trusted publishing configurations for npm（2026-09-03）](https://github.blog/changelog/2026-09-03-multiple-trusted-publishing-configurations-for-npm)
+**官方參考：** [GitHub Changelog：Opt-in dist-tag permissions for npm trusted publishing（2026-09-30）](https://github.blog/changelog/2026-09-30-opt-in-dist-tag-permissions-for-npm-trusted-publishing/) · [GitHub Changelog：Multiple trusted publishing configurations for npm（2026-09-03）](https://github.blog/changelog/2026-09-03-multiple-trusted-publishing-configurations-for-npm)
 
 相關：[Dependency（依賴套件）](dependency.md)、[Dependency Cooldown（依賴更新冷卻期）](dependency-cooldown.md)、[CI/CD](ci-cd.md)、[Environment Variable（環境變數）](environment-variable.md)
 
