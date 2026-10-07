@@ -36,7 +36,11 @@ OpenAI 2026 年 10 月 2 日的模型指南則建議，上線前用代表性任�
 
 GitHub 在 2026 年 10 月 1 日整理 GitHub Universe 技術場次時，將「benchmark 分數高但使用者仍失望」列為評估問題，並把真實 workflow 的可驗證執行、權限邊界與供應鏈風險放進同一個驗收脈絡。可泛化的做法是：除了終點是否完成，也要檢查 Agent 是否真的執行了必要查證、是否在安全邊界內操作，以及結果能否由 trace 或產物重現；活動介紹不是產品保證，仍需自行定義可驗收的證據。
 
-GitHub 2026 年 10 月 1 日整理的實務問題也指出，Agent 評估要回答「程式真的能不能工作」而不只是 benchmark 分數好不好看；可觀察的執行驗證、權限邊界與供應鏈風險，都應成為測試設計的一部分。這些是官方活動內容，不是已完成的產品功能承諾，因此本文只抽象化為評估方向，不把單一產品名稱當成通用標準。
+GitHub 在 2026 年 10 月 1 日整理的實務問題也指出，Agent 評估要回答「程式真的能不能工作」而不只是 benchmark 分數好不好看；可觀察的執行驗證、權限邊界與供應鏈風險，都應成為測試設計的一部分。這些是官方活動內容，不是已完成的產品功能承諾，因此本文只抽象化為評估方向，不把單一產品名稱當成通用標準。
+
+OpenAI 在 2026 年 10 月 6 日分享 Ironclad 合作案例時，將複雜專業工作拆成代表性 workflow，再依任務複雜度設定 8 到 50 個驗收條件，並讓 Agent 在產品的 hosted environment 中反覆練習與取得回饋。這可泛化成 **workflow evaluation** 的做法：不要只問模型「答案像不像」，而要把業務規則、跨步驟狀態、邊界情境與最終產物都列成可驗證條件。單一步驟做對，不代表整個流程在不同輸入下仍然正確；測試環境也應與實際工具、權限和資料邊界明確對齊。
+
+這個案例的數字與分數是 OpenAI 自家研究結果，不是所有 Agent 的保證。可借鏡的是評估設計：找熟悉業務的人定義重要任務，將成功拆成多個明確 criteria，讓 Agent 在接近真實但可控的環境中執行，並保存每個條件的證據。若把 hosted environment、權限或資料版本換掉，評估結果也要視為不同實驗，不可直接互相比較。
 
 ## 生活比喻 / 實際例子
 
@@ -66,7 +70,7 @@ GitHub 2026 年 10 月 1 日整理的實務問題也指出，Agent 評估要回�
 - 效率最佳化要看完整任務的成功率、成本、延遲與重試，不要只看單次模型呼叫的 token
 - 「能力評估分數變高，不代表回歸評估沒有退步；兩套題目要分開看。」
 
-**官方參考：** [OpenAI：A model guide for the GPT-6 family（2026-10-02）](https://openai.com/index/practical-guide-building-gpt-6/) · [GitHub：10 technical talks I’m excited about at GitHub Universe 2026（2026-10-01）](https://github.blog/news-insights/company-news/10-technical-talks-im-excited-about-at-github-universe-2026) · [GitHub Changelog：Agentic CLI customizations now in the usage metrics API（2026-09-17）](https://github.blog/changelog/2026-09-17-agentic-cli-customizations-now-in-the-usage-metrics-api) · [GitHub Changelog：Auto-resolution and analysis updates in Copilot code review（2026-09-11）](https://github.blog/changelog/2026-09-11-auto-resolution-and-analysis-updates-in-copilot-code-review/) · [Anthropic：Partnering with Accenture on embedded evaluation（2026-09-18）](https://www.anthropic.com/news/accenture-embedded-evaluation) · [GitHub：How we make AI coding more cost efficient without sacrificing task quality（2026-09-02）](https://github.blog/ai-and-ml/github-copilot/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality/)
+**官方參考：** [OpenAI：Advancing computer use with Ironclad（2026-10-06）](https://openai.com/index/advancing-computer-use-with-ironclad/) · [OpenAI：A model guide for the GPT-6 family（2026-10-02）](https://openai.com/index/practical-guide-building-gpt-6/) · [GitHub：10 technical talks I’m excited about at GitHub Universe 2026（2026-10-01）](https://github.blog/news-insights/company-news/10-technical-talks-im-excited-about-at-github-universe-2026) · [GitHub Changelog：Agentic CLI customizations now in the usage metrics API（2026-09-17）](https://github.blog/changelog/2026-09-17-agentic-cli-customizations-now-in-the-usage-metrics-api) · [GitHub Changelog：Auto-resolution and analysis updates in Copilot code review（2026-09-11）](https://github.blog/changelog/2026-09-11-auto-resolution-and-analysis-updates-in-copilot-code-review/) · [Anthropic：Partnering with Accenture on embedded evaluation（2026-09-18）](https://www.anthropic.com/news/accenture-embedded-evaluation) · [GitHub：How we make AI coding more cost efficient without sacrificing task quality（2026-09-02）](https://github.blog/ai-and-ml/github-copilot/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality/)
 
 相關： [Agentic（代理式）](agentic.md)、[AI Sandbox（AI 隔離環境）](ai-sandbox.md)、[AI Harness](../../software-engineering/terms/ai-harness.md)、[Guardrails（護欄）](guardrails.md)、[Accuracy（準確率）](accuracy.md)
 
