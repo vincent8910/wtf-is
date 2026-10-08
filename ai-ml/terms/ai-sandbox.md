@@ -36,10 +36,12 @@ Sandbox 仍要搭配最小權限、[Guardrails](guardrails.md)、[Prompt Injecti
 
 在 AI Coding、Agent、Computer Use 與自動化工作流中，Sandbox 是從「AI 會做事」走向「AI 可以安全做事」的關鍵概念。GitHub 2026 年 9 月 8 日的官方 Changelog 也示範了企業集中管理沙盒政策的做法：管理員可控制沙盒啟用、檔案系統與網路存取等範圍，且受管理的限制會優先於使用者設定；這是產品案例，不代表所有平台都採用相同能力或優先順序。
 
-GitHub 在 2026 年 9 月 23 日又公布本機 Sandbox 預覽功能，將檔案、網路與 credentials 的存取限制套用到本機 repository／working tree session。這個案例有兩個容易被忽略的邊界：功能是公開預覽，且本機 sandbox 不會自動套用到 cloud sandbox 或 remote host；另外，如果作業系統無法執行要求的政策，應該讓 shell 失敗，而不是默默退回未隔離模式。
+GitHub 在 2026 年 10 月 7 日宣布本機 Sandbox 已正式可用（GA），涵蓋 GitHub Copilot CLI、Copilot app，以及使用 Agent Host 的 VS Code session。這類本機沙盒會把 Agent 執行的工具與指令限制在政策允許的檔案、網路、憑證與系統能力範圍內；政策可以控制讀寫哪些目錄、是否能連外網或本地網路、是否能使用 Git／GitHub CLI 憑證，也能在支援時套用到本機 MCP 與 language server。企業管理的設定還可以要求必須啟用沙盒，並禁止開發者自行放寬限制。
+
+這個案例也提醒一個重要分界：**模型執行和工具隔離是兩件事**。不管背後使用哪個模型，沙盒政策都應直接套用到工具執行層，而不是期待模型自己遵守安全界線。GitHub 這次採用 Microsoft eXecution Container（MXC）把共同的沙盒政策轉成 Windows、macOS 與 Linux 的原生控制；這是 GitHub 的產品實作，不代表所有 Agent 平台都具備相同能力。
 
 ---
-**官方參考：** [GitHub Changelog：Enterprise-managed sandbox in Copilot for JetBrains（2026-09-08，公開預覽）](https://github.blog/changelog/2026-09-08-enterprise-managed-sandbox-in-copilot-for-jetbrains/) · [GitHub Changelog：Local sandboxing in the GitHub Copilot app（2026-09-23，公開預覽）](https://github.blog/changelog/2026-09-23-local-sandboxing-in-the-github-copilot-app)
+**官方參考：** [GitHub Changelog：Local sandboxing for GitHub Copilot now generally available（2026-10-07）](https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available/) · [GitHub Changelog：Enterprise-managed sandbox in Copilot for JetBrains（2026-09-08，公開預覽）](https://github.blog/changelog/2026-09-08-enterprise-managed-sandbox-in-copilot-for-jetbrains/) · [GitHub Changelog：Local sandboxing in the GitHub Copilot app（2026-09-23，公開預覽）](https://github.blog/changelog/2026-09-23-local-sandboxing-in-the-github-copilot-app)
 
 ---
 **[← 回到 AI / 機器學習總覽](../README.md)**
