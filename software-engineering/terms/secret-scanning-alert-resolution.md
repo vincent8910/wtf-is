@@ -10,6 +10,8 @@ Secret Scanning 會在程式碼中尋找可能是密碼、API key、access token
 
 這是「合併前的安全閘門」，不是單純在 CI 裡印一個警告。以 GitHub 在 2026 年 9 月 9 日公告的規則為例，管理者可在 repository、organization 或 enterprise 的 ruleset 中啟用 `require_secret_scanning_alert_resolution`；GitHub 也允許選擇要攔截 provider pattern、custom pattern 或 generic pattern。實際可用的 pattern、權限繞過方式與產品方案，仍要依 provider 文件和目前帳號方案確認。
 
+2026 年 10 月 7 日，GitHub 又公布了用專門的 AI 模型做 **情境感知 secret detection**：模型不只比對已知 token 外形，也會讀取周圍程式碼，找出沒有固定格式的密碼或其他可疑憑證。這補的是「怎麼找得更完整」，不是把合併規則改成由模型自行決定；實際上仍要看掃描結果、規則狀態和人工處理。官方也區分了已納入 Secret Protection 的警示掃描，以及 push protection／Copilot security review 等可能需要明確 opt-in、消耗 AI credits 的檢查，不能看到功能存在就自行開啟政策或費用功能。
+
 它和「把 secret 從程式碼刪掉」不是同一件事：刪除字串只是修正動作，resolution rule 是在合併流程中強制檢查，避免有人帶著未處理的警示繞過審查。
 
 ## 生活比喻 / 實際例子
@@ -42,7 +44,7 @@ Secret Scanning 會在程式碼中尋找可能是密碼、API key、access token
 - 讓團隊能把 secret scanning、ruleset、code review 與憑證輪替串成一條供應鏈安全流程
 - 提醒你區分「掃描完成」「沒有未處理警示」與「憑證已撤銷」這三件不同的事
 
-**官方參考：** [GitHub Changelog：Block pull requests with exposed secrets from merging（2026-09-09）](https://github.blog/changelog/2026-09-09-block-pull-requests-with-exposed-secrets-from-merging)
+**官方參考：** [GitHub Changelog：Purpose-built model for leaked secret detection（2026-10-07）](https://github.blog/changelog/2026-10-07-purpose-built-model-for-leaked-secret-detection/) · [GitHub Changelog：Block pull requests with exposed secrets from merging（2026-09-09）](https://github.blog/changelog/2026-09-09-block-pull-requests-with-exposed-secrets-from-merging)
 
 相關：[Trusted Publishing（信任發布）](trusted-publishing.md)、[Vulnerability（漏洞）](vulnerability.md)、[PR（Pull Request）](pull-request.md)、[Code Review（程式碼審查）](code-review.md)
 
