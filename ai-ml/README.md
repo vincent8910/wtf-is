@@ -29,14 +29,14 @@
 
 ## 大綱
 
-> 共收錄 **70 個** AI / 機器學習術語，點擊分類名稱直接跳轉。
+> 共收錄 **71 個** AI / 機器學習術語，點擊分類名稱直接跳轉。
 
 | 分類 | 術語數 | 說明 |
 |------|:------:|------|
 | [基礎概念類](#基礎概念類) | 10 | AI、機器學習、深度學習、神經網路⋯⋯ |
 | [技術方法類](#技術方法類) | 8 | 監督式學習、NLP、電腦視覺、分類⋯⋯ |
 | [模型與應用類](#模型與應用類) | 27 | LLM、GPT、Transformer、RAG、MCP、Computer Use、Agent Plugin、Progressive Discovery、Model Routing⋯⋯ |
-| [AI Agent 與協作類](#ai-agent-與協作類) | 12 | AI Sandbox、Multi-Agent System、A2A、Agent Memory、Agent Identity、Agent Permissions、Risk-based Tool Approval、Agent Anomaly Detection、Human-in-the-Loop、Content Exclusion、Zero Trust AI Agent⋯⋯ |
+| [AI Agent 與協作類](#ai-agent-與協作類) | 13 | AI Sandbox、Multi-Agent System、A2A、Agent Memory、Agent Identity、Agent Permissions、Risk-based Tool Approval、Agent Anomaly Detection、Unintended Agent Action、Human-in-the-Loop、Content Exclusion、Zero Trust AI Agent⋯⋯ |
 | [指標與問題類](#指標與問題類) | 13 | Agent Evaluation、Behavioral Evaluation、Safety Case、過擬合、偏差、幻覺、Slop、Shadow AI⋯⋯ |
 
 > 想一次看完所有比喻？直接跳到 [比喻對照總表](#比喻對照總表)
@@ -49,6 +49,7 @@
 |---|---|---|---|
 | [Accuracy（準確率）](terms/accuracy.md) | [Agent Anomaly Detection（代理異常偵測）](terms/agent-anomaly-detection.md) | [Agent Evaluation（代理評估）](terms/agent-evaluation.md) | [Agent Identity（代理身分）](terms/agent-identity.md) |
 | [Agent Memory（代理記憶）](terms/agent-memory.md) | [Agent Permissions（代理權限）](terms/agent-permissions.md) | [Agent Plugin（代理外掛）](terms/agent-plugin.md) | [AI（人工智慧）](terms/ai.md) |
+| [Unintended Agent Action（代理非預期行為）](terms/unintended-agent-action.md) | | | |
 | [Algorithm（演算法）](terms/algorithm.md) | [Behavioral Evaluation（行為評估）](terms/behavioral-evaluation.md) | | |
 | [Bias（偏差）](terms/bias.md) | | | |
 | [Classification（分類）](terms/classification.md) | [Computer Use（電腦操作代理）](terms/computer-use.md) | [Computer Vision（電腦視覺）](terms/computer-vision.md) | [Context Engineering（情境工程）](terms/context-engineering.md) |
@@ -160,6 +161,7 @@
 | Risk-based Tool Approval（風險分級工具核准） | 依工具操作風險決定自動放行、請人確認或拒絕 | 公司門禁依普通辦公區、資料室與金庫分級 | 「讀檔可以自動放行，但 production deploy 要人工核准」 | [詳細](terms/risk-based-tool-approval.md) |
 | Shared Agent Session（共享代理工作階段） | 多人共同查看、引導與審查同一個 Agent 工作階段 | 團隊在會議室看著外包工程師一起做事 | 「讓 QA 也加入 Shared Agent Session，一起看 Agent 的差異和測試結果」 | [詳細](terms/shared-agent-session.md) |
 | Agent Anomaly Detection（代理異常偵測） | 觀察 Agent 跨回合的工具呼叫與執行軌跡，找出單次看不出的異常模式 | 銀行不只看一筆刷卡，也看短時間內的累積消費是否可疑 | 「每筆退款都合法，但 Agent Anomaly Detection 發現它重複寫入同一張訂單」 | [詳細](terms/agent-anomaly-detection.md) |
+| Unintended Agent Action（代理非預期行為） | Agent 做出超出目標、權限或明確指示的行動 | 助理擅自走未授權的繞路，或按下不該按的送出鍵 | 「這不是答錯，而是 Unintended Agent Action」 | [詳細](terms/unintended-agent-action.md) |
 | Human-in-the-Loop（人在迴路中） | AI 處理大部分工作，但關鍵或高風險動作要由人確認 | 行政助理整理報帳，主管在付款前簽核 | 「付款和 production deploy 要保留 Human-in-the-Loop」 | [詳細](terms/human-in-the-loop.md) |
 | Content Exclusion（內容排除） | 明確禁止 AI 把特定檔案或資料帶進工作上下文 | 助理進辦公室前，先把機密文件鎖進櫃子 | 「先設定 Content Exclusion，再讓 Agent 搜尋專案」 | [詳細](terms/content-exclusion.md) |
 | Zero Trust AI Agent（零信任 AI 代理） | 不把模型判斷當成安全邊界，讓身分、隔離與確定性規則在模型外攔住危險操作 | 外包員工每筆付款都要驗證、限額和簽核 | 「能改資料的 Agent 要用 Zero Trust AI Agent 架構」 | [詳細](terms/zero-trust-ai-agent.md) |
@@ -261,6 +263,7 @@
 | Agent Memory | 專案助理整理好的工作筆記與交接簿，需要時再翻出來 |
 | Shared Agent Session | 團隊一起看著、引導同一個 AI 助理工作的會議室 |
 | Risk-based Tool Approval | 公司門禁依普通辦公區、資料室與金庫分級 |
+| Unintended Agent Action | 助理為了完成任務，擅自走未授權的繞路或按下不該按的送出鍵 |
 | Zero Trust AI Agent | 外包員工每筆付款都要驗證、限額和簽核 |
 
 ### 指標與問題類
