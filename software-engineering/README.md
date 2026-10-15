@@ -29,7 +29,7 @@
 
 ## 大綱
 
-> 共收錄 **172 個**軟體工程術語，點擊分類名稱直接跳轉。
+> 共收錄 **173 個**軟體工程術語，點擊分類名稱直接跳轉。
 
 | 分類 | 術語數 | 說明 |
 |------|:------:|------|
@@ -40,7 +40,7 @@
 | [開會時聽不懂類](#開會時聽不懂類) | 23 | 開會、看 Slack 時最常一頭霧水的詞 |
 | [專案管理類](#專案管理類) | 9 | PM 寫規格、追進度時會遇到的詞 |
 | [出事了類](#出事了類) | 7 | 系統出問題時工程師會說的詞 |
-| [供應鏈安全類](#供應鏈安全類) | 3 | 依賴更新、套件風險與軟體供應鏈防護 |
+| [供應鏈安全類](#供應鏈安全類) | 4 | 依賴更新、工作流程鎖定與軟體供應鏈防護 |
 | [依工程師類型分類](#依工程師類型分類) | 54 | 前端、後端、DevOps、Mobile、QA、資安⋯⋯ |
 
 > 想一次看完所有比喻？直接跳到 [比喻對照總表](#比喻對照總表)
@@ -92,6 +92,7 @@
 | [Technical Debt](terms/technical-debt.md) | [Terminal / CLI](terms/terminal-cli.md) | [Terraform / IaC](terms/terraform-iac.md) | [Test Case](terms/test-case.md) |
 | [Thread（執行緒）](terms/thread.md) | [Timeout](terms/timeout.md) | [tmux](terms/tmux.md) | [Token](terms/token.md) |
 | [Trusted Publishing（信任發布）](terms/trusted-publishing.md) | [TypeScript](terms/typescript.md) | [UAT](terms/uat.md) | [UI / UX](terms/ui-ux.md) |
+| [Workflow Lockfile（工作流程依賴鎖定檔）](terms/workflow-lockfile.md) | | | |
 | [Unity](terms/unity.md) | [VPN](terms/vpn.md) | [VS Code](terms/vscode.md) | [Vulnerability](terms/vulnerability.md) |
 | [WebAssembly (WASM)](terms/wasm.md) | [Webhook](terms/webhook.md) | [WebSocket](terms/websocket.md) | [WebView](terms/webview.md) |
 | [YAML](terms/yaml.md) | | | |
@@ -287,6 +288,7 @@ PM 寫規格、追進度時會遇到的詞：
 | **Dependency Cooldown（依賴更新冷卻期）** | 套件新版本先觀察一段時間，再進入自動更新流程 | 新品先放觀察區 | 「Dependabot 的 **cooldown** 可以降低剛發布套件的供應鏈風險。」 | [→ 詳細](terms/dependency-cooldown.md) |
 | **Secret Scanning Alert Resolution（密碼掃描警示清除要求）** | PR 引入的 secret alert 未處理前，不允許合併 | 出貨前的金屬探測門 | 「這個 PR 被 **Secret Scanning Alert Resolution** 擋住了，先撤銷洩漏的 token。」 | [→ 詳細](terms/secret-scanning-alert-resolution.md) |
 | **Trusted Publishing（信任發布）** | 用短期、可驗證的 OIDC 身分發布套件，不保存長期 token | 每次出貨都核對來源的限時通行證 | 「npm 發布改用 **Trusted Publishing**，不要把長期 token 放進 workflow。」 | [→ 詳細](terms/trusted-publishing.md) |
+| **Workflow Lockfile（工作流程依賴鎖定檔）** | 固定 CI/CD 實際執行的 Action 與 reusable workflow commit | 封存採購清單，記下實際拿到的材料版本 | 「先審查 Action，再更新 **Workflow Lockfile**。」 | [→ 詳細](terms/workflow-lockfile.md) |
 
 ---
 
