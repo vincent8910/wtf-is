@@ -6,7 +6,7 @@
 
 ## 它到底是什麼？
 
-Sandbox 是一個跟正式環境（[Production](staging-production.md)）完全隔離的測試環境。你可以在裡面自由測試、亂試功能，就算搞壞了也沒關係，因為完全不會影響到真正的使用者和真正的資料。
+Sandbox 是一個依設定隔離檔案、程序、網路或資料的執行環境，常用來測試程式或限制 AI Agent 的操作範圍。它能降低誤操作與惡意行為的影響，但「用了沙盒」不等於絕對安全：設定錯誤、漏洞、共用服務或其他通道都可能讓隔離失效，因此不能保證完全不影響正式系統。OpenAI 於 2026 年 10 月 23 日公布的安全研究，描述以 Agent 主動測試沙盒逃逸、跨越內部邊界，以及利用共用服務跨隔離區通訊；這提醒工程師，防線不能只押在沙盒本身，也要限制主機與網路的權限、檢查共用服務，並測試「內層已失守」時外圍是否仍能阻止外連。
 
 最常見的用法：
 - **金流串接**：先用 sandbox 環境測試刷卡流程，不會真的扣錢
@@ -29,6 +29,8 @@ Sandbox 是一個跟正式環境（[Production](staging-production.md)）完全�
 - 串接金流（綠界、藍新、Stripe 等）時，一定會先在 sandbox 環境測試
 - 跟第三方廠商技術對接時，對方通常會先給你 sandbox 的帳號和金鑰
 - 當你擔心「測試會不會影響正式環境」，工程師跟你說「放心，這是 sandbox」，你就可以安心了
+
+**官方參考：** [OpenAI：Securing our frontier model training environment（2026-10-23）](https://openai.com/index/securing-our-frontier-model-training-environment/)
 
 ---
 **[← 回到術語總覽](../README.md)**
