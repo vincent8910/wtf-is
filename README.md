@@ -50,7 +50,7 @@
 
 | 領域 | 術語數 | 說明 |
 |------|:------:|------|
-| [💻 軟體工程](software-engineering/README.md) | 174 | API、Git、Deploy、Docker⋯⋯ |
+| [💻 軟體工程](software-engineering/README.md) | 175 | API、Git、Deploy、Docker⋯⋯ |
 | [💹 股票投資](stock/README.md) | 96 | 技術分析、交易策略、美股台股制度⋯⋯ |
 | [🔬 電子產業](electronics/README.md) | 29 | 半導體、封裝測試、HBM⋯⋯ |
 | [📣 行銷企劃](marketing/README.md) | 37 | 數位廣告、轉換率、社群行銷⋯⋯ |
@@ -81,7 +81,7 @@
 
 ### 大綱
 
-> 共收錄 **174 個**術語，[點此進入完整頁面](software-engineering/README.md)。
+> 共收錄 **175 個**術語，[點此進入完整頁面](software-engineering/README.md)。
 
 | 分類 | 術語數 | 說明 |
 |------|:------:|------|
@@ -92,6 +92,7 @@
 | [開會時聽不懂類](software-engineering/README.md#開會時聽不懂類) | 23 | 開會、看 Slack 時最常一頭霧水的詞 |
 | [專案管理類](software-engineering/README.md#專案管理類) | 9 | PM 寫規格、追進度時會遇到的詞 |
 | [出事了類](software-engineering/README.md#出事了類) | 7 | 系統出問題時工程師會說的詞 |
+| [供應鏈安全類](software-engineering/README.md#供應鏈安全類) | 6 | 依賴更新、工作流程鎖定與軟體供應鏈防護 |
 | [依工程師類型分類](software-engineering/README.md#依工程師類型分類) | 54 | 前端、後端、DevOps、Mobile、QA、資安⋯⋯ |
 
 ### 單字速查表（A-Z）
@@ -112,7 +113,7 @@
 | [DevOps](software-engineering/terms/devops.md) | [DNS](software-engineering/terms/dns.md) | [Domain](software-engineering/terms/domain.md) | [Downtime](software-engineering/terms/downtime.md) |
 | [Dynamic Workflow（動態工作流）](software-engineering/terms/dynamic-workflow.md) | | | |
 | [Edge Computing](software-engineering/terms/edge-computing.md) | [EKS](software-engineering/terms/eks.md) | [ELK Stack](software-engineering/terms/elk.md) | [Encryption](software-engineering/terms/encryption.md) |
-| [Workflow Lockfile（工作流程依賴鎖定檔）](software-engineering/terms/workflow-lockfile.md) | | | |
+| [Workflow Execution Protection（工作流程執行防護）](software-engineering/terms/workflow-execution-protection.md) | [Workflow Lockfile（工作流程依賴鎖定檔）](software-engineering/terms/workflow-lockfile.md) | | |
 | [Endpoint](software-engineering/terms/endpoint.md) | [環境變數](software-engineering/terms/environment-variable.md) | [ETL](software-engineering/terms/etl.md) | [Event-Driven](software-engineering/terms/event-driven.md) |
 | [Feature Flag](software-engineering/terms/feature-flag.md) | [Firewall](software-engineering/terms/firewall.md) | [FPS](software-engineering/terms/fps.md) | [Framework / Library](software-engineering/terms/framework-library.md) |
 | [Frontend / Backend](software-engineering/terms/frontend-backend.md) | [Full-Stack](software-engineering/terms/full-stack.md) | [GCP](software-engineering/terms/gcp.md) | [Gemini CLI](software-engineering/terms/gemini-cli.md) |
