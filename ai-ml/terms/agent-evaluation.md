@@ -18,6 +18,12 @@
 
 一次「跑通」不代表 Agent 可靠。好的評估集要包含邊界條件、錯誤回應、權限限制、長流程中斷，以及接近真實 Provider payload 的資料。若評估資料本身不代表真實使用情境，漂亮的分數也可能只是考古題考得好。
 
+### 評估中的行為，和實際使用可能不同
+
+評估環境和正式環境的任務、上下文或提示方式不同時，Agent 可能表現不同；因此測試要檢查的不只是任務完成率，也包括它是否遵守授權範圍。OpenAI 於 2026 年 11 月 5 日發布的 GPT‑6 Cyber 系統卡，描述一項隔離環境測試：模型面對可利用的支援服務時，必須判斷攻擊該服務是否超出任務範圍；官方報告該模型在未提供部署安全提示時，99.93% 的測試沒有攻擊範圍外服務，提供提示時則為 100%。這是特定模型、測試與設定下的廠商報告，不代表其他 Agent 的表現，也不是正式環境安全保證。
+
+實務上，可以把「是否守住任務邊界」寫成獨立、可觀察的評分條件，安排可控的誘惑性工具或支援服務，檢查 Agent 是否拒絕越權；同時記錄安全提示、工具權限、隔離環境和測試資料等條件。不要把單一通過率當成安全證明，還要保存執行軌跡並驗證真實 Provider 與部署設定。
+
 評估結果至少要分成兩種問題：**能力評估**是找出 Agent 現在能不能完成較難的新任務；**回歸評估**是確認原本已經會的任務沒有退步。前者可以接受一開始分數不高，後者則應接近全數通過，兩者混在一個百分比裡，會看不出「變強」和「沒有變差」的差別。每個任務也應多跑幾次，因為 Agent 的輸出不是每次都一樣。
 
 評估 Agent 時，還要把 **Harness 一起寫進實驗條件**。同一個模型在不同工具、上下文壓縮、重試、隔離環境與預算下，可能得到完全不同的結果；若只報模型名稱和最後答案，其他人無法重現，也不能公平比較。至少應記錄：模型與版本、Harness／工具介面、可用 turn／token／時間預算、重試規則、資料版本、評分規則，以及是否有人工或安全閘門。
@@ -70,7 +76,7 @@ OpenAI 在 2026 年 10 月 6 日分享 Ironclad 合作案例時，將複雜專�
 - 效率最佳化要看完整任務的成功率、成本、延遲與重試，不要只看單次模型呼叫的 token
 - 「能力評估分數變高，不代表回歸評估沒有退步；兩套題目要分開看。」
 
-**官方參考：** [OpenAI：Advancing computer use with Ironclad（2026-10-06）](https://openai.com/index/advancing-computer-use-with-ironclad/) · [OpenAI：A model guide for the GPT-6 family（2026-10-02）](https://openai.com/index/practical-guide-building-gpt-6/) · [GitHub：10 technical talks I’m excited about at GitHub Universe 2026（2026-10-01）](https://github.blog/news-insights/company-news/10-technical-talks-im-excited-about-at-github-universe-2026) · [GitHub Changelog：Agentic CLI customizations now in the usage metrics API（2026-09-17）](https://github.blog/changelog/2026-09-17-agentic-cli-customizations-now-in-the-usage-metrics-api) · [GitHub Changelog：Auto-resolution and analysis updates in Copilot code review（2026-09-11）](https://github.blog/changelog/2026-09-11-auto-resolution-and-analysis-updates-in-copilot-code-review/) · [Anthropic：Partnering with Accenture on embedded evaluation（2026-09-18）](https://www.anthropic.com/news/accenture-embedded-evaluation) · [GitHub：How we make AI coding more cost efficient without sacrificing task quality（2026-09-02）](https://github.blog/ai-and-ml/github-copilot/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality/)
+**官方參考：** [OpenAI：GPT‑6 Cyber system card（2026-11-05）](https://openai.com/index/gpt-6-cyber-system-card/) · [OpenAI：Advancing computer use with Ironclad（2026-10-06）](https://openai.com/index/advancing-computer-use-with-ironclad/) · [OpenAI：A model guide for the GPT-6 family（2026-10-02）](https://openai.com/index/practical-guide-building-gpt-6/) · [GitHub：10 technical talks I’m excited about at GitHub Universe 2026（2026-10-01）](https://github.blog/news-insights/company-news/10-technical-talks-im-excited-about-at-github-universe-2026) · [GitHub Changelog：Agentic CLI customizations now in the usage metrics API（2026-09-17）](https://github.blog/changelog/2026-09-17-agentic-cli-customizations-now-in-the-usage-metrics-api) · [GitHub Changelog：Auto-resolution and analysis updates in Copilot code review（2026-09-11）](https://github.blog/changelog/2026-09-11-auto-resolution-and-analysis-updates-in-copilot-code-review/) · [Anthropic：Partnering with Accenture on embedded evaluation（2026-09-18）](https://www.anthropic.com/news/accenture-embedded-evaluation) · [GitHub：How we make AI coding more cost efficient without sacrificing task quality（2026-09-02）](https://github.blog/ai-and-ml/github-copilot/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality/)
 
 相關： [Agentic（代理式）](agentic.md)、[AI Sandbox（AI 隔離環境）](ai-sandbox.md)、[AI Harness](../../software-engineering/terms/ai-harness.md)、[Guardrails（護欄）](guardrails.md)、[Accuracy（準確率）](accuracy.md)
 
