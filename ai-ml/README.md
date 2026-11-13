@@ -49,6 +49,7 @@
 |---|---|---|---|
 | [Accuracy（準確率）](terms/accuracy.md) | [Agent Anomaly Detection（代理異常偵測）](terms/agent-anomaly-detection.md) | [Agent Evaluation（代理評估）](terms/agent-evaluation.md) | [Agent Identity（代理身分）](terms/agent-identity.md) |
 | [Agent Memory（代理記憶）](terms/agent-memory.md) | [Agent Permissions（代理權限）](terms/agent-permissions.md) | [Agent Plugin（代理外掛）](terms/agent-plugin.md) | [AI（人工智慧）](terms/ai.md) |
+| [A2UI（Agent-to-User Interface）](terms/a2ui.md) | | | |
 | [Unintended Agent Action（代理非預期行為）](terms/unintended-agent-action.md) | | | |
 | [Algorithm（演算法）](terms/algorithm.md) | [Behavioral Evaluation（行為評估）](terms/behavioral-evaluation.md) | | |
 | [Bias（偏差）](terms/bias.md) | | | |
@@ -156,6 +157,7 @@
 | AI Sandbox（AI 隔離環境） | 限制 AI 檔案、指令與網路活動範圍的隔離環境 | 沒有總鑰匙的工作室 | 「先在 Sandbox 裡測試，不要直接碰 production」 | [詳細](terms/ai-sandbox.md) |
 | Multi-Agent System（多代理系統） | 多個有角色與協作規則的 Agent 系統 | 分工明確的 AI 團隊 | 「這不是多個聊天視窗，而是 Multi-Agent System」 | [詳細](terms/multi-agent-system.md) |
 | [A2A（Agent-to-Agent）](terms/a2a.md) | Agent 與 Agent 之間的協作與通訊概念 | AI 團隊的對講機 | 「MCP 連工具，A2A 連另一個 Agent」 | [詳細](terms/a2a.md) |
+| A2UI（Agent-to-User Interface，代理對使用者介面） | 讓 Agent 描述互動畫面，由 App 使用核准的原生元件呈現 | 助理提供可勾選菜單，平板決定怎麼畫 | 「用 A2UI 顯示可編輯的出差安排」 | [詳細](terms/a2ui.md) |
 | Agent Identity（代理身分） | 識別 Agent、代表對象與委派權限的身分機制 | 公司員工證加訪客登記 | 「長流程 Agent 要有可稽核的 Agent Identity」 | [詳細](terms/agent-identity.md) |
 | Agent Permissions（代理權限） | 決定 Agent 哪些操作可直接做、要先詢問或一律禁止 | 助理的門禁表 | 「先把高風險操作設成 Ask 或 Deny」 | [詳細](terms/agent-permissions.md) |
 | Risk-based Tool Approval（風險分級工具核准） | 依工具操作風險決定自動放行、請人確認或拒絕 | 公司門禁依普通辦公區、資料室與金庫分級 | 「讀檔可以自動放行，但 production deploy 要人工核准」 | [詳細](terms/risk-based-tool-approval.md) |
