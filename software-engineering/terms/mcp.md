@@ -28,6 +28,10 @@ MCP 定義 AI 應用程式（Client / Host）和 MCP Server 之間如何交換�
 
 這些是協定層能力，不代表每個 AI 工具或 MCP Server 已經完整支援。導入前要確認 Client、Server 與 SDK 實際支援的版本與功能。
 
+### 規格如何推出新版本
+
+MCP 官方在 **2026 年 11 月 11 日**公布更固定的規格發布流程：目標是每年兩次，通常安排在 3 月與 9 月最後一個星期二；提案會先經審查與凍結，再提供 SDK beta，讓實作者有時間測試。未準備好的提案會延到下一版，而不是拖延整個版本。這是專案的規格治理與排程方式，**不是新增的 MCP 訊息或客戶端／伺服器功能**；現有實作不需因此修改。日期是官方目前的規劃，未來仍應以官方公告為準。
+
 ## 生活比喻 / 實際例子
 
 想像 AI 是一位被安排在辦公室裡的顧問：
@@ -84,7 +88,7 @@ MCP 的工具標註可以提供風險提示，但提示不是安全邊界；不�
 - 「升級到 `2026-07-28` 前，要先確認 Client、Server 和 SDK 的相容性。」
 - 「MCP 工具回傳的網頁內容不一定可信，還是要防 Prompt Injection。」
 
-**官方參考：** [MCP 2026-07-28 規格](https://modelcontextprotocol.io/specification/2026-07-28) · [規格變更紀錄](https://modelcontextprotocol.io/specification/2026-07-28/changelog) · [MCP 官方路線圖（2026-08-22）](https://blog.modelcontextprotocol.io/posts/mcp-roadmap/)
+**官方參考：** [MCP 2026-07-28 規格](https://modelcontextprotocol.io/specification/2026-07-28) · [規格變更紀錄](https://modelcontextprotocol.io/specification/2026-07-28/changelog) · [MCP 規格發布週期（2026-11-11）](https://blog.modelcontextprotocol.io/posts/mcp-release-cycle/) · [MCP 官方路線圖（2026-08-22）](https://blog.modelcontextprotocol.io/posts/mcp-roadmap/)
 
 ---
 
