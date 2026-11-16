@@ -39,6 +39,14 @@ MCP 官方的 **Skills Extension** 工作組正在處理另一個相鄰問題：
 
 這可以想成圖書館的差別：MCP 原本像是規定「怎麼借書、怎麼查資料」，Skills Extension 則讓圖書館能用一致方式讓你發現並取用一整本工作手冊。導入時仍要確認主機是否支援該 extension、Skill 內容來自哪裡，以及取回內容後會獲得哪些工具或權限。
 
+## 2026-11-10 檔案傳輸 Extension：目前仍是實驗草案
+
+MCP 官方於 2026 年 11 月 10 日分享 `io.modelcontextprotocol/files` 的檔案上傳／下載 Extension 草案，目標是讓檔案內容可在 JSON-RPC 對話之外直接傳輸，避免把大型檔案塞進模型上下文。官方明確表示這仍是早期實驗：尚無參考實作、設計可能改變，並預期在 2026 年底前完成穩定版；因此目前**不是穩定標準，也不是所有 MCP Client／Server 都支援的功能**。
+
+草案提出由 Server 標記檔案參數、先檢查權限與容量，再回傳上傳目標；Client 完成傳輸後再繼續工具呼叫。這也帶來新的安全檢查：不要把 MCP 憑證自動送往任意 URL、拒絕重新導向，並評估是否限制外部傳輸目標網域。尤其「取得使用者同意」不一定代表使用者已看過實際目的地，不能把同意視為完整安全邊界。
+
+**官方參考：** [MCP 官方部落格：Exploring File Uploads and Downloads in MCP（2026-11-10，實驗草案）](https://blog.modelcontextprotocol.io/posts/exploring-file-uploads-and-downloads-in-mcp/)
+
 ## 生活比喻 / 實際例子
 
 想像你家的電器插座：
